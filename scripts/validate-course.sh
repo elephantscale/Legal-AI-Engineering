@@ -183,7 +183,9 @@ if git -C "$ROOT_DIR" ls-files --error-unmatch labs/assets/corpus >/dev/null 2>&
 else
   ok "no generated corpus tracked in git"
 fi
-tracked_work=$(git -C "$ROOT_DIR" ls-files 'labs/work*' 'labs/*/work*' 2>/dev/null | head -1)
+# Directories only. 'labs/*/work*' also matched labs/10-Deploy-At-Scale/work_queue.py,
+# which is lab source, not lab output.
+tracked_work=$(git -C "$ROOT_DIR" ls-files 'labs/work/*' 'labs/*/work/*' 2>/dev/null | head -1)
 [ -z "$tracked_work" ] && ok "no lab work/ output tracked in git" \
   || bad "lab output is tracked in git: $tracked_work"
 for pat in 'labs/work' 'assets/corpus'; do

@@ -66,6 +66,9 @@
 * **Module 1: The Legal Engineer's Landscape**
   * Learning objectives — understand the role, where AI fits in legal work, and the two risks that run through everything.
   * Topics
+    * The legal AI implementation gap — what the 2026 ILTA, Wolters Kluwer and Thomson
+      Reuters surveys show, and why buying legal AI software does not remove the need
+      for engineering
     * The legal-engineer role and why it is being hired right now
     * Where AI fits: eDiscovery, review, contracts, research, investigations; the EDRM model in plain terms
     * Build vs. buy

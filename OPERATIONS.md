@@ -31,13 +31,13 @@ system did, and you can re-run it."*
 | Component | State |
 |---|---|
 | `outline.md` | Complete. Treated as the contract for module numbers and the Day split. |
-| Slides | 13 decks (`00-about` + modules 01–12), ~4,200 lines of presenter-skeleton Markdown, ~170 slides, all with `Notes:` narration |
+| Slides | 13 decks (`00-about` + modules 01–12), ~4,340 lines of presenter-skeleton Markdown, 185 slides, all with `Notes:` narration |
 | Labs | **All 11 built and smoke-tested offline** (01–07 core, 08–11 optional Day 3), ~9,500 lines of Python, ~3,800 lines of lab README including Teacher's Playbooks |
 | Course materials | 7 documents (design canvas, defensibility checklist, TAR metrics cheat sheet, privilege/egress attestation form, reproducibility manifest template, SAIS-100 legal overlay, capstone rubric) |
 | Checks | `scripts/validate-course.sh`, `labs/verify-setup.sh`, `labs/test-all-labs.sh` — all green |
 
-**Nothing is committed yet.** The work is in the working tree on `main`; the last commit is
-`f698bb0 outline`.
+**Committed and pushed.** `0349008` carries the whole course to
+`Scaia-ai/Legal-AI-Engineering` `main`; Module 1's new market section follows it.
 
 ## Recent accomplishments
 
@@ -61,16 +61,29 @@ system did, and you can re-run it."*
   for all 18 questions and the four legal auto-fail conditions.
 - **Three documented corrections applied to `outline.md`** after independent verification
   (see *Decisions needed from Mark*).
+- **Committed and pushed** as `0349008` (92 files, +20,846 lines) to
+  `git@github.com:Scaia-ai/Legal-AI-Engineering.git` `main`.
+- **Module 1 gained a new opening section, "The Legal AI Implementation Gap"** (two slides,
+  now Part 1; the existing parts renumbered 2–4). Every figure on it was taken from the
+  primary report — ILTA's free 2026 executive summary, Wolters Kluwer's own Future Ready
+  Lawyer 2026 data page, and the Thomson Reuters Institute's 2026 *AI in Professional
+  Services* PDF and *Future of Professionals 2026 — Legal* page. Source URLs, respondent
+  counts and **fieldwork dates** are in the presenter notes, together with an explicit list
+  of the widely-quoted figures that were **left off** because no primary report carries them
+  (ILTA product-level shares, the 85%–100% firm-size range, the 78% policy and 79% drafting
+  aggregates, and the segment-level 2025 priors behind the 41%/47% split). `outline.md`
+  gained a matching topic bullet.
+- **`validate-course.sh` glob bug fixed.** `labs/*/work*` matched
+  `labs/10-Deploy-At-Scale/work_queue.py` — lab source, not lab output — so the "no real case
+  data" check failed the moment that file became tracked. It now matches directories only.
 
 ## Current priorities
 
-1. **Commit and push** the whole body of work. It is the largest outstanding risk — nothing
-   is in version control yet.
-2. **Mark's review of the three `outline.md` edits**, one of which removed a deliverable
-   (below).
-3. **A dry run of Day 1** against the clock. The timings in the playbooks are estimates, not
-   measurements.
-4. **Build the PPTX decks** — `slides/gen.sh` is wired to the shared assembler. By standing
+1. **Mark's review of the three `outline.md` edits**, one of which removed a deliverable
+   (below), plus the one topic bullet added for the new Module 1 section.
+2. **A dry run of Day 1** against the clock. The timings in the playbooks are estimates, not
+   measurements. Module 1 is now budgeted at 50 minutes rather than 45.
+3. **Build the PPTX decks** — `slides/gen.sh` is wired to the shared assembler. By standing
    instruction Claude does not run it; Mark builds the decks himself.
 
 ## Customers and revenue connections
@@ -116,7 +129,7 @@ priority into a deadline.)*
 
 | Risk | Severity | Mitigation |
 |---|---|---|
-| **Uncommitted work.** The entire course exists only in one working tree. | **High** | Commit and push this session. |
+| **Perishable market statistics.** Module 1 Part 1 quotes the 2026 ILTA, Wolters Kluwer and Thomson Reuters surveys by number. Adoption figures age in months, and two of the three reports were already fielded in 2025. | Medium | Re-verify against the primary reports before each delivery; the presenter notes carry the URLs, respondent counts and fieldwork dates needed to do it in fifteen minutes. The slide's argument survives the numbers moving, because the argument is the gap between *adopted* and *implemented*. |
 | **Case-law currency.** *Morgan v. V2X* (D. Colo., Mar 2026) is cited as the anchor for "your AI use is discoverable". Legal-AI case law is moving fast and a stale citation is a credibility problem in this audience. | Medium | Re-check before each delivery. Treat the citation as perishable. |
 | **Model-ID drift.** `qwen3:8b` / `qwen3:14b` / `nomic-embed-text` are named in CLAUDE.md, the slides, the labs and the manifests. | Medium | `validate-course.sh` checks the pins agree between `CLAUDE.md` and `labs/common/llm.py`. Extend if more pins appear. |
 | **Reference outputs are corpus-dependent.** The playbooks quote numbers measured on the default corpus; a student running `--docs 300` sees different ones. | Low | Stated in `labs/README.md` and `labs/SETUP.md`. The *findings* are seeded to survive both sizes. |
@@ -139,9 +152,8 @@ priority into a deadline.)*
 
 ## Next three highest-value actions
 
-1. **Commit and push.** Eleven labs, thirteen decks, seven course documents and three check
-   scripts currently exist in exactly one place.
+1. **Decide the certificate question** (#1 above), since it is the one open item that changes
+   a student-facing promise.
 2. **Dry-run Day 1 against the clock**, and correct the playbook timings from measurement
    rather than estimate.
-3. **Decide the certificate question** (#1 above), since it is the one open item that changes
-   a student-facing promise.
+3. **Build the PPTX decks** from the Markdown, which is now final for Module 1.
