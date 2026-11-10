@@ -1,0 +1,4 @@
+# Pinned for the container build. Same pins as the individual labs' requirements.txt.
+pypdf==5.1.0
+Pillow==11.0.0
+requests==2.32.3

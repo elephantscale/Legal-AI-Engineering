@@ -1,0 +1,5 @@
+# Lab 10 needs nothing beyond the standard library.
+#
+# work_queue.py uses sqlite3 and multiprocessing; destroy_matter.py uses hashlib and
+# pathlib. That is deliberate for the destruction tool in particular: the person auditing
+# your retention compliance should be able to run it on a machine with nothing installed.

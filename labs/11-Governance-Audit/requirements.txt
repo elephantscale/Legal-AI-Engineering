@@ -1,0 +1,5 @@
+# Lab 11 needs nothing beyond the standard library.
+#
+# audit.py imports sais100.py from Lab 06 — deliberately, so the audit re-checks the
+# scorer the system scored itself with rather than reimplementing it. It then re-runs
+# Labs 03, 04 and 05 as subprocesses to verify their claims independently.

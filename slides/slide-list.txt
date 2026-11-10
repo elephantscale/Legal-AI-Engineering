@@ -1,0 +1,13 @@
+00-about.md
+01-legal-engineer-landscape.md
+02-legal-data-ingestion.md
+03-search-and-retrieval.md
+04-legal-rag-citations.md
+05-privilege-and-local-serving.md
+06-defensible-review.md
+07-ship-score-govern.md
+08-capstone.md
+09-investigations.md
+10-agentic-legal-workflows.md
+11-deployment-at-scale.md
+12-governance-deep-dive.md

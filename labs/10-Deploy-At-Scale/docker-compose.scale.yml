@@ -1,0 +1,91 @@
+# Lab 10 — the same stack as Lab 06, scaled out.
+#
+# Two things change from Lab 06 and nothing else does:
+#
+#   1. The pipeline service becomes N replicas of a WORKER against the shared queue.
+#      Nothing coordinates them. No leader, no assignment, no message broker — they all
+#      claim from the same SQLite table and the lease handles everything else.
+#   2. `internal: true` is still there. Scaling out is where teams quietly add a route
+#      to the internet "just for the model download" and never take it away.
+#
+# Run it:
+#     docker compose -f docker-compose.scale.yml up --build --scale worker=6
+#     docker compose -f docker-compose.scale.yml run --rm tools work_queue.py status --work /work
+#     docker compose -f docker-compose.scale.yml run --rm tools work_queue.py reap   --work /work
+
+services:
+
+  llm:
+    image: ollama/ollama:0.5.4
+    networks: [matter]
+    volumes:
+      - ollama-models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  tika:
+    image: apache/tika:2.9.2.1
+    networks: [matter]
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  # One-shot: enumerate the work. Idempotent, so running it twice is free and running it
+  # after a config change re-enqueues everything — which is correct.
+  init:
+    build: &build
+      context: ..
+      dockerfile: 06-Score-and-Package/Dockerfile
+    networks: [matter]
+    environment: &env
+      LEGAL_AI_MODE: local
+      LEGAL_AI_BASE_URL: http://llm:11434/v1
+      LEGAL_AI_MODEL: qwen3:8b
+      LEGAL_AI_EMBED: nomic-embed-text
+      LEGAL_AI_EGRESS: deny-lan
+      TIKA_URL: http://tika:9998
+      LAB10_WORK_ROUNDS: "1500"
+    volumes: &vols
+      - ../assets/corpus:/corpus:ro      # forensic rule one, enforced by the filesystem
+      - matter-work:/work
+    entrypoint: ["python3", "/app/10-Deploy-At-Scale/work_queue.py"]
+    command: ["init", "--work", "/work", "--corpus", "/corpus"]
+
+  # Scale THIS. `--scale worker=6` and the queue does the rest.
+  #
+  # Note there is no `depends_on: init`. A worker that starts before the queue is
+  # populated finds nothing pending and exits, and restart brings it back. Designing for
+  # "the work might not be there yet" is cheaper than orchestrating startup order, and it
+  # is the same property that makes a worker safe to kill.
+  worker:
+    build: *build
+    depends_on:
+      llm:
+        condition: service_healthy
+    networks: [matter]
+    environment: *env
+    volumes: *vols
+    restart: on-failure
+    entrypoint: ["python3", "/app/10-Deploy-At-Scale/work_queue.py"]
+    command: ["run", "--work", "/work", "--corpus", "/corpus", "--workers", "1"]
+
+  # An interactive shell on the same volumes, for status / reap / curve / destroy.
+  tools:
+    build: *build
+    networks: [matter]
+    environment: *env
+    volumes: *vols
+    entrypoint: ["python3"]
+    command: ["/app/10-Deploy-At-Scale/work_queue.py", "status", "--work", "/work"]
+
+networks:
+  matter:
+    internal: true          # still the whole control
+
+volumes:
+  ollama-models:
+  matter-work:              # destroying a matter means destroying THIS, by name

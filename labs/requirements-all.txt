@@ -1,0 +1,21 @@
+# Everything every lab needs, pinned. Install this once and all eleven labs run.
+#
+#     python3 -m pip install -r requirements-all.txt
+#
+# All of it is optional. With none of it installed, set LEGAL_AI_MODE=offline and every
+# lab still completes using stdlib fallbacks — the fallbacks are honestly worse, never
+# hidden, and each lab says which one it used.
+
+pypdf==5.1.0            # the PDF extraction path (Lab 01)
+Pillow==11.0.0          # renders the synthetic scans; OCR input (make_corpus, Lab 01)
+requests==2.32.3        # talks to the local OpenAI-compatible endpoint and to Tika
+
+# NOT pinned here, because they are not pip packages:
+#   tesseract-ocr   local OCR. apt: tesseract-ocr tesseract-ocr-eng / brew: tesseract
+#   ollama          the local model runtime. https://ollama.com
+#   apache/tika     optional, as a server: docker run -p 9998:9998 apache/tika:2.9.2.1
+#
+# Deliberately absent: no vector database, no LangChain, no embedding library. The labs
+# build retrieval from an inverted index and cosine similarity so you can see the whole
+# mechanism. Production swaps in Solr/Lucene and a real vector store — Module 3 and
+# Module 4 say exactly where.

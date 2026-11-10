@@ -1,7 +1,7 @@
 # Legal AI Engineering
 ### Building Private, Defensible AI for Law — eDiscovery, Review, and Investigations
 
-*© Elephant Scale · July 21, 2026*
+*© Elephant Scale · Nov 10, 2026*
 
 - **Course Code:** LEGAL-AI-ENG-2026
 - **Duration:** 2 Days (optional Day 3 / modular deep-dive available)
@@ -18,7 +18,7 @@
 * Special emphasis is placed on:
   * **Confidentiality and privilege** — where legal data actually goes, and how to keep it local and certifiable.
   * **Defensibility** — measuring, documenting, and reproducing an AI review so it holds up.
-  * Applying all concepts to a real-world system: **FreeEed** (open-source eDiscovery platform with AI capabilities) as the continuous hands-on lab.
+  * Grounding every concept in a real-world system: **FreeEed** (Apache-2.0, on-prem eDiscovery — Tika extraction across 1,400+ file types, OCR, imaging, PST/OST, Solr/Lucene search, review, and Bates/load-file production) is the reference platform the instructor ships and the labs are designed against.
 
 ### Learning Outcomes
 * After the **two-day core**, participants will be able to:
@@ -51,12 +51,12 @@
 ## Format
 * Instructor-led, **highly hands-on** (learn by doing)
 * Every module has a working lab; the labs compound into a real legal-AI application by the end
-* Taught from the builder's seat — the instructor ships a real legal-AI platform (FreeEed) and teaches AI security, so the labs are production reality, not toy demos
+* Taught from the builder's seat — the instructor ships a real on-prem eDiscovery platform (FreeEed) and teaches AI security, so the labs reflect production reality rather than toy demos
 
 ## Lab environment
 * A modern laptop and reliable internet access
 * A local model runtime (Ollama / vLLM, OpenAI-compatible) for the privacy and local-serving labs
-* The **FreeEed** lab environment for legal-data ingestion, search, and review labs
+* The labs themselves are self-contained Python (standard library plus a short pinned requirements list) over a provided synthetic corpus; **FreeEed** is referenced throughout as the production reference architecture, and participants are pointed at it to install and run on their own machines
 * Deliberately messy sample legal corpora are provided
 
 ## Course outline
@@ -76,7 +76,7 @@
   * Topics
     * 1,400+ file types, email and PST, scanned paper, load files (.dat/.opt); embedded metadata that matters
     * Text extraction (Tika), OCR, and de-duplication as a *choice*
-  * **Lab: FreeEed Ingestion** — build an ingestion pipeline over a deliberately messy document set (email/PST, scans, load files)
+  * **Lab: Ingestion** — build an ingestion pipeline over a deliberately messy document set (nested containers, email, scans, load files), with de-duplication as a documented legal decision
 
 * **Module 3: Search and Retrieval — the Foundation**
   * Learning objectives — build the core eDiscovery primitive: find anything inside everything.
@@ -100,7 +100,7 @@
   * Topics
     * Where the data actually goes when it hits a cloud AI
     * Privilege waiver, duty of competence, and the "private" spectrum (contractual vs. physical)
-    * *Morgan v. V2X* and why local is court-defensible
+    * *Morgan v. V2X* — your AI use is itself discoverable, so choose the tool on the record
     * Serving **local models** (Ollama / vLLM) and **monitoring outbound** traffic
   * **Lab: Local Model + Egress Proof** — run a local model end-to-end and prove, with monitoring, that no data egressed
 
@@ -133,12 +133,12 @@
 * **Deployment at Scale** — on-prem and appliance deployment, distributed processing for large volumes, regulated environments (CJIS, government, higher-ed), hardware sizing. *Lab: containerize and scale a processing job across workers.*
 * **Governance and Compliance Deep-Dive** — the AI-regulation landscape (100+ US state AI laws, the EU AI Act), audit requirements, and a full SAIS-100 governance audit. *Lab: audit a legal-AI system against a governance/defensibility checklist.*
 
-## Assessment and Certification
+## Assessment
 * Evaluation — capstone project, lab completion, and class participation
 * Requirements — minimum attendance, successful completion of the capstone, completion of module labs
-* Certificate Awarded — **Legal AI Engineer Certificate**
+* Completion — participants leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence of competence this course produces.
 
 ## Where this fits
 * This is the **legal-vertical track of the Elephant Scale Secure AI Learning Path.**
 * It pairs naturally with **Building Secure AI Applications** (builders) and **AI Security for Security Teams** (defenders), and applies the **SAIS-100** framework in its governance work.
-* **FreeEed** (open-source eDiscovery + AI) is the hands-on lab throughout — the real system that keeps the labs production-grade, not slideware.
+* **FreeEed** (Apache-2.0, on-prem eDiscovery) is the reference architecture throughout — the real system that keeps the labs production-grade rather than slideware. Participants build their own pipeline in the labs and leave able to deploy FreeEed on their own hardware.

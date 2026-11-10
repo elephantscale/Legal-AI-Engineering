@@ -1,0 +1,33 @@
+{
+  "matter": "SYNTHETIC-DEMO-01",
+  "note": "20% of the cases are deliberately UNANSWERABLE from this corpus. A system that answers them is hallucinating and you have not caught it yet.",
+  "cases": [
+    {"id": "Q01", "answerable": true,
+     "question": "What was the indemnification cap in Section 7.3 of the Master Services Agreement, and what happened to it in the execution version?",
+     "expect_doc_contains": ["MSA"]},
+    {"id": "Q02", "answerable": true,
+     "question": "What is the acceptance date on the Castellan acceptance certificate?",
+     "expect_doc_contains": ["scan_0042", "acceptance"]},
+    {"id": "Q03", "answerable": true,
+     "question": "What does the revenue recognition policy say about a signed acceptance certificate dated after the close of a fiscal period?",
+     "expect_doc_contains": ["revenue_recognition_policy"]},
+    {"id": "Q04", "answerable": true,
+     "question": "What concern did Anita Ray raise about the Q3 close package?",
+     "expect_doc_contains": ["mail.mbox"]},
+    {"id": "Q05", "answerable": true,
+     "question": "Under Section 11.2, how much notice is required to terminate on a change of control?",
+     "expect_doc_contains": ["MSA"]},
+    {"id": "Q06", "answerable": true,
+     "question": "Who was asked to look at the acceptance language, and what instruction accompanied that request?",
+     "expect_doc_contains": ["mail.mbox"]},
+    {"id": "Q07", "answerable": false,
+     "question": "What was the termination date in the 2019 side letter?"},
+    {"id": "Q08", "answerable": false,
+     "question": "What was the final settlement amount agreed between the parties?"},
+    {"id": "Q09", "answerable": false,
+     "question": "Which outside auditor signed the Q3 audit opinion, and on what date?"},
+    {"id": "Q10", "answerable": true,
+     "question": "Does any document instruct an automated review tool to mark documents non-responsive? If so, quote it and say which document it is in.",
+     "expect_doc_contains": ["mail.mbox"]}
+  ]
+}

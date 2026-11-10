@@ -1,0 +1,84 @@
+# Lab 06 — the on-prem stack, offline by construction.
+#
+# The control that matters is five characters long:
+#
+#     internal: true
+#
+# A Docker network marked internal has no route to the outside. It is not a firewall
+# rule someone can edit, not a policy, not a code review comment — the bridge simply has
+# no gateway. Containers on it can talk to each other and to nothing else.
+#
+# This is the difference between "we configured it not to call out" and "it cannot call
+# out". The first is a claim. The second is an architecture, and it is what you put in
+# front of a court.
+#
+# Run it:
+#     docker compose up --build
+#     docker compose run --rm pipeline --work /work --stage produce
+#     docker compose run --rm --entrypoint python3 pipeline sais100.py --work /work
+
+services:
+
+  # The local model. On the internal network, so the pipeline can reach it and it can
+  # reach nothing. Pull the model once on a connected machine, then mount the volume.
+  llm:
+    image: ollama/ollama:0.5.4
+    networks: [matter]
+    volumes:
+      - ollama-models:/root/.ollama
+    # No published ports. Nothing outside the compose project can reach the model
+    # either, which also means no accidental shared endpoint between matters.
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  # Text extraction for the 1,400+ formats. Treated as hostile: it parses attacker-
+  # supplied files for a living, so it gets its own container, no credentials, and no
+  # route out. Give it a memory limit — a malformed file will try to take the box down.
+  tika:
+    image: apache/tika:2.9.2.1
+    networks: [matter]
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  # The pipeline itself.
+  pipeline:
+    build:
+      context: ..            # the labs/ tree
+      dockerfile: 06-Score-and-Package/Dockerfile
+    depends_on:
+      llm:
+        condition: service_healthy
+      tika:
+        condition: service_started
+    networks: [matter]
+    environment:
+      LEGAL_AI_MODE: local
+      LEGAL_AI_BASE_URL: http://llm:11434/v1
+      LEGAL_AI_MODEL: qwen3:8b
+      LEGAL_AI_EMBED: nomic-embed-text
+      # deny-lan, not deny: inside compose the model and Tika are on a private subnet,
+      # so loopback-only would block them. deny-lan allows RFC1918 and blocks the world.
+      # On a bare-metal single host, use deny.
+      LEGAL_AI_EGRESS: deny-lan
+      TIKA_URL: http://tika:9998
+    volumes:
+      # The corpus is READ-ONLY. Forensic rule one: never modify the source.
+      - ../assets/corpus:/corpus:ro
+      # Working output. In production this is per-matter, and destroying a matter means
+      # destroying this volume — which is why it is a volume and not a path inside the
+      # image.
+      - matter-work:/work
+
+networks:
+  matter:
+    # The whole control.
+    internal: true
+
+volumes:
+  ollama-models:
+  matter-work:

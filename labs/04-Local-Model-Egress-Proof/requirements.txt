@@ -1,0 +1,12 @@
+# Lab 04 — Local model + egress proof
+# Nothing to install. The guard and the attestation writer are stdlib (../common/egress.py).
+#
+# To run the lab as intended you want a LOCAL model:
+#   ollama pull qwen3:8b
+#   ollama pull nomic-embed-text
+#
+# The optional cloud comparison (step 5) needs:
+#   export LEGAL_AI_MODE=cloud
+#   export LEGAL_AI_BASE_URL=https://api.openai.com/v1
+#   export LEGAL_AI_API_KEY=sk-...
+# Only ever against the SYNTHETIC corpus. Never a real matter.

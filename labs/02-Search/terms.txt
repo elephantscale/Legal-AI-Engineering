@@ -1,0 +1,17 @@
+# Proposed search terms — the kind of list that gets negotiated between counsel.
+# Run: python3 search_index.py hitreport --work ../work --terms terms.txt
+"revenue restatement"
+restatement
+indemnification
+indemnif*
+"indemnification cap"
+"change of control"
+"material adverse change"
+acceptance W/10 certificate
+"side letter"
+privileged
+"force majeure"
+terminat*
+auditor
+"discuss offline"
+parking

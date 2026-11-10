@@ -218,3 +218,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------- Legal AI Engineering
+# Lab outputs. Labs 01-06 write into labs/work/; each lab reads the previous one's
+# output. None of it is committed: it is derived, it is large, and knowing which files
+# are evidence and which are derived is itself a defensibility signal (Lab 07 grades it).
+labs/work/
+labs/work-*/
+labs/assets/corpus/
+
+# The generated corpus and anything derived from it. Every byte is synthetic — see
+# labs/assets/make_corpus.py — but it is regenerated, not stored.
+labs/**/text/
+labs/**/text-scaled/
+labs/**/rag-runs/
+labs/**/*.sqlite
+labs/**/*.sqlite-wal
+labs/**/*.sqlite-shm
+
+# Reproducibility bundles and destruction records are per-run artifacts.
+case-snapshot-*/
+destruction-certificate-*.json
+destruction-verification-*.json
+destruction-plan-*.json
+
+# Score and audit outputs
+labs/**/sais100-score.json
+labs/**/sais100-verified*.json
+labs/**/audit-*.json
+labs/**/audit-findings.md
+labs/**/throughput.json
+
+# Assembled decks. Mark builds the PPTX; the Markdown is the source of truth.
+slides/assembly.out/
