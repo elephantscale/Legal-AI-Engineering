@@ -206,9 +206,29 @@ that repo was created with.
    **(d)** accept a long Day 2 and say so in the outline. This decision should be made
    **before** dates are agreed with Carlene, because it changes what is being sold.
 
-1. **Free course now, paid technical support later** *(Mark's idea, 2026-11-10)*. The GM
-   read: the model is sound and fits the FreeEed demand channel, but three things should be
-   settled before it is offered on 2026-11-17.
+1. **Monetisation model** *(Mark, 2026-11-10)*. Two variants on the table: free course with
+   **paid support**, and the Andrew Ng pattern — free course with a **paid certificate**.
+   Mark's stated second motive for support is a **flow of real-world use cases** feeding
+   FreeEed. The GM read:
+   - **Paid certificate is the cleaner line**, but note the difference from Ng: his bar is
+     automated at scale, ours needs Mark to run `VERIFY.md` per student. That is what makes
+     it worth more, and it is fine at low volume. The tension to settle *before* anyone pays:
+     when the certificate is the revenue, failing a candidate costs money. Framing that
+     resolves it — **the fee buys the assessment, not the pass** — plus the published four
+     checks, the roster, and a free retake.
+   - **The use-case flow cannot run on client data.** Module 5's own slide says disclosure to
+     a third party can waive privilege; in a support channel Elephant Scale *is* the third
+     party, and the privilege is the student's client's to waive, not the student's. Default
+     answer to "will she have permission": no, and often she cannot grant it.
+   - **The workable version** is problem shapes, not matter facts — volumes, file-type mixes,
+     deadlines, constraints — reproduced **on the synthetic course corpus**. That is full
+     value for FreeEed roadmap purposes, needs no permission, and is the classroom ground
+     rule ("no client data in any tool") extended to support. Real matter detail would need
+     an NDA, and for privileged material engagement through counsel.
+   - **Reuse is a separate grant.** Marketing, case studies or course material built on these
+     cases needs explicit written permission, anonymised — cheap as an opt-in at signup,
+     awkward to retrofit.
+   Three things still to settle before any offer is made:
    - **Do not call it free; call it what it is.** The Day 1 dry run has never happened, so
      Carlene *is* the dry run. "No fee, in exchange for structured feedback and your timing
      data" is a fair trade between two parties, and it does not anchor the list price at
