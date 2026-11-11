@@ -99,9 +99,14 @@ differentiator against generic "AI for lawyers" training.
 
 ## Provenance
 
+- This repo lives at `/media/mark/data1/ES/Legal-AI-Engineering` (= `/home/mark/projects/ES/...`)
+  and pushes to `git@github.com:elephantscale/Legal-AI-Engineering.git`. It was moved here from
+  `/media/mark/data1/scaia/` on 2026-11-10; if you find a reference to the old path or to the
+  `Scaia-ai` remote anywhere, it is stale.
 - Built from `outline.md` (Elephant Scale, 2026-07-21). House style borrowed from the sibling
   Elephant Scale courses `Building-Agentic-AI`, `Building-Secure-AI-Applications`, and
-  `Artificial-Intelligence-for-Federal-Decision-Making-Training` in `/media/mark/data1/ES/`.
+  `Artificial-Intelligence-for-Federal-Decision-Making-Training` — now literally siblings, in
+  the same `ES/` directory.
 - The privacy/local-serving and reproducibility material tracks FreeEed's real design records:
   `/media/mark/data1/SHMsoft/FreeEed/docs/local-ai-cjis-briefing.md` and
   `docs/decisions/local-ai-architecture.md`. Keep them in sync — when FreeEed's pinned models

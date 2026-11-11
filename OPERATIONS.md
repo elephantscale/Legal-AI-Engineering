@@ -36,8 +36,12 @@ system did, and you can re-run it."*
 | Course materials | 7 documents (design canvas, defensibility checklist, TAR metrics cheat sheet, privilege/egress attestation form, reproducibility manifest template, SAIS-100 legal overlay, capstone rubric) |
 | Checks | `scripts/validate-course.sh`, `labs/verify-setup.sh`, `labs/test-all-labs.sh` — all green |
 
-**Committed and pushed.** `0349008` carries the whole course to
-`Scaia-ai/Legal-AI-Engineering` `main`; Module 1's new market section follows it.
+**Lives in the Elephant Scale course tree, under the Elephant Scale GitHub org.** Relocated
+2026-11-10 from `/media/mark/data1/scaia/Legal-AI-Engineering` to
+`/media/mark/data1/ES/Legal-AI-Engineering` (= `/home/mark/projects/ES/...`), matching every
+sibling ES course. Canonical remote is now **`git@github.com:elephantscale/Legal-AI-Engineering.git`**,
+`main` at `e5e4f34`, with the full course history force-pushed over the stub initial commit
+that repo was created with.
 
 ## Recent accomplishments
 
@@ -142,6 +146,11 @@ priority into a deadline.)*
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
 ## Decisions needed from Mark
+
+0. **The stale duplicate on the Scaia org.** `git@github.com:Scaia-ai/Legal-AI-Engineering.git`
+   still holds this same history through `e5e4f34`; the course is no longer pushed there.
+   Archive or delete it, so there is one canonical repo and nobody clones the wrong one.
+   Claude does not delete remote repositories.
 
 1. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
    direction is that the **Elephant Scale Legal AI Engineer Certificate** will become a brand
