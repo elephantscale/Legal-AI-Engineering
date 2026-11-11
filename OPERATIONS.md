@@ -110,11 +110,9 @@ that repo was created with.
 
 ## Customers and revenue connections
 
-- **First student: Carlene Gordon.** Mark meets her in the week of **2026-11-16** — the
-  course's first real contact with a student, and the end of its build-ahead-of-demand phase.
-  *(Needs CEO input: is this an intro conversation, a paid 1:1 delivery, or a pilot run in
-  exchange for feedback? Scope, dates and fee are Unknown, and they decide what gets
-  prepared — see Next three highest-value actions.)*
+- **First student: Carlene Gordon.** Mark meets her in the week of **2026-11-16**, and the
+  purpose of that meeting is to **agree the delivery dates**. This is the end of the course's
+  build-ahead-of-demand phase. Scope (2 days, or 2 + the optional Day 3) and fee are Unknown.
 - **FreeEed / SHMsoft** — the course is a demand channel for the platform, and the material
   tracks FreeEed's real design records (`docs/local-ai-cjis-briefing.md`,
   `docs/decisions/local-ai-architecture.md`). When FreeEed's pinned models or sizing tiers
@@ -127,10 +125,17 @@ that repo was created with.
 
 ## Upcoming deadlines
 
-- **Week of 2026-11-16 — meeting with Carlene Gordon, the first student.** Exact date
-  Unknown. Whatever its format, it is the first time the material meets someone who did not
-  write it, so the Day 1 dry run (priority 2) and the student-facing prerequisites both stop
-  being open-ended and acquire this date.
+- **Week of 2026-11-16 — meeting with Carlene Gordon to set the delivery dates.** Exact day
+  Unknown. Two things must be true before any date Mark agrees to in that meeting:
+  1. **The Day 1 dry run against the clock has happened** (priority 2, still open). The
+     playbook timings are estimates, never measured. Do not commit to a date that leaves no
+     room to discover Day 1 runs long.
+  2. **The student's environment has been checked at least a week ahead.** `verify-setup.sh`
+     goes to her before the session, not on the morning. The failure modes are a 5 GB model
+     download and corporate install restrictions, and both are discovered too late by default.
+- **Calendar note for that conversation:** US Thanksgiving is **2026-11-26**, so the week of
+  Nov 23 is effectively gone. The first clean two-day windows are the weeks of **2026-11-30**
+  and **2026-12-07**; later December runs into year-end, which is a bad season for legal.
 - Nothing else fixed.
 
 ## Important TODOs
