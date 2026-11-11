@@ -207,10 +207,10 @@ and run it on their own machine, which is the entire point of the product.
     *Hadoop Illuminated* (2012); technical reviewer for Manning and Packt
   - Certified Google Trainer
 
-* **A law degree** — earned online, while building the software
+* **A law degree** — earned online, **in order to** build the software
+  - Not a detour that happened alongside the work. A deliberate decision that you cannot
+    build eDiscovery software on a second-hand understanding of what the law requires
   - I am **not** a lawyer, I am not your lawyer, and nothing here is legal advice
-  - What it bought you: the legal concepts in this course are taught by someone who had to
-    learn them properly, not someone repeating them
 
 * **Author of *Legal AI Engineering*** — the material you are holding
 
@@ -223,11 +223,14 @@ Keep this to ninety seconds. The room does not want a resume; it wants one reaso
 you for two days. That reason is the second bullet — you maintain an eDiscovery platform, so
 the failure modes in Module 2 are yours, not a vendor's slide deck.
 
-The law-degree bullet is the one to deliver carefully. Say "not a lawyer, not your lawyer,
-not legal advice" out loud and move on quickly. In a room that may contain actual lawyers,
-claiming less than you could is the only safe direction — and it buys credibility rather
-than spending it. If the room is all engineers, the degree lands as "he took the domain
-seriously." If a GC is present, the disclaimer is what they will remember.
+The law-degree bullet carries more weight than it looks. The point is the word *for* — the
+degree was taken **to build the software**, not collected along the way. That is the whole
+thesis of the course in one biographical fact: the legal requirements are not a wrapper you
+put around a working pipeline afterwards, they are an input to the design. Say it that way.
+
+Then say "not a lawyer, not your lawyer, not legal advice" out loud and move on quickly. In
+a room that may contain actual lawyers, claiming less than you could is the only safe
+direction — and it buys credibility rather than spending it.
 
 Do not oversell the books. They are Big Data books, not legal-AI books; the honest framing
 is "I have been teaching engineers hard things for a decade," not "I am a published legal
