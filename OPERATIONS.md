@@ -110,8 +110,11 @@ that repo was created with.
 
 ## Customers and revenue connections
 
-- **No booked delivery yet.** The course is a catalog addition, built ahead of demand.
-  *(Needs CEO input: is there a target first delivery?)*
+- **First student: Carlene Gordon.** Mark meets her in the week of **2026-11-16** — the
+  course's first real contact with a student, and the end of its build-ahead-of-demand phase.
+  *(Needs CEO input: is this an intro conversation, a paid 1:1 delivery, or a pilot run in
+  exchange for feedback? Scope, dates and fee are Unknown, and they decide what gets
+  prepared — see Next three highest-value actions.)*
 - **FreeEed / SHMsoft** — the course is a demand channel for the platform, and the material
   tracks FreeEed's real design records (`docs/local-ai-cjis-briefing.md`,
   `docs/decisions/local-ai-architecture.md`). When FreeEed's pinned models or sizing tiers
@@ -124,8 +127,11 @@ that repo was created with.
 
 ## Upcoming deadlines
 
-None fixed. *(Needs CEO input: a target first-delivery date would turn the dry run from a
-priority into a deadline.)*
+- **Week of 2026-11-16 — meeting with Carlene Gordon, the first student.** Exact date
+  Unknown. Whatever its format, it is the first time the material meets someone who did not
+  write it, so the Day 1 dry run (priority 2) and the student-facing prerequisites both stop
+  being open-ended and acquire this date.
+- Nothing else fixed.
 
 ## Important TODOs
 
