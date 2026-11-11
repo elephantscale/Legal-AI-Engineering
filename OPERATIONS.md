@@ -83,6 +83,10 @@ that repo was created with.
   (ILTA product-level shares, the 85%–100% firm-size range, the 78% policy and 79% drafting
   aggregates, and the segment-level 2025 priors behind the 41%/47% split). `outline.md`
   gained a matching topic bullet.
+- **One canonical repo.** `Scaia-ai/Legal-AI-Engineering` — the duplicate left behind by the
+  move to the Elephant Scale org — was deleted by Mark on 2026-11-10, after a check confirmed
+  its only branch (`main` at `e5e4f34`) was an ancestor of ours and nothing lived there alone.
+  `git@github.com:elephantscale/Legal-AI-Engineering.git` is now the single source.
 - **Five decks that would not assemble now build.** `slides/gen.sh` crashed on
   `02`, `09`, `10`, `11` and `12`, leaving those PPTX files missing from `assembly.out`.
   Both crashes are bugs in the shared assembler (`$ES_HOME/utils/presentations/md_astprocessor.py`)
@@ -154,15 +158,6 @@ priority into a deadline.)*
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
 ## Decisions needed from Mark
-
-0. **The stale duplicate on the Scaia org.** `git@github.com:Scaia-ai/Legal-AI-Engineering.git`
-   still holds this same history through `e5e4f34`; the course is no longer pushed there.
-   Archive or delete it, so there is one canonical repo and nobody clones the wrong one.
-   **Verified 2026-11-10:** the old remote has one branch, `main` at `e5e4f34`, and that
-   commit is an ancestor of our `main` — nothing exists only there, so deleting it loses
-   nothing. Mark's `gh` token has no `delete_repo` scope; deletion needs
-   `gh auth refresh -h github.com -s delete_repo` or the GitHub web UI.
-   Claude does not delete remote repositories.
 
 1. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
    direction is that the **Elephant Scale Legal AI Engineer Certificate** will become a brand
