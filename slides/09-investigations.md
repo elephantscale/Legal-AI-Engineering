@@ -197,9 +197,9 @@ documents to read first.
 
 ---
 
-## Lab 08 — Investigations: Entities, Threads, and a Timeline
+## Lab 09 — Investigations: Entities, Threads, and a Timeline
 
-Over the same corpus from Labs 01–03:
+Over the same corpus from Labs 02–04:
 
 * Extract entities with a **hybrid** approach: gazetteer for known custodians, local LLM to
   a JSON schema for the rest — **every entity carries a source span**
@@ -221,9 +221,9 @@ letter that is not in the corpus. Students who find all four have done the modul
 
 ---
 
-## ▶ LAB BREAK — Lab 08
+## ▶ LAB BREAK — Lab 09
 
-Debrief: **"What did you find that the keyword search in Lab 02 could never have found?"**
+Debrief: **"What did you find that the keyword search in Lab 03 could never have found?"**
 
 Notes:
 

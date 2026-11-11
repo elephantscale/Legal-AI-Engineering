@@ -338,7 +338,7 @@ case-snapshot-SYNTHETIC-DEMO-01/
   manifest.json          <- the pins: model+hash+quant, runtime, decoding, corpus hash,
                             embeddings+chunking, software SHA, ground-truth metrics
   corpus/
-    catalog.jsonl        <- one row per document, hashed (Lab 01)
+    catalog.jsonl        <- one row per document, hashed (Lab 02)
     exceptions.jsonl     <- what did not process, and why
   runs/run-7f3a/
     prompts/             <- every rendered prompt
@@ -395,7 +395,7 @@ rubber-stamp workflow, and an opposing expert will read it that way.
 
 ---
 
-## Lab 05 — Defensible Review
+## Lab 06 — Defensible Review
 
 Measure an AI review against a blind ground truth and produce the bundle:
 
@@ -421,7 +421,7 @@ then pick a threshold will feel exactly why that is not allowed.
 
 ---
 
-## ▶ LAB BREAK — Lab 05
+## ▶ LAB BREAK — Lab 06
 
 Debrief: **"Read me your recall with its interval, and your elusion rate. Then tell me
 whether you'd sign it."**

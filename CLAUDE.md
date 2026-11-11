@@ -14,7 +14,7 @@ started in this directory.
 - `labs/NN-Name/README.md` — one lab per module, with runnable starter code and a
   `## Teacher's Playbook`.
 - `labs/assets/make_corpus.py` — generates the deliberately messy legal corpus the labs
-  share. Labs 01–07 are a **pipeline**: each one consumes the previous one's output.
+  share. Labs 02–08 are a **pipeline**: each one consumes the previous one's output.
 - `course-materials/` — the artifacts students keep (SAIS-100 legal overlay, defensibility
   checklist, reproducibility manifest template, TAR metrics cheat sheet, capstone rubric).
 - `scripts/validate-course.sh`, `labs/test-all-labs.sh`, `labs/verify-setup.sh` — structure
@@ -72,7 +72,7 @@ differentiator against generic "AI for lawyers" training.
 
 - Copy-ready code and commands **at point of use**. State what to install, how to run, what
   a correct run looks like, and what artifact to keep.
-- Labs 01–06 write into `labs/work/` (gitignored). Lab `NN` reads lab `NN-1`'s output.
+- Labs 02–07 write into `labs/work/` (gitignored). Lab `NN` reads lab `NN-1`'s output.
   Don't break that chain; if you change a filename, change the consumer in the same commit.
 - Each lab ends with a rich `## Teacher's Playbook`: worked model answer with realistic
   output, live-demo script, common mistakes + fixes, debrief Q&A, "what good looks like."

@@ -67,9 +67,9 @@ Nine artifacts. If you have them, an audit is a morning. If you don't, it is a q
 |---|---|---|
 | 1 | **Written AI use policy** — what's allowed, by whom, with what data | the organization |
 | 2 | **System description** — data flows, every hop, every component | your architecture doc |
-| 3 | **Egress attestation** per matter | Module 5 / Lab 04 |
-| 4 | **Validation protocol**, pre-registered, + results | Module 6 / Lab 05 |
-| 5 | **Reproducibility bundle** that replays | Module 6 / Lab 05 |
+| 3 | **Egress attestation** per matter | Module 5 / Lab 05 |
+| 4 | **Validation protocol**, pre-registered, + results | Module 6 / Lab 06 |
+| 5 | **Reproducibility bundle** that replays | Module 6 / Lab 06 |
 | 6 | **Audit trail** per matter: prompts, retrieved context, decisions, overrides | Modules 6–7 |
 | 7 | **Model inventory** — name, version, hash, quantization, provenance (an AI SBOM) | Module 7 |
 | 8 | **Access-control and ethical-wall** evidence | your deployment |
@@ -84,7 +84,7 @@ This is the module's thesis and the most actionable slide in it. The reframe —
 artifacts as *program outputs* rather than *documentation projects* — is what separates a
 system that is auditable from one that is audited.
 
-Have students check off which of the nine their Lab 01–06 system already produces. The honest
+Have students check off which of the nine their Lab 02–07 system already produces. The honest
 answer is usually six or seven, which is encouraging and also shows them the gaps.
 
 ---
@@ -214,9 +214,9 @@ next five points cost."
 
 ---
 
-## Lab 11 — Full SAIS-100 Verified Audit
+## Lab 12 — Full SAIS-100 Verified Audit
 
-Audit the system you built in Labs 01–06 — as an **assessor**, not as its author:
+Audit the system you built in Labs 02–07 — as an **assessor**, not as its author:
 
 * All six categories, three questions each, 0–3 against the anchored levels
 * **Every sub-score cites real evidence**: a path, a line, a test result, a log sample.
@@ -241,7 +241,7 @@ the embedding model in the manifest.
 
 ---
 
-## ▶ LAB BREAK — Lab 11
+## ▶ LAB BREAK — Lab 12
 
 Debrief: **"What was the cheapest point you bought, and what was the most expensive one you
 chose not to?"**

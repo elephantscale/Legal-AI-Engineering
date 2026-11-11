@@ -1,6 +1,0 @@
-# Lab 09 needs nothing beyond the standard library.
-#
-# With Ollama running, the model picks the tools. Without it, a fixed plan drives the
-# SAME Session.call() path — so every guardrail, every refusal and every log line in this
-# lab is identical in both modes. That is not a convenience: it is the lesson. The
-# guardrails are not in the model.

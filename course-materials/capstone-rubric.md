@@ -6,8 +6,8 @@
 students build, which it cannot do if they read it after building.
 
 The capstone is one repository that **an engineer can clone and run, and a lawyer can read
-and rely on.** It is assembled from Labs 01–06, which the students have already built. The
-full assembly instructions are in `labs/07-Capstone/README.md`.
+and rely on.** It is assembled from Labs 02–07, which the students have already built. The
+full assembly instructions are in `labs/08-Capstone/README.md`.
 
 ---
 
@@ -133,7 +133,7 @@ writing. The certificate records the bar; the repository is how they show it —
 somebody will skip the certificate and ask them to re-run their review in front of them.
 
 Issuance mechanics, the roster record, and the pre-decided borderline cases are in
-[Lab 07's Teacher's Playbook](../labs/07-Capstone/README.md#issuing-the-certificate).
+[Lab 08's Teacher's Playbook](../labs/08-Capstone/README.md#issuing-the-certificate).
 
 ---
 
@@ -151,4 +151,4 @@ Issuance mechanics, the roster record, and the pre-decided borderline cases are 
 
 ---
 
-*Lab 07 · `labs/07-Capstone/README.md` · see also [defensibility-checklist.md](defensibility-checklist.md) and [sais-100-legal-overlay.md](sais-100-legal-overlay.md)*
+*Lab 08 · `labs/08-Capstone/README.md` · see also [defensibility-checklist.md](defensibility-checklist.md) and [sais-100-legal-overlay.md](sais-100-legal-overlay.md)*

@@ -1,9 +1,9 @@
 # Labs
 
-Eleven labs. **Labs 01–07 are the two-day core; 08–11 are the optional Day 3.**
+Eleven labs. **Labs 02–08 are the two-day core; 09–12 are the optional Day 3.**
 
 The core labs are a **pipeline**: each one consumes the previous one's output. By the end
-of Lab 06 you have one working system, and Lab 07 is the capstone that assembles it into
+of Lab 07 you have one working system, and Lab 08 is the capstone that assembles it into
 something you can hand to a hiring manager or a client.
 
 ---
@@ -14,17 +14,17 @@ something you can hand to a hiring manager or a client.
 |---|---|---|---|---|
 | — | — | `00-about` | — | — |
 | 1 | 1 · The Legal Engineer's Landscape | `01-legal-engineer-landscape` | *discussion: Map Your Own Matter* | a one-page matter map |
-| 1 | 2 · Legal Data Is Messy | `02-legal-data-ingestion` | **[01 — Ingestion](01-Ingestion/)** | `catalog.jsonl` + a non-empty `exceptions.jsonl` |
-| 1 | 3 · Search and Retrieval | `03-search-and-retrieval` | **[02 — Search](02-Search/)** | `index.sqlite` + a hit report |
-| 1 | 4 · RAG with Citations | `04-legal-rag-citations` | **[03 — Legal RAG + Citations](03-Legal-RAG-Citations/)** | `rag-eval.json` with a refusal rate |
-| 2 | 5 · Privacy, Privilege, Local Serving | `05-privilege-and-local-serving` | **[04 — Local Model + Egress Proof](04-Local-Model-Egress-Proof/)** | `attestation.json` |
-| 2 | 6 · Defensible AI Review | `06-defensible-review` | **[05 — Defensible Review](05-Defensible-Review/)** | `metrics.json` + a bundle that replays |
-| 2 | 7 · Ship It | `07-ship-score-govern` | **[06 — Score and Package](06-Score-and-Package/)** | `sais100-score.json` + a production set |
-| 2 | Capstone | `08-capstone` | **[07 — Capstone](07-Capstone/)** | the repository + `DEFENSE.md` |
-| 3 | 9 · Investigations | `09-investigations` | **[08 — Investigations + Timeline](08-Investigations-Timeline/)** | `timeline.md` + `collection_leads.jsonl` |
-| 3 | 10 · Agentic Legal Workflows | `10-agentic-legal-workflows` | **[09 — Agentic Legal Workflow](09-Agentic-Legal-Workflow/)** | `steps.jsonl` + a gated memo |
-| 3 | 11 · Deployment at Scale | `11-deployment-at-scale` | **[10 — Deploy at Scale](10-Deploy-At-Scale/)** | `throughput.json` + a destruction certificate |
-| 3 | 12 · Governance Deep-Dive | `12-governance-deep-dive` | **[11 — Governance Audit](11-Governance-Audit/)** | `sais100-verified.json` + findings report |
+| 1 | 2 · Legal Data Is Messy | `02-legal-data-ingestion` | **[02 — Ingestion](02-Ingestion/)** | `catalog.jsonl` + a non-empty `exceptions.jsonl` |
+| 1 | 3 · Search and Retrieval | `03-search-and-retrieval` | **[03 — Search](03-Search/)** | `index.sqlite` + a hit report |
+| 1 | 4 · RAG with Citations | `04-legal-rag-citations` | **[04 — Legal RAG + Citations](04-Legal-RAG-Citations/)** | `rag-eval.json` with a refusal rate |
+| 2 | 5 · Privacy, Privilege, Local Serving | `05-privilege-and-local-serving` | **[05 — Local Model + Egress Proof](05-Local-Model-Egress-Proof/)** | `attestation.json` |
+| 2 | 6 · Defensible AI Review | `06-defensible-review` | **[06 — Defensible Review](06-Defensible-Review/)** | `metrics.json` + a bundle that replays |
+| 2 | 7 · Ship It | `07-ship-score-govern` | **[07 — Score and Package](07-Score-and-Package/)** | `sais100-score.json` + a production set |
+| 2 | Capstone | `08-capstone` | **[08 — Capstone](08-Capstone/)** | the repository + `DEFENSE.md` |
+| 3 | 9 · Investigations | `09-investigations` | **[09 — Investigations + Timeline](09-Investigations-Timeline/)** | `timeline.md` + `collection_leads.jsonl` |
+| 3 | 10 · Agentic Legal Workflows | `10-agentic-legal-workflows` | **[10 — Agentic Legal Workflow](10-Agentic-Legal-Workflow/)** | `steps.jsonl` + a gated memo |
+| 3 | 11 · Deployment at Scale | `11-deployment-at-scale` | **[11 — Deploy at Scale](11-Deploy-At-Scale/)** | `throughput.json` + a destruction certificate |
+| 3 | 12 · Governance Deep-Dive | `12-governance-deep-dive` | **[12 — Governance Audit](12-Governance-Audit/)** | `sais100-verified.json` + findings report |
 
 Module 8 is the capstone framing; there is no separate deck numbered 08 beyond
 `08-capstone`.
@@ -37,34 +37,34 @@ Module 8 is the capstone framing; there is no separate deck numbered 08 beyond
   make_corpus.py
         │  synthetic, messy, with seven planted findings
         ▼
-  01 Ingestion ──────▶ catalog.jsonl, exceptions.jsonl, text/
+  02 Ingestion ──────▶ catalog.jsonl, exceptions.jsonl, text/
         │
-        ├──▶ 02 Search ──────▶ index.sqlite
+        ├──▶ 03 Search ──────▶ index.sqlite
         │
-        ├──▶ 03 Legal RAG ───▶ chunks.jsonl, vectors.jsonl, rag-log.jsonl
+        ├──▶ 04 Legal RAG ───▶ chunks.jsonl, vectors.jsonl, rag-log.jsonl
         │
-        ├──▶ 04 Egress Proof ▶ attestation.json
+        ├──▶ 05 Egress Proof ▶ attestation.json
         │
-        ├──▶ 05 Defensible ──▶ decisions.jsonl, metrics.json, case-snapshot-<matter>/
+        ├──▶ 06 Defensible ──▶ decisions.jsonl, metrics.json, case-snapshot-<matter>/
         │       Review
         │
-        └──▶ 06 Score and ───▶ sais100-score.json, production/VOL001/
+        └──▶ 07 Score and ───▶ sais100-score.json, production/VOL001/
                 Package          (run_matter.py drives ALL of the above, resumably)
                    │
                    ▼
-                07 Capstone ──▶ the repository + DEFENSE.md
+                08 Capstone ──▶ the repository + DEFENSE.md
 
   Day 3 branches off the same work directory:
-        08 Investigations · 09 Agentic · 10 Scale · 11 Audit
+        09 Investigations · 10 Agentic · 11 Scale · 12 Audit
 ```
 
 Everything writes into `labs/work/` (gitignored). **Lab `NN` reads lab `NN-1`'s output.**
 If you change a filename, change the consumer in the same commit.
 
-The quickest way to get a full work directory is Lab 06's driver:
+The quickest way to get a full work directory is Lab 07's driver:
 
 ```bash
-cd 06-Score-and-Package
+cd 07-Score-and-Package
 python3 run_matter.py --corpus ../assets/corpus --work ../work
 ```
 
@@ -88,7 +88,7 @@ offline fallbacks.
 **Never blocked.** Every lab runs with **no API key and no network**. Where a lab wants a
 local LLM, embedding model, OCR engine, Tika or Solr, it ships a deterministic
 stdlib/offline fallback and says so out loud. A student without Ollama completes every lab
-and learns every lesson. The fallbacks are *honestly worse*, never hidden — and in Lab 09
+and learns every lesson. The fallbacks are *honestly worse*, never hidden — and in Lab 10
 the offline path drives the identical code, which is itself the point.
 
 **No real case data. Ever.** Every byte in `assets/` is synthetic, generated by
@@ -109,7 +109,7 @@ the class.
 | `metrics.py` | recall, elusion, precision, richness, Wilson intervals, sample sizing, Cohen's kappa. |
 | `bundle.py` | the reproducibility bundle: pins, prompt logs, retrieval logs, decisions, `VERIFY.md`, and `verify(replay=…)`. |
 
-One model chokepoint is not tidiness. It is what lets Lab 04's attestation enumerate the
+One model chokepoint is not tidiness. It is what lets Lab 05's attestation enumerate the
 AI components honestly, and it mirrors FreeEed's own design.
 
 ---

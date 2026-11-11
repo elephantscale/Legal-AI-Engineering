@@ -173,4 +173,4 @@ checkable rather than asserted.
 
 ---
 
-*Module 6 · Labs 05–06 · `labs/05-Defensible-Review/` and `labs/common/metrics.py`*
+*Module 6 · Labs 06–07 · `labs/06-Defensible-Review/` and `labs/common/metrics.py`*

@@ -1,6 +1,0 @@
-# Lab 08 needs nothing beyond the standard library.
-#
-# `entities --llm` calls the local model through ../common/llm.py. Without Ollama the
-# gazetteer and pattern paths still run and the lab still produces every finding, because
-# all four planted findings are STRUCTURAL — they come from headers, offsets, diffs and
-# absences, not from model output. That is the module's point, not a limitation.

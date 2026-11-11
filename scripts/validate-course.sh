@@ -78,7 +78,7 @@ for d in "$ROOT_DIR"/slides/[0-9][0-9]-*.md; do
   grep -q '^> ' "$d" || warn "$b has no > blockquote takeaways"
   # content decks hand off to a lab (00-about is the exception)
   # 00-about has no module; 01 is the framing module with no lab of its own; 08 IS the
-  # capstone deck, and Lab 07 is the capstone it hands off to by name in the body.
+  # capstone deck, and Lab 08 is the capstone it hands off to by name in the body.
   case "$b" in
     00-about.md|01-*|08-capstone.md) ;;
     *) grep -qiE '^## (▶ )?.*Lab [0-9]' "$d" || bad "$b has no Lab NN hand-off slide" ;;
@@ -94,10 +94,10 @@ done
 # ---------------------------------------------------------------------------- labs
 printf "\n${B}Labs${N}\n"
 expected_labs=(
-  01-Ingestion 02-Search 03-Legal-RAG-Citations 04-Local-Model-Egress-Proof
-  05-Defensible-Review 06-Score-and-Package 07-Capstone
-  08-Investigations-Timeline 09-Agentic-Legal-Workflow 10-Deploy-At-Scale
-  11-Governance-Audit
+  02-Ingestion 03-Search 04-Legal-RAG-Citations 05-Local-Model-Egress-Proof
+  06-Defensible-Review 07-Score-and-Package 08-Capstone
+  09-Investigations-Timeline 10-Agentic-Legal-Workflow 11-Deploy-At-Scale
+  12-Governance-Audit
 )
 for lab in "${expected_labs[@]}"; do
   [ -f "$ROOT_DIR/labs/$lab/README.md" ] && ok "$lab README" || bad "$lab README missing"
@@ -120,16 +120,16 @@ for lab in "${expected_labs[@]}"; do
   grep -qiE "^## (Deliverable|What to keep)|^\*\*Deliverables?\b|the deliverable you keep" \
     "$f" || bad "$lab names no deliverable"
   # every lab except the capstone ships code
-  if [ "$lab" != "07-Capstone" ]; then
+  if [ "$lab" != "08-Capstone" ]; then
     ls "$ROOT_DIR/labs/$lab"/*.py >/dev/null 2>&1 || bad "$lab ships no Python"
     [ -f "$ROOT_DIR/labs/$lab/requirements.txt" ] || warn "$lab has no requirements.txt"
   fi
 done
 
-# the pipeline contract: labs 02-06 must read ../work
-printf "\n${B}Pipeline contract (labs 01-06 chain through work/)${N}\n"
-for lab in 02-Search 03-Legal-RAG-Citations 04-Local-Model-Egress-Proof \
-           05-Defensible-Review 06-Score-and-Package; do
+# the pipeline contract: labs 03-07 must read ../work
+printf "\n${B}Pipeline contract (labs 02-07 chain through work/)${N}\n"
+for lab in 03-Search 04-Legal-RAG-Citations 05-Local-Model-Egress-Proof \
+           06-Defensible-Review 07-Score-and-Package; do
   if grep -rq -- '\.\./work' "$ROOT_DIR/labs/$lab"/*.py 2>/dev/null; then
     ok "$lab reads ../work"
   else
@@ -152,7 +152,7 @@ printf "\n${B}The four legal auto-fails agree across documents${N}\n"
 for tag in LEGAL-A LEGAL-B LEGAL-C LEGAL-D; do
   n=0
   for f in course-materials/sais-100-legal-overlay.md course-materials/capstone-rubric.md \
-           labs/06-Score-and-Package/sais100.py; do
+           labs/07-Score-and-Package/sais100.py; do
     grep -q "$tag" "$ROOT_DIR/$f" 2>/dev/null && n=$((n+1))
   done
   [ "$n" = 3 ] && ok "$tag in overlay, rubric and sais100.py" \
@@ -183,7 +183,7 @@ if git -C "$ROOT_DIR" ls-files --error-unmatch labs/assets/corpus >/dev/null 2>&
 else
   ok "no generated corpus tracked in git"
 fi
-# Directories only. 'labs/*/work*' also matched labs/10-Deploy-At-Scale/work_queue.py,
+# Directories only. 'labs/*/work*' also matched labs/11-Deploy-At-Scale/work_queue.py,
 # which is lab source, not lab output.
 tracked_work=$(git -C "$ROOT_DIR" ls-files 'labs/work/*' 'labs/*/work/*' 2>/dev/null | head -1)
 [ -z "$tracked_work" ] && ok "no lab work/ output tracked in git" \

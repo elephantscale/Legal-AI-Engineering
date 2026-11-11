@@ -83,7 +83,7 @@ The family-group rule surprises engineers every time. If a parent email is respo
 attachments generally go out with it even if an attachment standing alone is not responsive.
 That is a *schema* consequence, not a filter you bolt on later.
 
-Point at the ASCII tree during Lab 01 — the generated corpus has exactly this shape,
+Point at the ASCII tree during Lab 02 — the generated corpus has exactly this shape,
 including a message attached to a message and a scan attached to that.
 
 ---
@@ -113,7 +113,7 @@ The "treat it as hostile" line comes from real operational pain: a 400 MB spread
 pathological formula graph will sit there consuming heap until something dies. Isolation and
 per-document timeouts are not optional at volume.
 
-In Lab 01 we provide stdlib extractors plus an optional Tika path, so nobody is blocked on
+In Lab 02 we provide stdlib extractors plus an optional Tika path, so nobody is blocked on
 a Java install — but say clearly that production means Tika.
 
 ---
@@ -200,7 +200,7 @@ This is the slide where engineers realize legal processing is not data cleaning.
 is "dedupe aggressively, it's free accuracy." In a matter, possession *is* evidence. Who had
 the memo is frequently more probative than the memo.
 
-Make them write the dedupe policy into the manifest in Lab 01. It is a one-line JSON field
+Make them write the dedupe policy into the manifest in Lab 02. It is a one-line JSON field
 and it is the difference between a choice and an accident.
 
 ---
@@ -225,7 +225,7 @@ VOL001.opt  — Opticon page/image map, one row per PAGE
   one-off regex.
 
 > Load files are how your beautiful pipeline talks to the rest of the legal world.
-> You will write a reader *and* a writer. Lab 01 writes the reader.
+> You will write a reader *and* a writer. Lab 02 writes the reader.
 
 Notes:
 
@@ -322,7 +322,7 @@ evidence. Both are real problems. Disable remote entity resolution explicitly.
 
 ---
 
-## Lab 01 — Ingestion
+## Lab 02 — Ingestion
 
 Build the ingestion pipeline over a deliberately messy corpus:
 
@@ -347,7 +347,7 @@ anyone without Tesseract moving.
 
 ---
 
-## ▶ LAB BREAK — Lab 01
+## ▶ LAB BREAK — Lab 02
 
 Set up, then students run the lab. Debrief on return: compare document counts, then compare
 **exception** counts. The counts will differ, and *why* they differ is the debrief.

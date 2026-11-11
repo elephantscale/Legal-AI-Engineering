@@ -248,7 +248,7 @@ for quote, n in quoted_spans(answer):
 Notes:
 
 The three checks in step 3 are, in practice, the whole safety story of a legal RAG system,
-and they are implemented in Lab 03. The quote check is the one students underestimate: models
+and they are implemented in Lab 04. The quote check is the one students underestimate: models
 paraphrase inside quotation marks, which in a legal document is a fabricated quotation.
 
 Say the obvious caveat out loud: a `[n]` marker proves the model *pointed at* a passage, not
@@ -276,7 +276,7 @@ A: "Not found in the provided documents."
 
 Notes:
 
-Add unanswerable questions to the eval set in Lab 03. Roughly 20% of your eval set should be
+Add unanswerable questions to the eval set in Lab 04. Roughly 20% of your eval set should be
 unanswerable. Teams that skip this ship systems with a 0% refusal rate and call it high
 recall.
 
@@ -332,9 +332,9 @@ naming as such.
 
 ---
 
-## Lab 03 — Legal RAG With Citations
+## Lab 04 — Legal RAG With Citations
 
-Build retrieval-augmented Q&A over the Lab 02 index that **cites its sources**:
+Build retrieval-augmented Q&A over the Lab 03 index that **cites its sources**:
 
 * Structure-aware chunking with char offsets back to the source
 * Local embeddings (`nomic-embed-text`), with a deterministic offline fallback
@@ -354,7 +354,7 @@ sit with it — that rejection is the product working.
 
 ---
 
-## ▶ LAB BREAK — Lab 03
+## ▶ LAB BREAK — Lab 04
 
 Debrief: **"Whose verifier caught something? What did it catch?"**
 
@@ -368,5 +368,5 @@ Close Day 1 here. Preview Day 2 in one sentence: *"you believe today's pipeline 
 locally. Tomorrow you learn the difference between believing it and being able to prove
 it — and you produce the proof."*
 
-If anyone ran Lab 03 against a cloud model or cloud embeddings (the lab offers it as the
-contrast case), ask them to keep that run. It becomes the before/after in Lab 04.
+If anyone ran Lab 04 against a cloud model or cloud embeddings (the lab offers it as the
+contrast case), ask them to keep that run. It becomes the before/after in Lab 05.

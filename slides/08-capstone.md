@@ -21,7 +21,7 @@ Elephant Scale
 Notes:
 
 The capstone is integrated across Day 2 rather than bolted on at the end — students have
-been building it since Lab 01. This deck is the framing, the rubric, and the defense.
+been building it since Lab 02. This deck is the framing, the rubric, and the defense.
 
 Say the last line plainly. Students should leave with a repository they can show a hiring
 manager or a client, and the six bullets above are, nearly verbatim, what a legal-tech
@@ -189,7 +189,7 @@ trip or they do not — which is what keeps this certificate worth having. Do no
 effort or on attendance alone; the moment it is handed out for showing up, it is worth nothing
 to the person who earned it properly.
 
-Issuance mechanics and the roster record are in Lab 07's Teacher's Playbook.
+Issuance mechanics and the roster record are in Lab 08's Teacher's Playbook.
 
 ---
 

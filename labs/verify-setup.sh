@@ -41,7 +41,7 @@ if python3 -c 'import pypdf' 2>/dev/null; then
   ok "pypdf" "$(python3 -c 'import pypdf;print(pypdf.__version__)' 2>/dev/null)"
 else
   warn "pypdf" "pip install pypdf==5.1.0"
-  note "Lab 01: PDFs become exceptions instead of text. The lab still runs — and an"
+  note "Lab 02: PDFs become exceptions instead of text. The lab still runs — and an"
   note "exception list with real entries is the lab's actual lesson — but you will not"
   note "see the PDF extraction path."
 fi
@@ -50,7 +50,7 @@ if python3 -c 'import PIL' 2>/dev/null; then
   ok "Pillow" "$(python3 -c 'import PIL;print(PIL.__version__)' 2>/dev/null)"
 else
   warn "Pillow" "pip install Pillow==11.0.0"
-  note "make_corpus.py cannot render the synthetic scans, so the OCR thread in Labs 01"
+  note "make_corpus.py cannot render the synthetic scans, so the OCR thread in Labs 02"
   note "and 02 is missing — including the indemnif1cation finding, which is the best"
   note "thirty seconds of Day 1. Install this one if you install nothing else."
 fi
@@ -66,8 +66,8 @@ if command -v tesseract >/dev/null 2>&1; then
   ok "tesseract" "$(tesseract --version 2>&1 | head -1)"
 else
   warn "tesseract" "apt install tesseract-ocr tesseract-ocr-eng / brew install tesseract"
-  note "Lab 01 --reocr does nothing, so the producer's OCR sidecar is all you have."
-  note "You lose the three-different-hit-counts exercise in Lab 02. The scans stay as"
+  note "Lab 02 --reocr does nothing, so the producer's OCR sidecar is all you have."
+  note "You lose the three-different-hit-counts exercise in Lab 03. The scans stay as"
   note "exceptions, which is itself a defensible outcome — say so in your memo."
 fi
 
@@ -75,7 +75,7 @@ if command -v docker >/dev/null 2>&1; then
   ok "docker" "$(docker --version 2>/dev/null | head -1)"
 else
   warn "docker" "optional"
-  note "Labs 06 and 10 Part 4 (compose, internal: true) become a read-the-file exercise."
+  note "Labs 07 and 11 Part 4 (compose, internal: true) become a read-the-file exercise."
   note "Nothing downstream depends on it; the score and the production set do not."
 fi
 printf "\n"
@@ -119,7 +119,7 @@ PY
 else
   warn "endpoint" "$BASE unreachable"
   note "Set LEGAL_AI_MODE=offline and every lab still completes with deterministic"
-  note "stdlib fallbacks. What you lose: real model output in Labs 03 and 05, and the"
+  note "stdlib fallbacks. What you lose: real model output in Labs 04 and 06, and the"
   note "chance to see a local model lose to a cloud model in front of you. What you"
   note "keep: all seven planted findings, every guardrail, every metric, every"
   note "artifact. The offline paths are honestly worse and each one says so."
@@ -133,7 +133,7 @@ if [ -f assets/corpus/collection.zip ]; then
   ok "assets/corpus" "$N top-level entries"
   if [ -f assets/corpus/_groundtruth/labels.jsonl ]; then
     L=$(wc -l < assets/corpus/_groundtruth/labels.jsonl | tr -d ' ')
-    ok "ground truth" "$L labels — Lab 05 needs these"
+    ok "ground truth" "$L labels — Lab 06 needs these"
   else
     warn "ground truth" "missing"
     note "Regenerate: python3 assets/make_corpus.py"

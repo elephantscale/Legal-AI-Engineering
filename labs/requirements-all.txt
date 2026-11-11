@@ -6,8 +6,8 @@
 # lab still completes using stdlib fallbacks — the fallbacks are honestly worse, never
 # hidden, and each lab says which one it used.
 
-pypdf==5.1.0            # the PDF extraction path (Lab 01)
-Pillow==11.0.0          # renders the synthetic scans; OCR input (make_corpus, Lab 01)
+pypdf==5.1.0            # the PDF extraction path (Lab 02)
+Pillow==11.0.0          # renders the synthetic scans; OCR input (make_corpus, Lab 02)
 requests==2.32.3        # talks to the local OpenAI-compatible endpoint and to Tika
 
 # NOT pinned here, because they are not pip packages:

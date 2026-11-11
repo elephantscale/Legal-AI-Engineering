@@ -7,7 +7,7 @@ a named human, it is generated from a machine record rather than typed from memo
 states its own limits — because an attestation whose scope is unstated is read as covering
 everything, and then it is wrong.
 
-Working code: `labs/common/egress.py` and `labs/04-Local-Model-Egress-Proof/local_proof.py`.
+Working code: `labs/common/egress.py` and `labs/05-Local-Model-Egress-Proof/local_proof.py`.
 A filled example lands in `work/attestation.json` on every run.
 
 ---
@@ -206,4 +206,4 @@ attestation you will have to walk back.
 
 ---
 
-*Module 5 and Module 7 · Lab 04 · `labs/common/egress.py`*
+*Module 5 and Module 7 · Lab 05 · `labs/common/egress.py`*

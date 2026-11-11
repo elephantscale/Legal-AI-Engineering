@@ -49,7 +49,7 @@ that repo was created with.
   reports **94 passed / 0 failed** in 16 seconds on a 300-document corpus, including the
   deliberate refusals (production without approval, destruction without confirmation) which
   are asserted to exit non-zero rather than merely "not crash".
-- **The Labs 01–06 pipeline chain is verified on the default corpus** (~1,196 documents, seed
+- **The Labs 02–07 pipeline chain is verified on the default corpus** (~1,196 documents, seed
   `20261109`): 1,196 docs → 15 produced / 1,181 withheld → SAIS-100 baseline 89 → 96 after
   one hardening pass → break egress → 94 + LEGAL-A → Do Not Deploy → repair → 96.
 - **All seven planted corpus findings land**, including the deleted §7.3 indemnification cap,
@@ -57,7 +57,7 @@ that repo was created with.
   independent routes.
 - **Six agent attacks are blocked with log lines** (injection, cross-matter, leaky memo,
   self-approval, unregistered tool, step flood), and the approval gate is idempotent.
-- **Lab 09 fixture hardened.** The offline plan hard-coded `DOC-000330`, which existed only on
+- **Lab 10 fixture hardened.** The offline plan hard-coded `DOC-000330`, which existed only on
   the default corpus; on any other size the memo step turned into an out-of-matter refusal
   that *looked like a guardrail working*. The anchor is now resolved from the catalog at run
   time. `DOC-999999` stays hard-coded because it must be absent.
@@ -68,8 +68,8 @@ that repo was created with.
 - **The Legal AI Engineer Certificate is restored and now issuable.** It had been removed as
   an unbacked promise; Mark's decision is that it stays and becomes a brand name. `outline.md`
   carries "Assessment and Certification" and the certificate line again, the capstone deck and
-  Lab 07 and the rubric are reworded back, and the gap that justified removing it is closed:
-  the bar is objective, Lab 07's playbook has a four-check issuance checklist and the roster
+  Lab 08 and the rubric are reworded back, and the gap that justified removing it is closed:
+  the bar is objective, Lab 08's playbook has a four-check issuance checklist and the roster
   record, and the three borderline cases are decided in advance.
 - **Committed and pushed** as `0349008` (92 files, +20,846 lines) to
   `git@github.com:Scaia-ai/Legal-AI-Engineering.git` `main`.
@@ -96,7 +96,7 @@ that repo was created with.
   in Module 2's Tika table, and an unitalicised `Optional Day 3 / modular` line on the four
   Day 3 title slides. All five parse clean; **the decks themselves are still Mark's to build.**
 - **`validate-course.sh` glob bug fixed.** `labs/*/work*` matched
-  `labs/10-Deploy-At-Scale/work_queue.py` — lab source, not lab output — so the "no real case
+  `labs/11-Deploy-At-Scale/work_queue.py` — lab source, not lab output — so the "no real case
   data" check failed the moment that file became tracked. It now matches directories only.
 
 ## Current priorities
@@ -115,7 +115,7 @@ that repo was created with.
   This ends the course's build-ahead-of-demand phase.
   - **Day 3 stays optional** (Mark, 2026-11-10), partly because two days may already be too
     much material — see the Day 2 overload risk below.
-  - **She is to receive the certificate.** The infrastructure is ready: Lab 07's four-check
+  - **She is to receive the certificate.** The infrastructure is ready: Lab 08's four-check
     issuance checklist and the roster record. She becomes **roster row #1** for
     `LEGAL-AI-ENG-2026`, which is the row that has to answer "what did they actually have to
     do?" in five years. Issue it against the same bar as any paying student — a softened
@@ -150,10 +150,10 @@ that repo was created with.
 
 ## Important TODOs
 
-- **`labs/06-Score-and-Package/README.md` has no stated duration** — the only core lab
+- **`labs/07-Score-and-Package/README.md` has no stated duration** — the only core lab
   without one, and it sits inside the Day 2 block that does not fit. Time it during the dry
   run and write the number in.
-- **The capstone's pair exercises assume a classroom.** Lab 07 schedules a defense round "in
+- **The capstone's pair exercises assume a classroom.** Lab 08 schedules a defense round "in
   pairs, 15 minutes each way" and a round-the-room reading of a partner's best question.
   With a single student Mark is the partner; that works and is faster, but the playbook
   should say so rather than leaving the instructor to improvise in the first delivery.
@@ -194,14 +194,14 @@ that repo was created with.
 
    | | Lecture (slides × ~2 min) | Labs (as written) | Total | Fits 6.5 h? |
    |---|---|---|---|---|
-   | **Day 1** — M1–M4, Labs 01–03 | 67 slides ≈ 2:15 | 3:00–3:45 + 0:30 discussion | **5:45–6:30** | yes, tight |
-   | **Day 2** — M5–M7 + capstone, Labs 04–07 | 53 slides ≈ 1:45 | 6:45–7:15 | **8:30–9:00** | **no — over by 2:00+** |
+   | **Day 1** — M1–M4, Labs 02–04 | 67 slides ≈ 2:15 | 3:00–3:45 + 0:30 discussion | **5:45–6:30** | yes, tight |
+   | **Day 2** — M5–M7 + capstone, Labs 05–08 | 53 slides ≈ 1:45 | 6:45–7:15 | **8:30–9:00** | **no — over by 2:00+** |
 
    Day 2's labs alone (75 + 90 + ~60–90 + 180 capstone) exceed a whole teaching day before a
    single slide. One honest caveat: the capstone is "integrated across Day 2" and
    `run_matter.py` drives the earlier stages, so perhaps an hour is double-counted — even
    then Day 2 is over by an hour. Options, in Mark's order of preference, needed:
-   **(a)** move Module 7 / Lab 06 to Day 3, **(b)** cut the capstone from 3:00 to ~2:15,
+   **(a)** move Module 7 / Lab 07 to Day 3, **(b)** cut the capstone from 3:00 to ~2:15,
    **(c)** sell the course as 3 days with Day 3 required for the full artifact set, or
    **(d)** accept a long Day 2 and say so in the outline. This decision should be made
    **before** dates are agreed with Carlene, because it changes what is being sold.
@@ -251,10 +251,10 @@ that repo was created with.
 
 2. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
    direction is that the **Elephant Scale Legal AI Engineer Certificate** will become a brand
-   name, so the course now awards it and `outline.md`, the capstone deck, Lab 07 and the
+   name, so the course now awards it and `outline.md`, the capstone deck, Lab 08 and the
    rubric all say so again. The teaching side is done: the bar is objective (attendance,
    module labs, and a capstone that passes its own `VERIFY.md` with no legal auto-fail), the
-   issuance checklist and the borderline cases are in Lab 07's Teacher's Playbook, and the
+   issuance checklist and the borderline cases are in Lab 08's Teacher's Playbook, and the
    roster record is specified. What still needs Mark, as business rather than curriculum:
    - the certificate **artifact** itself (design, PDF, who signs it);
    - whether holders are **verifiable** — a registry, a serial number, or nothing;

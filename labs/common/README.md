@@ -23,8 +23,8 @@ from llm import chat, embed, model_info
 ## The design rule worth copying
 
 `llm.py` has exactly two public entry points that touch a model: `chat()` and `embed()`.
-Nothing else in any lab calls an AI endpoint. That is why Lab 04 can make the whole stack
-local by changing two environment variables, and why the attestation in Lab 04 can
+Nothing else in any lab calls an AI endpoint. That is why Lab 05 can make the whole stack
+local by changing two environment variables, and why the attestation in Lab 05 can
 enumerate every AI component honestly — there are only two.
 
 Centralize your model client on day one, even when you only ever plan to use one provider.

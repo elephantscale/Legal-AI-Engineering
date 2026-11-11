@@ -214,7 +214,7 @@ Notes:
 
 This is the agentic extension of Module 6's decision log, and it slots into the same
 reproducibility bundle under `runs/<run-id>/steps.jsonl`. Keep the schemas compatible — that
-compatibility is why Lab 09's output drops straight into the capstone bundle.
+compatibility is why Lab 10's output drops straight into the capstone bundle.
 
 ---
 
@@ -238,7 +238,7 @@ known shape, and a known shape deserves a pipeline.
 
 ---
 
-## Lab 09 — A Multi-Step Legal Workflow With a Human Checkpoint
+## Lab 10 — A Multi-Step Legal Workflow With a Human Checkpoint
 
 Build a contract-review agent over the corpus:
 
@@ -269,7 +269,7 @@ the function was never in the registry. That is what a control looks like.
 
 ---
 
-## ▶ LAB BREAK — Lab 09
+## ▶ LAB BREAK — Lab 10
 
 Debrief: **"Did anyone get the agent to touch another matter, or to call a tool it didn't
 have? Show me the log line where it failed."**

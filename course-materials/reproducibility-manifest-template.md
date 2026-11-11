@@ -220,4 +220,4 @@ thing an expert will take apart first.
 
 ---
 
-*Module 6 and Module 11 · Labs 05, 06 and 10 · `labs/common/bundle.py`*
+*Module 6 and Module 11 · Labs 06, 07 and 11 · `labs/common/bundle.py`*

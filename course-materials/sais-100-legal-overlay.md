@@ -14,8 +14,8 @@ What this overlay adds is the part a legal matter needs and a general security s
    irrelevant.
 3. **A verified-assessment rule**: `UNVERIFIED` is a distinct answer, and it is neither 0 nor 3.
 
-Running code for all of this is `labs/06-Score-and-Package/sais100.py` (scores a system) and
-`labs/11-Governance-Audit/audit.py` (re-checks the claims against the evidence).
+Running code for all of this is `labs/07-Score-and-Package/sais100.py` (scores a system) and
+`labs/12-Governance-Audit/audit.py` (re-checks the claims against the evidence).
 
 ---
 
@@ -91,7 +91,7 @@ Triggered when **D2 = 0**.
 Matters at the same firm are separated by ethical walls. Leakage between them is a
 conflict-of-interest problem, not a bug — and it is not fixed by an apology. The practical
 test: is the matter id **bound server-side**, or is it an argument the model can supply? In
-`labs/09-Agentic-Legal-Workflow/agent.py` the matter is held in the session and a
+`labs/10-Agentic-Legal-Workflow/agent.py` the matter is held in the session and a
 model-supplied `matter` argument is discarded and logged.
 
 **This question cannot be answered from a run that only touched one matter.** If there is no
@@ -250,4 +250,4 @@ what tells you how far the system is from deployable once the condition is clear
 to legal matters and adds evidence requirements and auto-fail conditions; it does not change
 the categories, weights, anchors or bands.*
 
-*Module 7 and Module 12 · Labs 06 and 11*
+*Module 7 and Module 12 · Labs 07 and 12*

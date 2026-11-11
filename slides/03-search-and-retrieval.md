@@ -243,7 +243,7 @@ RRF in one sentence: for each document, sum `1/(60 + rank)` across the result li
 descending. Sixty is the conventional constant; it damps the influence of any single list's
 top position.
 
-Flag that we build the vector half in Lab 03 and fuse there. This slide is the promise.
+Flag that we build the vector half in Lab 04 and fuse there. This slide is the promise.
 
 ---
 
@@ -271,9 +271,9 @@ and destruction obligation. If a matter's documents are smeared across date-base
 
 ---
 
-## Lab 02 — eDiscovery Search
+## Lab 03 — eDiscovery Search
 
-Index `catalog.jsonl` from Lab 01 and run real eDiscovery searches:
+Index `catalog.jsonl` from Lab 02 and run real eDiscovery searches:
 
 * Build a **dual-field** index: analyzed text + un-analyzed keyword field
 * Run phrase, proximity, wildcard, and boolean queries
@@ -292,7 +292,7 @@ Students who report "no hits" have learned the lesson the hard way, which is the
 
 ---
 
-## ▶ LAB BREAK — Lab 02
+## ▶ LAB BREAK — Lab 03
 
 Debrief question: **"Who reported zero hits for `indemnification`, and who found it in a
 scan?"**

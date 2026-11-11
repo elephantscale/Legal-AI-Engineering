@@ -135,7 +135,7 @@ provision — in a firm audience, hands go up, and that is the integration row p
 
 The security row is the one to slow down on. "No confidential or sensitive information" at 29%
 of small firms is a **policy**, and a policy is a sentence, not a control. A sentence cannot
-tell you where a document went. Plant that here and harvest it in Module 5 and again in Lab 11,
+tell you where a document went. Plant that here and harvest it in Module 5 and again in Lab 12,
 where the lesson is stated as **capability is not configuration** — a guard that exists but is
 running in observe-only mode fails the question that matters.
 
@@ -426,8 +426,8 @@ here — just name it.
 
 | | The risk | The claim you must be able to make | Where we build it |
 |---|---|---|---|
-| **1** | Confidentiality / privilege | *"Nothing left the building, and here is the attestation."* | Module 5, Lab 04 |
-| **2** | Defensibility | *"Here is exactly what it did, and you can re-run it."* | Module 6, Lab 05 |
+| **1** | Confidentiality / privilege | *"Nothing left the building, and here is the attestation."* | Module 5, Lab 05 |
+| **2** | Defensibility | *"Here is exactly what it did, and you can re-run it."* | Module 6, Lab 06 |
 
 Everything else — ingestion, search, RAG, deployment — is **in service of those two
 sentences.**
@@ -497,9 +497,9 @@ Collect two or three diagrams on the whiteboard and leave them up.
 
 ---
 
-## ▶ On to Module 2 — and Lab 01
+## ▶ On to Module 2 — and Lab 02
 
 Notes:
 
-Hand off straight into Module 2 and get them into Lab 01 before the first break if at all
+Hand off straight into Module 2 and get them into Lab 02 before the first break if at all
 possible. The first keyboard contact should happen in the first ninety minutes.

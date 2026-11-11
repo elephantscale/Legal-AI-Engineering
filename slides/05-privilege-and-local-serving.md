@@ -412,11 +412,11 @@ This slide is also what distinguishes an Elephant Scale course from vendor train
 
 ---
 
-## Lab 04 — Local Model + Egress Proof
+## Lab 05 — Local Model + Egress Proof
 
 Run yesterday's RAG end to end on a **local** model, and prove nothing left:
 
-* Point the client at Ollama; re-run the Lab 03 eval set
+* Point the client at Ollama; re-run the Lab 04 eval set
 * Install an **in-process egress guard**: default-deny sockets, loopback allowed, every
   attempt recorded
 * Run the **monitor**; attempt a deliberate outbound call and watch it get blocked **and
@@ -440,7 +440,7 @@ document the delta and the mitigation.
 
 ---
 
-## ▶ LAB BREAK — Lab 04
+## ▶ LAB BREAK — Lab 05
 
 Debrief: **"Read me your `non_loopback_connections` number. Now read me your quality
 delta."**

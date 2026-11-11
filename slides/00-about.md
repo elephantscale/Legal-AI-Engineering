@@ -100,13 +100,13 @@ preparation for the lab.
 The labs are **not** seven exercises. They are **one system, built in seven steps.**
 
 ```text
-  Lab 01  messy corpus      ->  catalog.jsonl   (ingest, extract, OCR, dedupe)
-  Lab 02  catalog.jsonl      ->  search index    (find anything inside everything)
-  Lab 03  search index       ->  RAG + citations (answers you can go check)
-  Lab 04  RAG                ->  local + attested (nothing left the building)
-  Lab 05  local RAG          ->  measured review (recall, elusion, precision)
-  Lab 06  measured review    ->  scored + packaged (SAIS-100, on-prem bundle)
-  Lab 07  all of it          ->  CAPSTONE: your portfolio project
+  Lab 02  messy corpus      ->  catalog.jsonl   (ingest, extract, OCR, dedupe)
+  Lab 03  catalog.jsonl      ->  search index    (find anything inside everything)
+  Lab 04  search index       ->  RAG + citations (answers you can go check)
+  Lab 05  RAG                ->  local + attested (nothing left the building)
+  Lab 06  local RAG          ->  measured review (recall, elusion, precision)
+  Lab 07  measured review    ->  scored + packaged (SAIS-100, on-prem bundle)
+  Lab 08  all of it          ->  CAPSTONE: your portfolio project
 ```
 
 Every lab consumes the previous lab's output. Break step 2 and step 5 doesn't run — which
@@ -119,7 +119,7 @@ Notes:
 
 Show this early and refer to it at every lab hand-off ("you are here"). The compounding
 structure is the single biggest reason this course lands better than a topic-per-module AI
-course. It also creates real stakes: a student who skips Lab 2 feels it in Lab 3.
+course. It also creates real stakes: a student who skips Lab 03 feels it in Lab 04.
 
 Warn them now: if they fall behind, the fix is to take the *reference output* from the
 previous lab (shipped in every lab folder) and move on. Nobody gets stranded.
@@ -187,7 +187,7 @@ scale · governance and compliance deep-dive
 Notes:
 
 The third rule matters more here than in any other course we teach. Someone *will* be
-tempted to bring a real PST to Lab 1 "to see if it works." The answer is no. The reason
+tempted to bring a real PST to Lab 02 "to see if it works." The answer is no. The reason
 becomes Module 5. If they want their own data processed, they install FreeEed afterwards
 and run it on their own machine, which is the entire point of the product.
 

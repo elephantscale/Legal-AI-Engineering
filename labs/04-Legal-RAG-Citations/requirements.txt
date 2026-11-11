@@ -1,0 +1,10 @@
+# Lab 04 — Legal RAG with citations
+# Nothing is required: the lab runs on the standard library, and ../common/llm.py falls
+# back to a deterministic offline embedder and an extractive answer stub.
+#
+# For the REAL thing (and much better retrieval), install Ollama and pull two models:
+#   curl -fsSL https://ollama.com/install.sh | sh     # or: brew install ollama
+#   ollama pull qwen3:8b
+#   ollama pull nomic-embed-text
+#
+# Then:  export LEGAL_AI_MODE=local   (the default)

@@ -204,7 +204,7 @@ always more places than they expected, and the prompt logs are always one of the
 
 ---
 
-## Lab 10 — Containerize and Scale
+## Lab 11 — Containerize and Scale
 
 * Wrap the ingestion stage in a worker that pulls from a **SQLite work queue** with
   **leases and timeouts**
@@ -232,7 +232,7 @@ asked them for it at work.
 
 ---
 
-## ▶ LAB BREAK — Lab 10
+## ▶ LAB BREAK — Lab 11
 
 Debrief: **"Where did your curve flatten, and why? And did `destroy_matter.py` miss
 anything on the first try?"**

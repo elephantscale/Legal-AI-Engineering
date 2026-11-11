@@ -119,8 +119,8 @@ artifact "$CORPUS/_groundtruth/labels.jsonl" "blind ground truth"
 artifact "$CORPUS/production/VOL001.dat" "producer load file"
 
 # ------------------------------------------------------------- 01 ingestion
-header "Lab 01 — Ingestion"
-cd "$LABS/01-Ingestion"
+header "Lab 02 — Ingestion"
+cd "$LABS/02-Ingestion"
 step "ingest_reference.py --reocr" \
   python3 ingest_reference.py --corpus "$CORPUS" --out "$WORK" --reocr
 artifact "$WORK/catalog.jsonl" "catalog.jsonl"
@@ -132,8 +132,8 @@ step "--dedupe global" \
   python3 ingest_reference.py --corpus "$CORPUS" --out "$ROOT/work-glob" --dedupe global
 
 # ---------------------------------------------------------------- 02 search
-header "Lab 02 — Search"
-cd "$LABS/02-Search"
+header "Lab 03 — Search"
+cd "$LABS/03-Search"
 step "search_index.py build" python3 search_index.py build --work "$WORK"
 artifact "$WORK/index.sqlite" "index.sqlite"
 step "search_index.py search (phrase)" \
@@ -144,8 +144,8 @@ step "search_index.py hitreport" python3 search_index.py hitreport --work "$WORK
 artifact "$WORK/hit-report.json" "hit-report.json"
 
 # ------------------------------------------------------------------- 03 RAG
-header "Lab 03 — Legal RAG with citations"
-cd "$LABS/03-Legal-RAG-Citations"
+header "Lab 04 — Legal RAG with citations"
+cd "$LABS/04-Legal-RAG-Citations"
 step "legal_rag.py chunk" python3 legal_rag.py chunk --work "$WORK"
 artifact "$WORK/chunks.jsonl" "chunks.jsonl"
 step "legal_rag.py embed" python3 legal_rag.py embed --work "$WORK"
@@ -160,8 +160,8 @@ artifact "$WORK/rag-eval.json" "rag-eval.json"
 artifact "$WORK/rag-log.jsonl" "rag-log.jsonl"
 
 # -------------------------------------------------------- 04 egress / proof
-header "Lab 04 — Local model and egress proof"
-cd "$LABS/04-Local-Model-Egress-Proof"
+header "Lab 05 — Local model and egress proof"
+cd "$LABS/05-Local-Model-Egress-Proof"
 step "local_proof.py observe" python3 local_proof.py observe --work "$WORK"
 step "local_proof.py prove" python3 local_proof.py prove --work "$WORK"
 artifact "$WORK/attestation.json" "attestation.json"
@@ -170,8 +170,8 @@ step "local_proof.py compare (cloud row skipped)" python3 local_proof.py compare
 artifact "$WORK/local-vs-cloud.json" "local-vs-cloud.json"
 
 # ------------------------------------------------------ 05 defensible review
-header "Lab 05 — Defensible review"
-cd "$LABS/05-Defensible-Review"
+header "Lab 06 — Defensible review"
+cd "$LABS/06-Defensible-Review"
 step "richness (prevalence first)" python3 defensible_review.py richness --work "$WORK" --corpus "$CORPUS"
 step "protocol (pre-register, hashed)" \
   python3 defensible_review.py protocol --work "$WORK" --corpus "$CORPUS"
@@ -191,8 +191,8 @@ artifact "$SNAP/VERIFY.md" "bundle: VERIFY.md"
 artifact "$SNAP/verification.json" "bundle: verification.json"
 
 # ------------------------------------------------------- 06 score & package
-header "Lab 06 — Score and package"
-cd "$LABS/06-Score-and-Package"
+header "Lab 07 — Score and package"
+cd "$LABS/07-Score-and-Package"
 step "run_matter.py (12 stages, one command)" \
   python3 run_matter.py --corpus "$CORPUS" --work "$ROOT/work-matter"
 expect_exit 2 "produce REFUSES without approval" \
@@ -210,13 +210,13 @@ step "sais100.py --delta" \
 artifact "$ROOT/sais100-score.json" "sais100-score.json"
 
 # ----------------------------------------------------------------- 07 capstone
-header "Lab 07 — Capstone"
+header "Lab 08 — Capstone"
 printf "  %-46s${YELLOW}n/a${OFF} ${DIM}(assembly + rubric; nothing to execute)${OFF}\n" "README + rubric"
 SKIP=$((SKIP+1))
 
 # --------------------------------------------------------- 08 investigations
-header "Lab 08 — Investigations and timeline"
-cd "$LABS/08-Investigations-Timeline"
+header "Lab 09 — Investigations and timeline"
+cd "$LABS/09-Investigations-Timeline"
 step "investigate.py entities" python3 investigate.py entities --work "$WORK"
 artifact "$WORK/entities.jsonl" "entities.jsonl"
 step "investigate.py resolve" python3 investigate.py resolve --work "$WORK"
@@ -230,8 +230,8 @@ step "investigate.py leads" python3 investigate.py leads --work "$WORK"
 artifact "$WORK/collection_leads.jsonl" "collection_leads.jsonl"
 
 # ------------------------------------------------------------- 09 agentic
-header "Lab 09 — Agentic legal workflow"
-cd "$LABS/09-Agentic-Legal-Workflow"
+header "Lab 10 — Agentic legal workflow"
+cd "$LABS/10-Agentic-Legal-Workflow"
 step "agent.py tools (closed registry)" python3 agent.py tools --work "$WORK"
 step "agent.py run" python3 agent.py run --work "$WORK"
 for atk in $(python3 -c "import agent,sys; print(' '.join(sorted(agent.ATTACKS)))" 2>/dev/null); do
@@ -244,8 +244,8 @@ step "agent.py approve (gate recorded)" \
 artifact "$WORK/approvals.jsonl" "approvals.jsonl"
 
 # ---------------------------------------------------------------- 10 scale
-header "Lab 10 — Deploy at scale"
-cd "$LABS/10-Deploy-At-Scale"
+header "Lab 11 — Deploy at scale"
+cd "$LABS/11-Deploy-At-Scale"
 export LAB10_WORK_ROUNDS=50          # keep the smoke test fast; the curve needs 1500
 step "work_queue.py init" \
   python3 work_queue.py init --work "$ROOT/work-queue" --corpus "$CORPUS"
@@ -270,8 +270,8 @@ expect_exit 2 "destroy REFUSES without --by" \
     --confirm SYNTHETIC-DEMO-01
 
 # ------------------------------------------------------------ 11 governance
-header "Lab 11 — Governance audit"
-cd "$LABS/11-Governance-Audit"
+header "Lab 12 — Governance audit"
+cd "$LABS/12-Governance-Audit"
 step "audit.py artifacts" python3 audit.py artifacts --work "$ROOT/work-matter"
 step "audit.py audit (verified score)" python3 audit.py audit --work "$ROOT/work-matter"
 step "audit.py findings" python3 audit.py findings --work "$ROOT/work-matter"
@@ -281,8 +281,8 @@ step "guard: nonexistent work dir fails cleanly" \
   bash -c "python3 audit.py audit --work '$ROOT/nope' 2>&1 | grep -qi 'run_matter\|not found\|no such'"
 
 # ------------------------------------------------- destruction, run LAST
-header "Lab 10 — destruction (runs last: it deletes the shared work dir)"
-cd "$LABS/10-Deploy-At-Scale"
+header "Lab 11 — destruction (runs last: it deletes the shared work dir)"
+cd "$LABS/11-Deploy-At-Scale"
 step "destroy --confirm --by" \
   python3 destroy_matter.py destroy --work "$WORK" --matter SYNTHETIC-DEMO-01 \
     --confirm SYNTHETIC-DEMO-01 --by "Smoke Test, Esq."

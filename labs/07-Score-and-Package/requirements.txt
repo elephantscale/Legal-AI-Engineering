@@ -1,0 +1,9 @@
+# Lab 07 needs nothing beyond the standard library.
+#
+# run_matter.py drives the other labs as subprocesses, so install their requirements:
+#     pip install -r ../02-Ingestion/requirements.txt
+#     pip install -r ../04-Legal-RAG-Citations/requirements.txt
+#
+# sais100.py reads artifacts off disk and imports nothing outside the stdlib. That is
+# deliberate: the scorer must be runnable by someone auditing you, on a machine with
+# nothing installed.

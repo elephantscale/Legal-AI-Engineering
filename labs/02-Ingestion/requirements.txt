@@ -1,0 +1,10 @@
+# Lab 02 — Ingestion
+# Nothing here is required to complete the lab: the starter runs on the standard
+# library alone. Each line buys you one more file type.
+#
+# Local OCR needs the tesseract BINARY, not a Python package:
+#   Ubuntu/Debian : sudo apt install tesseract-ocr
+#   macOS         : brew install tesseract
+#   Windows       : winget install UB-Mannheim.TesseractOCR
+pypdf==5.1.0          # PDF text layer extraction
+Pillow==11.0.0        # only needed to GENERATE the corpus scans

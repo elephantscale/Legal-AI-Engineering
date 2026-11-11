@@ -325,7 +325,7 @@ earns a place on the list.
 
 ## Scoring Walk-Through
 
-Score the system you built in Labs 01–06, in pairs, in twenty minutes:
+Score the system you built in Labs 02–07, in pairs, in twenty minutes:
 
 1. Walk the six categories **in order**. Don't skip to the one you're proud of.
 2. Three questions each, 0–3 against the anchored levels. **Name the evidence** for each —
@@ -348,7 +348,7 @@ end on.
 
 ---
 
-## Lab 06 — Score and Package
+## Lab 07 — Score and Package
 
 Wire the stages into one workflow, score it, and package it:
 
@@ -371,7 +371,7 @@ morning proposal.
 
 ---
 
-## ▶ LAB BREAK — Lab 06
+## ▶ LAB BREAK — Lab 07
 
 Debrief: **"Your score, your verdict, and did you trip an auto-fail?"**
 

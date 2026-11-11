@@ -1,0 +1,8 @@
+# Lab 03 — Search
+# Nothing to install. SQLite FTS5 ships with Python.
+#
+# Check it:  python3 -c "import sqlite3;sqlite3.connect(':memory:').execute(
+#              'CREATE VIRTUAL TABLE t USING fts5(a)');print('FTS5 ok')"
+#
+# Optional, to see the production shape (Module 3):
+#   docker run -p 8983:8983 solr:9        # then compare the same queries

@@ -25,7 +25,7 @@ What you get (and why each piece is there):
   production/VOL001.dat / .opt          a real-shaped load file (\x14 / \xFE delimited)
   production/IMAGES/001/*.png           the pages the .opt file maps
   exceptions_src/                       encrypted, truncated and zero-byte files
-  _groundtruth/labels.jsonl             responsiveness + privilege labels (Lab 05)
+  _groundtruth/labels.jsonl             responsiveness + privilege labels (Lab 06)
   _groundtruth/findings.md              INSTRUCTOR ONLY — the planted findings
 
 Planted findings (the labs are built to surface these):
@@ -149,7 +149,7 @@ class CorpusBuilder:
               locator: str | None = None) -> None:
         """Record a ground-truth label.
 
-        `locator` is how Lab 05 resolves a label back to a document after ingestion:
+        `locator` is how Lab 06 resolves a label back to a document after ingestion:
         a Message-ID for mail, or a path suffix for a file. Without it the labels are
         unusable, because doc_ids are assigned by the ingestion walk, not by us. Note
         that one Message-ID can resolve to SEVERAL doc_ids — the same message sitting in
@@ -645,8 +645,8 @@ class CorpusBuilder:
         write(gt / "findings.md", FINDINGS_MD)
         write(gt / "README.txt",
               "INSTRUCTOR / GROUND TRUTH.\n\n"
-              "labels.jsonl carries the responsiveness and privilege labels used by Lab 05.\n"
-              "Students should not read findings.md before Lab 08.\n")
+              "labels.jsonl carries the responsiveness and privilege labels used by Lab 06.\n"
+              "Students should not read findings.md before Lab 09.\n")
 
         write(self.out / "README.txt", CORPUS_README.format(
             matter=MATTER, seed=self.seed, n_docs=self.n_docs,
@@ -737,33 +737,33 @@ class CorpusBuilder:
         print(f"  containers       : collection.zip (with a nested zip and a nested message)")
         print(f"  load file        : production/VOL001.dat + .opt")
         print(f"  exception source : exceptions_src/ (empty, truncated, encrypted)")
-        print(f"  ground truth     : _groundtruth/labels.jsonl  (Lab 05)")
+        print(f"  ground truth     : _groundtruth/labels.jsonl  (Lab 06)")
         print("\nAll content is synthetic. No real matter, person, or client is represented.\n")
 
 
 FINDINGS_MD = """# Planted findings — INSTRUCTOR ONLY
 
-Do not hand this to students before Lab 08.
+Do not hand this to students before Lab 09.
 
 | ID | Finding | Surfaced by |
 |---|---|---|
-| **F1** | A **39-day gap** in the "Q3 numbers look off" thread between jdoe and aray. | Lab 08 gap detection |
-| **F2** | The **§7.3 indemnification cap ($2,000,000)** is present in Draft 1 and Draft 2 and **removed** from `MSA_EXECUTED.txt`. An email instructs that it be struck "without a redline". | Lab 08 near-dup diff |
-| **F3** | In `Re: Q3 numbers look off`, **mchen is dropped from the Cc**. mchen holds the pre-drop copy. | Lab 08 thread reconstruction |
-| **F4** | Two emails reference a **"side letter"** that is not in the collection. The load file also lists `side_letter.pdf` with no corresponding native. | Lab 01 reconciliation, Lab 08 collection leads |
-| **F5** | `scan_0042.png` is image-only; the vendor OCR text reads **"indemnif1cation"**, so an exact keyword search for `indemnification` misses it. Fuzzy or vector retrieval finds it. | Lab 02, Lab 03 |
-| **F6** | One email body contains a **prompt-injection** payload aimed at an automated review tool. | Lab 03 verifier, Lab 09 agent |
-| **F7** | Two **attorney-client privileged** messages with outside counsel. Responsive, but must never be produced. | Lab 05, Lab 06 production gate |
+| **F1** | A **39-day gap** in the "Q3 numbers look off" thread between jdoe and aray. | Lab 09 gap detection |
+| **F2** | The **§7.3 indemnification cap ($2,000,000)** is present in Draft 1 and Draft 2 and **removed** from `MSA_EXECUTED.txt`. An email instructs that it be struck "without a redline". | Lab 09 near-dup diff |
+| **F3** | In `Re: Q3 numbers look off`, **mchen is dropped from the Cc**. mchen holds the pre-drop copy. | Lab 09 thread reconstruction |
+| **F4** | Two emails reference a **"side letter"** that is not in the collection. The load file also lists `side_letter.pdf` with no corresponding native. | Lab 02 reconciliation, Lab 09 collection leads |
+| **F5** | `scan_0042.png` is image-only; the vendor OCR text reads **"indemnif1cation"**, so an exact keyword search for `indemnification` misses it. Fuzzy or vector retrieval finds it. | Lab 03, Lab 04 |
+| **F6** | One email body contains a **prompt-injection** payload aimed at an automated review tool. | Lab 04 verifier, Lab 10 agent |
+| **F7** | Two **attorney-client privileged** messages with outside counsel. Responsive, but must never be produced. | Lab 06, Lab 07 production gate |
 
 ## Debrief hooks
 
-* Lab 01 — document counts will differ between students. The causes are the dedupe policy
+* Lab 02 — document counts will differ between students. The causes are the dedupe policy
   (the executed MSA exists under two custodians), whether they walked the nested zip, and
   whether they expanded the message attached to a message.
-* Lab 02 — ask who reported zero hits for `indemnification`. F5 is why.
-* Lab 03 — F6 should be contained by fenced context, not by the model's good manners.
-* Lab 05 — F7 must land in the privilege queue, never in the auto-coded set.
-* Lab 08 — all of F1–F4 are absences or structural facts, not keyword hits. That is the
+* Lab 03 — ask who reported zero hits for `indemnification`. F5 is why.
+* Lab 04 — F6 should be contained by fenced context, not by the model's good manners.
+* Lab 06 — F7 must land in the privilege queue, never in the auto-coded set.
+* Lab 09 — all of F1–F4 are absences or structural facts, not keyword hits. That is the
   point of the investigations module.
 """
 
@@ -785,7 +785,7 @@ Layout
   collection.zip        the collection, as it would arrive: a container of containers
   production/           a load file (VOL001.dat / .opt) and page images
   exceptions_src/       files that must become processing exceptions, not silent drops
-  _groundtruth/         responsiveness + privilege labels (Lab 05); instructor findings
+  _groundtruth/         responsiveness + privilege labels (Lab 06); instructor findings
 
 Course rule: no client data in any lab, ever. If you want your own documents processed,
 install FreeEed and run it on your own machine. That is the entire point of the product.

@@ -12,7 +12,7 @@ python3 assets/make_corpus.py      # generate the corpus (~1,200 documents, ~30 
 ```
 
 If `verify-setup.sh` says you can run every lab, stop reading and go to
-[01-Ingestion](01-Ingestion/README.md). Come back here when something degrades.
+[02-Ingestion](02-Ingestion/README.md). Come back here when something degrades.
 
 ---
 
@@ -29,11 +29,11 @@ settings, or just export what you need.
 
 `offline` is not a degraded teaching experience with pieces missing. Every planted finding
 is still found, every guardrail still fires, every metric is still computed, every artifact
-is still produced. What you lose is seeing a real model's output, and in Labs 03 and 05 that
+is still produced. What you lose is seeing a real model's output, and in Labs 04 and 06 that
 is worth having. What the fallbacks give you instead is a reproducible number the whole room
 shares, which is why the Teacher's Playbooks quote offline figures.
 
-`cloud` exists for exactly one exercise: Lab 04's `compare`, where you run the same
+`cloud` exists for exactly one exercise: Lab 05's `compare`, where you run the same
 questions against a hosted model and record the delta honestly, having first been warned on
 screen that the document text is about to leave the machine. With no key set, `compare`
 reports the local row only and says so — which is the right default for a legal course, and
@@ -64,7 +64,7 @@ ollama pull nomic-embed-text    # embeddings, 768 dimensions     ~275 MB
 ```
 
 With a 24 GB+ GPU or a 32 GB Mac, use `qwen3:14b` for the chat model instead — the
-difference shows most in Lab 05's structured extraction, where the 8B model's JSON is
+difference shows most in Lab 06's structured extraction, where the 8B model's JSON is
 noticeably less reliable.
 
 ```sh
@@ -104,8 +104,8 @@ export LEGAL_AI_MODE=offline
   embedder.
 - an **extractive answer stub** instead of a chat model. It quotes retrieved passages
   rather than reasoning over them. Citations still resolve, so every verifier exercise in
-  Lab 03 works unchanged.
-- a **keyword baseline** in Lab 05 instead of model calls, labelled as
+  Lab 04 works unchanged.
+- a **keyword baseline** in Lab 06 instead of model calls, labelled as
   `keyword-baseline (no model available)` in the run record. Recall and elusion are still
   measured against blind ground truth; the numbers are just worse, and the metrics code
   cannot tell the difference. That is the point of measuring — and the keyword baseline is
@@ -118,7 +118,7 @@ course is about.
 
 ---
 
-## Mode 3 — Cloud (Lab 04 only)
+## Mode 3 — Cloud (Lab 05 only)
 
 ```sh
 export LEGAL_AI_MODE=cloud
@@ -127,7 +127,7 @@ export LEGAL_AI_BASE_URL=https://api.anthropic.com/v1   # or your provider's
 export LEGAL_AI_MODEL=claude-sonnet-5
 ```
 
-Lab 04 is the only lab that uses this, it is clearly marked, and it is skippable. Without a
+Lab 05 is the only lab that uses this, it is clearly marked, and it is skippable. Without a
 key you get the local row, a printed explanation of what the missing row would have told
 you, and the full egress exercise — which is the part of the lab that matters.
 
@@ -141,12 +141,12 @@ the next corpus you work on.
 
 | Thing | Install | What you lose without it |
 |---|---|---|
-| **pypdf** | `pip install pypdf==5.1.0` | PDFs become exceptions in Lab 01. The lab still runs — and a non-empty exception list is its real lesson — but you miss the PDF path. |
-| **Pillow** | `pip install Pillow==11.0.0` | `make_corpus.py` cannot render the synthetic scans, so the whole OCR thread in Labs 01–02 is missing, including the `indemnif1cation` finding. **Install this one.** |
+| **pypdf** | `pip install pypdf==5.1.0` | PDFs become exceptions in Lab 02. The lab still runs — and a non-empty exception list is its real lesson — but you miss the PDF path. |
+| **Pillow** | `pip install Pillow==11.0.0` | `make_corpus.py` cannot render the synthetic scans, so the whole OCR thread in Labs 02–03 is missing, including the `indemnif1cation` finding. **Install this one.** |
 | **requests** | `pip install requests==2.32.3` | No local model, no Tika. Labs fall back automatically. |
-| **tesseract** | `apt install tesseract-ocr tesseract-ocr-eng` / `brew install tesseract` | `--reocr` does nothing, so you accept the producer's OCR. Lab 02's three-different-hit-counts exercise needs this. |
-| **Docker** | [docs.docker.com](https://docs.docker.com/engine/install/) | Labs 06 and 10 Part 4 become read-the-compose-file exercises. Nothing downstream depends on it. |
-| **Apache Tika** | `docker run -d -p 9998:9998 apache/tika:2.9.2.1` then `export TIKA_URL=http://localhost:9998` | Lab 01's built-in extractors handle the corpus fine. Tika is what you would use in production; the builtins exist so the lab never blocks on a JVM. |
+| **tesseract** | `apt install tesseract-ocr tesseract-ocr-eng` / `brew install tesseract` | `--reocr` does nothing, so you accept the producer's OCR. Lab 03's three-different-hit-counts exercise needs this. |
+| **Docker** | [docs.docker.com](https://docs.docker.com/engine/install/) | Labs 07 and 11 Part 4 become read-the-compose-file exercises. Nothing downstream depends on it. |
+| **Apache Tika** | `docker run -d -p 9998:9998 apache/tika:2.9.2.1` then `export TIKA_URL=http://localhost:9998` | Lab 02's built-in extractors handle the corpus fine. Tika is what you would use in production; the builtins exist so the lab never blocks on a JVM. |
 
 Or in one go:
 
@@ -181,10 +181,10 @@ Three things about this corpus that matter:
    image-only scan inside *that*, three versions of one contract, a zero-byte file, a
    truncated OOXML, a password-protected archive, a cp1252 load file with a row that has no
    corresponding native, and a document containing a prompt-injection payload aimed at your
-   own pipeline. If your Lab 01 run reports zero exceptions, your handler is swallowing
+   own pipeline. If your Lab 02 run reports zero exceptions, your handler is swallowing
    errors.
-3. **There is blind ground truth** in `assets/corpus/_groundtruth/`. Lab 05 scores against
-   it. Do not read it before Lab 05 — you will have un-blinded your own validation, which is
+3. **There is blind ground truth** in `assets/corpus/_groundtruth/`. Lab 06 scores against
+   it. Do not read it before Lab 06 — you will have un-blinded your own validation, which is
    precisely the error the module exists to prevent.
 
 ---
@@ -204,17 +204,17 @@ labs/
     corpus/             generated — gitignored
   common/               llm.py, egress.py, metrics.py, bundle.py
   work/                 ALL lab output lands here — gitignored
-  01-Ingestion/ … 11-Governance-Audit/
+  02-Ingestion/ … 12-Governance-Audit/
 ```
 
-**Labs 01–06 are a pipeline.** Lab `NN` reads lab `NN-1`'s output from `work/`. Run them in
-order the first time. Labs 08–11 (optional Day 3) each read `work/` but not each other, so
+**Labs 02–07 are a pipeline.** Lab `NN` reads lab `NN-1`'s output from `work/`. Run them in
+order the first time. Labs 09–12 (optional Day 3) each read `work/` but not each other, so
 they can be done in any order.
 
-If you fall behind, Lab 01 ships a complete worked answer (`ingest_reference.py`) and every
+If you fall behind, Lab 02 ships a complete worked answer (`ingest_reference.py`) and every
 later lab in the chain ships code that already runs end to end — the exercises are edits and
-extensions to working programs, not blank files. Nobody gets stranded at the start of Lab 03
-because Lab 01 did not finish; run the reference and move on.
+extensions to working programs, not blank files. Nobody gets stranded at the start of Lab 04
+because Lab 02 did not finish; run the reference and move on.
 
 ---
 
@@ -247,6 +247,6 @@ Per-lab problems are in each lab's **Troubleshooting** section. The three that c
 
 - **`corpus not found`** — you skipped `make_corpus.py`, or you are in the wrong directory.
   Lab paths like `--corpus ../assets/corpus` are relative to the lab folder.
-- **`run <stage> first` / `no catalog`** — the pipeline is ordered. Labs 01–06 in sequence.
+- **`run <stage> first` / `no catalog`** — the pipeline is ordered. Labs 02–07 in sequence.
 - **`[llm] chat endpoint unavailable`** — Ollama is not running (`ollama serve`). The lab
   continues on the offline stub and warns once.

@@ -5,7 +5,7 @@ the default.
 
     LEGAL_AI_MODE=local    (default)  Ollama (or any OpenAI-compatible server) on localhost
     LEGAL_AI_MODE=offline             no model at all; deterministic stand-ins
-    LEGAL_AI_MODE=cloud               a hosted provider — the CONTRAST CASE, used in Lab 04
+    LEGAL_AI_MODE=cloud               a hosted provider — the CONTRAST CASE, used in Lab 05
                                       to measure what you give up, never the happy path
 
 Environment:
@@ -308,4 +308,4 @@ if __name__ == "__main__":
     print(f"endpoint reachable: {available()}")
     if not info.local:
         print("\n!! MODE=cloud. Document text will leave this machine. "
-              "This mode exists for the Lab 04 comparison only.")
+              "This mode exists for the Lab 05 comparison only.")
