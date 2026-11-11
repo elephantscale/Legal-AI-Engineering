@@ -110,9 +110,19 @@ that repo was created with.
 
 ## Customers and revenue connections
 
-- **First student: Carlene Gordon.** Mark meets her in the week of **2026-11-16**, and the
-  purpose of that meeting is to **agree the delivery dates**. This is the end of the course's
-  build-ahead-of-demand phase. Scope (2 days, or 2 + the optional Day 3) and fee are Unknown.
+- **First student: Carlene Gordon.** Mark meets her **Tuesday 2026-11-17** to talk through
+  the course and set expectations; **delivery dates are agreed later**, not in that meeting.
+  This ends the course's build-ahead-of-demand phase.
+  - **Day 3 stays optional** (Mark, 2026-11-10), partly because two days may already be too
+    much material — see the Day 2 overload risk below.
+  - **She is to receive the certificate.** The infrastructure is ready: Lab 07's four-check
+    issuance checklist and the roster record. She becomes **roster row #1** for
+    `LEGAL-AI-ENG-2026`, which is the row that has to answer "what did they actually have to
+    do?" in five years. Issue it against the same bar as any paying student — a softened
+    first issuance is the one thing that would devalue the credential permanently.
+  - **Under consideration (Mark, 2026-11-10): course free, technical support paid.** She
+    would get the course at no charge, with paid support afterwards on the issues the course
+    covers. *(Needs CEO input — see Decisions needed from Mark.)*
 - **FreeEed / SHMsoft** — the course is a demand channel for the platform, and the material
   tracks FreeEed's real design records (`docs/local-ai-cjis-briefing.md`,
   `docs/decisions/local-ai-architecture.md`). When FreeEed's pinned models or sizing tiers
@@ -139,6 +149,14 @@ that repo was created with.
 - Nothing else fixed.
 
 ## Important TODOs
+
+- **`labs/06-Score-and-Package/README.md` has no stated duration** — the only core lab
+  without one, and it sits inside the Day 2 block that does not fit. Time it during the dry
+  run and write the number in.
+- **The capstone's pair exercises assume a classroom.** Lab 07 schedules a defense round "in
+  pairs, 15 minutes each way" and a round-the-room reading of a partner's best question.
+  With a single student Mark is the partner; that works and is faster, but the playbook
+  should say so rather than leaving the instructor to improvise in the first delivery.
 
 - Commit and push.
 - Dry-run Day 1 with a timer; correct the playbook timings from measurement.
@@ -170,7 +188,41 @@ that repo was created with.
 
 ## Decisions needed from Mark
 
-1. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
+0. **Day 2 does not fit in a day, and the first delivery is the moment it will show.**
+   Mark's own instinct (2026-11-10) that two days may be too much material is **confirmed by
+   the stated lab durations**, and it is specifically Day 2, not Day 1:
+
+   | | Lecture (slides × ~2 min) | Labs (as written) | Total | Fits 6.5 h? |
+   |---|---|---|---|---|
+   | **Day 1** — M1–M4, Labs 01–03 | 67 slides ≈ 2:15 | 3:00–3:45 + 0:30 discussion | **5:45–6:30** | yes, tight |
+   | **Day 2** — M5–M7 + capstone, Labs 04–07 | 53 slides ≈ 1:45 | 6:45–7:15 | **8:30–9:00** | **no — over by 2:00+** |
+
+   Day 2's labs alone (75 + 90 + ~60–90 + 180 capstone) exceed a whole teaching day before a
+   single slide. One honest caveat: the capstone is "integrated across Day 2" and
+   `run_matter.py` drives the earlier stages, so perhaps an hour is double-counted — even
+   then Day 2 is over by an hour. Options, in Mark's order of preference, needed:
+   **(a)** move Module 7 / Lab 06 to Day 3, **(b)** cut the capstone from 3:00 to ~2:15,
+   **(c)** sell the course as 3 days with Day 3 required for the full artifact set, or
+   **(d)** accept a long Day 2 and say so in the outline. This decision should be made
+   **before** dates are agreed with Carlene, because it changes what is being sold.
+
+1. **Free course now, paid technical support later** *(Mark's idea, 2026-11-10)*. The GM
+   read: the model is sound and fits the FreeEed demand channel, but three things should be
+   settled before it is offered on 2026-11-17.
+   - **Do not call it free; call it what it is.** The Day 1 dry run has never happened, so
+     Carlene *is* the dry run. "No fee, in exchange for structured feedback and your timing
+     data" is a fair trade between two parties, and it does not anchor the list price at
+     zero. Publish a list price alongside it.
+   - **Bound the support.** "Support on the issues covered" is unbounded as written. A
+     defined window and channel (for example 30 days, email, course topics only) can be
+     given away safely; anything open-ended cannot, and this student will have a real matter
+     and a real deadline behind her questions.
+   - **Decide what Elephant Scale gets.** A reference, a testimonial, permission to name the
+     first certificate holder, or a case study — all of which are worth more than one
+     student's fee at this stage, and none of which happen unless they are asked for on
+     Tuesday.
+
+2. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
    direction is that the **Elephant Scale Legal AI Engineer Certificate** will become a brand
    name, so the course now awards it and `outline.md`, the capstone deck, Lab 07 and the
    rubric all say so again. The teaching side is done: the bar is objective (attendance,
@@ -185,18 +237,25 @@ that repo was created with.
      material would fail. It is now ES's brand call, but reversing it contradicts Module 1;
    - whether this is the **first of a family** across the Secure AI Learning Path, which would
      decide the naming now rather than after the first cohort.
-2. **FreeEed wording.** Five lines were softened from implying shipped capability to
+3. **FreeEed wording.** Five lines were softened from implying shipped capability to
    "reference platform / reference architecture the labs are designed against", naming only
    capabilities backed by `FreeEedCRM/docs/technical-primer.md`. Confirm this is how you want
    FreeEed positioned in course marketing.
-3. **Day 3 packaging** — one optional day, or a separately sellable modular deep-dive?
-4. **Target first delivery**, which would set the dry-run deadline.
+4. **Day 3 packaging** — *Decided 2026-11-10: Day 3 stays **optional**.* Still open is
+   whether it is also sellable as a standalone modular series, which decision 0 may force
+   anyway if Module 7 moves into it.
+5. **Target first delivery** — *Superseded 2026-11-10:* Carlene Gordon is the first
+   student; dates are set after the 2026-11-17 conversation.
 
 ## Next three highest-value actions
 
-1. **Name the certificate and decide whether holders are verifiable** (#1 above). The
-   curriculum side is finished; what is left is brand, and it is cheaper to decide before the
-   first cohort holds one.
-2. **Dry-run Day 1 against the clock**, and correct the playbook timings from measurement
-   rather than estimate.
-3. **Build the PPTX decks** from the Markdown, which is now final for Module 1.
+1. **Settle the Day 2 shape before quoting dates** (decision 0). The stated lab durations do
+   not fit in a day, and the first thing a real delivery exposes is a timetable that was
+   never run. Decide (a)–(d), then the outline and `labs/README.md` follow.
+2. **Dry-run Day 1 against the clock** and replace the playbook estimates with measurements.
+   Carlene's session is itself the Day 2 measurement, which is the honest argument for not
+   charging for it.
+3. **Prepare the 2026-11-17 conversation**: the artifact list as the thing being sold, the
+   certificate bar stated plainly, the support offer bounded in writing, and
+   `labs/verify-setup.sh` sent to her afterwards so her machine is known well before a date
+   is agreed.
