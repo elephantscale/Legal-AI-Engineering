@@ -169,16 +169,27 @@ different questions and each finds what the other missed.
 
 ## What You Walk Out With
 
-* **The capstone repository** — and it is the credential that matters here
-* Completion requires:
+* The **Legal AI Engineer Certificate** — Elephant Scale
+* **The capstone repository** — the evidence behind it, and the thing a hiring manager reads
+* Certification requires:
   - minimum attendance
   - completion of the module labs
   - a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail
 * What it demonstrates: you can build a legal-AI system that is **private, measured, and
   reproducible** — and you can defend it in writing
 
-> Nobody will ask to see a certificate. They will ask you to re-run your review in front
-> of them. That is what you have.
+> The certificate records that you cleared the bar. The repository is how you prove it, because
+> the first thing anyone serious will ask is that you re-run your review in front of them.
+
+Notes:
+
+Say the requirements out loud before the capstone session, not after it. The bar is objective
+on purpose — `VERIFY.md` either replays or it does not, and the four legal auto-fails either
+trip or they do not — which is what keeps this certificate worth having. Do not award it on
+effort or on attendance alone; the moment it is handed out for showing up, it is worth nothing
+to the person who earned it properly.
+
+Issuance mechanics and the roster record are in Lab 07's Teacher's Playbook.
 
 ---
 

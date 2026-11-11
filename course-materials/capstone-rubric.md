@@ -116,15 +116,24 @@ partner's system has demonstrated the course's actual skill.
 
 ---
 
-## Completion
+## Certification
 
-Completion requires attendance, the module labs, and a capstone that **passes its own
-`VERIFY.md`** and trips **no** legal auto-fail.
+The course awards the **Legal AI Engineer Certificate** (Elephant Scale). It requires
+attendance, the module labs, and a capstone that **passes its own `VERIFY.md`** and trips
+**no** legal auto-fail.
 
-What the student leaves with is the repository. It demonstrates that they can build a
+Note what is *not* on that list: the rubric score. A capstone can score 72 and certify, or
+score 94 and not. The score measures how well the system is built; the three requirements
+measure whether it does what its author says it does. Those are different questions, and only
+the second one can be checked by someone who was not in the room.
+
+The student also leaves with the repository, which demonstrates that they can build a
 legal-AI system that is private, measured and reproducible, and that they can defend it in
-writing. Nobody will ask to see a certificate; they will ask the student to re-run their
-review in front of them.
+writing. The certificate records the bar; the repository is how they show it — sooner or later
+somebody will skip the certificate and ask them to re-run their review in front of them.
+
+Issuance mechanics, the roster record, and the pre-decided borderline cases are in
+[Lab 07's Teacher's Playbook](../labs/07-Capstone/README.md#issuing-the-certificate).
 
 ---
 

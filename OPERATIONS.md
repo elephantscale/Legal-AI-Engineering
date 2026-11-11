@@ -61,6 +61,12 @@ system did, and you can re-run it."*
   for all 18 questions and the four legal auto-fail conditions.
 - **Three documented corrections applied to `outline.md`** after independent verification
   (see *Decisions needed from Mark*).
+- **The Legal AI Engineer Certificate is restored and now issuable.** It had been removed as
+  an unbacked promise; Mark's decision is that it stays and becomes a brand name. `outline.md`
+  carries "Assessment and Certification" and the certificate line again, the capstone deck and
+  Lab 07 and the rubric are reworded back, and the gap that justified removing it is closed:
+  the bar is objective, Lab 07's playbook has a four-check issuance checklist and the roster
+  record, and the three borderline cases are decided in advance.
 - **Committed and pushed** as `0349008` (92 files, +20,846 lines) to
   `git@github.com:Scaia-ai/Legal-AI-Engineering.git` `main`.
 - **Module 1 gained a new opening section, "The Legal AI Implementation Gap"** (two slides,
@@ -137,12 +143,19 @@ priority into a deadline.)*
 
 ## Decisions needed from Mark
 
-1. **The removed completion certificate.** A peer session flagged, and I verified, that
-   `outline.md` promised "Assessment and Certification" with a certificate line that nothing
-   in the course delivers. I replaced it with the capstone-repository deliverable and
-   reworded the capstone deck and Lab 07 from "Certification" to "Completion". **This removed
-   a promise from a published outline — reverse it if the certificate is intended**, in which
-   case it needs an actual issuing process.
+1. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's
+   direction is that the **Elephant Scale Legal AI Engineer Certificate** will become a brand
+   name, so the course now awards it and `outline.md`, the capstone deck, Lab 07 and the
+   rubric all say so again. The teaching side is done: the bar is objective (attendance,
+   module labs, and a capstone that passes its own `VERIFY.md` with no legal auto-fail), the
+   issuance checklist and the borderline cases are in Lab 07's Teacher's Playbook, and the
+   roster record is specified. What still needs Mark, as business rather than curriculum:
+   - the certificate **artifact** itself (design, PDF, who signs it);
+   - whether holders are **verifiable** — a registry, a serial number, or nothing;
+   - the exact **name** on the document: "Legal AI Engineer Certificate", or the holder-form
+     "Certified Legal AI Engineer", which is the stronger brand but the bigger claim;
+   - whether this is the **first of a family** across the Secure AI Learning Path, which would
+     decide the naming now rather than after the first cohort.
 2. **FreeEed wording.** Five lines were softened from implying shipped capability to
    "reference platform / reference architecture the labs are designed against", naming only
    capabilities backed by `FreeEedCRM/docs/technical-primer.md`. Confirm this is how you want
@@ -152,8 +165,9 @@ priority into a deadline.)*
 
 ## Next three highest-value actions
 
-1. **Decide the certificate question** (#1 above), since it is the one open item that changes
-   a student-facing promise.
+1. **Name the certificate and decide whether holders are verifiable** (#1 above). The
+   curriculum side is finished; what is left is brand, and it is cheaper to decide before the
+   first cohort holds one.
 2. **Dry-run Day 1 against the clock**, and correct the playbook timings from measurement
    rather than estimate.
 3. **Build the PPTX decks** from the Markdown, which is now final for Module 1.

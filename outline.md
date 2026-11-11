@@ -136,10 +136,11 @@
 * **Deployment at Scale** — on-prem and appliance deployment, distributed processing for large volumes, regulated environments (CJIS, government, higher-ed), hardware sizing. *Lab: containerize and scale a processing job across workers.*
 * **Governance and Compliance Deep-Dive** — the AI-regulation landscape (100+ US state AI laws, the EU AI Act), audit requirements, and a full SAIS-100 governance audit. *Lab: audit a legal-AI system against a governance/defensibility checklist.*
 
-## Assessment
+## Assessment and Certification
 * Evaluation — capstone project, lab completion, and class participation
-* Requirements — minimum attendance, successful completion of the capstone, completion of module labs
-* Completion — participants leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence of competence this course produces.
+* Requirements — minimum attendance, completion of the module labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition
+* Certificate Awarded — **Legal AI Engineer Certificate**
+* Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
 
 ## Where this fits
 * This is the **legal-vertical track of the Elephant Scale Secure AI Learning Path.**

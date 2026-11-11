@@ -159,15 +159,23 @@ Hand your partner their three weakest answers, in writing. Then swap.
 
 ---
 
-## Completion
+## Certification
 
-Completion requires minimum attendance, completion of the module labs, and a capstone that
-**passes its own `VERIFY.md`** and trips **no** legal auto-fail.
+This course awards the **Legal AI Engineer Certificate** (Elephant Scale). It requires:
 
-What you leave with is the repository itself. It demonstrates that you can build a
-legal-AI system that is private, measured, and reproducible — and that you can defend it
-in writing. Nobody will ask to see a certificate; they will ask you to re-run your review
-in front of them.
+1. minimum attendance,
+2. completion of the module labs, and
+3. a capstone that **passes its own `VERIFY.md`** and trips **no** legal auto-fail.
+
+Requirement 3 is the one that matters, and it is deliberately not a judgment call. Either the
+bundle replays for someone else or it does not; either a privileged document is reachable, a
+matter leaks, a production went out unapproved and a model cannot be pinned — or none of those
+is true. Nobody passes this on effort.
+
+You also leave with the repository itself, and you should treat it as the more useful half.
+The certificate records that you cleared a bar. The repository is how you show it — because
+sooner or later somebody will skip the certificate and ask you to re-run your review in front
+of them.
 
 ---
 
@@ -229,6 +237,34 @@ course exists to prevent.
   work and one at random.
 - An **empty** `scope_and_limits` is worse than a missing attestation. The second is
   incomplete; the first is an overclaim.
+
+### Issuing the certificate
+
+The certificate is only worth what the bar is worth, so run the bar as a checklist, per
+student, in front of them:
+
+| # | Check | How you check it, in under a minute |
+|---|---|---|
+| 1 | Attendance | Your roster. |
+| 2 | Module labs complete | Their `work/` has the stage artifacts for Labs 01–06. |
+| 3 | `VERIFY.md` replays | Run it yourself from a clean directory, changing only the corpus path. |
+| 4 | No legal auto-fail | `sais100-score.json` — LEGAL-A/B/C/D all absent. |
+
+Keep the result. One line per student is enough — name, date, course code
+(`LEGAL-AI-ENG-2026`), the four checks, and the `VERIFY.md` verdict. If this credential is
+going to mean something in five years, the first person who asks "what did they actually have
+to do?" has to get an answer, and that answer is this row.
+
+Borderline cases, decided in advance so you are not deciding them at 4:55pm:
+
+- **`VERIFY.md` fails for an environment reason** (missing tesseract, no local model) and
+  replays once that is supplied — that passes. The bar is reproducibility, not the student's
+  laptop.
+- **`VERIFY.md` fails because the bundle is incomplete** — that does not pass. Offer a
+  deadline to send a working bundle rather than an exception; most students will take it.
+- **An auto-fail the student found and documented in `DEFENSE.md`** still trips. Say why
+  plainly: the four conditions are about what the system does, not about whether its author
+  understood it. Document the honesty, award the certificate when it is fixed.
 
 ### Debrief questions
 
