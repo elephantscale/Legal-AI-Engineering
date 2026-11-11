@@ -83,6 +83,14 @@ that repo was created with.
   (ILTA product-level shares, the 85%–100% firm-size range, the 78% policy and 79% drafting
   aggregates, and the segment-level 2025 priors behind the 41%/47% split). `outline.md`
   gained a matching topic bullet.
+- **Five decks that would not assemble now build.** `slides/gen.sh` crashed on
+  `02`, `09`, `10`, `11` and `12`, leaving those PPTX files missing from `assembly.out`.
+  Both crashes are bugs in the shared assembler (`$ES_HOME/utils/presentations/md_astprocessor.py`)
+  tripped by perfectly valid Markdown: a table cell of the form ``**`code`**`` (bold wrapping
+  inline code) and an *emphasised* paragraph on a title slide, before the first slide heading.
+  The assembler is another team's repo, so the fix was made on our side — `**tika-python**`
+  in Module 2's Tika table, and an unitalicised `Optional Day 3 / modular` line on the four
+  Day 3 title slides. All five parse clean; **the decks themselves are still Mark's to build.**
 - **`validate-course.sh` glob bug fixed.** `labs/*/work*` matched
   `labs/10-Deploy-At-Scale/work_queue.py` — lab source, not lab output — so the "no real case
   data" check failed the moment that file became tracked. It now matches directories only.
@@ -150,6 +158,10 @@ priority into a deadline.)*
 0. **The stale duplicate on the Scaia org.** `git@github.com:Scaia-ai/Legal-AI-Engineering.git`
    still holds this same history through `e5e4f34`; the course is no longer pushed there.
    Archive or delete it, so there is one canonical repo and nobody clones the wrong one.
+   **Verified 2026-11-10:** the old remote has one branch, `main` at `e5e4f34`, and that
+   commit is an ancestor of our `main` — nothing exists only there, so deleting it loses
+   nothing. Mark's `gh` token has no `delete_repo` scope; deletion needs
+   `gh auth refresh -h github.com -s delete_repo` or the GitHub web UI.
    Claude does not delete remote repositories.
 
 1. **Certificate brand infrastructure.** *Decided 2026-11-10: the certificate stays.* Mark's

@@ -98,7 +98,7 @@ including a message attached to a message and a scan attached to that.
 |---|---|---|
 | **In-process (Java)** | `AutoDetectParser` | You're on the JVM (FreeEed's engine) |
 | **Server** | `tika-server`, REST on `:9998` | Polyglot stack; isolates crashes |
-| **`tika-python`** | wraps the server | Python pipelines (our labs) |
+| **tika-python** | wraps the server | Python pipelines (our labs) |
 
 * **Run it as a server and treat it as hostile.** Parsers crash, hang, and occasionally
   blow the heap on a malformed file. One bad document should not take the run down.
