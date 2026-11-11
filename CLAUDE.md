@@ -82,7 +82,14 @@ differentiator against generic "AI for lawyers" training.
 
 - Decks: `slides/NN-topic.md`, `NN` two digits, listed in `slides/slide-list.txt`.
 - Labs: `labs/NN-Topic-Name/README.md`, `NN` two digits matching the module ↔ lab map in
-  `labs/README.md`.
+  `labs/README.md`. **Module N uses Lab N** — the numbers agree exactly, so the instructor
+  never has to translate between them out loud. Module 1 has a discussion, not a lab, so
+  there is no Lab 01 and the numbering starts at 02. Renumbering anything breaks that
+  identity; don't.
+- A deck's `## Lab NN` hand-off slide may carry a **different title** from the lab's own
+  `# Lab NN —` heading (Labs 10, 11, 12 do). That is deliberate (Mark, 2026-11-11): the
+  slide title says what the student is about to *do*, the lab title names the lab. The
+  numbers must match; the words need not. Don't "fix" these.
 
 ## Build & workflow
 
