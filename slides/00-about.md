@@ -193,9 +193,49 @@ and run it on their own machine, which is the entire point of the product.
 
 ---
 
-## About You And Me
+## About the Instructor
 
-* About the instructor
+* **Ten-plus years in eDiscovery** — ingestion, processing, review, production
+  - Not *AI for legal* observed from the outside. The unglamorous parts, from inside the
+    pipeline — which is why Module 2 exists at all
+
+* **Author of FreeEed** — the open-source, on-prem eDiscovery platform
+  - Every Tika / PST / OCR / load-file war story in this course is one I own in a bug tracker
+
+* **Ten-plus years of technical training** — Big Data, Hadoop, Spark, and now AI
+  - *Guide to Big Data Applications* (Springer, 2017), *HBase Design Patterns* (2015),
+    *Hadoop Illuminated* (2012); technical reviewer for Manning and Packt
+  - Certified Google Trainer
+
+* **A law degree** — earned online, while building the software
+  - I am **not** a lawyer, I am not your lawyer, and nothing here is legal advice
+  - What it bought you: the legal concepts in this course are taught by someone who had to
+    learn them properly, not someone repeating them
+
+* **Author of *Legal AI Engineering*** — the material you are holding
+
+> I ship the thing I am teaching you to build. When I tell you a local model loses to a
+> cloud model, it is because I have watched it happen on my own hardware.
+
+Notes:
+
+Keep this to ninety seconds. The room does not want a resume; it wants one reason to trust
+you for two days. That reason is the second bullet — you maintain an eDiscovery platform, so
+the failure modes in Module 2 are yours, not a vendor's slide deck.
+
+The law-degree bullet is the one to deliver carefully. Say "not a lawyer, not your lawyer,
+not legal advice" out loud and move on quickly. In a room that may contain actual lawyers,
+claiming less than you could is the only safe direction — and it buys credibility rather
+than spending it. If the room is all engineers, the degree lands as "he took the domain
+seriously." If a GC is present, the disclaimer is what they will remember.
+
+Do not oversell the books. They are Big Data books, not legal-AI books; the honest framing
+is "I have been teaching engineers hard things for a decade," not "I am a published legal
+AI authority."
+
+---
+
+## About You
 
 * About you
   - Your name, and what you build
