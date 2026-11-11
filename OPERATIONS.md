@@ -206,10 +206,17 @@ that repo was created with.
    **(d)** accept a long Day 2 and say so in the outline. This decision should be made
    **before** dates are agreed with Carlene, because it changes what is being sold.
 
-1. **Monetisation model** *(Mark, 2026-11-10)*. Two variants on the table: free course with
-   **paid support**, and the Andrew Ng pattern — free course with a **paid certificate**.
-   Mark's stated second motive for support is a **flow of real-world use cases** feeding
-   FreeEed. The GM read:
+1. **Monetisation model** — *Decided 2026-11-10. The ladder is:*
+
+   > **discounted course → paid certificate → paid support → FreeEed**
+
+   Note what was rejected: the course is **discounted, not free**. A discount keeps a list
+   price on the table, so the first student is receiving a pilot rate rather than being
+   taught that the course is worth nothing — and every later quote still has an anchor.
+   The four rungs are settled; **every number in them is Unknown** (list price, pilot
+   discount, certificate fee, support rate) and they are the next thing to set, after the
+   Day 2 question in decision 0. Mark's stated second motive for the support rung is a
+   **flow of real-world use cases** feeding FreeEed. The GM read on the rungs:
    - **Paid certificate is the cleaner line**, but note the difference from Ng: his bar is
      automated at scale, ours needs Mark to run `VERIFY.md` per student. That is what makes
      it worth more, and it is fine at low volume. The tension to settle *before* anyone pays:
@@ -228,7 +235,7 @@ that repo was created with.
    - **Reuse is a separate grant.** Marketing, case studies or course material built on these
      cases needs explicit written permission, anonymised — cheap as an opt-in at signup,
      awkward to retrofit.
-   Three things still to settle before any offer is made:
+   Still to settle before any offer is made:
    - **Do not call it free; call it what it is.** The Day 1 dry run has never happened, so
      Carlene *is* the dry run. "No fee, in exchange for structured feedback and your timing
      data" is a fair trade between two parties, and it does not anchor the list price at
