@@ -136,7 +136,7 @@ Not notes. **Artifacts.**
 | A document catalog with hashes and dedupe | A recall / elusion / precision measurement |
 | A real eDiscovery search index | A reproducibility bundle (the "case snapshot") |
 | A RAG answer with checkable citations | A SAIS-100 score with a legal overlay |
-| | A containerized, on-prem-deployable system |
+| | The capstone repository + `DEFENSE.md` |
 
 Plus the reusable paperwork: the defensibility checklist, the reproducibility manifest
 template, and the privilege/egress attestation form.
@@ -162,11 +162,11 @@ the list of things a legal-tech hiring manager asks about.
 
 5. Privacy, privilege, and local serving — the privilege trap
 6. Defensible AI review
-7. Ship it — workflow, private deployment, and governance
-8. Capstone
+7. Capstone
 
-**Optional Day 3 / modular** — investigations · agentic legal workflows · deployment at
-scale · governance and compliance deep-dive
+**Optional Day 3 / modular** — ship it (workflow, private deployment, governance) ·
+investigations · agentic legal workflows · deployment at scale · governance and compliance
+deep-dive
 
 ---
 

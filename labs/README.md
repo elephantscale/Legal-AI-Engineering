@@ -1,6 +1,7 @@
 # Labs
 
-Eleven labs. **Labs 02–08 are the two-day core; 09–12 are the optional Day 3.**
+Eleven labs. **Labs 02–06 and 08 are the two-day core. Lab 07 floats — it is scheduled on Day 3 and
+pulled into Day 2 when that day has room. Labs 09–12 are the rest of the optional Day 3.**
 
 The core labs are a **pipeline**: each one consumes the previous one's output. By the end
 of Lab 07 you have one working system, and Lab 08 is the capstone that assembles it into
@@ -19,7 +20,7 @@ something you can hand to a hiring manager or a client.
 | 1 | 4 · RAG with Citations | `04-legal-rag-citations` | **[04 — Legal RAG + Citations](04-Legal-RAG-Citations/)** | `rag-eval.json` with a refusal rate |
 | 2 | 5 · Privacy, Privilege, Local Serving | `05-privilege-and-local-serving` | **[05 — Local Model + Egress Proof](05-Local-Model-Egress-Proof/)** | `attestation.json` |
 | 2 | 6 · Defensible AI Review | `06-defensible-review` | **[06 — Defensible Review](06-Defensible-Review/)** | `metrics.json` + a bundle that replays |
-| 2 | 7 · Ship It | `07-ship-score-govern` | **[07 — Score and Package](07-Score-and-Package/)** | `sais100-score.json` + a production set |
+| 3 ◇ | 7 · Ship It | `07-ship-score-govern` | **[07 — Score and Package](07-Score-and-Package/)** | `sais100-score.json` + a production set |
 | 2 | Capstone | `08-capstone` | **[08 — Capstone](08-Capstone/)** | the repository + `DEFENSE.md` |
 | 3 | 9 · Investigations | `09-investigations` | **[09 — Investigations + Timeline](09-Investigations-Timeline/)** | `timeline.md` + `collection_leads.jsonl` |
 | 3 | 10 · Agentic Legal Workflows | `10-agentic-legal-workflows` | **[10 — Agentic Legal Workflow](10-Agentic-Legal-Workflow/)** | `steps.jsonl` + a gated memo |
@@ -28,6 +29,12 @@ something you can hand to a hiring manager or a client.
 
 Module 8 is the capstone framing; there is no separate deck numbered 08 beyond
 `08-capstone`.
+
+◇ **Module 7 is the floating module.** Day 3 by default, so that Day 2 fits in a day;
+teach it on Day 2 whenever the room is fast enough. Nothing downstream needs it — the
+capstone drives Labs 02–06 itself and produces its own SAIS-100 score. What a two-day room
+does *not* get without it is the **document production set** and the **containerized
+deployment**.
 
 ---
 

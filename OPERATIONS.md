@@ -188,23 +188,26 @@ that repo was created with.
 
 ## Decisions needed from Mark
 
-0. **Day 2 does not fit in a day, and the first delivery is the moment it will show.**
-   Mark's own instinct (2026-11-10) that two days may be too much material is **confirmed by
-   the stated lab durations**, and it is specifically Day 2, not Day 1:
+0. **Day 2 overload** — *Decided 2026-11-11: **Module 7 / Lab 07 move to Day 3**, as the
+   **floating module** — pulled forward into Day 2 whenever the room is fast enough. Mark is
+   content to sell three days otherwise.* Effect on the clock:
 
-   | | Lecture (slides × ~2 min) | Labs (as written) | Total | Fits 6.5 h? |
+   | | Lecture | Labs | Total | vs 6.5 h |
    |---|---|---|---|---|
-   | **Day 1** — M1–M4, Labs 02–04 | 67 slides ≈ 2:15 | 3:00–3:45 + 0:30 discussion | **5:45–6:30** | yes, tight |
-   | **Day 2** — M5–M7 + capstone, Labs 05–08 | 53 slides ≈ 1:45 | 6:45–7:15 | **8:30–9:00** | **no — over by 2:00+** |
+   | **Day 1** — M1–M4, Labs 02–04 | ≈ 2:15 | 3:00–3:45 + 0:30 | **5:45–6:30** | fits |
+   | **Day 2** — M5, M6 + capstone, Labs 05, 06, 08 | ≈ 1:20 | 5:45 | **≈ 7:05** | ~35 min over |
 
-   Day 2's labs alone (75 + 90 + ~60–90 + 180 capstone) exceed a whole teaching day before a
-   single slide. One honest caveat: the capstone is "integrated across Day 2" and
-   `run_matter.py` drives the earlier stages, so perhaps an hour is double-counted — even
-   then Day 2 is over by an hour. Options, in Mark's order of preference, needed:
-   **(a)** move Module 7 / Lab 07 to Day 3, **(b)** cut the capstone from 3:00 to ~2:15,
-   **(c)** sell the course as 3 days with Day 3 required for the full artifact set, or
-   **(d)** accept a long Day 2 and say so in the outline. This decision should be made
-   **before** dates are agreed with Carlene, because it changes what is being sold.
+   The move removes roughly 1:45 from Day 2, which was over by 2:00–2:30. **It is now about
+   35 minutes over, not two hours** — close enough to absorb 1:1 or with a tight lunch. The
+   only remaining lever is the capstone's 3:00 block; cutting it to 2:30 would close the gap
+   outright, and that decision is still open.
+
+   What the two-day room gives up when Module 7 is not pulled forward: the **document
+   production set** (`production/VOL001/`) and the **containerized deployment**. What it does
+   **not** give up: the certificate — the capstone drives Labs 02–06 itself and runs
+   `sais100.py`, so `sais100-score.json` and issuance check 4 survive. Day 3 is now
+   explicitly a **menu, not a fixed day**: five modules' worth of material, selected from or
+   sold as a modular series.
 
 1. **Monetisation model** — *Decided 2026-11-10. The ladder is:*
 

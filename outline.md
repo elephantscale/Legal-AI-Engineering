@@ -115,13 +115,10 @@
     * The "defensible case snapshot" that lets someone re-run your review a year later and get the same result
   * **Lab: Defensible Review** — measure an AI review against a blind ground truth and produce a reproducibility bundle
 
-* **Module 7: Ship It — Workflow, Private Deployment, and Governance**
-  * Learning objectives — assemble the pieces into a workflow, deploy it privately, and score it.
-  * Topics
-    * A multi-step legal workflow (ingest → search → summarize → review → produce) with **human-in-the-loop**
-    * Private/on-prem deployment essentials (containerize; keep the data in the building)
-    * AI governance for legal in brief, and **scoring the system with SAIS-100 (the Elephant Scale Secure AI Score)**
-  * **Lab: Score and Package** — wire a multi-step workflow, score it with SAIS-100, and package it for private deployment
+> **Module 7 is the floating module.** It is scheduled on Day 3 so that Day 2 fits in a day,
+> and it is pulled forward into Day 2 whenever the room is moving fast enough to take it.
+> Nothing on Day 2 depends on it: the capstone drives Labs 02–06 itself and produces its own
+> SAIS-100 score, so the certificate bar is met either way.
 
 ### Capstone (integrated across Day 2)
 * Build a **private, defensible legal-AI application end to end** — ingest a messy corpus, search it, answer questions over it with citations using a **local** model, measure a defensible review, and package it for private deployment.
@@ -131,6 +128,17 @@
 
 ### Optional Day 3 / Advanced Modules (deliverable as a 3rd day or a modular series)
 
+Day 3 is a **menu, not a fixed day** — there is more material here than fits in one, and it
+is selected from, or sold as a modular series.
+
+* **Module 7 · Ship It — Workflow, Private Deployment, and Governance** *(the floating
+  module — taught on Day 2 instead whenever that day has room)* — a multi-step legal
+  workflow (ingest → search → summarize → review → produce) with **human-in-the-loop**;
+  private/on-prem deployment essentials (containerize; keep the data in the building); AI
+  governance for legal in brief, and **scoring the system with SAIS-100 (the Elephant Scale
+  Secure AI Score)**. *Lab: wire the workflow, score it with SAIS-100, and package it for
+  private deployment.* Taking it on Day 3 rather than Day 2 is what moves the **document
+  production set** and the **containerized deployment** out of the two-day deliverable.
 * **Investigations: Entities, Relationships, and Timelines** — extract people/orgs/dates, reconstruct email threads, build chronologies, map near-duplicates and document lineage. *Lab: build a timeline and entity/relationship view.*
 * **Agentic and Multi-Step Legal Workflows (deep)** — richer orchestration, contract analysis, multi-doc synthesis, tool use and guardrails as a design principle. *Lab: build a multi-step workflow with a human checkpoint.*
 * **Deployment at Scale** — on-prem and appliance deployment, distributed processing for large volumes, regulated environments (CJIS, government, higher-ed), hardware sizing. *Lab: containerize and scale a processing job across workers.*

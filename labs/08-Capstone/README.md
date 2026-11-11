@@ -18,12 +18,12 @@ One repository that an engineer can clone and run, and that a lawyer can read an
 my-legal-ai/
   README.md                      <- what it does, how to run it, what it claims
   DEFENSE.md                     <- your one page (below). This is the differentiator.
-  docker-compose.yml             <- runs offline; internal network; pinned digests
-  Dockerfile
+  docker-compose.yml             <- runs offline; internal network; pinned digests   [Lab 07]
+  Dockerfile                                                                      [Lab 07]
   run_matter.py                  <- the driver: ingest → … → bundle
   sais100.py
   common/                        <- llm.py, egress.py, metrics.py, bundle.py
-  pipeline/                      <- your stage code from Labs 02–07
+  pipeline/                      <- your stage code from Labs 02–06 (+ 07 if you did it)
   work/                          <- stage artifacts, checkpointed (gitignored)
   case-snapshot-<matter>/
     manifest.json                <- every pin
@@ -33,11 +33,17 @@ my-legal-ai/
     validation/{protocol.md,ground_truth.jsonl,metrics.json}
     attestation.json
     VERIFY.md
-  production/VOL001/{VOL001.dat,TEXT/,manifest.json}
+  production/VOL001/{VOL001.dat,TEXT/,manifest.json}                              [Lab 07]
   sais100-score.json             <- before and after one hardening change
 ```
 
-Two rules about that tree:
+Three rules about that tree:
+
+0. **The `[Lab 07]` lines are there only if you did Lab 07.** Module 7 is the floating
+   module, normally taught on Day 3. Without it you have no document production set and no
+   container — the capstone and the certificate do not require either, because the capstone
+   drives Labs 02–06 itself and produces its own SAIS-100 score. Say so in `DEFENSE.md`
+   rather than leaving a grader to wonder.
 
 1. **`VERIFY.md` must actually work.** Someone else will run it. Test it from a clean
    checkout in a different directory, with the corpus path as the only thing you change.

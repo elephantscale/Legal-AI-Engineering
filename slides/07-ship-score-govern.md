@@ -1,5 +1,7 @@
 # Module 7 — Ship It: Workflow, Private Deployment, and Governance
 
+Day 3 by default — the floating module
+
 Elephant Scale
 
 ---
