@@ -161,8 +161,10 @@ priority into a deadline.)*
    roster record is specified. What still needs Mark, as business rather than curriculum:
    - the certificate **artifact** itself (design, PDF, who signs it);
    - whether holders are **verifiable** — a registry, a serial number, or nothing;
-   - the exact **name** on the document: "Legal AI Engineer Certificate", or the holder-form
-     "Certified Legal AI Engineer", which is the stronger brand but the bigger claim;
+   - the exact **name** on the document. HQ's `DEC-015` (2026-11-10) already takes a position:
+     the **certificate form**, not the holder-form "Certified Legal AI Engineer", because a
+     professional-title claim with no accrediting body is the one overclaim this course's own
+     material would fail. It is now ES's brand call, but reversing it contradicts Module 1;
    - whether this is the **first of a family** across the Secure AI Learning Path, which would
      decide the naming now rather than after the first cohort.
 2. **FreeEed wording.** Five lines were softened from implying shipped capability to
