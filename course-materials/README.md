@@ -23,6 +23,7 @@ has running code behind it, the code is named.
 | **[privilege-and-egress-attestation.md](privilege-and-egress-attestation.md)** | The machine record plus the human form that supports "nothing left the building" — including the scope section that keeps it honest. | Every run on a real matter | `labs/common/egress.py` |
 | **[reproducibility-manifest-template.md](reproducibility-manifest-template.md)** | The one file that makes "we can re-run this" checkable. Every pin, plus the `VERIFY.md` skeleton. | Every run you may have to defend | `labs/common/bundle.py` |
 | **[sais-100-legal-overlay.md](sais-100-legal-overlay.md)** | The evidence map for all 18 SAIS-100 questions, the four legal auto-fails, and the verified-assessment rules. | Module 7, and again at Module 12 | `labs/07-Score-and-Package/sais100.py`, `labs/12-Governance-Audit/audit.py` |
+| **[sais-100-framework-mapping.md](sais-100-framework-mapping.md)** | Every SAIS-100 category translated into NIST AI RMF, ISO/IEC 42001, the EU AI Act and the governing legal authority — so you can answer a security reviewer in their own vocabulary. | Module 7, and whenever someone outside the room asks | `sais-100-legal-overlay.md` |
 | **[capstone-rubric.md](capstone-rubric.md)** | How the capstone is graded, the band descriptors, the grading sequence, and the defense round. | **Day 2 morning** — not at the start of the capstone | — |
 
 ---

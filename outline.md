@@ -191,7 +191,7 @@ condensed course and a course that ran out of time.
 * Evaluation — capstone project, lab completion, and class participation
 * Requirements — minimum attendance, completion of the module labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition
 * Certificate Awarded — the **Elephant Scale Legal AI Engineer Certificate**
-* Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
+* Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and S score. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
 
 ## Where this fits
 * This is the **legal-vertical track of the Elephant Scale Secure AI Learning Path.**
