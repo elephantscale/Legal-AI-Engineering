@@ -18,9 +18,8 @@ Notes:
 
 Keep this module tight — 50 minutes. It is the only module with no lab, and a room of
 engineers will get restless if you lecture for ninety minutes before they touch a keyboard.
-The four market slides — **Legal AI Adoption Is Accelerating**, **Read the Verbs, Not the
-Numbers**, **The Missing Piece Is Engineering** and **A Policy Is Not a Control** — are the
-evidence, and together they should take nine minutes, not twenty. If
+The market section runs from **Legal AI Adoption Is Accelerating** to **A Policy Is Not a
+Control** — five slides of evidence, and together they should take nine minutes, not twenty. If
 the room is mostly legal-tech people already, cut the EDRM section to five minutes and bank the
 time for Module 6.
 
@@ -35,12 +34,6 @@ headline numbers, and move.
 
 Three survey reports. Three different populations. One direction.
 
-| Report | Population · fieldwork | The number |
-|---|---|---|
-| **ILTA 2026 Technology Survey** | 508 law firms · published Sept 2026 | **94%** are now *engaged with* generative AI — **up 14 points** in one year |
-| **Wolters Kluwer Future Ready Lawyer 2026** | 810 lawyers, firms and in-house · fielded Aug 2025 | **92%** use at least one AI tool in their daily work |
-| **Thomson Reuters Institute — AI in Professional Services 2026** | 1,514 professionals · fielded Oct–Nov 2025 | **41%** of law firms and **47%** of corporate legal departments are *already using* GenAI (40% across all professions, up from 22%) |
-
 * Twelve months earlier, **one firm in five** reported no GenAI engagement at all. ILTA says
   that holdout population "has all but vanished."
 * For the first time in that survey's history, an emerging technology is the **primary focus
@@ -50,8 +43,26 @@ Three survey reports. Three different populations. One direction.
 
 Notes:
 
-Three minutes. Do not read the table aloud; put it up, say the three headline numbers, and go
-to the next slide — the verbs are the teaching point, not the table.
+A minute, no more. This is the claim; the next slide is the evidence and the slide after it is
+the teaching point. If the room is legal-tech people who already know all this, say the two
+bullets and go straight to the verbs.
+
+---
+
+## Three Reports, Three Populations
+
+Read the population and the fieldwork date, not just the number.
+
+| Report | Population · fieldwork | The number |
+|---|---|---|
+| **ILTA 2026 Technology Survey** | 508 law firms · published Sept 2026 | **94%** are now *engaged with* generative AI — **up 14 points** in one year |
+| **Wolters Kluwer Future Ready Lawyer 2026** | 810 lawyers, firms and in-house · fielded Aug 2025 | **92%** use at least one AI tool in their daily work |
+| **Thomson Reuters Institute — AI in Professional Services 2026** | 1,514 professionals · fielded Oct–Nov 2025 | **41%** of law firms and **47%** of corporate legal departments are *already using* GenAI (40% across all professions, up from 22%) |
+
+Notes:
+
+Two minutes. Do not read the table aloud; put it up, say the three headline numbers, and go to
+the verbs on the next slide — the verbs are the teaching point, not the table.
 
 Sources — all figures below are quoted from the primary reports, not from press coverage:
 
@@ -149,7 +160,7 @@ defensible, whoever built the tool.
 
 Sources:
 
-* **ILTA 2026 Technology Survey**, Executive Summary (full citation on the adoption slide).
+* **ILTA 2026 Technology Survey**, Executive Summary (full citation on **Three Reports, Three Populations**).
   Copilot Chat 81% and the "no discrete deployment events" observation are both in the free
   summary.
 * **Thomson Reuters Institute, 2026 AI in Professional Services Report** — ROI metrics (18%,
@@ -203,7 +214,7 @@ slower than the alternative.
 
 Sources:
 
-* **ILTA 2026 Technology Survey**, Executive Summary (full citation on the adoption slide). The
+* **ILTA 2026 Technology Survey**, Executive Summary (full citation on **Three Reports, Three Populations**). The
   security-challenge second place and the policy table (Q3.18, broken out by firm size) are both
   in the free summary. ILTA's full named concerns are GenAI-powered social engineering first,
   then detecting anomalous GenAI behavior, preventing GenAI agent abuse, third-party GenAI
