@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-11
+**Last updated:** 2026-11-12
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -395,7 +395,8 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 ## Next highest-value actions
 
 1. **Send Chandra Tan the Legal AI Engineering outline** (owed **2026-11-19**), with the
-   Module 7 → Day 3 change called out, and tell her what partners may say about the certificate.
+   Module 7 → Day 3 change and the **new "bring your own AI subscription" prerequisite** called
+   out, and tell her what partners may say about the certificate.
    One email, zero cost, and it corrects a live public page that is selling our course today.
    This is Phase 1 of the 90-day plan in `marketing-channels.md` and the highest-return action
    available.

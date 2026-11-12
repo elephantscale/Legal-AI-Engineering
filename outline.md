@@ -45,6 +45,7 @@
 
 ## Prerequisites
 * Comfortable with Python and basic APIs
+* **Bring your own AI subscription** — a working account with a frontier assistant (Claude, ChatGPT, Gemini or equivalent). You will use it as a coding assistant throughout the labs, the way you will on the job. No lab *depends* on it and no lab needs an API key — but a legal engineer who does not already work this way is starting a day behind.
 * Helpful: familiarity with LLMs at a user level (no ML background required — we build the mental model)
 * No legal background required — the legal concepts you need are taught in context
 

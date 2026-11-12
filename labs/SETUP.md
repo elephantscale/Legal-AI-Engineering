@@ -1,9 +1,13 @@
 # Lab Setup
 
-**You need Python 3.10+. That is the only hard requirement in this course.**
+**You need Python 3.10+. That is the only hard requirement for the labs themselves.**
 
 Everything else is optional and every gap has a fallback. No lab needs an API key. No lab
 needs the network. If a lab ever asks you for either, that is a bug — tell the instructor.
+
+The course also asks you to **bring your own AI subscription** — Claude, ChatGPT, Gemini or
+equivalent — and to use it on the labs as a coding assistant. That is a prerequisite of the
+*course*, not of the code: nothing here checks for it and nothing here breaks without it.
 
 ```sh
 cd labs

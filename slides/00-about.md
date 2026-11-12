@@ -36,6 +36,11 @@ hands that go up are your allies for the rest of the course.
   - Labs are Python; nothing exotic, no ML framework, no model training
   - If you can read a `for` loop and a `requests` call, you can do every lab
 
+* **Bring your own AI subscription**
+  - A frontier assistant you already pay for — Claude, ChatGPT, Gemini or equivalent
+  - Use it on the labs. We build AI for lawyers; we do not write code like it is 2019
+  - No lab *depends* on it, and no lab needs an API key
+
 * **No legal background required**
   - Privilege, responsiveness, elusion, TAR, load files, custodians — taught in context,
     at the moment each one first costs you something as a builder
