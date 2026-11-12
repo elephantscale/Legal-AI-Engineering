@@ -47,10 +47,6 @@ chunks" is not. That asymmetry comes back in Module 6 as a transparency problem.
 
 ---
 
-# Part 1 — How Full-Text Search Actually Works
-
----
-
 ## The Inverted Index
 
 ```text

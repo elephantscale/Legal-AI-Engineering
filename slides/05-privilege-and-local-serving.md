@@ -228,10 +228,6 @@ strict one can evaluate the other two. The reverse is not true.
 
 ---
 
-# Part 2 — Serving a Model Locally
-
----
-
 ## OpenAI-Compatible Is the Whole Trick
 
 Going local is a **config change**, not a rewrite — because everything speaks the same API
@@ -322,10 +318,6 @@ The honest caveat students need: a local open-weight model will not automaticall
 largest hosted models on messy real-world documents. The professional move is a validation
 pass — run both against a labeled sample and measure field-level precision and recall. The
 compliance case is the *why*; a measured accuracy delta is what makes the switch defensible.
-
----
-
-# Part 3 — Proving It
 
 ---
 

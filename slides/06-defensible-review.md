@@ -46,10 +46,6 @@ evidence you produced about it.
 
 ---
 
-# Part 1 — The Numbers That Hold Up
-
----
-
 ## The Confusion Matrix, In Legal Terms
 
 ```text
@@ -230,10 +226,6 @@ This is where LLM classification and classical TAR meet. An LLM-based coder with
 prompt and a pinned model is essentially TAR 1.0 — and that is a feature, because it is
 trivially reproducible. The moment you add few-shot examples that grow as reviewers work,
 you have built CAL and inherited its documentation burden. Make that trade deliberately.
-
----
-
-# Part 2 — Transparency and Reproducibility
 
 ---
 

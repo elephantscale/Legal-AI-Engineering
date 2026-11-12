@@ -24,10 +24,6 @@ before the capstone and people are tired. Lots of concrete artifacts, less theor
 
 ---
 
-# Part 1 — The Workflow
-
----
-
 ## The Five Stages, With Gates
 
 ```text
@@ -111,10 +107,6 @@ Notes:
 The threshold numbers are illustrative — the point is that the bands are a *written policy
 decision*, set in the protocol, not a magic number in the code. Have students put their bands
 in `validation/protocol.md`.
-
----
-
-# Part 2 — Private Deployment
 
 ---
 
@@ -217,10 +209,6 @@ Students in product roles will be asked to size a deployment within a month of t
 Give them the shape: OCR scales with cores, review scales with VRAM and batching, and the
 quality tier is set by VRAM — which means the hardware conversation and the model-choice
 conversation are the same conversation.
-
----
-
-# Part 3 — Governance and Scoring
 
 ---
 

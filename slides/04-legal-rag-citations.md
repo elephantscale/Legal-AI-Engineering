@@ -86,10 +86,6 @@ system, and they are each about forty lines of code.
 
 ---
 
-# Part 1 — Chunking
-
----
-
 ## Chunking: Legal Documents Fight Back
 
 * The unit you retrieve is the unit you cite. **Chunk badly and your citations are useless.**
@@ -174,10 +170,6 @@ That reframe tends to visibly land. Teams classify the vector DB as infrastructu
 document store as data, then put the "infrastructure" in a SaaS. The chunks are the
 documents, in plaintext, searchable. Treat the vector store with exactly the same custody
 rules as the native files.
-
----
-
-# Part 2 — Citations
 
 ---
 

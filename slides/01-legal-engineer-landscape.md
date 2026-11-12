@@ -20,17 +20,14 @@ Notes:
 
 Keep this module tight — 50 minutes. It is the only module with no lab, and a room of
 engineers will get restless if you lecture for ninety minutes before they touch a keyboard.
-Part 1 is the market evidence and should take seven minutes, not fifteen. If the room is
-mostly legal-tech people already, cut the EDRM section to five minutes and bank the time for
-Module 6.
+The two market slides — **Legal AI Adoption Is Accelerating** and **The Missing Piece Is
+Engineering** — are the evidence, and together they should take seven minutes, not fifteen. If
+the room is mostly legal-tech people already, cut the EDRM section to five minutes and bank the
+time for Module 6.
 
-Part 2 now carries **What the Postings Actually Say** — three minutes, and the one slide in
-this module not to cut. Take the three minutes out of Part 1, which is scenery by comparison:
-put the adoption table up, say the three headline numbers, and move.
-
----
-
-# Part 1 — The Legal AI Implementation Gap
+**What the Postings Actually Say** needs three minutes and is the one slide in this module not
+to cut. Take those three minutes out of the adoption slide, which is scenery by comparison: put
+the table up, say the three headline numbers, and move.
 
 ---
 
@@ -176,10 +173,6 @@ they need the two specific gaps this course closes.
 
 ---
 
-# Part 2 — The Role
-
----
-
 ## What Is a "Legal Engineer"?
 
 The person who sits between the people who **know the law** and the systems that **process
@@ -221,7 +214,8 @@ allowed to leave."**
 
 Notes:
 
-This slide is the argument; Part 1 was the evidence for it. If anyone asked "says who?"
+This slide is the argument; the two market slides were the evidence for it. If anyone asked
+"says who?"
 during the adoption slide, this is where it pays off — the ILTA headcount forecast (IT,
 innovation, security, training, knowledge management, data science) is the industry naming
 this role without naming it.
@@ -272,7 +266,7 @@ Notes:
 Three minutes, and do not skip it. This is the slide that answers the question every paying
 student is already holding: *will anyone hire me after this?* The honest answer is yes, under
 a different title than the one on the brochure — and saying so in the first hour buys more
-credibility than anything else in Part 1.
+credibility than anything else in this module's opening stretch.
 
 Say the J.D. line plainly and early. Someone in the room has already searched *Legal AI
 Engineer*, found a J.D. requirement, and is quietly wondering whether they are in the wrong
@@ -323,10 +317,6 @@ Notes:
 The last row is underrated and worth thirty seconds. The cost floor on eDiscovery has
 collapsed — a capable engineer with open-source tooling and a local model can now serve
 small firms that were priced out entirely. That is FreeEed's whole market thesis.
-
----
-
-# Part 3 — Where AI Fits in Legal Work
 
 ---
 
@@ -440,10 +430,6 @@ the load-file munger, the dedupe script. The question is whether they do it deli
 The model-pinning argument in the fourth build bullet is the one legal buyers have not yet
 internalized, and it is a durable differentiator for anything you build locally. Plant it
 here; harvest it in Module 6.
-
----
-
-# Part 4 — The Two Risks
 
 ---
 
