@@ -24,9 +24,10 @@ evidence, and together they should take nine minutes, not twenty. If
 the room is mostly legal-tech people already, cut the EDRM section to five minutes and bank the
 time for Module 6.
 
-**What the Postings Actually Say** needs three minutes and is the one slide in this module not
-to cut. Take those three minutes out of the adoption slide, which is scenery by comparison: put
-the table up, say the three headline numbers, and move.
+**What the Postings Actually Say** and **The Title Is Gated, the Work Is Not** need three
+minutes between them and are the one thing in this module not to cut. Take those three minutes
+out of the adoption slide, which is scenery by comparison: put the table up, say the three
+headline numbers, and move.
 
 ---
 
@@ -287,6 +288,37 @@ straight through the job title on the front of this deck.
 
 † filled or closed — the range still tells you what the work pays.
 
+> Read down the **Lawyer required?** column before you read a single job title.
+
+Notes:
+
+Ninety seconds on the table. Put it up, read down the **Lawyer required?** column, and take the
+findings off the next slide.
+
+If someone asks what the skill is worth on its own: **$150/hour**, Gusto, a contractor doing
+almost exactly our capstone in-house. It is one data point and it is closed — say both.
+
+Sources: **[job-market-research.md](../job-market-research.md)** holds all nine postings with
+URLs, dates, requirement quotes and the skills matrix; the student-facing version is
+**[course-materials/legal-ai-job-market.md](../course-materials/legal-ai-job-market.md)**.
+Compiled 2026-11-11.
+
+Three caveats that must travel with these two slides:
+
+1. **Nine postings is a sample, not a market.** It establishes the title split and the
+   platform-naming pattern, both unambiguous. It does not size demand. Do not say "the market
+   requires" — say "these nine postings say."
+2. **Four of the nine could not be read from the employer's own page** (Dentons returns 403;
+   Thomson Reuters and Relativity use JavaScript-rendered Workday pages). Those rows come from
+   dated mirrors. **Verify before quoting a number in marketing copy.**
+3. **The window moves weekly.** One Gibson Dunn posting was pulled eleven days before its own
+   published close date. Re-read the research file before teaching, and say the compile date
+   out loud.
+
+---
+
+## The Title Is Gated, the Work Is Not
+
 * **Four of the six employers gate the role titled *Legal AI Engineer* behind a J.D.** This
   course cannot satisfy that, and no course can.
 * **The roles that want what you are about to build are titled something else** — and the
@@ -300,15 +332,14 @@ straight through the job title on the front of this deck.
   by name (Harvey, Copilot Studio, Azure AI Foundry, Relativity aiR, CoCounsel) and
   **adoption** — demos, onboarding, training lawyers. Know that walking in.
 
-> The title is gated. The work is not. **Read the requirements, never the headline** — and
-> when you apply, apply to the engineer-titled role.
+> **Read the requirements, never the headline** — and when you apply, apply to the
+> engineer-titled role.
 
 Notes:
 
-Three minutes, and do not skip it. This is the slide that answers the question every paying
+Ninety seconds, and do not skip it. This is the slide that answers the question every paying
 student is already holding: *will anyone hire me after this?* The honest answer is yes, under
-a different title than the one on the brochure — and saying so in the first hour buys more
-credibility than anything else in this module's opening stretch.
+a different title than the one on the brochure.
 
 Say the J.D. line plainly and early. Someone in the room has already searched *Legal AI
 Engineer*, found a J.D. requirement, and is quietly wondering whether they are in the wrong
@@ -320,26 +351,6 @@ the last bullet without flinching. **We do not teach the platforms and we do not
 adoption.** Students who hear that from you on Day 1 trust the rest of the course; students
 who discover it from a job posting in March do not. Point them at the handout for the
 platform-by-platform picture.
-
-If someone asks what the skill is worth on its own: **$150/hour**, Gusto, a contractor doing
-almost exactly our capstone in-house. It is one data point and it is closed — say both.
-
-Sources: **[job-market-research.md](../job-market-research.md)** holds all nine postings with
-URLs, dates, requirement quotes and the skills matrix; the student-facing version is
-**[course-materials/legal-ai-job-market.md](../course-materials/legal-ai-job-market.md)**.
-Compiled 2026-11-11.
-
-Three caveats that must travel with this slide:
-
-1. **Nine postings is a sample, not a market.** It establishes the title split and the
-   platform-naming pattern, both unambiguous. It does not size demand. Do not say "the market
-   requires" — say "these nine postings say."
-2. **Four of the nine could not be read from the employer's own page** (Dentons returns 403;
-   Thomson Reuters and Relativity use JavaScript-rendered Workday pages). Those rows come from
-   dated mirrors. **Verify before quoting a number in marketing copy.**
-3. **The window moves weekly.** One Gibson Dunn posting was pulled eleven days before its own
-   published close date. Re-read the research file before teaching, and say the compile date
-   out loud.
 
 ---
 
