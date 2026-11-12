@@ -65,6 +65,34 @@ not take the field. Material changed the same day:
   the overlay: the system the student builds is local and has no approval package to point
   at, so it owes enforced egress, zero non-loopback connections, and a tripwire.
 
+**Job-market review done 2026-11-11, course not yet changed.** Two new root documents:
+`job-market-research.md` (nine postings at six named employers, with a skills matrix against
+every module and lab) and `marketing-channels.md` (seven channels costed, the Govtra question
+settled, and a 90-day experiment). **Per Mark's instruction nothing in the course has been
+rewritten** — the gaps are recorded for review. The three findings that matter:
+
+1. **The course is well aimed and mis-titled.** Four of six named employers **require a JD**
+   for the role titled *Legal AI Engineer* (Relativity: *"JD and Bar admission"*; TR Eagan:
+   *"J.D. ... required"*; Debevoise: JD + 3 years; Gibson Dunn: JD + admitted; Dentons asks two
+   years of substantive practice). No course can satisfy those. The roles that match what we
+   actually teach are titled differently and pay well: **TR CoCounsel FDE $136k–$253k** (RAG,
+   evals, red-teaming, MLOps, MCP, Python, no JD), **Dentons AI Automation Engineer
+   $99.5k–$125k** (now filled), **Gusto Legal AI Engineer contractor $150/hour**. Dentons ran
+   both patterns in the same city in the same month, which is the cleanest illustration of the
+   split available.
+2. **Two gaps are absent, not thin.** **Commercial platform configuration** (Harvey, Copilot
+   Studio, Azure AI Foundry, Relativity aiR/claiR, CoCounsel, iManage/NetDocuments — named
+   constantly, taught nowhere here) and **AI adoption / lawyer training**, which is the
+   most-repeated responsibility in the entire posting set and appears in five of six employers.
+   Partial: prompt libraries as an artifact, human-oversight design, vendor evaluation.
+3. **Our strongest material is what the market assumes rather than requests.** Five postings
+   require an *understanding* of confidentiality, privilege and ethical walls; **none asks for
+   evidence that egress was enforced**, and defensibility measurement is named once in the whole
+   set (TR Senior Legal AI Engineer: *"measuring hallucination risk and citation quality"* —
+   which is exactly Modules 4 and 6). That is simultaneously the differentiator and the
+   over-investment. `DEC-018` is independently confirmed: every platform named in every posting
+   is cloud.
+
 ## Recent accomplishments
 
 - **All 11 labs run end to end with no API key, no network and no model.** `test-all-labs.sh`
@@ -152,6 +180,20 @@ not take the field. Material changed the same day:
   the mainstream, not a weakness the course corrects. If a call happens he may ask for
   `outline.md`, `course-materials/capstone-rubric.md` and the lab list; all three are
   presentable, and the LEGAL-A wording above is the line he would have read first.
+- **The course is already published and for sale by a partner.** NobleProg lists *Legal AI
+  Engineering* (14 h) on its country domains and on **Govtra**, its government-training front
+  end. Investigated 2026-11-11: this is an **authorised partner listing**, not an unrelated
+  offering — NobleProg is a live ES reseller with four contacts on the 22-name channel list,
+  Chandra Tan published two ES courses in July 2026, and the page reproduces our outline down to
+  the module titles and the certificate requirements. Three things follow:
+  - **Their page is already stale** — it still shows Module 7 on Day 2. The outline Mark owes
+    Chandra **by 2026-11-19** is now a correction, not a courtesy.
+  - **It advertises the "Legal AI Engineer Certificate"**, including its requirements, on a
+    third-party page, while the certificate's name is still an open ES brand decision
+    (`DEC-015`) and none has ever been issued.
+  - **First hard price anchor.** NobleProg prices ES courses at a flat **$193/h online,
+    $278.80/h classroom** (21 h = $4,054/$5,854; 35 h = $6,757/$9,757). At 14 h that is
+    **≈ $2,700 online / ≈ $3,900 classroom** retail. Ours is still `Unknown`.
 - **FreeEed / SHMsoft** — the course is a demand channel for the platform, and the material
   tracks FreeEed's real design records (`docs/local-ai-cjis-briefing.md`,
   `docs/decisions/local-ai-architecture.md`). When FreeEed's pinned models or sizing tiers
@@ -213,6 +255,8 @@ not take the field. Material changed the same day:
 | **Case-law currency.** *Morgan v. V2X* (D. Colo., Mar 2026) is cited as the anchor for "your AI use is discoverable". Legal-AI case law is moving fast and a stale citation is a credibility problem in this audience. | Medium | Re-check before each delivery. Treat the citation as perishable. |
 | **Model-ID drift.** `qwen3:8b` / `qwen3:14b` / `nomic-embed-text` are named in CLAUDE.md, the slides, the labs and the manifests. | Medium | `validate-course.sh` checks the pins agree between `CLAUDE.md` and `labs/common/llm.py`. Extend if more pins appear. |
 | **Reference outputs are corpus-dependent.** The playbooks quote numbers measured on the default corpus; a student running `--docs 300` sees different ones. | Low | Stated in `labs/README.md` and `labs/SETUP.md`. The *findings* are seeded to survive both sizes. |
+| **The course is named after a JD-gated job title.** Four of six employers require a JD for the role titled *Legal AI Engineer*; the roles our graduates can actually win are titled *Forward-Deployed Engineer*, *AI Automation Engineer* or *Legal AI Engineer (Contractor)*. A student who takes the title literally will conclude the course did not work. | **High** | Not a rename — a **market map in Module 1** (`job-market-research.md` §4, priority P1): which titles are JD-gated, what each pays, which door this course opens. One slide and one handout, built from research already done. It also answers the question every paying student asks in the first hour, now with evidence. |
+| **A partner is advertising our certificate before we have defined it.** The NobleProg/Govtra page carries the Legal AI Engineer Certificate and its requirements. | Medium | Settle `DEC-015` and tell Chandra what partners may and may not say. Carlene's issuance is the first real test of the same bar. |
 | **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. |
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
@@ -323,17 +367,47 @@ not take the field. Material changed the same day:
      defensibility commercially. **Needs CEO input** — I have not changed the rubric on any of
      the three.
 
-## Next three highest-value actions
+7. **Advertise or free webinar?** — *Answered by research 2026-11-11: **webinar, not
+   advertising**, and not yet.* Mark emailed a partner's `customerservice` inbox on 2026-11-11
+   asking this. The research answer, in `marketing-channels.md` §4: there is nowhere for an ad to
+   land (no ES page, no published price, no dates, no dry run), the free educational webinar is
+   the native format of this market (ACEDS runs them with sponsors as a standing series), a
+   webinar produces the recording and the registrant list that advertising does not, and we now
+   have a non-promotional topic — *what six Legal AI Engineer postings actually require*. Two
+   process notes. A generic `customerservice` address is the weakest door into any of these
+   organisations, each of which routes this to a named team (ILTA `sponsor@`/`events@`, CLOC
+   `sponsorship@`, LawNext `info@lawnext.com`, ACEDS via its Affiliate Partner Program). And
+   **if that email went to NobleProg — confirmed by Mark 2026-11-11 as the channel — the person
+   to talk to is Chandra Tan, not customer service.** She asked for the outlines on 2026-11-05,
+   she publishes the pages, and she already has this course listed for sale. The stronger pitch
+   is not *"advertise or webinar?"* but *"I have research on legal-AI hiring and a 45-minute
+   session built on it — who runs your education calendar?"*
+8. **Which course gaps to close, and when** — *Needs CEO input; no course changes made.*
+   Recommended P1, all cheap and none touching a lab: the Module 1 market map; a
+   **platform-equivalence appendix** (what you built / what you would configure instead in aiR,
+   CoCounsel, Harvey, Copilot Studio / what you still owe a court either way); and a
+   **vendor-evaluation handout** in `course-materials/`, built on the Module 5 spectrum and the
+   new three-architecture slide. P2, real work: human-oversight design, an adoption unit, MCP in
+   Lab 10. P3: eval-platform and observability literacy, and naming LangGraph once. **Not
+   recommended:** a no-code track for JD-holders — weeks of work, contradicts the positioning,
+   and the JD-gated roles want a practising lawyer, not a lawyer with a Python certificate.
 
-1. **Decide the audience sentence** before it is repeated anywhere (risk table above), and
+## Next highest-value actions
+
+1. **Send Chandra Tan the Legal AI Engineering outline** (owed **2026-11-19**), with the
+   Module 7 → Day 3 change called out, and tell her what partners may say about the certificate.
+   One email, zero cost, and it corrects a live public page that is selling our course today.
+   This is Phase 1 of the 90-day plan in `marketing-channels.md` and the highest-return action
+   available.
+2. **Decide the audience sentence** before it is repeated anywhere (risk table above), and
    **answer the three validation questions** in decision 6. Both are cheap now and expensive
    once a brochure exists or a certificate has been issued against the rubric. The Merlin
    call is the forcing function for the first and the best available review of the second.
-2. **Dry-run Day 1 against the clock** and replace the playbook estimates with measurements.
+3. **Dry-run Day 1 against the clock** and replace the playbook estimates with measurements.
    Carlene's session is itself the Day 2 measurement, which is the honest argument for not
    charging for it. Day 2 now sits at roughly 7:05 against a 6.5-hour day (decision 0), so
    the remaining question is whether the capstone's 3:00 block comes down to 2:30.
-3. **Prepare the 2026-11-17 conversation**: the artifact list as the thing being sold, the
+4. **Prepare the 2026-11-17 conversation**: the artifact list as the thing being sold, the
    certificate bar stated plainly, the support offer bounded in writing, and
    `labs/verify-setup.sh` sent to her afterwards so her machine is known well before a date
    is agreed.
