@@ -282,6 +282,7 @@ straight through the job title on the front of this deck.
 | **Legal AI Engineer, Corporate** | Debevoise | **J.D. + 3 yrs practising** | *states your own* |
 | **Legal AI Advisor** | Relativity | **J.D. + bar admission** | $152k–$228k |
 | **Legal Technology & AI Attorney** | Gibson Dunn | **J.D. + admitted** | $250k–$300k |
+| **Senior Legal AI Engineer** | Thomson Reuters | **J.D. *or* equivalent practice depth** | not published |
 | **AI Automation Engineer** | Dentons † | **no** | $99.5k–$125k |
 | **Senior Software Engineer, AI** · CoCounsel FDE | Thomson Reuters | **no** | **$136k–$253k** |
 | **Legal AI Engineer (Contractor)** | Gusto † | **no** | **$150 / hour** |
@@ -297,6 +298,10 @@ findings off the next slide.
 
 If someone asks what the skill is worth on its own: **$150/hour**, Gusto, a contractor doing
 almost exactly our capstone in-house. It is one data point and it is closed — say both.
+
+The Thomson Reuters **Senior** Legal AI Engineer row (JREQ202169) is the hinge of the table and
+the only one that does not hard-gate on a J.D. Its requisition resolves but the content is from
+aggregators, and no range is published — flag it as active-unconfirmed if anyone asks.
 
 Sources: **[job-market-research.md](../job-market-research.md)** holds all nine postings with
 URLs, dates, requirement quotes and the skills matrix; the student-facing version is
@@ -327,7 +332,8 @@ Three caveats that must travel with these two slides:
   publishes no salary. *AI Automation Engineer* wants an engineer, names RAG and ethical
   walls, requires no J.D., and pays $99.5k–$125k.
 * **One posting in nine asks by name for what Modules 4 and 6 do** — Thomson Reuters, Senior
-  Legal AI Engineer: *"measuring hallucination risk and citation quality."*
+  Legal AI Engineer: *"measuring hallucination risk and citation quality."* It is also the only
+  one of the nine that will take a J.D. **or** equivalent depth in practice.
 * **What five of the six ask for and this course does not teach:** the commercial platforms
   by name (Harvey, Copilot Studio, Azure AI Foundry, Relativity aiR, CoCounsel) and
   **adoption** — demos, onboarding, training lawyers. Know that walking in.
