@@ -250,5 +250,13 @@ labs/**/audit-findings.md
 labs/**/throughput.json
 
 # Assembled decks. Mark builds the PPTX; the Markdown is the source of truth.
-slides/assembly.out/
-slides/assembly.out.*/
+# Any assembly output directory, at any depth — the shared assembler rolls the
+# previous one aside as assembly.out.<timestamp>/ on every run, so these
+# accumulate and must never be committed. No PPTX belongs in this repo.
+assembly.out/
+assembly.out.*/
+# Assembler scratch files, left behind only if a run is interrupted.
+slides/1.md
+slides/1.pptx
+slides/1-gen.pptx
+slides/1-*-gen.pptx
