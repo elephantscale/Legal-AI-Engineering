@@ -357,6 +357,30 @@ rewritten** — the gaps are recorded for review. The three findings that matter
      SAIS-100 / no-auto-fail bar. **A signature line is also a new commitment** — somebody has
      to sign each one. Reconcile the two sentences before Chandra's page or Carlene's issuance
      repeats either.
+
+   **Can ES award this with no outside body? Yes — as a certificate, not a certification**
+   (analysis 2026-11-12). A certificate is a factual statement by its issuer: *ES taught this,
+   this person met this bar.* No accreditor is needed or involved, which is how every vendor
+   credential works. A *certification* asserts an external professional standard, and that is
+   the claim ES cannot make alone — the reason `DEC-015` chose the certificate form. Three
+   consequences:
+   - **Name the issuer on the face of it** — the *Elephant Scale Legal AI Engineer Certificate*.
+     That word converts a free-floating credential into an attributed one, and it is the brand
+     asset anyway.
+   - **Four claims to avoid**, each of which needs a body that does not exist: "Certified Legal
+     AI Engineer" or any post-nominal; "accredited" / "approved" / "recognized"; **CLE credit**
+     (states accredit the *provider*; ES is not one — the answer is "no CLE credit" until it is,
+     and lawyers will ask in the first ten minutes); and any suggestion that employers require
+     or recognise it, which `job-market-research.md` contradicts.
+   - **Put the bar on the certificate** — hours, module labs, and a capstone that passed its own
+     `VERIFY.md` with no legal auto-fail. Every other training certificate is an assertion; this
+     one would carry its evidence, and the holder also has the repository. It is the only version
+     that survives the cross-examination test Module 1 teaches.
+
+   *Verify before print, not before deciding:* **"engineer" is a protected title** in some
+   jurisdictions (Canadian provincial bodies enforce it; a few US states restrict it). The
+   exposure is in the holder-form claim, not in a course named after a title employers advertise
+   themselves — and NobleProg sells into Canada, so it is their exposure too.
 3. **FreeEed wording.** Five lines were softened from implying shipped capability to
    "reference platform / reference architecture the labs are designed against", naming only
    capabilities backed by `FreeEedCRM/docs/technical-primer.md`. Confirm this is how you want
