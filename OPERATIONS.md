@@ -344,7 +344,9 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    roster record is specified. What still needs Mark, as business rather than curriculum:
    - the certificate **artifact** itself (design, PDF, who signs it);
    - whether holders are **verifiable** — a registry, a serial number, or nothing;
-   - the exact **name** on the document. HQ's `DEC-015` (2026-11-10) already takes a position:
+   - the exact **name** on the document. *Decided 2026-11-12: the name now carries the issuer —
+     **Elephant Scale Legal AI Engineer Certificate** — in `outline.md`, deck 08, Lab 08 and the
+     capstone rubric.* HQ's `DEC-015` (2026-11-10) already takes a position:
      the **certificate form**, not the holder-form "Certified Legal AI Engineer", because a
      professional-title claim with no accrediting body is the one overclaim this course's own
      material would fail. It is now ES's brand call, but reversing it contradicts Module 1;

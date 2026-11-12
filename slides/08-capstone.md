@@ -169,7 +169,7 @@ different questions and each finds what the other missed.
 
 ## What You Walk Out With
 
-* The **Legal AI Engineer Certificate** — Elephant Scale
+* The **Elephant Scale Legal AI Engineer Certificate**
 * **The capstone repository** — the evidence behind it, and the thing a hiring manager reads
 * Certification requires:
   - minimum attendance

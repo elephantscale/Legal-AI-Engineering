@@ -167,7 +167,7 @@ Hand your partner their three weakest answers, in writing. Then swap.
 
 ## Certification
 
-This course awards the **Legal AI Engineer Certificate** (Elephant Scale). It requires:
+This course awards the **Elephant Scale Legal AI Engineer Certificate**. It requires:
 
 1. minimum attendance,
 2. completion of the module labs, and

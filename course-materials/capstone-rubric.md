@@ -126,7 +126,7 @@ partner's system has demonstrated the course's actual skill.
 
 ## Certification
 
-The course awards the **Legal AI Engineer Certificate** (Elephant Scale). It requires
+The course awards the **Elephant Scale Legal AI Engineer Certificate**. It requires
 attendance, the module labs, and a capstone that **passes its own `VERIFY.md`** and trips
 **no** legal auto-fail.
 
