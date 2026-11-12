@@ -184,7 +184,7 @@ condensed course and a course that ran out of time.
 * **The working system you built** — the capstone repository itself: a private, defensible legal-AI application with its `DEFENSE.md`, reproducibility bundle and SAIS-100 score. A portfolio artifact, not a slide deck.
 * **The reusable paperwork** — the SAIS-100 legal overlay, the defensibility checklist, the reproducibility manifest template, the TAR metrics cheat sheet.
 * **The Elephant Scale Legal AI Engineer Certificate**, signed by the instructor.
-* **Six months of email support from the instructor** — on your own build, not just on the labs.
+* **Six months of email support from the instructor** — on your own build, not just on the labs: architecture, what to measure, how to defend it. Best effort, by email, personal to you, starting the last day of class. **Please send no client data — a synthetic reproduction or a description of the problem.** Advice on a live matter, or work that turns out to be a project, is quoted separately.
 * **Six months of updates to the course materials** — slides, labs and handouts, as the tooling and the regulations move.
 
 ## Assessment and Certification

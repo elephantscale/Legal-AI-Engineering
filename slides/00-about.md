@@ -149,7 +149,10 @@ template, and the privilege/egress attestation form.
 And after the room closes:
 
 * **The Elephant Scale Legal AI Engineer Certificate**, signed by the instructor
-* **Six months of email support** — on your own build, not just on the labs
+* **Six months of email support** — your own build, not just the labs
+  - Best effort, personal to you, from the last day of class
+  - **Send no client data.** A synthetic reproduction, or describe the problem
+
 * **Six months of course-material updates** — as the tooling and the regulations move
 
 > You leave comfortable in the area, holding a system you can show someone.
@@ -164,6 +167,12 @@ The three after-class items are commitments, so say them plainly and do not embe
 Six months of email support means the instructor's own inbox, and six months of updates means
 they keep getting the current labs — which matters in a field where the regulations moved
 twice while this course was being written.
+
+Say the no-client-data line out loud rather than letting them read it. Somebody *will* paste a
+privileged document into a support thread to show you why their extraction is failing, and the
+moment to prevent that is now, not then. Frame it as the course's own rule applied to the
+course: if the argument for local AI is that privileged material should not land in someone
+else's inbox, that includes mine.
 
 ---
 

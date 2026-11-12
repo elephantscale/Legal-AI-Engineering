@@ -468,17 +468,40 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    recommended:** a no-code track for JD-holders — weeks of work, contradicts the positioning,
    and the JD-gated roles want a practising lawyer, not a lawyer with a Python certificate.
 
-9. **Scope the six-month support and update promise** — *Needs CEO input; added 2026-11-12.*
-   Three questions, all cheap to answer now:
-   - **What does email support cover?** Questions about the labs and the student's own build is
-     the natural reading; it is not consulting on a live matter, and it is not a help desk for
-     FreeEed. One sentence in the outline closes the gap.
-   - **How are updates delivered?** A read invitation to the course repository costs nothing and
-     is self-maintaining. A mailed zip per release is a recurring chore. Pick one.
-   - **Does a partner-sold seat include both?** NobleProg is selling this course now at a flat
-     rate set before these commitments existed. If a Govtra registrant gets six months of Mark's
-     inbox, that is a cost inside someone else's price; if not, our outline and their page
-     describe different products.
+9. **Scope the six-month support and update promise** — *Support scope **decided 2026-11-12**;
+   update delivery still open.*
+
+   **What email support covers — decided.** The published scope was already "your own build, not
+   just the labs"; the decision is the fence around it, now in `outline.md` and deck `00-about`:
+   architecture, what to measure, how to defend it — **best effort, by email, personal to the
+   named participant, six months from the last day of class**; **no client data, a synthetic
+   reproduction or a description only**; a live matter, or work that turns out to be a project,
+   is **quoted separately**.
+
+   Four things that fence buys:
+   - **The confidentiality hole is closed.** A student would otherwise paste a privileged
+     document into a support thread to show why their extraction is failing. For a course whose
+     argument is that privileged material should not land in someone else's inbox, it cannot
+     land in ours. The deck now tells the instructor to say this out loud, not let them read it.
+   - **Personal and non-transferable**, so one participant at a large firm does not become a
+     help desk for forty.
+   - **Best effort, no SLA** — a medium is promised, not a deadline. Delivery weeks are slow.
+   - **"A project is quoted"** turns the cost into the top of the monetisation ladder. Someone
+     asking a hard question six weeks after class is a qualified lead.
+
+   **Cost — estimated, not measured.** A cohort of twelve, perhaps a quarter ask anything at all,
+   one to three threads each: a handful of hours spread over six months. Revisit after the first
+   two cohorts with real numbers.
+
+   **Partner-sold seats — resolved by the wording, pending one confirmation.** Support is from
+   *the instructor*, and ES supplies the instructor whether the seat was sold direct or through
+   NobleProg, so there is no two-tier product and nothing to carve out. **Confirm with Chandra
+   that NobleProg books the ES instructor rather than delivering with its own trainer** — if
+   they ever deliver it themselves, support is theirs to provide or to buy from us.
+
+   **Still open — how updates are delivered.** A read invitation to the course repository costs
+   nothing and is self-maintaining; a mailed archive per release is a recurring chore. The
+   outline deliberately does not name a mechanism, so this can be settled without re-issuing it.
 
 ## Next highest-value actions
 
