@@ -97,8 +97,12 @@ differentiator against generic "AI for lawyers" training.
 ## Build & workflow
 
 - **Never regenerate the PPTX decks — Mark builds them himself.** `slides/gen.sh` calls the
-  shared assembler (`$ES_HOME/utils/presentations/slides-assembler.sh`) and renumbers 0-based
-  into `slides/assembly.out/`. To refresh the manifest without assembling:
+  shared assembler (`$ES_HOME/utils/presentations/slides-assembler.sh`) and then **strips the
+  assembler's `NN__` counter prefix**, so `slides/assembly.out/` holds decks named after their
+  source: `01-legal-engineer-landscape.pptx`, not `01__01-legal-engineer-landscape.pptx`
+  (Mark, 2026-11-12). The source filenames already carry the module number, so the counter was
+  both redundant and off by one. Same second pass as `Building-Agentic-AI/slides/gen.sh`; the
+  shared assembler stays untouched. To refresh the manifest without assembling:
   `ls slides/[0-9][0-9]-*.md | sed 's#slides/##' | sort > slides/slide-list.txt`.
 - Add a slide image: put the file in `images/` and reference it as
   `<img src="../images/foo.png" style="width:60%;"/>`. Keep md image tags to `src` + `width`;

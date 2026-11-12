@@ -251,3 +251,4 @@ labs/**/throughput.json
 
 # Assembled decks. Mark builds the PPTX; the Markdown is the source of truth.
 slides/assembly.out/
+slides/assembly.out.*/
