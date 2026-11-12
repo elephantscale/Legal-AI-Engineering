@@ -67,7 +67,7 @@ Hence: evidence per question, and four conditions that override the number.
 Any one of these makes the verdict **Do Not Deploy**, whatever the total. A 96 with an
 auto-fail is a Do Not Deploy.
 
-### LEGAL-A — Privileged content can reach a third party by some path
+### LEGAL-A — Case content can leave by an unapproved or unenforced path
 
 Triggered when **D1 < 2**, *or* when egress is **observed but not enforced**.
 
@@ -83,6 +83,27 @@ trace with document text in the payload is an egress path.
 
 > There is no partial credit on this one. A single disclosure can waive privilege for the
 > subject matter.
+
+**What "out" means depends on where the boundary is.** This condition is about an
+**unapproved or unenforced** path — not about the existence of a third party. Three
+architectures are accepted in practice, and the boundary sits somewhere different in each:
+
+| Architecture | What makes egress approved | How it is enforced |
+|---|---|---|
+| **Vendor-approved cloud** — the hosted review mainstream | the engagement: contract, DPA, security review, the firm's own vendor approval | the vendor's boundary, evidenced by their audit reports |
+| **Government cloud** | an authorization: FedRAMP / StateRAMP / CJIS, signed addenda, screened personnel | the authorization package and the boundary it describes |
+| **Local or air-gapped** | nothing has to be approved, because nothing leaves | your own log showing zero egress |
+
+An approved hosted platform egresses by design and is accepted practice. What fails this
+condition is a path **nobody approved** — an error tracker shipping prompt text, a remote
+image in an email body, a DNS lookup that reveals a custodian's domain — or an approved
+boundary that is **asserted rather than enforced**.
+
+**In this course the strict reading applies**, because the system in the capstone is local
+and has no approval package to point at: `deny`, zero non-loopback connections, and a
+tripwire. A student who cannot show enforcement has not learned the module. But the judgment
+being taught is *which boundary applies here, and can you prove the one you chose holds* —
+not *any third party is a waiver*.
 
 ### LEGAL-B — Data from different matters can mix
 
@@ -130,7 +151,7 @@ is missing, the answer is `UNVERIFIED`.
 
 | Q | Question | Evidence |
 |---|---|---|
-| **D1** | Is egress of case content to third parties prevented? | `attestation.json` — `egress_policy` is `deny`, non-loopback connection count is 0, and a **tripwire** shows a deliberate leak being blocked. Observe-only → **LEGAL-A**. |
+| **D1** | Is unapproved egress of case content prevented? | `attestation.json` — `egress_policy` is `deny`, non-loopback connection count is 0, and a **tripwire** shows a deliberate leak being blocked. Observe-only → **LEGAL-A**. |
 | **D2** | Is case/matter data isolated from other matters? | A `matter` field on every catalog row, decision and log line; a recorded **cross-matter refusal**. No isolation test → `UNVERIFIED`. |
 | **D3** | Is source data preserved and provably unmodified? | `catalog.jsonl` has `native_sha256` for every document; natives are read-only; `exceptions.jsonl` is non-empty and triaged. |
 
@@ -225,7 +246,7 @@ first and fails the second, and only the second is a claim about the matter.
 
 **Legal auto-fail check** — all four, every time:
 
-- [ ] **LEGAL-A** — no path by which case content reaches a third party; egress **enforced**, not merely observed
+- [ ] **LEGAL-A** — no unapproved path by which case content can leave; egress **enforced**, not merely observed
 - [ ] **LEGAL-B** — matter isolation demonstrated by an actual cross-matter refusal
 - [ ] **LEGAL-C** — every production carries a named, timestamped, pre-dating approval
 - [ ] **LEGAL-D** — the model is pinned to a version you can still obtain

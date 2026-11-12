@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-10
+**Last updated:** 2026-11-11
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -42,6 +42,28 @@ system did, and you can re-run it."*
 sibling ES course. Canonical remote is now **`git@github.com:elephantscale/Legal-AI-Engineering.git`**,
 `main` at `e5e4f34`, with the full course history force-pushed over the stub initial commit
 that repo was created with.
+
+**Positioning narrowed 2026-11-11 (HQ `DEC-018`).** Local AI is **not** an irrefutable win,
+and the course no longer implies it is. Three architectures are accepted in practice:
+**vendor-approved cloud** (the hosted review mainstream — privilege managed by contract and
+process, and lawyers already accept it), **government cloud** (FedRAMP / StateRAMP / CJIS
+authorization is the acceptance mechanism; every California county operates this way, as does
+Scaia's own CJIS work), and **local or air-gapped** (the answer when the rule is absolute
+rather than risk-based — military and classified first). Local keeps a real segment; it does
+not take the field. Material changed the same day:
+
+- **Module 5 gained a slide** — *Where Local Actually Wins — and Where It Does Not* — placed
+  immediately after *Why Local Is Court-Defensible*, which was where the overclaim lived.
+- **LEGAL-A was re-worded, not weakened.** It read "privileged content can reach a third
+  party by any path". It now reads "case content can leave by an **unapproved or unenforced**
+  path". The bar is identical — the code's test was always `D1 < 2` or observe-only — but the
+  old wording described an approved hosted platform as an auto-fail, which is wrong in the
+  field and is the sentence a student would have repeated to a firm. Changed in the overlay,
+  the capstone rubric, Labs 07 and 08, deck `08-capstone`, and `sais100.py`'s condition
+  string and D1 question text.
+- **The strict reading still governs the capstone**, stated explicitly in both the rubric and
+  the overlay: the system the student builds is local and has no approval package to point
+  at, so it owes enforced egress, zero non-loopback connections, and a tripwire.
 
 ## Recent accomplishments
 
@@ -123,6 +145,13 @@ that repo was created with.
   - **Under consideration (Mark, 2026-11-10): course free, technical support paid.** She
     would get the course at no charge, with paid support afterwards on the issues the course
     covers. *(Needs CEO input — see Decisions needed from Mark.)*
+- **Partnership offer out to John Tredennick (Merlin Search Technologies), 2026-11-11.**
+  Legal AI Engineering under the Merlin brand, Mark teaching it; email sent, awaiting a call.
+  Tredennick founded and sold Catalyst and now runs Merlin, a commercial **cloud** review
+  platform — so `DEC-018` is what makes the partnership coherent: under it his architecture is
+  the mainstream, not a weakness the course corrects. If a call happens he may ask for
+  `outline.md`, `course-materials/capstone-rubric.md` and the lab list; all three are
+  presentable, and the LEGAL-A wording above is the line he would have read first.
 - **FreeEed / SHMsoft** — the course is a demand channel for the platform, and the material
   tracks FreeEed's real design records (`docs/local-ai-cjis-briefing.md`,
   `docs/decisions/local-ai-architecture.md`). When FreeEed's pinned models or sizing tiers
@@ -184,6 +213,7 @@ that repo was created with.
 | **Case-law currency.** *Morgan v. V2X* (D. Colo., Mar 2026) is cited as the anchor for "your AI use is discoverable". Legal-AI case law is moving fast and a stale citation is a credibility problem in this audience. | Medium | Re-check before each delivery. Treat the citation as perishable. |
 | **Model-ID drift.** `qwen3:8b` / `qwen3:14b` / `nomic-embed-text` are named in CLAUDE.md, the slides, the labs and the manifests. | Medium | `validate-course.sh` checks the pins agree between `CLAUDE.md` and `labs/common/llm.py`. Extend if more pins appear. |
 | **Reference outputs are corpus-dependent.** The playbooks quote numbers measured on the default corpus; a student running `--docs 300` sees different ones. | Low | Stated in `labs/README.md` and `labs/SETUP.md`. The *findings* are seeded to survive both sizes. |
+| **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. |
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
 ## Decisions needed from Mark
@@ -276,15 +306,33 @@ that repo was created with.
    anyway if Module 7 moves into it.
 5. **Target first delivery** — *Superseded 2026-11-10:* Carlene Gordon is the first
    student; dates are set after the 2026-11-17 conversation.
+6. **Three open questions on the validation dimension.** Raised by HQ 2026-11-11 and drafted
+   at `Scaia-Operations/drafts/tredennick-defensibility-rubric-ask-2026-11-11.md`. They are
+   unresolved in the material as written, and this course grades people on them:
+   - **"With an interval" may not be a real bar.** A student can report a confidence interval
+     so wide it says nothing and still earn the marks. Either the rubric names a precision the
+     interval has to reach, or it stops implying one.
+   - **Elusion as the primary measure** is taught as settled, and probably is — but "probably"
+     is doing work in a document that decides who is certified.
+   - **LEGAL-D (the model cannot be pinned)** sits beside three genuine legal failure
+     conditions while being an **engineering** instinct. Privilege waiver, ethical walls and
+     unapproved production each have law behind them; "an unreproducible review is
+     undefendable" may never have been tested where it mattered. It may still belong — as a
+     named engineering condition rather than a legal one.
+   - These are good questions to put to Tredennick if the call happens; he grades
+     defensibility commercially. **Needs CEO input** — I have not changed the rubric on any of
+     the three.
 
 ## Next three highest-value actions
 
-1. **Settle the Day 2 shape before quoting dates** (decision 0). The stated lab durations do
-   not fit in a day, and the first thing a real delivery exposes is a timetable that was
-   never run. Decide (a)–(d), then the outline and `labs/README.md` follow.
+1. **Decide the audience sentence** before it is repeated anywhere (risk table above), and
+   **answer the three validation questions** in decision 6. Both are cheap now and expensive
+   once a brochure exists or a certificate has been issued against the rubric. The Merlin
+   call is the forcing function for the first and the best available review of the second.
 2. **Dry-run Day 1 against the clock** and replace the playbook estimates with measurements.
    Carlene's session is itself the Day 2 measurement, which is the honest argument for not
-   charging for it.
+   charging for it. Day 2 now sits at roughly 7:05 against a 6.5-hour day (decision 0), so
+   the remaining question is whether the capstone's 3:00 block comes down to 2:30.
 3. **Prepare the 2026-11-17 conversation**: the artifact list as the thing being sold, the
    certificate bar stated plainly, the support offer bounded in writing, and
    `labs/verify-setup.sh` sent to her afterwards so her machine is known well before a date

@@ -95,7 +95,7 @@ local model quality delta, sample size, non-determinism on GPU, and the monitor'
 | **Score & governance** | 10 | SAIS-100 with legal overlay, before/after, no auto-fail; `DEFENSE.md` names real limits |
 
 **Auto-fail (regardless of total):** any of the four legal auto-fails from Module 7 —
-privileged content can reach a third party by any path; cross-matter leakage; production
+case content can leave by an unapproved or unenforced path; cross-matter leakage; production
 without recorded approval; the model cannot be pinned.
 
 > Full marks on the first two dimensions is the whole course. The other four are how you

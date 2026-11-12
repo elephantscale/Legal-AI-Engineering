@@ -180,23 +180,23 @@ def score_data_security(ev: Evidence) -> list[Answer]:
     enforced = "default-deny" in (att or {}).get("egress_policy", "").lower()
     leaked = (att or {}).get("non_loopback_connections", 1)
     if att and enforced and leaked == 0:
-        out.append(Answer("D1", "Is egress of case content to third parties prevented?",
+        out.append(Answer("D1", "Is unapproved egress of case content prevented?",
                           3, [ev.rel(ev.has("attestation.json")),
                               src("common/egress.py"),
                               "tripwire test: attestation-tripwire.json"],
                           "none at this level; re-attest whenever the stack changes"))
     elif att:
-        out.append(Answer("D1", "Is egress of case content to third parties prevented?",
+        out.append(Answer("D1", "Is unapproved egress of case content prevented?",
                           2, [ev.rel(ev.has("attestation.json"))],
                           "non-loopback connections were observed — identify each one "
                           "and either justify it in the attestation or block it"))
     elif guard.exists():
-        out.append(Answer("D1", "Is egress of case content to third parties prevented?",
+        out.append(Answer("D1", "Is unapproved egress of case content prevented?",
                           1, [src("common/egress.py")],
                           "the guard exists but no attestation was produced for this "
                           "run — run Lab 05's `prove` as part of the pipeline"))
     else:
-        out.append(Answer("D1", "Is egress of case content to third parties prevented?",
+        out.append(Answer("D1", "Is unapproved egress of case content prevented?",
                           0, [], "no egress control and no attestation"))
 
     # D2 — matter isolation (the legal overlay's headline addition)
@@ -599,12 +599,12 @@ def legal_auto_fails(ev: Evidence, answers: dict[str, list[Answer]]) -> list[dic
     fails = []
     by_id = {a.qid: a for v in answers.values() for a in v}
 
-    # (a) privileged content can reach a third party by any path
+    # (a) case content can leave by an unapproved or unenforced path
     att = ev.json("attestation.json")
     if by_id["D1"].score < 2:
         fails.append({
             "id": "LEGAL-A",
-            "condition": "Privileged content can reach a third party by some path",
+            "condition": "Case content can leave by an unapproved or unenforced path",
             "evidence": by_id["D1"].evidence or ["no egress attestation"],
             "why": "A single disclosure of a privileged document can waive privilege "
                    "for the subject matter. There is no partial credit on this.",

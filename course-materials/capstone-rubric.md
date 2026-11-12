@@ -28,14 +28,22 @@ full assembly instructions are in `labs/08-Capstone/README.md`.
 
 Any one of the four legal conditions:
 
-- **LEGAL-A** — privileged content can reach a third party by any path, **or** egress was
-  observed rather than enforced
+- **LEGAL-A** — case content can leave the trust boundary by a path that is neither
+  **approved** nor **enforced**, **or** egress was observed rather than enforced
 - **LEGAL-B** — cross-matter leakage
 - **LEGAL-C** — a production emitted without a recorded human approval
 - **LEGAL-D** — the model cannot be pinned
 
 A 96 with an auto-fail is a Do Not Deploy. Record the total anyway: it says how far the
 system is from deployable once the condition is cleared.
+
+**On LEGAL-A, read the words exactly.** The condition is an *unapproved or unenforced* path,
+not the existence of a third party. An approved hosted review platform egresses by design and
+is accepted practice; what fails is a path nobody approved, or an approved boundary that is
+asserted rather than enforced. For *this* capstone the strict reading applies, because the
+system you built is local and has no approval package to point at: enforced egress, zero
+non-loopback connections, and a tripwire that fires. See the legal overlay for the three
+architectures the profession actually accepts.
 
 ---
 

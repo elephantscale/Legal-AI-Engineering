@@ -183,6 +183,51 @@ Point 4 is the one legal buyers have not internalized yet. Say it twice.
 
 ---
 
+## Where Local Actually Wins — and Where It Does Not
+
+Local AI is **not** an irrefutable win. There are three architectures the profession
+accepts, and each one has a different acceptance mechanism.
+
+| Architecture | Why it is accepted | Where it is the right answer |
+|---|---|---|
+| **Vendor-approved cloud** — the hosted review mainstream | privilege managed by **contract and process**: DPA, security review, the firm's own vendor approval | most commercial litigation; this is accepted practice today, not a compromise |
+| **Government cloud** | an **authorization**: FedRAMP / StateRAMP / CJIS, signed addenda, screened personnel | the public sector — every California county already operates this way |
+| **Local or air-gapped** | nothing leaves, and you can **show** it | when the rule is absolute rather than risk-based: military, classified, and clients who will not accept a counterparty at all |
+
+* The hosted review platforms process an enormous share of the world's eDiscovery and
+  lawyers accept them. That is not a hole in their defensibility; it is a **different
+  acceptance mechanism** — contract and process instead of geography.
+* So the skill is not "cloud is indefensible." It is knowing **which boundary applies to
+  this matter, and how to prove the boundary you chose actually holds.**
+* Local is the architecture that wins when the rule is absolute — and the one where your
+  proof is a log you own rather than a report you were sent.
+
+> Three accepted architectures, not two. Pick the boundary the matter requires, then prove
+> it — and be able to say on the record why you picked it.
+
+Notes:
+
+Do not skip this slide. The failure mode of the previous two is a student who walks into a
+firm and announces that their approved review platform is indefensible. That is the opposite
+of the judgment this course is trying to produce, and it ends the conversation.
+
+Be concrete if asked: the big hosted review platforms run in their own approved clouds and
+that is acceptable to lawyers; the California counties run in government cloud and that is
+acceptable too — CJIS authorization is the mechanism. Our own CJIS deployment work sits in
+government cloud, not on a local box.
+
+What that leaves local AI is a real and defensible segment rather than the whole field:
+absolute rules, classified and military work, clients who will not sign off on any
+counterparty, and the cases where the cheapest route past a long compliance checklist is to
+make the checklist not apply. That last argument is still the strongest one in the course —
+it is just not the only acceptable answer. (Mark's positioning call, 2026-11-11.)
+
+The rest of this module teaches the strict architecture, and the capstone grades against it,
+because that is the one where the proof is yours to produce. A student who can build the
+strict one can evaluate the other two. The reverse is not true.
+
+---
+
 # Part 2 — Serving a Model Locally
 
 ---

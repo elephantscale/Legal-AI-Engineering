@@ -128,7 +128,7 @@ this and it is the first thing anyone else reads.
 
 **Auto-fail, regardless of total** — any of the four legal conditions:
 
-- privileged content can reach a third party by any path
+- case content can leave by an unapproved or unenforced path
 - cross-matter leakage
 - a production emitted without a recorded human approval
 - the model cannot be pinned

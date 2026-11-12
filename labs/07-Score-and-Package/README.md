@@ -262,7 +262,7 @@ conditions sit on top of the number:
 
 | | condition | why it is absolute |
 |---|---|---|
-| **LEGAL-A** | privileged content can reach a third party by any path | one disclosure can waive privilege for the whole subject matter |
+| **LEGAL-A** | case content can leave by an unapproved or unenforced path | one disclosure can waive privilege for the whole subject matter |
 | **LEGAL-B** | data from different matters can mix | ethical walls are not a performance tuning parameter |
 | **LEGAL-C** | a production went out with no recorded human approval | nobody is accountable for what left the building |
 | **LEGAL-D** | the model cannot be pinned | an unreproducible review is an undefendable review |
