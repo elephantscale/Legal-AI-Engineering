@@ -352,13 +352,14 @@ rewritten** — the gaps are recorded for review. The three findings that matter
      material would fail. It is now ES's brand call, but reversing it contradicts Module 1;
    - whether this is the **first of a family** across the Secure AI Learning Path, which would
      decide the naming now rather than after the first cohort;
-   - **new 2026-11-12:** the outline now names the award two ways — the takeaway section says
-     *"a certificate of completion, signed by the instructor"* and the Assessment section says
-     *"Legal AI Engineer Certificate"*. Both are in Mark's own words and they are not the same
-     claim: a completion certificate is attendance-and-labs, the branded certificate is the
-     SAIS-100 / no-auto-fail bar. **A signature line is also a new commitment** — somebody has
-     to sign each one. Reconcile the two sentences before Chandra's page or Carlene's issuance
-     repeats either.
+   - **Resolved 2026-11-12.** The outline briefly named the award two ways — a "certificate of
+     completion" in the takeaway section and the branded certificate under Assessment. Mark's
+     call: **one award, the branded one**, in both places and on deck `00-about`. So there is no
+     completion-only tier: every certificate carries the SAIS-100 / no-auto-fail bar, and a
+     participant who attends but does not pass the capstone gets no certificate. Say that to
+     partners, because NobleProg is selling seats against it. **The signature line is still a new
+     commitment** — somebody signs each one, which is a per-cohort task and an argument for a
+     serial number rather than a wet signature.
 
    **Can ES award this with no outside body? Yes — as a certificate, not a certification**
    (analysis 2026-11-12). A certificate is a factual statement by its issuer: *ES taught this,

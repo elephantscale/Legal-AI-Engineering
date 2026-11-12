@@ -150,7 +150,7 @@ is selected from, or sold as a modular series.
 * **Comfort in the area of study** — you leave able to hold your own in a legal-AI conversation: the vocabulary, the two risks, where AI actually fits in a matter, and what still has to be *built* rather than bought.
 * **The working system you built** — the capstone repository itself: a private, defensible legal-AI application with its `DEFENSE.md`, reproducibility bundle and SAIS-100 score. A portfolio artifact, not a slide deck.
 * **The reusable paperwork** — the SAIS-100 legal overlay, the defensibility checklist, the reproducibility manifest template, the TAR metrics cheat sheet.
-* **A certificate of completion, signed by the instructor.**
+* **The Elephant Scale Legal AI Engineer Certificate**, signed by the instructor.
 * **Six months of email support from the instructor** — on your own build, not just on the labs.
 * **Six months of updates to the course materials** — slides, labs and handouts, as the tooling and the regulations move.
 

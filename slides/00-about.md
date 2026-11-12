@@ -148,7 +148,7 @@ template, and the privilege/egress attestation form.
 
 And after the room closes:
 
-* **A certificate of completion**, signed by the instructor
+* **The Elephant Scale Legal AI Engineer Certificate**, signed by the instructor
 * **Six months of email support** — on your own build, not just on the labs
 * **Six months of course-material updates** — as the tooling and the regulations move
 
