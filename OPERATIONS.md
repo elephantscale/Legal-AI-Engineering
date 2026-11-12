@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-12 (three-day restructure)
+**Last updated:** 2026-11-12 (Module 1 market map)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -94,6 +94,23 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    is cloud.
 
 ## Recent accomplishments
+
+- **Module 1 now proves the need for the job, not just for the work** (Mark, 2026-11-12). Part 1
+  always carried the firm-side adoption evidence; nothing carried the demand side. New slide
+  **What the Postings Actually Say** (Part 2, after the role thesis) puts up nine postings at six
+  employers: five lawyer-titled roles gated behind a J.D., four engineer-titled roles with no J.D.
+  and the best-paid role in the set among them, the Dentons same-firm/same-month pair, and — said
+  out loud rather than discovered later — the two things five of six employers ask for that this
+  course does not teach (the commercial platforms by name, and adoption). Companion handout
+  `course-materials/legal-ai-job-market.md` carries the full tables, the three résumé sentences,
+  the $150/hour contractor data point, a section for J.D.-holders, and five caveats. The topic is
+  named in `outline.md`, so it is in the contract and in the Word outline. Built entirely from
+  `job-market-research.md` (2026-11-11); **no number is quoted that the research could not source
+  to a posting**, and the two algorithmic salary estimates it flags are excluded. This closes P1
+  item 1 of decision 8 and takes the JD-gated-title risk from **High** to Medium.
+  Also repaired in the same pass: `outline.md` said *"and S score"* where it meant *"SAIS-100
+  score"* — a truncated edit that had shipped into the contract. The Word outline in
+  `~/Downloads` was rebuilt from the corrected source.
 
 - **The outline now states what a participant takes away** (Mark, 2026-11-12): comfort in the
   area of study, the capstone repository, the reusable paperwork, a **certificate of completion
@@ -271,7 +288,7 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 | **Case-law currency.** *Morgan v. V2X* (D. Colo., Mar 2026) is cited as the anchor for "your AI use is discoverable". Legal-AI case law is moving fast and a stale citation is a credibility problem in this audience. | Medium | Re-check before each delivery. Treat the citation as perishable. |
 | **Model-ID drift.** `qwen3:8b` / `qwen3:14b` / `nomic-embed-text` are named in CLAUDE.md, the slides, the labs and the manifests. | Medium | `validate-course.sh` checks the pins agree between `CLAUDE.md` and `labs/common/llm.py`. Extend if more pins appear. |
 | **Reference outputs are corpus-dependent.** The playbooks quote numbers measured on the default corpus; a student running `--docs 300` sees different ones. | Low | Stated in `labs/README.md` and `labs/SETUP.md`. The *findings* are seeded to survive both sizes. |
-| **The course is named after a JD-gated job title.** Four of six employers require a JD for the role titled *Legal AI Engineer*; the roles our graduates can actually win are titled *Forward-Deployed Engineer*, *AI Automation Engineer* or *Legal AI Engineer (Contractor)*. A student who takes the title literally will conclude the course did not work. | **High** | Not a rename — a **market map in Module 1** (`job-market-research.md` §4, priority P1): which titles are JD-gated, what each pays, which door this course opens. One slide and one handout, built from research already done. It also answers the question every paying student asks in the first hour, now with evidence. |
+| **The course is named after a JD-gated job title.** Four of six employers require a JD for the role titled *Legal AI Engineer*; the roles our graduates can actually win are titled *Forward-Deployed Engineer*, *AI Automation Engineer* or *Legal AI Engineer (Contractor)*. A student who takes the title literally will conclude the course did not work. | Medium *(was High)* | **Mitigated 2026-11-12, not a rename.** The market map is built: slide **What the Postings Actually Say** in Module 1 Part 2 (the title split, the Dentons pair, the salaries, what we do *not* teach) plus the handout `course-materials/legal-ai-job-market.md`, and the topic is now named in `outline.md`. The residual risk is **currency, not silence** — the slide is a dated snapshot of nine postings and says so; re-read `job-market-research.md` before each delivery. |
 | **A partner is advertising our certificate before we have defined it.** The NobleProg/Govtra page carries the Legal AI Engineer Certificate and its requirements. | Medium | Settle `DEC-015` and tell Chandra what partners may and may not say. Carlene's issuance is the first real test of the same bar. |
 | **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. |
 | **Six months of support and updates is now a promise in the contract.** `outline.md` commits every participant to six months of the instructor's email support and six months of course-material updates. The volume is unbounded, the cost is unpriced, and when a **partner** sells the seat it is not stated who honours it — NobleProg's ~$2,700 online rate was set before this existed. | Medium | Decide the bounds before the first cohort (decision 9): what support covers, how updates are delivered (a repo invitation is the cheapest honest answer), and whether a partner seat includes both. Cheap to scope now, expensive to walk back after a cohort has been told. |
@@ -459,8 +476,10 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    she publishes the pages, and she already has this course listed for sale. The stronger pitch
    is not *"advertise or webinar?"* but *"I have research on legal-AI hiring and a 45-minute
    session built on it — who runs your education calendar?"*
-8. **Which course gaps to close, and when** — *Needs CEO input; no course changes made.*
-   Recommended P1, all cheap and none touching a lab: the Module 1 market map; a
+8. **Which course gaps to close, and when** — *Needs CEO input. **P1 item 1 built
+   2026-11-12** (Mark: "yes, build it") — the Module 1 market map slide and handout; the rest
+   unstarted.*
+   Recommended P1, all cheap and none touching a lab: ~~the Module 1 market map~~ **(done)**; a
    **platform-equivalence appendix** (what you built / what you would configure instead in aiR,
    CoCounsel, Harvey, Copilot Studio / what you still owe a court either way); and a
    **vendor-evaluation handout** in `course-materials/`, built on the Module 5 spectrum and the

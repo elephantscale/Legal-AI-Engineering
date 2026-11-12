@@ -24,6 +24,10 @@ Part 1 is the market evidence and should take seven minutes, not fifteen. If the
 mostly legal-tech people already, cut the EDRM section to five minutes and bank the time for
 Module 6.
 
+Part 2 now carries **What the Postings Actually Say** — three minutes, and the one slide in
+this module not to cut. Take the three minutes out of Part 1, which is scenery by comparison:
+put the adoption table up, say the three headline numbers, and move.
+
 ---
 
 # Part 1 — The Legal AI Implementation Gap
@@ -226,6 +230,80 @@ This is the thesis of the course. Land it hard. The third bullet is the moat: an
 wire a chatbot to a cloud API in an afternoon. Doing it where the data cannot leave, and
 producing the evidence that it did not, is a real engineering discipline — and it is
 teachable — in days, not years — which is why this course exists.
+
+---
+
+## What the Postings Actually Say
+
+Nine postings, six employers, read **November 2026**. The pattern is a split — and it runs
+straight through the job title on the front of this deck.
+
+| Title | Employer | Lawyer required? | Published range |
+|---|---|---|---|
+| **Legal AI Engineer** | Dentons | 2 yrs substantive practice | not published |
+| **Legal AI Engineer** | Thomson Reuters (Eagan) | **J.D. required** | $100.1k–$185.9k |
+| **Legal AI Engineer, Corporate** | Debevoise | **J.D. + 3 yrs practising** | *states your own* |
+| **Legal AI Advisor** | Relativity | **J.D. + bar admission** | $152k–$228k |
+| **Legal Technology & AI Attorney** | Gibson Dunn | **J.D. + admitted** | $250k–$300k |
+| **AI Automation Engineer** | Dentons † | **no** | $99.5k–$125k |
+| **Senior Software Engineer, AI** · CoCounsel FDE | Thomson Reuters | **no** | **$136k–$253k** |
+| **Legal AI Engineer (Contractor)** | Gusto † | **no** | **$150 / hour** |
+
+† filled or closed — the range still tells you what the work pays.
+
+* **Four of the six employers gate the role titled *Legal AI Engineer* behind a J.D.** This
+  course cannot satisfy that, and no course can.
+* **The roles that want what you are about to build are titled something else** — and the
+  best-paid role in the set is one of them.
+* **Dentons posted both, same city, same month.** *Legal AI Engineer* wants a lawyer and
+  publishes no salary. *AI Automation Engineer* wants an engineer, names RAG and ethical
+  walls, requires no J.D., and pays $99.5k–$125k.
+* **One posting in nine asks by name for what Modules 4 and 6 do** — Thomson Reuters, Senior
+  Legal AI Engineer: *"measuring hallucination risk and citation quality."*
+* **What five of the six ask for and this course does not teach:** the commercial platforms
+  by name (Harvey, Copilot Studio, Azure AI Foundry, Relativity aiR, CoCounsel) and
+  **adoption** — demos, onboarding, training lawyers. Know that walking in.
+
+> The title is gated. The work is not. **Read the requirements, never the headline** — and
+> when you apply, apply to the engineer-titled role.
+
+Notes:
+
+Three minutes, and do not skip it. This is the slide that answers the question every paying
+student is already holding: *will anyone hire me after this?* The honest answer is yes, under
+a different title than the one on the brochure — and saying so in the first hour buys more
+credibility than anything else in Part 1.
+
+Say the J.D. line plainly and early. Someone in the room has already searched *Legal AI
+Engineer*, found a J.D. requirement, and is quietly wondering whether they are in the wrong
+course. They are not — they are reading the wrong half of the market. If you let them work
+that out on their own on Day 3, you have lost them.
+
+Work the Dentons pair out loud; it is the whole finding compressed into one firm. Then land
+the last bullet without flinching. **We do not teach the platforms and we do not teach
+adoption.** Students who hear that from you on Day 1 trust the rest of the course; students
+who discover it from a job posting in March do not. Point them at the handout for the
+platform-by-platform picture.
+
+If someone asks what the skill is worth on its own: **$150/hour**, Gusto, a contractor doing
+almost exactly our capstone in-house. It is one data point and it is closed — say both.
+
+Sources: **[job-market-research.md](../job-market-research.md)** holds all nine postings with
+URLs, dates, requirement quotes and the skills matrix; the student-facing version is
+**[course-materials/legal-ai-job-market.md](../course-materials/legal-ai-job-market.md)**.
+Compiled 2026-11-11.
+
+Three caveats that must travel with this slide:
+
+1. **Nine postings is a sample, not a market.** It establishes the title split and the
+   platform-naming pattern, both unambiguous. It does not size demand. Do not say "the market
+   requires" — say "these nine postings say."
+2. **Four of the nine could not be read from the employer's own page** (Dentons returns 403;
+   Thomson Reuters and Relativity use JavaScript-rendered Workday pages). Those rows come from
+   dated mirrors. **Verify before quoting a number in marketing copy.**
+3. **The window moves weekly.** One Gibson Dunn posting was pulled eleven days before its own
+   published close date. Re-read the research file before teaching, and say the compile date
+   out loud.
 
 ---
 
@@ -488,6 +566,7 @@ Collect two or three diagrams on the whiteboard and leave them up.
 
 * The market: adoption is settled, **implementation is not** — the gap is where the role lives
 * The role: make a legal obligation **executable**, then **provable**
+* The titles: *Legal AI Engineer* is often J.D.-gated — **apply to the engineer-titled role**
 * The map: EDRM — your code lives in Processing, Review, Analysis, Production
 * The vocabulary: custodian, responsive, privileged, load file, Bates, production
 * The data-model lesson: coding decisions belong to *(document, matter, request, reviewer)*

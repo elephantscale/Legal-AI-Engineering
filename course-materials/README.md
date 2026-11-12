@@ -2,7 +2,7 @@
 
 **Legal AI Engineering · Elephant Scale**
 
-Seven documents. These are the artifacts students keep after the slides are closed and the
+Nine documents. These are the artifacts students keep after the slides are closed and the
 `work/` directory is deleted — the reusable paperwork behind the course's two claims:
 
 1. **"Nothing left the building."** — confidentiality and privilege
@@ -25,6 +25,14 @@ has running code behind it, the code is named.
 | **[sais-100-legal-overlay.md](sais-100-legal-overlay.md)** | The evidence map for all 18 SAIS-100 questions, the four legal auto-fails, and the verified-assessment rules. | Module 7, and again at Module 12 | `labs/07-Score-and-Package/sais100.py`, `labs/12-Governance-Audit/audit.py` |
 | **[sais-100-framework-mapping.md](sais-100-framework-mapping.md)** | Every SAIS-100 category translated into NIST AI RMF, ISO/IEC 42001, the EU AI Act and the governing legal authority — so you can answer a security reviewer in their own vocabulary. | Module 7, and whenever someone outside the room asks | `sais-100-legal-overlay.md` |
 | **[capstone-rubric.md](capstone-rubric.md)** | How the capstone is graded, the band descriptors, the grading sequence, and the defense round. | **Day 2 morning** — not at the start of the capstone | — |
+| **[legal-ai-job-market.md](legal-ai-job-market.md)** | Nine postings at six employers: which titles are J.D.-gated, which are not, what each pays, what they ask for that you built, and the three gaps this course does not cover. | **Module 1** — hand it out with the market-map slide | — |
+
+**The job-market handout serves neither claim, deliberately.** Every other document here is
+evidence for a court or a client. That one is for the student's own career, and it is in this
+directory because it is the question they ask in the first hour and it deserves an
+evidence-backed answer rather than an encouraging one. It is the companion to the Module 1
+slide **What the Postings Actually Say**, and it is a dated snapshot — re-read
+`job-market-research.md` before teaching from it.
 
 ---
 
