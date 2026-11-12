@@ -18,8 +18,9 @@ Notes:
 
 Keep this module tight — 50 minutes. It is the only module with no lab, and a room of
 engineers will get restless if you lecture for ninety minutes before they touch a keyboard.
-The two market slides — **Legal AI Adoption Is Accelerating** and **The Missing Piece Is
-Engineering** — are the evidence, and together they should take seven minutes, not fifteen. If
+The three market slides — **Legal AI Adoption Is Accelerating**, **Read the Verbs, Not the
+Numbers** and **The Missing Piece Is Engineering** — are the evidence, and together they should
+take seven minutes, not fifteen. If
 the room is mostly legal-tech people already, cut the EDRM section to five minutes and bank the
 time for Module 6.
 
@@ -43,17 +44,13 @@ Three survey reports. Three different populations. One direction.
   that holdout population "has all but vanished."
 * For the first time in that survey's history, an emerging technology is the **primary focus
   of law firm technology investment**.
-* Read the verbs. *Engaged with* is not *deployed*. *Using* is not *governed*.
-* Read the fieldwork column — two of these "2026" reports were fielded in **2025**. A number
-  without its population and its date is not a finding.
 
-> The adoption argument is over. Nobody has to sell AI to a law firm any more — what is left
-> is the hard part.
+> The holdout population is gone. Adoption is no longer the question anyone is asking.
 
 Notes:
 
-Five minutes, maximum. Do not read the table aloud; put it up, say the three headline numbers,
-and move to the verbs — the verbs are the teaching point.
+Three minutes. Do not read the table aloud; put it up, say the three headline numbers, and go
+to the next slide — the verbs are the teaching point, not the table.
 
 Sources — all figures below are quoted from the primary reports, not from press coverage:
 
@@ -77,16 +74,6 @@ Sources — all figures below are quoted from the primary reports, not from pres
   split comes from the report's own "Current usage comparison, GenAI v. Agentic AI" chart.
   <https://www.thomsonreuters.com/en/institute/reports/2026-ai-in-professional-services-report>
 
-Two honesty notes, and say the first one out loud if anyone in the room is a researcher:
-
-1. **These are not the same question.** ILTA counts *firms* "engaged with" GenAI — which
-   includes evaluating it. Wolters Kluwer counts *individuals* touching a tool. Thomson Reuters
-   counts *organizations* that say they are "already using" it. The gap between 94% and 41% is
-   mostly definitional, and pointing that out is more valuable than the numbers are.
-2. **"2026" is a report title, not a field date.** Wolters Kluwer's 2026 survey was fielded in
-   August 2025 and Thomson Reuters' in October–November 2025. Only ILTA's is 2026 fieldwork.
-   Adoption has moved since; the direction is the claim, not the decimal.
-
 Figures deliberately **left off** this slide because they could not be confirmed in a primary
 report — do not add them back without a source:
 
@@ -100,6 +87,33 @@ report — do not add them back without a source:
 * "41% of law firms, up from 28%, and 47% of corporate legal, up from 23%." The 2026 figures
   are in the Thomson Reuters chart; the segment-level 2025 priors are not. Only the all-sector
   22% → 40% movement is published.
+
+---
+
+## Read the Verbs, Not the Numbers
+
+Three reports, three different questions. The gap between **94%** and **41%** is mostly
+definitional.
+
+* *Engaged with* is not *deployed*. *Using* is not *governed*.
+  - ILTA counts **firms** engaged with GenAI — evaluating it counts
+  - Wolters Kluwer counts **individuals** who have touched a tool
+  - Thomson Reuters counts **organizations** that say they are already using it
+* **"2026" is a report title, not a field date.** Two of these three were fielded in **2025**.
+* A number without its population and its date is not a finding.
+
+> The adoption argument is over. Nobody has to sell AI to a law firm any more — what is left
+> is the hard part.
+
+Notes:
+
+Two minutes, and this is the half of the market argument to keep if you are running short. Say
+the definitional point out loud if anyone in the room is a researcher — pointing out the gap is
+worth more than the numbers are.
+
+Fieldwork, for the record: Wolters Kluwer's survey was fielded 8–25 August 2025 and Thomson
+Reuters' in October–November 2025. Only ILTA's is 2026 fieldwork. Adoption has moved since —
+the direction is the claim, not the decimal.
 
 ---
 
