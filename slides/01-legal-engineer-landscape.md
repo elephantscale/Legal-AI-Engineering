@@ -8,13 +8,11 @@ Elephant Scale
 
 You are about to build software whose output may be read aloud in a courtroom.
 
-That changes the engineering. Not the languages, not the frameworks — the **acceptance
-criteria**. "It works" is not a criterion. "It works, nothing leaked, and I can prove both"
-is.
+That changes the **acceptance criteria**. "It works" is not a criterion. "It works, nothing
+leaked, and I can prove both" is.
 
 This module gives you the map: what the market has already bought and what it still cannot
-do, what the role is, where AI actually fits in legal work, and the two risks that will be
-behind every design decision you make for the rest of this course.
+do, what the role is, where AI actually fits in legal work. Also, the risks.
 
 Notes:
 
@@ -45,17 +43,17 @@ Three survey reports. Three different populations. One direction.
   that holdout population "has all but vanished."
 * For the first time in that survey's history, an emerging technology is the **primary focus
   of law firm technology investment**.
-* Now read the verbs. *Engaged with* is not *deployed*. *Using* is not *governed*.
-* And read the fieldwork column — two of these "2026" reports were fielded in **2025**. A
-  number without its population and its date is not a finding. Module 6 again.
+* Read the verbs. *Engaged with* is not *deployed*. *Using* is not *governed*.
+* Read the fieldwork column — two of these "2026" reports were fielded in **2025**. A number
+  without its population and its date is not a finding.
 
-> The adoption argument is over, and you arrived **after** it. Nobody here has to sell AI to
-> a law firm — which means what is left is the hard part.
+> The adoption argument is over. Nobody has to sell AI to a law firm any more — what is left
+> is the hard part.
 
 Notes:
 
 Five minutes, maximum. Do not read the table aloud; put it up, say the three headline numbers,
-and move to the verbs. The verbs are the teaching point and the rest is scenery.
+and move to the verbs — the verbs are the teaching point.
 
 Sources — all figures below are quoted from the primary reports, not from press coverage:
 
@@ -119,17 +117,15 @@ A firm can license every product in ILTA's top twenty and still have none of the
 
 * ILTA's own forecast, in its own words: firms "anticipate additional headcount needs across
   IT, innovation, security, training, knowledge management, and data science."
-  - That sentence is the commercial rationale for this role, written by the industry's own
-    technology association rather than by a trainer.
 
 > Buying the software settles the procurement question and opens the engineering one. The
 > engineering one is the only one a court will ask you about.
 
 Notes:
 
-This is the slide that pays for the room. The whole argument is one move: every statistic on
-it is a *post-purchase* problem. The software was already bought. These are the things that
-were still missing the next morning, and each one is a line item in somebody's budget.
+The whole argument is one move: every statistic on it is a *post-purchase* problem. The
+software was already bought. These are the things that were still missing the next morning,
+and each one is a line item in somebody's budget.
 
 Work the rows against the room. Ask who has been handed a Copilot tenant they did not
 provision — in a firm audience, hands go up, and that is the integration row proving itself.
@@ -142,7 +138,7 @@ running in observe-only mode fails the question that matters.
 
 The evaluation row is the setup for Module 6: 18% collecting any metric means the overwhelming
 majority of legal AI in production right now is unmeasured. An unmeasured review is not
-defensible, whoever built the tool. That is the entire market for the skill being taught here.
+defensible, whoever built the tool.
 
 Sources:
 
@@ -199,8 +195,8 @@ so nobody disqualifies themselves over a job title.
 
 Three things collided:
 
-* **Volume** — matters now routinely involve millions of documents; manual review does not
-  scale and stopped being affordable years ago
+* **Volume** — matters now routinely involve millions of documents; manual review stopped
+  being affordable years ago
 * **Capability** — foundation models made reading, classifying, and summarizing documents a
   configuration task instead of an 18-month ML project
 * **Constraint** — the one thing you cannot do with a legal document is **send it to a
@@ -215,15 +211,13 @@ allowed to leave."**
 Notes:
 
 This slide is the argument; the two market slides were the evidence for it. If anyone asked
-"says who?"
-during the adoption slide, this is where it pays off — the ILTA headcount forecast (IT,
-innovation, security, training, knowledge management, data science) is the industry naming
-this role without naming it.
+"says who?" during the adoption slide, this is where it pays off — the ILTA headcount forecast
+(IT, innovation, security, training, knowledge management, data science) is the industry
+naming this role without naming it.
 
-This is the thesis of the course. Land it hard. The third bullet is the moat: anybody can
-wire a chatbot to a cloud API in an afternoon. Doing it where the data cannot leave, and
-producing the evidence that it did not, is a real engineering discipline — and it is
-teachable — in days, not years — which is why this course exists.
+The third bullet is the moat: anybody can wire a chatbot to a cloud API in an afternoon.
+Doing it where the data cannot leave, and producing the evidence that it did not, is a real
+engineering discipline.
 
 ---
 
@@ -329,7 +323,7 @@ small firms that were priced out entirely. That is FreeEed's whole market thesis
 * **Investigations** — who knew what, when, and who did they tell
 
 * Underneath all five: **retrieve the right text, then reason over it.**
-  - Which is why Modules 3 and 4 are the spine of this course
+  - Modules 3 and 4 are the spine of the course
 
 > Five markets, one primitive. Build the primitive well and you can serve any of them.
 
@@ -344,7 +338,7 @@ agentic content; eDiscovery people need defensibility.
 ## The EDRM, In Plain Terms
 
 The **Electronic Discovery Reference Model** — the industry's standard picture of a matter.
-Nine stages. You will hear it constantly, so here it is once, honestly:
+Nine stages. You will hear it constantly, so here it is once:
 
 ```text
 Information    Identification   Preservation   Collection
@@ -481,8 +475,7 @@ recall review with a documented, validated methodology is defensible. A review t
 probably 95% but was never sampled is not, because you have nothing to say when asked how
 you know.
 
-This is also the sales argument for everything in Module 6, so don't resolve the tension
-here — just name it.
+Don't resolve the tension here — just name it.
 
 ---
 
