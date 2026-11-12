@@ -18,9 +18,9 @@ Notes:
 
 Keep this module tight — 50 minutes. It is the only module with no lab, and a room of
 engineers will get restless if you lecture for ninety minutes before they touch a keyboard.
-The three market slides — **Legal AI Adoption Is Accelerating**, **Read the Verbs, Not the
-Numbers** and **The Missing Piece Is Engineering** — are the evidence, and together they should
-take seven minutes, not fifteen. If
+The four market slides — **Legal AI Adoption Is Accelerating**, **Read the Verbs, Not the
+Numbers**, **The Missing Piece Is Engineering** and **A Policy Is Not a Control** — are the
+evidence, and together they should take nine minutes, not twenty. If
 the room is mostly legal-tech people already, cut the EDRM section to five minutes and bank the
 time for Module 6.
 
@@ -126,8 +126,6 @@ A firm can license every product in ILTA's top twenty and still have none of the
 | **Integration** — find the paths AI already arrived through | Among firms that enabled Copilot / Teams Premium features, Copilot Chat is the most commonly activated (**81%**) — capability appearing with no discrete deployment event *(ILTA)* |
 | **Evaluation** — know whether it works, in numbers | Only **18%** of organizations collect any ROI metric for AI; **40%** do not know whether theirs does *(TR)* |
 | **Customization** — one policy per client, not one per firm | Two-thirds of corporate clients say their outside firms should use AI, under **20%** mandate it, and **40%** of professionals have been told both to use AI and not to use it, depending on the client *(TR)* |
-| **Security** — a control, not a sentence in a policy | GenAI entered ILTA's tracked security-challenge list for the first time and took **second place**, above malware and compliance. "No confidential/sensitive info" is written policy at **29%** of firms under 50 lawyers and **53%** of firms over 700 |
-| **Deployment** — make the sanctioned path faster than the unsanctioned one | **34%** of law firm professionals use AI tools their firm has not authorized; **50%** say their firm's AI strategy is invisible in day-to-day work *(TR)* |
 
 * ILTA's own forecast, in its own words: firms "anticipate additional headcount needs across
   IT, innovation, security, training, knowledge management, and data science."
@@ -144,42 +142,78 @@ and each one is a line item in somebody's budget.
 Work the rows against the room. Ask who has been handed a Copilot tenant they did not
 provision — in a firm audience, hands go up, and that is the integration row proving itself.
 
-The security row is the one to slow down on. "No confidential or sensitive information" at 29%
-of small firms is a **policy**, and a policy is a sentence, not a control. A sentence cannot
-tell you where a document went. Plant that here and harvest it in Module 5 and again in Lab 12,
-where the lesson is stated as **capability is not configuration** — a guard that exists but is
-running in observe-only mode fails the question that matters.
-
 The evaluation row is the setup for Module 6: 18% collecting any metric means the overwhelming
 majority of legal AI in production right now is unmeasured. An unmeasured review is not
 defensible, whoever built the tool.
 
 Sources:
 
-* **ILTA 2026 Technology Survey**, Executive Summary (as cited on the previous slide). Copilot
-  Chat 81%, the "no discrete deployment events" observation, the security-challenge second
-  place, and the policy table (Q3.18, broken out by firm size) are all in the free summary.
-  Note that ILTA's full named concerns are GenAI-powered social engineering first, then
-  detecting anomalous GenAI behavior, preventing GenAI agent abuse, third-party GenAI security
-  risk, prompt injection and data/model poisoning — which is, almost line for line, the Day 3
-  agentic-security module.
+* **ILTA 2026 Technology Survey**, Executive Summary (full citation on the adoption slide).
+  Copilot Chat 81% and the "no discrete deployment events" observation are both in the free
+  summary.
 * **Thomson Reuters Institute, 2026 AI in Professional Services Report** — ROI metrics (18%,
   40% don't know), client mandate figures, and the 40% "told both" figure are verbatim key
   findings. <https://www.thomsonreuters.com/en/institute/reports/2026-ai-in-professional-services-report>
-* **Thomson Reuters Institute, Future of Professionals 2026 — Legal** — 736 law firm
-  professionals across 46 countries (421 in the U.S.) plus 203 in-house, fielded **March–April
-  2026**. Verbatim: *"some 34% of law firm professionals say they are currently using AI tools
-  their firm has not authorized."* Half say their firm's AI strategy is invisible in day-to-day
-  work; 41% say the right tools are not yet in place.
-  <https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report-legal>
 * **Wolters Kluwer Future Ready Lawyer 2026** — the top two barriers to wider AI use are tied
   at **39%** each: ethical concerns including data privacy, and inadequate training. Useful if
   the room pushes back on the training argument, since it is their own profession's answer.
   <https://www.wolterskluwer.com/en/know/future-ready-lawyer-2026>
 
 If you have an engineering-only room, cut this slide to ninety seconds and keep only the
-security and evaluation rows. Engineers do not need convincing that a licence is not a system;
-they need the two specific gaps this course closes.
+evaluation row — the next slide is the other one worth keeping. Engineers do not need
+convincing that a licence is not a system; they need the two specific gaps this course closes.
+
+---
+
+## A Policy Is Not a Control
+
+Two of those gaps are the same gap seen from both ends — and they are the pair that bites
+first.
+
+| What the licence does not include | The 2026 evidence |
+|---|---|
+| **Security** — a control, not a sentence in a policy | GenAI entered ILTA's tracked security-challenge list for the first time and took **second place**, above malware and compliance. "No confidential/sensitive info" is written policy at **29%** of firms under 50 lawyers and **53%** of firms over 700 |
+| **Deployment** — make the sanctioned path faster than the unsanctioned one | **34%** of law firm professionals use AI tools their firm has not authorized; **50%** say their firm's AI strategy is invisible in day-to-day work *(TR)* |
+
+* "No confidential or sensitive information" is a **sentence**. A sentence cannot tell you
+  where a document went.
+* And when the sanctioned path is slower than the unsanctioned one, a third of the firm has
+  already left it — carrying client documents.
+* Both rows are *your* work: the control that enforces the sentence, and the sanctioned path
+  fast enough that nobody routes around it.
+
+> You cannot write a prohibition and call it a boundary.
+
+Notes:
+
+Slow down here. This is the row pair that makes the course's first claim — *nothing left the
+building* — a technical problem rather than a compliance one.
+
+A policy is a sentence, and 29% of small firms have exactly that one sentence. Plant it here
+and harvest it in Module 5 and again in Lab 12, where the lesson is stated as **capability is
+not configuration** — a guard that exists but is running in observe-only mode fails the question
+that matters.
+
+The 34% figure is the one that lands with engineers, because they are usually part of it. Ask
+the room what they personally pasted into a chatbot last month. The honest answer in a firm
+audience is "something I should not have," and that is the deployment row proving itself: people
+do not route around a control because they are careless, they route around it because it is
+slower than the alternative.
+
+Sources:
+
+* **ILTA 2026 Technology Survey**, Executive Summary (full citation on the adoption slide). The
+  security-challenge second place and the policy table (Q3.18, broken out by firm size) are both
+  in the free summary. ILTA's full named concerns are GenAI-powered social engineering first,
+  then detecting anomalous GenAI behavior, preventing GenAI agent abuse, third-party GenAI
+  security risk, prompt injection and data/model poisoning — which is, almost line for line, the
+  Day 3 agentic-security module.
+* **Thomson Reuters Institute, Future of Professionals 2026 — Legal** — 736 law firm
+  professionals across 46 countries (421 in the U.S.) plus 203 in-house, fielded **March–April
+  2026**. Verbatim: *"some 34% of law firm professionals say they are currently using AI tools
+  their firm has not authorized."* Half say their firm's AI strategy is invisible in day-to-day
+  work; 41% say the right tools are not yet in place.
+  <https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report-legal>
 
 ---
 
