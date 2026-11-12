@@ -95,6 +95,14 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Recent accomplishments
 
+- **The outline now states what a participant takes away** (Mark, 2026-11-12): comfort in the
+  area of study, the capstone repository, the reusable paperwork, a **certificate of completion
+  signed by the instructor**, **six months of email support**, and **six months of course-material
+  updates**. Also added as a prerequisite: students **bring their own AI subscription** (Claude,
+  ChatGPT, Gemini or equivalent) and use it on the labs. Both appear in `outline.md` and on deck
+  `00-about`; `labs/SETUP.md` was corrected because it claimed Python was the only requirement in
+  the course. **The last three takeaways are commercial commitments, not curriculum** — see the
+  risk row and decision 9.
 - **All 11 labs run end to end with no API key, no network and no model.** `test-all-labs.sh`
   reports **94 passed / 0 failed** in 16 seconds on a 300-document corpus, including the
   deliberate refusals (production without approval, destruction without confirmation) which
@@ -258,6 +266,7 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 | **The course is named after a JD-gated job title.** Four of six employers require a JD for the role titled *Legal AI Engineer*; the roles our graduates can actually win are titled *Forward-Deployed Engineer*, *AI Automation Engineer* or *Legal AI Engineer (Contractor)*. A student who takes the title literally will conclude the course did not work. | **High** | Not a rename — a **market map in Module 1** (`job-market-research.md` §4, priority P1): which titles are JD-gated, what each pays, which door this course opens. One slide and one handout, built from research already done. It also answers the question every paying student asks in the first hour, now with evidence. |
 | **A partner is advertising our certificate before we have defined it.** The NobleProg/Govtra page carries the Legal AI Engineer Certificate and its requirements. | Medium | Settle `DEC-015` and tell Chandra what partners may and may not say. Carlene's issuance is the first real test of the same bar. |
 | **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. |
+| **Six months of support and updates is now a promise in the contract.** `outline.md` commits every participant to six months of the instructor's email support and six months of course-material updates. The volume is unbounded, the cost is unpriced, and when a **partner** sells the seat it is not stated who honours it — NobleProg's ~$2,700 online rate was set before this existed. | Medium | Decide the bounds before the first cohort (decision 9): what support covers, how updates are delivered (a repo invitation is the cheapest honest answer), and whether a partner seat includes both. Cheap to scope now, expensive to walk back after a cohort has been told. |
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
 ## Decisions needed from Mark
@@ -340,7 +349,14 @@ rewritten** — the gaps are recorded for review. The three findings that matter
      professional-title claim with no accrediting body is the one overclaim this course's own
      material would fail. It is now ES's brand call, but reversing it contradicts Module 1;
    - whether this is the **first of a family** across the Secure AI Learning Path, which would
-     decide the naming now rather than after the first cohort.
+     decide the naming now rather than after the first cohort;
+   - **new 2026-11-12:** the outline now names the award two ways — the takeaway section says
+     *"a certificate of completion, signed by the instructor"* and the Assessment section says
+     *"Legal AI Engineer Certificate"*. Both are in Mark's own words and they are not the same
+     claim: a completion certificate is attendance-and-labs, the branded certificate is the
+     SAIS-100 / no-auto-fail bar. **A signature line is also a new commitment** — somebody has
+     to sign each one. Reconcile the two sentences before Chandra's page or Carlene's issuance
+     repeats either.
 3. **FreeEed wording.** Five lines were softened from implying shipped capability to
    "reference platform / reference architecture the labs are designed against", naming only
    capabilities backed by `FreeEedCRM/docs/technical-primer.md`. Confirm this is how you want
@@ -391,6 +407,18 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    Lab 10. P3: eval-platform and observability literacy, and naming LangGraph once. **Not
    recommended:** a no-code track for JD-holders — weeks of work, contradicts the positioning,
    and the JD-gated roles want a practising lawyer, not a lawyer with a Python certificate.
+
+9. **Scope the six-month support and update promise** — *Needs CEO input; added 2026-11-12.*
+   Three questions, all cheap to answer now:
+   - **What does email support cover?** Questions about the labs and the student's own build is
+     the natural reading; it is not consulting on a live matter, and it is not a help desk for
+     FreeEed. One sentence in the outline closes the gap.
+   - **How are updates delivered?** A read invitation to the course repository costs nothing and
+     is self-maintaining. A mailed zip per release is a recurring chore. Pick one.
+   - **Does a partner-sold seat include both?** NobleProg is selling this course now at a flat
+     rate set before these commitments existed. If a Govtra registrant gets six months of Mark's
+     inbox, that is a cost inside someone else's price; if not, our outline and their page
+     describe different products.
 
 ## Next highest-value actions
 

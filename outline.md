@@ -145,6 +145,15 @@ is selected from, or sold as a modular series.
 * **Deployment at Scale** — on-prem and appliance deployment, distributed processing for large volumes, regulated environments (CJIS, government, higher-ed), hardware sizing. *Lab: containerize and scale a processing job across workers.*
 * **Governance and Compliance Deep-Dive** — the AI-regulation landscape (100+ US state AI laws, the EU AI Act), audit requirements, and a full SAIS-100 governance audit. *Lab: audit a legal-AI system against a governance/defensibility checklist.*
 
+## What participants take away
+
+* **Comfort in the area of study** — you leave able to hold your own in a legal-AI conversation: the vocabulary, the two risks, where AI actually fits in a matter, and what still has to be *built* rather than bought.
+* **The working system you built** — the capstone repository itself: a private, defensible legal-AI application with its `DEFENSE.md`, reproducibility bundle and SAIS-100 score. A portfolio artifact, not a slide deck.
+* **The reusable paperwork** — the SAIS-100 legal overlay, the defensibility checklist, the reproducibility manifest template, the TAR metrics cheat sheet.
+* **A certificate of completion, signed by the instructor.**
+* **Six months of email support from the instructor** — on your own build, not just on the labs.
+* **Six months of updates to the course materials** — slides, labs and handouts, as the tooling and the regulations move.
+
 ## Assessment and Certification
 * Evaluation — capstone project, lab completion, and class participation
 * Requirements — minimum attendance, completion of the module labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition

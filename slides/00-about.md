@@ -146,11 +146,24 @@ Not notes. **Artifacts.**
 Plus the reusable paperwork: the defensibility checklist, the reproducibility manifest
 template, and the privilege/egress attestation form.
 
+And after the room closes:
+
+* **A certificate of completion**, signed by the instructor
+* **Six months of email support** — on your own build, not just on the labs
+* **Six months of course-material updates** — as the tooling and the regulations move
+
+> You leave comfortable in the area, holding a system you can show someone.
+
 Notes:
 
 Show this slide before the first lab. It reframes the labs from "exercises" to "deliverables"
 and it is the slide people photograph. The right-hand column is also, almost word for word,
 the list of things a legal-tech hiring manager asks about.
+
+The three after-class items are commitments, so say them plainly and do not embellish them.
+Six months of email support means the instructor's own inbox, and six months of updates means
+they keep getting the current labs — which matters in a field where the regulations moved
+twice while this course was being written.
 
 ---
 
