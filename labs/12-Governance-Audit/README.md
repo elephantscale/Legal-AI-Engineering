@@ -1,6 +1,6 @@
 # Lab 12 — Governance Audit: Verified, With Evidence
 
-**Module 12 · optional Day 3 · the last lab of the course**
+**Module 12 · Day 3 · the last lab of the course**
 
 In Lab 07 you scored your own system from your own artifacts, and the scorer believed
 them. An auditor does not.
@@ -305,7 +305,7 @@ not to?"**
 The first half is easy and everyone has an answer — usually enforcing egress, or running
 the tripwire, each about fifteen minutes.
 
-**The second half is the whole question**, and it is the right note to end two days on.
+**The second half is the whole question**, and it is the right note to end the course on.
 Not every gap gets closed. Hash-pinned dependencies, a real matter-isolation test suite, a
 bigger elusion sample — these cost real time and sometimes the answer is "not this
 quarter." Knowing which gaps you are consciously carrying, and being able to say why in
@@ -365,7 +365,7 @@ rather than on the audit:
 - **recall and elusion, with the interval.** No bare point estimates.
 - **"can you prove it?"** — asked of your own work, before someone else asks it of you.
 
-Then the callback: two days ago they could build a legal-AI system. The reason they can
+Then the callback: three days ago they could build a legal-AI system. The reason they can
 now defend one is not that the code got better. It is that every stage emits an artifact,
 and the artifacts are the defence.
 

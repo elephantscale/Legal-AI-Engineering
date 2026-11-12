@@ -1,6 +1,6 @@
 # Module 11 — Deployment at Scale
 
-Optional Day 3 / modular
+Modular series — swapped into Day 3 on request
 
 Elephant Scale
 

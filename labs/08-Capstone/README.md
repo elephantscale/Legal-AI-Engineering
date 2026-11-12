@@ -39,9 +39,9 @@ my-legal-ai/
 
 Three rules about that tree:
 
-0. **The `[Lab 07]` lines are there only if you did Lab 07.** Module 7 is the floating
-   module, normally taught on Day 3. Without it you have no document production set and no
-   container — the capstone and the certificate do not require either, because the capstone
+0. **The `[Lab 07]` lines are there only if you did Lab 07.** Module 7 is taught on Day 3,
+   so a condensed two-day class may not have reached it. Without it you have no document
+   production set and no container — the capstone and the certificate do not require either, because the capstone
    drives Labs 02–06 itself and produces its own SAIS-100 score. Say so in `DEFENSE.md`
    rather than leaving a grader to wonder.
 
@@ -187,7 +187,7 @@ of them.
 
 ## Extensions
 
-Pick one if you have time. They map to the optional Day 3 modules and to Labs 09–12.
+Pick one if you have time. They map to the Day 3 modules and the modular series (Labs 09–12).
 
 | extension | module | lab |
 |---|---|---|
@@ -303,4 +303,4 @@ you.
 
 ---
 
-**Optional Day 3:** [Lab 09 — Investigations and Timeline](../09-Investigations-Timeline/README.md)
+**Day 3 starts here:** [Lab 07 — Score and Package](../07-Score-and-Package/README.md)

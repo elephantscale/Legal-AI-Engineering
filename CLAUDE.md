@@ -1,6 +1,6 @@
 # Working on this course with Claude
 
-This is the **Legal AI Engineering** course (Elephant Scale) — a 2-day (+ optional Day 3),
+This is the **Legal AI Engineering** course (Elephant Scale) — a 3-day (condensed 2-day version available),
 hands-on, engineer-level course on building **private, defensible** AI for legal work:
 eDiscovery, document review, and investigations. This file orients a Claude session
 started in this directory.
@@ -8,7 +8,10 @@ started in this directory.
 ## What's here
 
 - `outline.md` — the course outline. **Treat it as the contract.** Module numbers, lab
-  names, and the Day 1 / Day 2 / optional Day 3 split come from here.
+  names, and the Day 1 / Day 2 / Day 3 split come from here. **Three days as of 2026-11-12**
+  (Mark): Days 1–2 are the build path, Day 3 is Modules 7, 10 and 12 ("ship it, oversee it,
+  prove it"), Modules 9 and 11 are a modular series swapped into Day 3 on request, and a
+  **condensed two-day version** drops Day 3 with Module 7 floating forward into Day 2.
 - `slides/NN-name.md` — one Markdown deck per module (`00-about` + modules `01`–`12`).
   **The Markdown is the source of truth.** Listed in `slides/slide-list.txt`.
 - `labs/NN-Name/README.md` — one lab per module, with runnable starter code and a

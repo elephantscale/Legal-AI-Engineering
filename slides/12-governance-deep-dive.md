@@ -1,6 +1,6 @@
 # Module 12 — Governance and Compliance Deep-Dive
 
-Optional Day 3 / modular
+Day 3 — Prove It
 
 Elephant Scale
 

@@ -1,6 +1,6 @@
 # Module 7 — Ship It: Workflow, Private Deployment, and Governance
 
-Day 3 by default — the floating module
+Day 3 — Ship It
 
 Elephant Scale
 
@@ -244,7 +244,7 @@ conversation are the same conversation.
 
 Notes:
 
-Keep this tight — 10 minutes. The deep version is the optional Day 3 module. The actionable
+Keep this tight — 10 minutes. The deep version is Module 12, later today. The actionable
 point is the last one: the protective order and the client guidelines bind your users today,
 and they are the near-term source of product requirements, not the EU AI Act.
 
@@ -368,7 +368,7 @@ and a compose file that runs the stack offline.
 Notes:
 
 Budget 75 minutes. The before/after score is the part students take back to work — it is a
-format their management already understands, and it turns a two-day course into a Monday
+format their management already understands, and it turns a training course into a Monday
 morning proposal.
 
 ---

@@ -212,13 +212,12 @@ labs/
 ```
 
 **Labs 02–07 are a pipeline.** Lab `NN` reads lab `NN-1`'s output from `work/`. Run them in
-order the first time. Labs 09–12 (optional Day 3) each read `work/` but not each other, so
+order the first time. Labs 07 and 09–12 each read `work/` but not each other, so
 they can be done in any order.
 
-**Lab 07 is taught on Day 3 by default** (it is the floating module), but it still sits in
-the chain: it reads Lab 06's output. If your class did not reach it, run it anyway — the
-capstone does not require it, and it is where the production set and the container come
-from.
+**Lab 07 is taught on Day 3**, but it still sits in the chain: it reads Lab 06's output. If
+your class ran the condensed two-day version and did not reach it, run it anyway — the capstone
+does not require it, and it is where the production set and the container come from.
 
 If you fall behind, Lab 02 ships a complete worked answer (`ingest_reference.py`) and every
 later lab in the chain ships code that already runs end to end — the exercises are edits and

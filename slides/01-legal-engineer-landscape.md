@@ -14,7 +14,7 @@ is.
 
 This module gives you the map: what the market has already bought and what it still cannot
 do, what the role is, where AI actually fits in legal work, and the two risks that will be
-behind every design decision you make for the next two days.
+behind every design decision you make for the rest of this course.
 
 Notes:
 
@@ -225,7 +225,7 @@ this role without naming it.
 This is the thesis of the course. Land it hard. The third bullet is the moat: anybody can
 wire a chatbot to a cloud API in an afternoon. Doing it where the data cannot leave, and
 producing the evidence that it did not, is a real engineering discipline — and it is
-teachable in two days, which is why this course exists.
+teachable — in days, not years — which is why this course exists.
 
 ---
 
@@ -268,7 +268,7 @@ small firms that were priced out entirely. That is FreeEed's whole market thesis
 Notes:
 
 Ask the room which of the five they are being paid to work on. Use the answer to decide how
-much of the optional Day 3 material to preview. Contracts people need the extraction and
+much of the Day 3 material to preview. Contracts people need the extraction and
 agentic content; eDiscovery people need defensibility.
 
 ---

@@ -114,7 +114,7 @@ just a pipeline.
 
 ## Extensions, If You Have Time
 
-Pick one. They map to the optional Day 3 modules.
+Pick one. They map to the Day 3 modules and the modular series.
 
 * **Investigations** — entities, a reconstructed email thread, a timeline *(Module 9)*
 * **Agentic** — a multi-step workflow with a real human checkpoint *(Module 10)*
@@ -200,7 +200,7 @@ Issuance mechanics and the roster record are in Lab 08's Teacher's Playbook.
   - **Building Secure AI Applications** — the builder's security course (injection, output
     handling, RAG security, agent safety). Your corpus is written by adversaries; take it.
   - **AI Security for Security Teams** — the defender's chair, same threat model
-  - **Building Agentic AI** — if your Day 3 interest is orchestration
+  - **Building Agentic AI** — if you want more than Module 10 gives you on orchestration
 * Applies **SAIS-100** in its governance work, with the legal overlay you now own
 * **FreeEed** — the open-source reference system; go install it and point it at your own data,
   on your own machine, which is the entire point

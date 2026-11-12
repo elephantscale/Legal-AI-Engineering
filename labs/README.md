@@ -1,7 +1,8 @@
 # Labs
 
-Eleven labs. **Labs 02–06 and 08 are the two-day core. Lab 07 floats — it is scheduled on Day 3 and
-pulled into Day 2 when that day has room. Labs 09–12 are the rest of the optional Day 3.**
+Eleven labs. **Labs 02–06 and 08 are the Day 1–2 build path. Labs 07, 10 and 12 are Day 3.
+Labs 09 and 11 are the modular series, swapped into Day 3 on request.** In the condensed
+two-day version Lab 07 floats forward into Day 2 when that day has room.
 
 The core labs are a **pipeline**: each one consumes the previous one's output. By the end
 of Lab 07 you have one working system, and Lab 08 is the capstone that assembles it into
@@ -22,19 +23,18 @@ something you can hand to a hiring manager or a client.
 | 2 | 6 · Defensible AI Review | `06-defensible-review` | **[06 — Defensible Review](06-Defensible-Review/)** | `metrics.json` + a bundle that replays |
 | 3 ◇ | 7 · Ship It | `07-ship-score-govern` | **[07 — Score and Package](07-Score-and-Package/)** | `sais100-score.json` + a production set |
 | 2 | Capstone | `08-capstone` | **[08 — Capstone](08-Capstone/)** | the repository + `DEFENSE.md` |
-| 3 | 9 · Investigations | `09-investigations` | **[09 — Investigations + Timeline](09-Investigations-Timeline/)** | `timeline.md` + `collection_leads.jsonl` |
+| series | 9 · Investigations | `09-investigations` | **[09 — Investigations + Timeline](09-Investigations-Timeline/)** | `timeline.md` + `collection_leads.jsonl` |
 | 3 | 10 · Agentic Legal Workflows | `10-agentic-legal-workflows` | **[10 — Agentic Legal Workflow](10-Agentic-Legal-Workflow/)** | `steps.jsonl` + a gated memo |
-| 3 | 11 · Deployment at Scale | `11-deployment-at-scale` | **[11 — Deploy at Scale](11-Deploy-At-Scale/)** | `throughput.json` + a destruction certificate |
+| series | 11 · Deployment at Scale | `11-deployment-at-scale` | **[11 — Deploy at Scale](11-Deploy-At-Scale/)** | `throughput.json` + a destruction certificate |
 | 3 | 12 · Governance Deep-Dive | `12-governance-deep-dive` | **[12 — Governance Audit](12-Governance-Audit/)** | `sais100-verified.json` + findings report |
 
 Module 8 is the capstone framing; there is no separate deck numbered 08 beyond
 `08-capstone`.
 
-◇ **Module 7 is the floating module.** Day 3 by default, so that Day 2 fits in a day;
-teach it on Day 2 whenever the room is fast enough. Nothing downstream needs it — the
-capstone drives Labs 02–06 itself and produces its own SAIS-100 score. What a two-day room
-does *not* get without it is the **document production set** and the **containerized
-deployment**.
+◇ **Module 7 is taught on Day 3.** Nothing downstream needs it — the capstone drives Labs
+02–06 itself and produces its own SAIS-100 score. In the **condensed two-day version** it
+floats forward into Day 2 whenever the room is fast enough; a two-day room that does not reach
+it loses the **document production set** and the **containerized deployment**.
 
 ---
 
@@ -61,7 +61,7 @@ deployment**.
                    ▼
                 08 Capstone ──▶ the repository + DEFENSE.md
 
-  Day 3 branches off the same work directory:
+  Day 3 and the modular series branch off the same work directory:
         09 Investigations · 10 Agentic · 11 Scale · 12 Audit
 ```
 

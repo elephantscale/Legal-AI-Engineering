@@ -1,6 +1,6 @@
 # Module 9 — Investigations: Entities, Relationships, and Timelines
 
-Optional Day 3 / modular
+Modular series — swapped into Day 3 on request
 
 Elephant Scale
 

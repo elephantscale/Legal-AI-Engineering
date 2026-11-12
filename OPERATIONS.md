@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-12
+**Last updated:** 2026-11-12 (three-day restructure)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -171,14 +171,22 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 - **First student: Carlene Gordon.** Mark meets her **Tuesday 2026-11-17** to talk through
   the course and set expectations; **delivery dates are agreed later**, not in that meeting.
   This ends the course's build-ahead-of-demand phase.
-  - **Day 3 stays optional** (Mark, 2026-11-10), partly because two days may already be too
-    much material — see the Day 2 overload risk below.
+  - **Run her as three days** (Mark, 2026-11-12). The course is now three days by default, and
+    she is the dry run — measuring two days would measure a product we no longer lead with.
   - **She is to receive the certificate.** The infrastructure is ready: Lab 08's four-check
     issuance checklist and the roster record. She becomes **roster row #1** for
     `LEGAL-AI-ENG-2026`, which is the row that has to answer "what did they actually have to
     do?" in five years. Issue it against the same bar as any paying student — a softened
     first issuance is the one thing that would devalue the credential permanently.
-  - **Under consideration (Mark, 2026-11-10): course free, technical support paid.** She
+  - **Decided 2026-11-12: she pays, at $100/day — $300 for the three days.** She asked to pay.
+    Record *why* it is $300, because the number will be quoted back: she is the first cohort and
+    the dry run, and the price buys her feedback and our timings. Three consequences. She is now
+    a **paying student**, so the certificate bar and the **six months of email support** apply
+    to her in full — she is the first live test of decision 9. **$300 must not reach Chandra's
+    page or any channel conversation**; it is a pilot rate, not a list price, and the list price
+    is still `Unknown`. And it is the course's **first revenue** — trivial in amount, material
+    as a reference customer.
+  - **Superseded by the above (Mark, 2026-11-10): course free, technical support paid.** She
     would get the course at no charge, with paid support afterwards on the issues the course
     covers. *(Needs CEO input — see Decisions needed from Mark.)*
 - **Partnership offer out to John Tredennick (Merlin Search Technologies), 2026-11-11.**
@@ -267,6 +275,7 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 | **A partner is advertising our certificate before we have defined it.** The NobleProg/Govtra page carries the Legal AI Engineer Certificate and its requirements. | Medium | Settle `DEC-015` and tell Chandra what partners may and may not say. Carlene's issuance is the first real test of the same bar. |
 | **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. |
 | **Six months of support and updates is now a promise in the contract.** `outline.md` commits every participant to six months of the instructor's email support and six months of course-material updates. The volume is unbounded, the cost is unpriced, and when a **partner** sells the seat it is not stated who honours it — NobleProg's ~$2,700 online rate was set before this existed. | Medium | Decide the bounds before the first cohort (decision 9): what support covers, how updates are delivered (a repo invitation is the cheapest honest answer), and whether a partner seat includes both. Cheap to scope now, expensive to walk back after a cohort has been told. |
+| **The three-day shape is unmeasured.** Day 3 is now a sold day — Modules 7, 10, 12 and three labs — and no day of this course has ever been run against a clock. Day 2 was 35 minutes over before the restructure. If Day 3 does not fill a day, we are charging for a short day; if it overflows, the modular series has nowhere to go. | **High** | Carlene (2026-11-17 meeting, dates later) is now a three-day dry run, which is the measurement. Time all three days against the playbook estimates and replace the estimates with numbers before the first paid cohort or any channel re-pricing sticks. |
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
 ## Decisions needed from Mark
@@ -288,9 +297,9 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    What the two-day room gives up when Module 7 is not pulled forward: the **document
    production set** (`production/VOL001/`) and the **containerized deployment**. What it does
    **not** give up: the certificate — the capstone drives Labs 02–06 itself and runs
-   `sais100.py`, so `sais100-score.json` and issuance check 4 survive. Day 3 is now
-   explicitly a **menu, not a fixed day**: five modules' worth of material, selected from or
-   sold as a modular series.
+   `sais100.py`, so `sais100-score.json` and issuance check 4 survive.
+
+   *Superseded in part 2026-11-12:* Day 3 is **no longer a menu**. See decision 4.
 
 1. **Monetisation model** — *Decided 2026-11-10. The ladder is:*
 
@@ -388,9 +397,33 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    "reference platform / reference architecture the labs are designed against", naming only
    capabilities backed by `FreeEedCRM/docs/technical-primer.md`. Confirm this is how you want
    FreeEed positioned in course marketing.
-4. **Day 3 packaging** — *Decided 2026-11-10: Day 3 stays **optional**.* Still open is
-   whether it is also sellable as a standalone modular series, which decision 0 may force
-   anyway if Module 7 moves into it.
+4. **Day 3 packaging** — *Decided 2026-11-12: **the course is three days**, with a condensed
+   two-day version. This supersedes the 2026-11-10 "Day 3 stays optional" decision.* The whole
+   repo now says so: `outline.md`, `README.md`, `CLAUDE.md`, `labs/README.md`, `labs/SETUP.md`,
+   eight decks and five lab READMEs.
+
+   **The shape:**
+   - **Days 1–2** — the build path, unchanged. Capstone and SAIS-100 score on Day 2, so the
+     certificate bar is met in two days either way.
+   - **Day 3 — "ship it, oversee it, prove it"** — Modules **7** (Ship It), **10** (agentic,
+     with human oversight designed rather than promised) and **12** (governance audit).
+   - **Modular series** — Modules **9** (investigations) and **11** (deployment at scale),
+     sold separately or swapped into Day 3 on request. 9 is what an eDiscovery audience asks
+     for; 11 is what public-sector and government-cloud buyers ask for.
+   - **Condensed two-day version** — Day 3 dropped, Module 7 floating forward into Day 2 when
+     the room is fast enough. **The cut is decided before the class, not at 4pm on Day 2.**
+
+   **Why three, and why the default matters.** The default is what a partner lists and what
+   anchors the price; options get ignored. "Optional Day 3" means upselling a buyer who has
+   already decided on two days — almost nobody is. "Condensed two-day" means the buyer asks for
+   a discount and *we* choose what drops. At NobleProg's own flat rate this is **~$2,700 →
+   ~$4,050 online** and **~$3,900 → ~$5,855 classroom** per seat, for material already written
+   and already passing `test-all-labs.sh`. The counter-cost is real: a third day crosses an
+   approval threshold at many firms where two days is only a calendar decision, so expect a
+   lower conversion rate at a higher price per seat.
+
+   **Still open:** Day 3 has never been run against a clock either, and Modules 7 + 10 + 12
+   with three labs is the same shape as Day 1, not obviously a day. Measure it.
 5. **Target first delivery** — *Superseded 2026-11-10:* Carlene Gordon is the first
    student; dates are set after the 2026-11-17 conversation.
 6. **Three open questions on the validation dimension.** Raised by HQ 2026-11-11 and drafted
@@ -449,12 +482,16 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Next highest-value actions
 
-1. **Send Chandra Tan the Legal AI Engineering outline** (owed **2026-11-19**), with the
-   Module 7 → Day 3 change and the **new "bring your own AI subscription" prerequisite** called
-   out, and tell her what partners may say about the certificate.
-   One email, zero cost, and it corrects a live public page that is selling our course today.
-   This is Phase 1 of the 90-day plan in `marketing-channels.md` and the highest-return action
-   available.
+1. **Write to Chandra Tan once, not twice** (outline owed **2026-11-19**). Mark already sent
+   her an outline; what she now needs is a single message covering **one change, not four**:
+   *the course is three days / 21 hours — please re-price and re-list.* Folded into it: the
+   Day 3 contents, the new **bring-your-own-AI-subscription** prerequisite, the full certificate
+   name (**Elephant Scale Legal AI Engineer Certificate**, no completion-only tier), and the
+   webinar proposal. **Hold back one item**: six months of email support and updates must not go
+   on her page until decision 9 settles what it covers and whether a partner seat includes it.
+   This was drafted as a Module-7-moved correction on 2026-11-12 and then held, deliberately,
+   because the three-day decision landed the same day — two corrections in a week to a reseller
+   reads as an unfinished product.
 2. **Decide the audience sentence** before it is repeated anywhere (risk table above), and
    **answer the three validation questions** in decision 6. Both are cheap now and expensive
    once a brochure exists or a certificate has been issued against the rubric. The Merlin

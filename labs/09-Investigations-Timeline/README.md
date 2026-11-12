@@ -1,6 +1,6 @@
 # Lab 09 — Investigations: Entities, Threads, Timelines, Lineage
 
-**Module 9 · optional Day 3**
+**Module 9 · modular series — swapped into Day 3 on request**
 
 Review asks what a document says. **Investigation asks what the documents, together,
 imply** — including what is missing.

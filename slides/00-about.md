@@ -6,7 +6,7 @@ Elephant Scale
 
 ---
 
-## Two Days, Two Questions
+## Three Days, Two Questions
 
 > **"Where did that document go?"**
 >
@@ -22,7 +22,7 @@ Notes:
 
 Open here, on the two questions. Do not open with "AI is transforming legal." Everyone in
 the room already believes that; it buys nothing. The two questions are the course. Write
-them on the board and leave them there for two days — every lab gets tied back to one of
+them on the board and leave them there for three days — every lab gets tied back to one of
 them.
 
 Ask who has already had to answer a client security questionnaire about an AI feature. The
@@ -56,7 +56,7 @@ Notes:
 
 Say the "no legal background" line explicitly and early. Engineers moving into legal tech
 are often quietly worried that the room will assume knowledge they don't have. Defuse it
-in the first five minutes and you get real questions for two days instead of silence.
+in the first five minutes and you get real questions for three days instead of silence.
 
 ---
 
@@ -167,7 +167,7 @@ twice while this course was being written.
 
 ---
 
-## The Shape of the Two Days
+## The Shape of the Three Days
 
 **Day 1 — Build the foundation: ingest, search, retrieve**
 
@@ -176,15 +176,20 @@ twice while this course was being written.
 3. Search and retrieval — the foundation
 4. RAG for legal documents — with citations
 
-**Day 2 — Make it private, defensible, and shippable**
+**Day 2 — Make it private and defensible**
 
 5. Privacy, privilege, and local serving — the privilege trap
 6. Defensible AI review
 7. Capstone
 
-**Optional Day 3 / modular** — ship it (workflow, private deployment, governance) ·
-investigations · agentic legal workflows · deployment at scale · governance and compliance
-deep-dive
+**Day 3 — Ship it, oversee it, prove it**
+
+7. Ship it — workflow, private deployment, and governance
+10. Agentic and multi-step legal workflows (deep)
+12. Governance and compliance deep-dive
+
+**Further modules**, as a modular series or swapped into Day 3 on request — investigations
+(entities, relationships, timelines) · deployment at scale (CJIS, government, higher-ed)
 
 ---
 
@@ -238,7 +243,7 @@ and run it on their own machine, which is the entire point of the product.
 Notes:
 
 Keep this to ninety seconds. The room does not want a resume; it wants one reason to trust
-you for two days. That reason is the second bullet — you maintain an eDiscovery platform, so
+you for three days. That reason is the second bullet — you maintain an eDiscovery platform, so
 the failure modes in Module 2 are yours, not a vendor's slide deck.
 
 The law-degree bullet carries more weight than it looks. The point is the word *for* — the

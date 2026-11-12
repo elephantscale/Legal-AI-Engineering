@@ -1,6 +1,6 @@
 # Module 10 — Agentic and Multi-Step Legal Workflows
 
-Optional Day 3 / modular
+Day 3 — Oversee It
 
 Elephant Scale
 
