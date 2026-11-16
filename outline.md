@@ -60,8 +60,6 @@
 
 ## Format
 * **Live online, 9:00–16:00 US Central** (Mark, 2026-11-15) — on site for private cohorts on request.
-  ⚠ Seven hours *including* breaks and lunch is roughly **6:00 of teaching time per day**, against a
-  Day 2 measured at ~7:05 of content in OPERATIONS.md decision 0. The clock question is open.
 * Instructor-led, **highly hands-on** (learn by doing)
 * Every module has a working lab; the labs compound into a real legal-AI application by the end
 * Taught from the builder's seat — the instructor ships a real on-prem eDiscovery platform (FreeEed) and teaches AI security, so the labs reflect production reality rather than toy demos
