@@ -114,7 +114,7 @@ just a pipeline.
 
 ## Extensions, If You Have Time
 
-Pick one. They map to the Day 3 modules and the modular series.
+Pick one. They map to the Deep Dive and the electives.
 
 * **Investigations** — entities, a reconstructed email thread, a timeline *(Module 9)*
 * **Agentic** — a multi-step workflow with a real human checkpoint *(Module 10)*

@@ -269,7 +269,7 @@ Source: [jobs.generalcatalyst.com](https://jobs.generalcatalyst.com/companies/gu
 | Reproducibility bundle, pinned models, replay | Nobody by name | **M6 / Lab 06** | ✅ — no stated demand |
 | Prompt engineering and **prompt libraries as an artifact** | Dentons LAIE, Gibson Dunn, TR FDE, Gusto, Debevoise | M4, M7 (prompts are written, never curated) | 🟡 |
 | Human-in-the-loop / attorney review design, QC | Dentons LAIE (*where human review is needed*), Debevoise (*quality control, attorney review*), Gibson Dunn | **M7 / Lab 07**, LEGAL-C approval gate | 🟡 — we gate production; we do not design review |
-| Multi-step agentic workflows, tool use, guardrails | TR FDE (required), Gusto, Dentons AAE | **M10 / Lab 10** (Day 3) | ✅ but Day 3 |
+| Multi-step agentic workflows, tool use, guardrails | TR FDE (required), Gusto, Dentons AAE | **M10 / Lab 10** (Deep Dive) | ✅ but Deep Dive |
 | **MCP / A2A integration** | TR FDE (required), Gusto | — | ❌ |
 | **AI evaluation platforms** (LangSmith, Langfuse, Braintrust, W&B) | TR FDE | our own eval code only | ❌ |
 | **Observability / MLOps-LLMOps** (Datadog, Grafana, Prometheus; tracing) | TR FDE | M11 (scale), egress monitor | 🟡 |
@@ -280,7 +280,7 @@ Source: [jobs.generalcatalyst.com](https://jobs.generalcatalyst.com/companies/gu
 | **DMS integration** (iManage, NetDocuments) | TR FDE, Dentons AAE | — | ❌ |
 | **Vendor evaluation, pilots, tool assessment** | Gibson Dunn (core), Dentons AAE (*evaluate and prototype*), Gusto (*tool approvals, security reviews*) | M5 "private spectrum" + the new three-architecture slide | 🟡 — the raw material exists, the artifact does not |
 | **AI adoption, lawyer training, demos, change management** | Dentons, TR Eagan, Relativity, Debevoise, Gibson Dunn | — | ❌ **most-repeated requirement in the set** |
-| Governance, AI regulation, audit | Gibson Dunn (adjacent), Dentons AAE (responsible AI) | **M12 / Lab 12 + SAIS-100 overlay** | ✅ but Day 3 |
+| Governance, AI regulation, audit | Gibson Dunn (adjacent), Dentons AAE (responsible AI) | **M12 / Lab 12 + SAIS-100 overlay** | ✅ but Deep Dive |
 | Regulated-environment experience (CJIS/FedRAMP-type) | TR FDE (regulated industry, preferred) | **M11** | ✅ |
 | Legal domain fluency taught in context | all eight | M1, M5, M6 | ✅ |
 

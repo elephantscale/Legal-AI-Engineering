@@ -215,9 +215,14 @@ labs/
 order the first time. Labs 07 and 09–12 each read `work/` but not each other, so
 they can be done in any order.
 
-**Lab 07 is taught on Day 3**, but it still sits in the chain: it reads Lab 06's output. If
-your class ran the condensed two-day version and did not reach it, run it anyway — the capstone
-does not require it, and it is where the production set and the container come from.
+**Lab 07 opens the Deep Dive**, but it still sits in the chain: it reads Lab 06's output. If your
+class took the Core only and never reached it, run it anyway — the capstone does not require it,
+and it is where the production set and the container come from.
+
+**Coming back for the Deep Dive weeks later?** Labs 07, 10 and 12 all read the Core's `work/`
+tree — `catalog.jsonl`, `exceptions.jsonl`, `index.sqlite`, `chunks.jsonl`, `attestation.json`,
+`metrics.json`, the case snapshot. If yours is gone, run `./resume-deep-dive.sh` from `labs/`: it
+rebuilds the seeded corpus and replays Labs 02–06 offline in a few minutes.
 
 If you fall behind, Lab 02 ships a complete worked answer (`ingest_reference.py`) and every
 later lab in the chain ships code that already runs end to end — the exercises are edits and

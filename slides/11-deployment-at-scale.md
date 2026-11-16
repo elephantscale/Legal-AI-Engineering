@@ -1,6 +1,6 @@
 # Module 11 — Deployment at Scale
 
-Modular series — swapped into Day 3 on request
+Elective — booked on its own, or added to the Deep Dive
 
 Elephant Scale
 

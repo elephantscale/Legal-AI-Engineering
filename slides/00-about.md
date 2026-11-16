@@ -6,7 +6,7 @@ Elephant Scale
 
 ---
 
-## Three Days, Two Questions
+## Two Questions You Will Be Asked
 
 > **"Where did that document go?"**
 >
@@ -22,7 +22,7 @@ Notes:
 
 Open here, on the two questions. Do not open with "AI is transforming legal." Everyone in
 the room already believes that; it buys nothing. The two questions are the course. Write
-them on the board and leave them there for three days — every lab gets tied back to one of
+them on the board and leave them there for the whole course — every lab gets tied back to one of
 them.
 
 Ask who has already had to answer a client security questionnaire about an AI feature. The
@@ -56,7 +56,7 @@ Notes:
 
 Say the "no legal background" line explicitly and early. Engineers moving into legal tech
 are often quietly worried that the room will assume knowledge they don't have. Defuse it
-in the first five minutes and you get real questions for three days instead of silence.
+in the first five minutes and you get real questions for the rest of the course instead of silence.
 
 ---
 
@@ -176,28 +176,28 @@ else's inbox, that includes mine.
 
 ---
 
-## The Shape of the Three Days
+## The Shape of the Course
 
-**Day 1 — Build the foundation: ingest, search, retrieve**
+**Core · Day 1 — Build the foundation: ingest, search, retrieve**
 
 1. The legal engineer's landscape
 2. Legal data is messy — ingestion and extraction
 3. Search and retrieval — the foundation
 4. RAG for legal documents — with citations
 
-**Day 2 — Make it private and defensible**
+**Core · Day 2 — Make it private and defensible**
 
 5. Privacy, privilege, and local serving — the privilege trap
 6. Defensible AI review
-7. Capstone
+8. Capstone
 
-**Day 3 — Ship it, oversee it, prove it**
+**Deep Dive — one day, scheduled separately: ship it, oversee it, prove it**
 
 7. Ship it — workflow, private deployment, and governance
 10. Agentic and multi-step legal workflows (deep)
 12. Governance and compliance deep-dive
 
-**Further modules**, as a modular series or swapped into Day 3 on request — investigations
+**Electives**, booked on their own or added to the Deep Dive — investigations
 (entities, relationships, timelines) · deployment at scale (CJIS, government, higher-ed)
 
 ---
@@ -252,7 +252,7 @@ and run it on their own machine, which is the entire point of the product.
 Notes:
 
 Keep this to ninety seconds. The room does not want a resume; it wants one reason to trust
-you for three days. That reason is the second bullet — you maintain an eDiscovery platform, so
+you for the next two days. That reason is the second bullet — you maintain an eDiscovery platform, so
 the failure modes in Module 2 are yours, not a vendor's slide deck.
 
 The law-degree bullet carries more weight than it looks. The point is the word *for* — the

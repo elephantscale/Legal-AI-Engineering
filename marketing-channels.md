@@ -34,8 +34,12 @@ outline.** It is not a competitor and not a leak. It is our own channel moving f
 **Three live issues it creates — none of them a dispute, all of them ours to close:**
 
 1. **The public spec is now a page we did not write.** It tracks `outline.md` closely, but
-   `outline.md` changed on 2026-11-11 (Module 7 moved to Day 3). **Their page is already
-   stale.** Sending the promised outline is now a correction, not just a favour.
+   `outline.md` has changed twice since: **2026-11-11** (Module 7 moved off Day 2) and
+   **2026-11-15** (the three-day course became a **2-day Core plus a 1-day Deep Dive**, sold and
+   scheduled separately, with electives). **Their page is two revisions stale.** Sending the
+   promised outline is now a correction, not just a favour — and it is the third shape we have
+   described to this reseller in two weeks, so send the current one and say plainly that it is
+   the one to publish.
 2. **No author or instructor credit**, and the footer asserts *"All Rights Reserved"* to
    NobleProg while using our SAIS-100 name. The same asymmetry was already noted on the July
    listings and judged optional. It is less optional on a page advertising **our certificate**.
@@ -232,7 +236,7 @@ Phase 3, and Phase 3 only happens if Phase 2 clears.
 
 | Action | Done when |
 |---|---|
-| Send Chandra Tan the Legal AI Engineering outline (**owed 2026-11-19**), noting the Module 7 → Day 3 change | Email sent; her page updated |
+| Send Chandra Tan the Legal AI Engineering outline (**owed 2026-11-19**), noting the 2026-11-15 split: a 2-day Core and a separately scheduled 1-day Deep Dive, Module 7 in the Deep Dive, electives on request | Email sent; her page updated |
 | Reconcile the NobleProg/Govtra page against current `outline.md`; list every divergence | Written diff exists |
 | Decide whether a partner may advertise the **Legal AI Engineer Certificate**, and under what name (`DEC-015`) | Decision recorded |
 | Settle the audience sentence — engineers, or engineers *and* lawyers (see `job-market-research.md` §4) | Decision recorded |
@@ -292,7 +296,7 @@ seats**. **Threshold to continue into Q2:** ≥3 paid seats or ≥1 partner-sche
 
 | Unknown | Blocks | Owner |
 |---|---|---|
-| **Our list price** for the two-day course (NobleProg implies ≈$2,700 online retail) | Every channel, every ad, every quote | Mark |
+| **Our list price** for the two-day **Core** (NobleProg implies ≈$2,700 online retail) — **and, new on 2026-11-15, a separate price for the 1-day Deep Dive**, which is now a product a buyer can decline | Every channel, every ad, every quote | Mark |
 | Certificate name and whether partners may advertise it | The NobleProg page, Carlene's certificate | Mark / ES brand (`DEC-015`) |
 | LawSites / LawNext **rate card** and audience size | Phase 3 choice | ask `info@lawnext.com` |
 | ACEDS affiliate-partner and webinar-sponsor **terms and cost** | Phase 3 choice | ask ACEDS |

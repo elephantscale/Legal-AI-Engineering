@@ -1,6 +1,6 @@
 # Lab 12 — Governance Audit: Verified, With Evidence
 
-**Module 12 · Day 3 · the last lab of the course**
+**Module 12 · Deep Dive · the last lab of the course**
 
 In Lab 07 you scored your own system from your own artifacts, and the scorer believed
 them. An auditor does not.
@@ -358,15 +358,15 @@ the pair-swap (recommended), add 20 and cut the exercises.
 
 ### Closing the course on this lab
 
-If Day 3 ends here, this is the last thing the room hears, so close on the three keepers
+If the Deep Dive ends here, this is the last thing the room hears, so close on the three keepers
 rather than on the audit:
 
 - **the four leak points** — OCR, embeddings, chat, logs. Count them every time.
 - **recall and elusion, with the interval.** No bare point estimates.
 - **"can you prove it?"** — asked of your own work, before someone else asks it of you.
 
-Then the callback: three days ago they could build a legal-AI system. The reason they can
-now defend one is not that the code got better. It is that every stage emits an artifact,
+Then the callback: at the end of the Core they could build a legal-AI system. The reason they
+can now defend one is not that the code got better. It is that every stage emits an artifact,
 and the artifacts are the defence.
 
 ---

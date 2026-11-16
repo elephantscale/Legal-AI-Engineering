@@ -1,8 +1,8 @@
 # Labs
 
-Eleven labs. **Labs 02–06 and 08 are the Day 1–2 build path. Labs 07, 10 and 12 are Day 3.
-Labs 09 and 11 are the modular series, swapped into Day 3 on request.** In the condensed
-two-day version Lab 07 floats forward into Day 2 when that day has room.
+Eleven labs. **Labs 02–06 and 08 are the Core, two days — the build path. Labs 07, 10 and 12 are
+the Deep Dive, one day, scheduled separately. Labs 09 and 11 are electives**, booked on their own
+or added to the Deep Dive.
 
 The core labs are a **pipeline**: each one consumes the previous one's output. By the end
 of Lab 07 you have one working system, and Lab 08 is the capstone that assembles it into
@@ -31,10 +31,11 @@ something you can hand to a hiring manager or a client.
 Module 8 is the capstone framing; there is no separate deck numbered 08 beyond
 `08-capstone`.
 
-◇ **Module 7 is taught on Day 3.** Nothing downstream needs it — the capstone drives Labs
-02–06 itself and produces its own SAIS-100 score. In the **condensed two-day version** it
-floats forward into Day 2 whenever the room is fast enough; a two-day room that does not reach
-it loses the **document production set** and the **containerized deployment**.
+◇ **Module 7 opens the Deep Dive and no longer floats** (Mark, 2026-11-15). Nothing downstream
+needs it — the capstone drives Labs 02–06 itself and produces its own SAIS-100 score. It cannot be
+pulled back into Day 2: that was tried on paper and Day 2 is already ~35 minutes over without it.
+A Core-only class loses the **document production set** and the **containerized deployment**, and
+nothing else.
 
 ---
 
@@ -61,8 +62,9 @@ it loses the **document production set** and the **containerized deployment**.
                    ▼
                 08 Capstone ──▶ the repository + DEFENSE.md
 
-  Day 3 and the modular series branch off the same work directory:
-        09 Investigations · 10 Agentic · 11 Scale · 12 Audit
+  The Deep Dive and the electives branch off the same work directory:
+        07 Score & Package · 09 Investigations · 10 Agentic · 11 Scale · 12 Audit
+  The Deep Dive runs weeks later, so rebuild the tree with ./resume-deep-dive.sh
 ```
 
 Everything writes into `labs/work/` (gitignored). **Lab `NN` reads lab `NN-1`'s output.**

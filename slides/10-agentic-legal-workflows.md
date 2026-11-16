@@ -1,6 +1,6 @@
 # Module 10 — Agentic and Multi-Step Legal Workflows
 
-Day 3 — Oversee It
+Deep Dive — Oversee It
 
 Elephant Scale
 
@@ -261,7 +261,7 @@ Notes:
 
 Budget 90 minutes. The injection document is the highlight — students see their own agent
 read an instruction from the evidence and ignore it, with a log line proving it. That is the
-most satisfying moment of Day 3.
+most satisfying moment of the Deep Dive.
 
 The deliberately-unregistered `produce()` tool is worth calling out at debrief: ask the room
 how they would get the agent to produce documents. The answer is that they cannot, because

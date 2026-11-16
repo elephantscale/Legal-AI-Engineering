@@ -38,6 +38,8 @@ PST/OST, Solr/Lucene search, review, and Bates/load-file production. The labs ar
 self-contained Python over a synthetic corpus, designed against that architecture, so what
 you build here transfers to a system you can actually deploy.
 
-A 3-day course — a 2-day build path plus a third day that ships it — with further modules (investigations, agentic legal
-workflows, scale, governance audit). See [`outline.md`](outline.md) for the full
-description, audience, learning outcomes, modules, and the module ↔ lab map.
+Two products: a **2-day Core** (the build path, and the certificate bar) and a **1-day Deep Dive**
+scheduled separately (ship it, oversee it, prove it), plus **electives** — investigations and
+deployment at scale. They can still run as three consecutive days on request. See
+[`outline.md`](outline.md) for the full description, audience, learning outcomes, modules, and the
+module ↔ lab map.

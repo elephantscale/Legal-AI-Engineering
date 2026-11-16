@@ -1,17 +1,23 @@
 # Working on this course with Claude
 
-This is the **Legal AI Engineering** course (Elephant Scale) — a 3-day (condensed 2-day version available),
-hands-on, engineer-level course on building **private, defensible** AI for legal work:
+This is the **Legal AI Engineering** course (Elephant Scale) — a hands-on, engineer-level course on
+building **private, defensible** AI for legal work, sold as a **2-day Core plus a 1-day Deep Dive**:
 eDiscovery, document review, and investigations. This file orients a Claude session
 started in this directory.
 
 ## What's here
 
 - `outline.md` — the course outline. **Treat it as the contract.** Module numbers, lab
-  names, and the Day 1 / Day 2 / Day 3 split come from here. **Three days as of 2026-11-12**
-  (Mark): Days 1–2 are the build path, Day 3 is Modules 7, 10 and 12 ("ship it, oversee it,
-  prove it"), Modules 9 and 11 are a modular series swapped into Day 3 on request, and a
-  **condensed two-day version** drops Day 3 with Module 7 floating forward into Day 2.
+  names, and the product split come from here. **Two products as of 2026-11-15** (Mark): the
+  **Core** is two days, Modules 1–6 plus the capstone — the build path, and the certificate bar is
+  met by it alone. The **Deep Dive** is one day, Modules 7, 10 and 12 ("ship it, oversee it, prove
+  it"), scheduled separately and **assuming the Core**. Modules 9 and 11 are **electives**, booked
+  on their own or added to the Deep Dive. The two can still run back to back as three consecutive
+  days on request — the split exists because three days in a row is the hardest thing to ask of a
+  working legal team. There is no "condensed version" and **Module 7 no longer floats**: it was
+  moved into Day 2 on paper on 2026-11-15 and moved straight back, because Day 2 is already ~35
+  minutes over without it (OPERATIONS.md decision 0 carries the clock table). Don't re-propose it
+  without new timings.
 - `slides/NN-name.md` — one Markdown deck per module (`00-about` + modules `01`–`12`).
   **The Markdown is the source of truth.** Listed in `slides/slide-list.txt`.
 - `labs/NN-Name/README.md` — one lab per module, with runnable starter code and a
@@ -77,6 +83,13 @@ differentiator against generic "AI for lawyers" training.
   a correct run looks like, and what artifact to keep.
 - Labs 02–07 write into `labs/work/` (gitignored). Lab `NN` reads lab `NN-1`'s output.
   Don't break that chain; if you change a filename, change the consumer in the same commit.
+- **The Deep Dive runs weeks after the Core**, so `labs/resume-deep-dive.sh` rebuilds the seeded
+  corpus and replays Labs 02–06 into `labs/work/` offline — Labs 07, 10 and 12 read
+  `catalog.jsonl`, `exceptions.jsonl`, `index.sqlite`, `chunks.jsonl`, `attestation.json`,
+  `metrics.json` and the case snapshot, so a student arriving with an empty work tree cannot
+  start. It deliberately replays the Core labs with **their own commands** rather than Lab 07's
+  `run_matter.py`, which would spoil the Deep Dive's first lesson. That script is a **consumer of
+  every Core lab's output filenames**: if you rename one, fix it in the same commit.
 - Each lab ends with a rich `## Teacher's Playbook`: worked model answer with realistic
   output, live-demo script, common mistakes + fixes, debrief Q&A, "what good looks like."
 - Each lab names its **deliverable** — the artifact that goes in the capstone bundle.

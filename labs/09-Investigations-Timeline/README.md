@@ -1,6 +1,6 @@
 # Lab 09 — Investigations: Entities, Threads, Timelines, Lineage
 
-**Module 9 · modular series — swapped into Day 3 on request**
+**Module 9 · elective — booked on its own, or added to the Deep Dive**
 
 Review asks what a document says. **Investigation asks what the documents, together,
 imply** — including what is missing.

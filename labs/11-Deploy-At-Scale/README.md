@@ -1,6 +1,6 @@
 # Lab 11 — Deploy at Scale, and Destroy at the End
 
-**Module 11 · modular series — swapped into Day 3 on request**
+**Module 11 · elective — booked on its own, or added to the Deep Dive**
 
 Two things happen to a legal-AI system that works: it gets pointed at a collection ten
 times bigger, and eventually somebody asks you to delete the whole matter.

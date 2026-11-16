@@ -1,6 +1,6 @@
 # Lab 10 — An Agentic Legal Workflow You Can Defend
 
-**Module 10 · Day 3**
+**Module 10 · Deep Dive**
 
 An agent loop is twenty lines: the model picks a tool, you run it, you feed back the
 result. Nothing about that is legal-specific, and nothing about it is hard.

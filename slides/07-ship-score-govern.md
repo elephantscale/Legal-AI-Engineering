@@ -1,6 +1,6 @@
 # Module 7 — Ship It: Workflow, Private Deployment, and Governance
 
-Day 3 — Ship It
+Deep Dive — Ship It
 
 Elephant Scale
 

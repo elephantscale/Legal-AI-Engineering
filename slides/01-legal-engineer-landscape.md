@@ -219,7 +219,7 @@ Sources:
   in the free summary. ILTA's full named concerns are GenAI-powered social engineering first,
   then detecting anomalous GenAI behavior, preventing GenAI agent abuse, third-party GenAI
   security risk, prompt injection and data/model poisoning — which is, almost line for line, the
-  Day 3 agentic-security module.
+  Deep Dive's agentic-security module.
 * **Thomson Reuters Institute, Future of Professionals 2026 — Legal** — 736 law firm
   professionals across 46 countries (421 in the U.S.) plus 203 in-house, fielded **March–April
   2026**. Verbatim: *"some 34% of law firm professionals say they are currently using AI tools
@@ -361,7 +361,7 @@ a different title than the one on the brochure.
 Say the J.D. line plainly and early. Someone in the room has already searched *Legal AI
 Engineer*, found a J.D. requirement, and is quietly wondering whether they are in the wrong
 course. They are not — they are reading the wrong half of the market. If you let them work
-that out on their own on Day 3, you have lost them.
+that out on their own at the end of the course, you have lost them.
 
 Work the Dentons pair out loud; it is the whole finding compressed into one firm. Then land
 the last bullet without flinching. **We do not teach the platforms and we do not teach
@@ -406,7 +406,7 @@ small firms that were priced out entirely. That is FreeEed's whole market thesis
 Notes:
 
 Ask the room which of the five they are being paid to work on. Use the answer to decide how
-much of the Day 3 material to preview. Contracts people need the extraction and
+much of the Deep Dive material to preview. Contracts people need the extraction and
 agentic content; eDiscovery people need defensibility.
 
 ---

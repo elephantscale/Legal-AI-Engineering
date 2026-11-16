@@ -39,11 +39,11 @@ my-legal-ai/
 
 Three rules about that tree:
 
-0. **The `[Lab 07]` lines are there only if you did Lab 07.** Module 7 is taught on Day 3,
-   so a condensed two-day class may not have reached it. Without it you have no document
-   production set and no container — the capstone and the certificate do not require either, because the capstone
-   drives Labs 02–06 itself and produces its own SAIS-100 score. Say so in `DEFENSE.md`
-   rather than leaving a grader to wonder.
+0. **The `[Lab 07]` lines are there only if you did Lab 07.** Module 7 opens the Deep Dive, so
+   a Core-only class has not reached it. Without it you have no document production set and no
+   container — the capstone and the certificate do not require either, because the capstone
+   drives Labs 02–06 itself and produces its own SAIS-100 score. Say so in `DEFENSE.md` rather
+   than leaving a grader to wonder.
 
 1. **`VERIFY.md` must actually work.** Someone else will run it. Test it from a clean
    checkout in a different directory, with the corpus path as the only thing you change.
@@ -187,7 +187,7 @@ of them.
 
 ## Extensions
 
-Pick one if you have time. They map to the Day 3 modules and the modular series (Labs 09–12).
+Pick one if you have time. They map to the Deep Dive and the electives (Labs 09–12).
 
 | extension | module | lab |
 |---|---|---|
@@ -303,4 +303,6 @@ you.
 
 ---
 
-**Day 3 starts here:** [Lab 07 — Score and Package](../07-Score-and-Package/README.md)
+**The Deep Dive starts here:** [Lab 07 — Score and Package](../07-Score-and-Package/README.md) —
+and if weeks have passed since the Core, run `./resume-deep-dive.sh` from `labs/` first, because
+Lab 07 reads the Core's work tree.

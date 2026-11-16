@@ -1,14 +1,15 @@
 # Project Operations
 
-**Last updated:** 2026-11-15 (Module 1 slide splits; course target list in the CRM)
+**Last updated:** 2026-11-15 (Core + Deep Dive split; Module 1 slide splits; target list in the CRM)
 **Owner:** Mark Kerzner
 **Status:** Green
 
 ## Purpose and business value
 
 **Legal AI Engineering** (`LEGAL-AI-ENG-2026`) is the legal-vertical track of the Elephant
-Scale Secure AI Learning Path: 2 days core plus an optional Day 3 / modular deep-dive,
-Intermediate-to-Advanced, for software and AI engineers moving into legal tech.
+Scale Secure AI Learning Path: a **2-day Core** plus a **1-day Deep Dive scheduled separately**,
+with investigations and deployment-at-scale electives, Intermediate-to-Advanced, for software and
+AI engineers moving into legal tech.
 
 Why it earns its place in the catalog:
 
@@ -30,9 +31,9 @@ system did, and you can re-run it."*
 
 | Component | State |
 |---|---|
-| `outline.md` | Complete. Treated as the contract for module numbers and the Day split. |
+| `outline.md` | Complete. Treated as the contract for module numbers and the Core / Deep Dive split. |
 | Slides | 13 decks (`00-about` + modules 01–12), ~4,340 lines of presenter-skeleton Markdown, 185 slides, all with `Notes:` narration |
-| Labs | **All 11 built and smoke-tested offline** (01–07 core, 08–11 optional Day 3), ~9,500 lines of Python, ~3,800 lines of lab README including Teacher's Playbooks |
+| Labs | **All 11 built and smoke-tested offline** (02–06 + 08 Core, 07/10/12 Deep Dive, 09/11 electives), ~9,500 lines of Python, ~3,800 lines of lab README including Teacher's Playbooks |
 | Course materials | 7 documents (design canvas, defensibility checklist, TAR metrics cheat sheet, privilege/egress attestation form, reproducibility manifest template, SAIS-100 legal overlay, capstone rubric) |
 | Checks | `scripts/validate-course.sh`, `labs/verify-setup.sh`, `labs/test-all-labs.sh` — all green |
 
@@ -94,6 +95,34 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    is cloud.
 
 ## Recent accomplishments
+
+- *** THE COURSE IS NOW TWO PRODUCTS, NOT THREE DAYS IN A ROW (Mark, 2026-11-15). *** A **2-day
+  Core** (Modules 1–6 + the capstone; the certificate bar is met by it alone) and a **1-day Deep
+  Dive** (Modules **7**, **10**, **12** — ship it, oversee it, prove it), **sold and scheduled
+  separately**, with Modules 9 and 11 as **electives**. The two still run back to back as three
+  consecutive days on request. **Mark's reason, recorded because it is the design rationale:**
+  three days in a row is the hardest thing to ask of a working legal team. The repo says so
+  throughout — `outline.md`, `README.md`, `CLAUDE.md`, `labs/README.md`, `labs/SETUP.md`, the
+  capstone lab, and the day labels on eight decks (`Day 3 —` became `Deep Dive —`, the modular
+  series became `Elective —`). **"Condensed two-day version" is gone as a concept**, and with it
+  the 4pm-on-Day-2 cut decision: the Core *is* the two-day product.
+  - **Module 7 was moved into Day 2 and moved straight back, in the same session.** The clock
+    refused it: decision 0's table has Day 2 at **≈7:05 against 6.5 hours — already ~35 minutes
+    over — without** Module 7, and Module 7 plus Lab 07 is another **1:45**, which would put Day 2
+    near **8:50**. Keeping it in the Deep Dive also makes that day a real day: decision 4 flagged
+    that 10 + 12 alone *"is the same shape as Day 1, not obviously a day"*, and 7 + 10 + 12 is.
+    **Do not re-propose the move without new timings.**
+  - **`labs/resume-deep-dive.sh` is new, and it is what makes a separately scheduled day work.**
+    Labs 07, 10 and 12 all read the Core's `labs/work/` tree, so a student returning weeks later
+    with a wiped laptop cannot start. The script rebuilds the **seeded** corpus (seed 20261109,
+    pinned so the playbooks' document counts stay true) and replays **Labs 02–05** offline, then
+    prints what the Deep Dive will look for. Verified end to end: replay → Lab 07's twelve stages
+    and three gates → Lab 10 → Lab 12, all green offline.
+  - It deliberately does **not** rebuild the tree with Lab 07's `run_matter.py`, because that
+    one-line rebuild is the Deep Dive's opening lesson. **Why it stops at Lab 05 is a defect we
+    found on the way** — see the risk table.
+  - **Checks:** `validate-course.sh` green, `labs/test-all-labs.sh --docs 120` **94 passed / 0
+    failed / 1 n/a**, `verify-setup.sh` green.
 
 - **Module 1 now proves the need for the job, not just for the work** (Mark, 2026-11-12). Part 1
   always carried the firm-side adoption evidence; nothing carried the demand side. New slide
@@ -190,6 +219,12 @@ rewritten** — the gaps are recorded for review. The three findings that matter
   This ends the course's build-ahead-of-demand phase.
   - **Run her as three days** (Mark, 2026-11-12). The course is now three days by default, and
     she is the dry run — measuring two days would measure a product we no longer lead with.
+    - **Revisit under the 2026-11-15 split — Mark's call, not yet made.** The three days are now a
+      2-day Core and a 1-day Deep Dive, so her dry run should be **2 + 1**: easier to schedule
+      than three consecutive days, and it measures both products separately, including the gap and
+      `resume-deep-dive.sh` on the way back in. Three days of teaching either way, so **$300 at
+      $100/day is unaffected**. What does need deciding: whether her six months of support starts
+      at the end of the Core or the end of the Deep Dive.
   - **She is to receive the certificate.** The infrastructure is ready: Lab 08's four-check
     issuance checklist and the roster record. She becomes **roster row #1** for
     `LEGAL-AI-ENG-2026`, which is the row that has to answer "what did they actually have to
@@ -264,7 +299,12 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 - Commit and push.
 - Dry-run Day 1 with a timer; correct the playbook timings from measurement.
-- Decide whether `slides/09`–`12` (the optional Day 3) ship as a separate sellable module.
+- ~~Decide whether `slides/09`–`12` (the optional Day 3) ship as a separate sellable module.~~
+  **Decided 2026-11-15:** Modules 10 and 12 are the Deep Dive, with Module 7; 9 and 11 are
+  electives.
+- **Price the Deep Dive.** It is now a product a buyer can decline, which a three-day default hid.
+- **Decide when the six months of support and updates start** when the Core and the Deep Dive are
+  weeks apart. `outline.md` says "the last day of class" and that is now ambiguous.
 - Re-verify Module 5 and Module 11 against FreeEed's current sizing tiers before first
   delivery.
 - Consider a short student-facing one-pager on "your AI use is itself discoverable"
@@ -292,7 +332,8 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 | **A partner is advertising our certificate before we have defined it.** The NobleProg/Govtra page carries the Legal AI Engineer Certificate and its requirements. | Medium | Settle `DEC-015` and tell Chandra what partners may and may not say. Carlene's issuance is the first real test of the same bar. |
 | **Stated audience is wider than the built course.** Mark's 2026-11-11 email to Merlin describes the audience as "legal professionals looking to upgrade, or engineers moving into legal tech". As built this is Intermediate-to-Advanced **for engineers**: eleven Python labs and a capstone repository. A lawyer upgrading cannot complete them. | Medium | It was one line in a first email and it is Mark's to resolve on the call. Before anyone treats a non-engineer track as covered: it is weeks of work, not an adjustment — a parallel no-code track with different deliverables and a different certificate bar. Resolve the audience sentence before any brochure or landing page repeats it. **No longer theoretical, 2026-11-15 (risk raised to High in practice, not yet in this column):** Mark's four lined-up targets are now recorded in `FreeEedCRM/contacts.csv`, and they split three ways — two engineers who can do the labs, one eDiscovery practitioner (the dry run), and one practising attorney who cannot complete them and is therefore a private-cohort sponsor rather than a seat. Two of four cannot take the same course, and the freeeed.org **advance signup** page now waiting on this decision has to say which one it is. |
 | **Six months of support and updates is now a promise in the contract.** `outline.md` commits every participant to six months of the instructor's email support and six months of course-material updates. The volume is unbounded, the cost is unpriced, and when a **partner** sells the seat it is not stated who honours it — NobleProg's ~$2,700 online rate was set before this existed. | Medium | Decide the bounds before the first cohort (decision 9): what support covers, how updates are delivered (a repo invitation is the cheapest honest answer), and whether a partner seat includes both. Cheap to scope now, expensive to walk back after a cohort has been told. |
-| **The three-day shape is unmeasured.** Day 3 is now a sold day — Modules 7, 10, 12 and three labs — and no day of this course has ever been run against a clock. Day 2 was 35 minutes over before the restructure. If Day 3 does not fill a day, we are charging for a short day; if it overflows, the modular series has nowhere to go. | **High** | Carlene (2026-11-17 meeting, dates later) is now a three-day dry run, which is the measurement. Time all three days against the playbook estimates and replace the estimates with numbers before the first paid cohort or any channel re-pricing sticks. |
+| **Neither product has been run against a clock.** The Deep Dive is a sold day — Modules 7, 10, 12 and three labs — and no day of this course has ever been timed. Day 2 of the Core sits at ≈7:05 against 6.5 hours on paper (decision 0). If the Deep Dive does not fill a day we are charging for a short day; if it overflows, the electives have nowhere to go. **The 2026-11-15 split raises the stakes: the Deep Dive is now a separate purchase, so a thin day is visible on its own invoice.** | **High** | Carlene's dry run is the measurement, and under the split it should run as **2 + 1** — which also tests the gap and `resume-deep-dive.sh`. Time all three days against the playbook estimates and replace the estimates with numbers before the first paid cohort or any channel re-pricing sticks. |
+| **Lab 07's pipeline refuses to run on a work tree where Lab 06 was done by hand.** Found 2026-11-15 while building `resume-deep-dive.sh`. `defensible_review.py protocol` refuses to overwrite an existing `validation-protocol.md` — deliberately, *"that refusal IS the control"* — and Lab 07's `run_matter.py` re-runs that stage, so it fails at stage 9 and nothing after it runs. **This is the documented path**: Lab 07's README says *"if you have been following the pipeline, your `labs/work/` already has what this lab consumes."* `test-all-labs.sh` never catches it because it runs Lab 07 into a separate `work-matter` directory. **The split makes it worse** — the Deep Dive now opens with that command, weeks later, in front of a room. | **High** | Not fixed; **Mark's call, because every option changes lab behaviour or lab text.** Three candidates: (1) `run_matter.py` adopts pre-existing artifacts into `_state` instead of re-running them; (2) it passes `--force` to `protocol` only when no classification has run yet; (3) Lab 07's README tells the student to use a fresh `--work ../work-matter`, which is what the smoke test already does. **Whichever is chosen, `test-all-labs.sh` should also run Lab 07 over the hand-built tree, or the next regression hides in the same blind spot.** |
 | **SAIS-100 has no external recognition, and its spec has never been published.** NobleProg's public page already names SAIS-100 to buyers who can search for it and find nothing; the rubric exists only as four July 2026 drafts in `es-marketing`. In a course whose brand is *do not overclaim*, teaching a proprietary score with no published spec is the one place the course is exposed to its own charge. | **High** | Two drafts written 2026-11-12. (1) **`course-materials/sais-100-framework-mapping.md`** — committed: every category translated into NIST AI RMF, ISO/IEC 42001, EU AI Act and the governing legal authority, with the honest "what it is not" section. (2) **A public one-page spec**, drafted but **not placed** — `es-marketing` is read-only, so it needs Mark to drop it in and publish. Until it is published the exposure stands. |
 | **Overclaiming.** This course's whole pitch is honesty about limits; a single overclaim costs more here than in any other course we teach. | Low | Honesty is enforced in the material itself — offline fallbacks announce that they are worse, and attestations carry a `scope_and_limits`. |
 
@@ -318,6 +359,11 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    `sais100.py`, so `sais100-score.json` and issuance check 4 survive.
 
    *Superseded in part 2026-11-12:* Day 3 is **no longer a menu**. See decision 4.
+
+   *Re-confirmed 2026-11-15, and this table is why:* the Core/Deep Dive split put Module 7 back
+   into Day 2 on paper and reverted it in the same session. Day 2 without it is **≈7:05**; with it,
+   **≈8:50**. The capstone's 3:00 block remains the only lever and the decision is still open.
+   **Nothing should move into Day 2 until a measured Day 2 exists.**
 
 1. **Monetisation model** — *Decided 2026-11-10. The ladder is:*
 
@@ -442,6 +488,16 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
    **Still open:** Day 3 has never been run against a clock either, and Modules 7 + 10 + 12
    with three labs is the same shape as Day 1, not obviously a day. Measure it.
+
+   *Superseded 2026-11-15: **the course is a 2-day Core plus a separately scheduled 1-day Deep
+   Dive**, with Modules 9 and 11 as electives.* The contents are unchanged — Core = Modules 1–6 +
+   capstone, Deep Dive = 7, 10, 12 — so this decision's shape survives; what changed is that the
+   third day is **sold and scheduled on its own** rather than as day three of a block, because
+   three consecutive days is the hardest thing to ask of a working legal team. Consequences:
+   the "condensed two-day version" and the floating Module 7 are both **retired**; the Deep Dive
+   needs **its own price**; and it needs the Core's work tree to exist weeks later, which is what
+   `labs/resume-deep-dive.sh` is for. Three consecutive days stays available on request, so the
+   ~$4,050 online / ~$5,855 classroom three-day figures above still apply to that booking.
 5. **Target first delivery** — *Superseded 2026-11-10:* Carlene Gordon is the first
    student; dates are set after the 2026-11-17 conversation.
 6. **Three open questions on the validation dimension.** Raised by HQ 2026-11-11 and drafted
@@ -531,8 +587,11 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 1. **Write to Chandra Tan once, not twice** (outline owed **2026-11-19**). Mark already sent
    her an outline; what she now needs is a single message covering **one change, not four**:
-   *the course is three days / 21 hours — please re-price and re-list.* Folded into it: the
-   Day 3 contents, the new **bring-your-own-AI-subscription** prerequisite, the full certificate
+   *the course is a 2-day Core plus a separately scheduled 1-day Deep Dive — please re-price and
+   re-list.* **Updated 2026-11-15 and this is now the third shape in two weeks**, which is exactly
+   why the earlier correction was held: send one message describing the current shape, and say
+   plainly that it is the one to publish. Folded into it: the Deep Dive contents (Modules 7, 10,
+   12), the electives, the new **bring-your-own-AI-subscription** prerequisite, the full certificate
    name (**Elephant Scale Legal AI Engineer Certificate**, no completion-only tier), and the
    webinar proposal. **Hold back one item**: six months of email support and updates must not go
    on her page until decision 9 settles what it covers and whether a partner seat includes it.

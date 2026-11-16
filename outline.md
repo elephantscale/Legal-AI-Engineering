@@ -4,16 +4,16 @@
 *© Elephant Scale · Nov 10, 2026*
 
 - **Course Code:** LEGAL-AI-ENG-2026
-- **Duration:** 3 Days (a condensed 2-day version is available; further modules sell as a modular series)
+- **Duration:** 2-day Core + a 1-day Deep Dive, scheduled separately (electives sell on their own)
 - **Level:** Intermediate to Advanced
 
 ### Course Description
 * Course goals
   * Turn software / AI engineers into **legal engineers** — the people who can actually *build* AI for legal work (eDiscovery, review, investigations).
   * Teach participants to build legal-AI systems that are **private** (nothing leaves the building), **defensible** (you can prove what they did), and **deployable on-prem** — the exact skills legal-tech firms and law departments are hiring for.
-  * Do it in three intensive, hands-on days — the whole build path, and then shipping it. No fluff.
+  * Do it in **two intensive, hands-on days** — the whole build path, and shipping it — with a **one-day technical Deep Dive**, scheduled separately, for oversight and governance. No fluff.
 
-* In the first two days, participants build the full core stack: ingest and extract messy real-world legal data, search and retrieve it, add retrieval-augmented generation (RAG) with **citations**, keep it **private** on a local model and prove it, run a **defensible AI review** with court-ready metrics, and package the result for deployment. **Day 3 ships that system**: a multi-step workflow with a human in the loop, private on-prem packaging, agentic orchestration with a designed human checkpoint, and a full governance audit. Investigations and deployment at scale are available as a modular series.
+* **The Core — two days.** Participants build the full stack: ingest and extract messy real-world legal data, search and retrieve it, add retrieval-augmented generation (RAG) with **citations**, keep it **private** on a local model and prove it, run a **defensible AI review** with court-ready metrics, and assemble the whole thing as a capstone that scores itself with **SAIS-100**. **The Deep Dive — one day, scheduled separately.** Ship that system: a multi-step workflow with a human in the loop, private on-prem packaging, agentic orchestration with a designed human checkpoint, and a full governance audit against the AI-regulation landscape. Investigations and deployment at scale are available as electives.
 
 * Special emphasis is placed on:
   * **Confidentiality and privilege** — where legal data actually goes, and how to keep it local and certifiable.
@@ -21,14 +21,14 @@
   * Grounding every concept in a real-world system: **FreeEed** (Apache-2.0, on-prem eDiscovery — Tika extraction across 1,400+ file types, OCR, imaging, PST/OST, Solr/Lucene search, review, and Bates/load-file production) is the reference platform the instructor ships and the labs are designed against.
 
 ### Learning Outcomes
-* After **Days 1 and 2** — the build path — participants will be able to:
+* After the **Core (two days)** — the build path, and shipping it — participants will be able to:
   * Ingest and process messy real-world legal data (1,400+ file types, email/PST, scans, load files).
   * Build search + RAG over documents that **cites its sources** and keeps data local.
   * Choose local vs. cloud AI defensibly, and prove nothing left the machine.
   * Measure and document an AI review so it holds up in court (recall, elusion, precision, ground truth).
   * Package a private, defensible legal-AI application and score it with the **SAIS-100 (Elephant Scale Secure AI Score)** rubric.
-* **Day 3** adds: shipping a human-in-the-loop legal workflow and packaging it for private on-prem deployment, designing human oversight into an agentic workflow rather than promising it, and auditing a legal-AI system against the AI-regulation landscape.
-* The **modular series** adds: investigative AI (entities, relationships, timelines) and on-prem deployment at scale in regulated environments (CJIS, government, higher-ed).
+* The **Deep Dive (one day)** adds: shipping a human-in-the-loop legal workflow and packaging it for private on-prem deployment, designing human oversight into an agentic workflow rather than promising it, attacking your own guardrails and watching them hold, and auditing a legal-AI system against the AI-regulation landscape.
+* The **electives** add: investigative AI (entities, relationships, timelines) and on-prem deployment at scale in regulated environments (CJIS, government, higher-ed).
 
 ## Audience
 * Software / AI engineers moving into legal tech
@@ -40,18 +40,23 @@
 * Intermediate to Advanced
 
 ## Duration
-* **Three days** (recommended) — Days 1 and 2 are the complete hands-on build path; Day 3 ships
-  it, oversees it, and proves it.
-* A **condensed two-day version** is available: Days 1 and 2 unchanged, Day 3 dropped. The
-  capstone and the SAIS-100 score sit on Day 2, so the certificate bar is met either way.
-* Further modules — **investigations** and **deployment at scale** — are sold as a **modular
-  series**, or swapped into Day 3 on request.
+* **Core — two days.** The complete hands-on build path, Modules 1–6 plus the capstone. The
+  capstone and the SAIS-100 score sit on Day 2, so **the certificate bar is met by the Core alone**.
+* **Deep Dive — one day, scheduled separately.** Modules 7, 10 and 12 — ship it, oversee it, prove
+  it: the document production set, the container, the agentic workflow with a designed human
+  checkpoint, and the governance audit. **It assumes the Core.**
+* The two can still run back to back as three consecutive days when a buyer wants it that way. The
+  split exists because three days in a row is the hardest thing to ask of a working legal team — not
+  because the days are weaker apart.
+* **Electives** — **investigations** and **deployment at scale** — are booked on their own, or added
+  to the Deep Dive on request.
 
 ## Prerequisites
 * Comfortable with Python and basic APIs
 * **Bring your own AI subscription** — a working account with a frontier assistant (Claude, ChatGPT, Gemini or equivalent). You will use it as a coding assistant throughout the labs, the way you will on the job. No lab *depends* on it and no lab needs an API key — but a legal engineer who does not already work this way is starting a day behind.
 * Helpful: familiarity with LLMs at a user level (no ML background required — we build the mental model)
 * No legal background required — the legal concepts you need are taught in context
+* **For the Deep Dive only:** the Core, and the `labs/work/` tree you built in it — or run `labs/resume-deep-dive.sh` before the day starts, which rebuilds it in a few minutes
 
 ## Format
 * Instructor-led, **highly hands-on** (learn by doing)
@@ -66,7 +71,7 @@
 
 ## Course outline
 
-### Day 1: Build the Foundation — Ingest, Search, Retrieve
+### Core · Day 1: Build the Foundation — Ingest, Search, Retrieve
 
 * **Module 1: The Legal Engineer's Landscape**
   * Learning objectives — understand the role, where AI fits in legal work, and the two risks that run through everything.
@@ -104,7 +109,7 @@
 
 ---
 
-### Day 2: Make It Private and Defensible
+### Core · Day 2: Make It Private and Defensible
 
 * **Module 5: Privacy, Privilege, and Local Serving — the Privilege Trap**
   * Learning objectives — keep legal data local and be able to certify it.
@@ -123,18 +128,20 @@
     * The "defensible case snapshot" that lets someone re-run your review a year later and get the same result
   * **Lab: Defensible Review** — measure an AI review against a blind ground truth and produce a reproducibility bundle
 
-> **Module 7 is taught on Day 3.** Nothing on Day 2 depends on it: the capstone drives Labs
+> **Module 7 opens the Deep Dive, and it cannot come back into Day 2** — that was tried on
+> paper and the clock refuses it: Day 2 is already about 35 minutes over 6.5 hours without it, and
+> Module 7 plus Lab 07 is another 1:45. Nothing on Day 2 depends on it: the capstone drives Labs
 > 02–06 itself and produces its own SAIS-100 score, so the certificate bar is met at the end of
-> Day 2. In the **condensed two-day version** Module 7 is pulled forward into Day 2 whenever the
-> room is moving fast enough to take it.
+> Day 2. What a Core-only buyer does not get is the **document production set** and the
+> **containerized deployment** — say that in the sales conversation, not on Day 2.
 
-### Capstone (integrated across Day 2)
+### Capstone (integrated across Core Day 2)
 * Build a **private, defensible legal-AI application end to end** — ingest a messy corpus, search it, answer questions over it with citations using a **local** model, measure a defensible review, and package it for private deployment.
 * Participants leave with a portfolio project that *is* the legal-engineer job.
 
 ---
 
-### Day 3: Ship It, Oversee It, Prove It
+### Deep Dive — one day, scheduled separately: Ship It, Oversee It, Prove It
 
 * **Module 7: Ship It — Workflow, Private Deployment, and Governance**
   * A multi-step legal workflow (ingest → search → summarize → review → produce) with
@@ -156,7 +163,7 @@
   * **Lab: Governance Audit** — audit a legal-AI system against a governance/defensibility
     checklist
 
-### Further modules — a modular series, or swapped into Day 3 on request
+### Electives — booked on their own, or added to the Deep Dive on request
 
 * **Module 9: Investigations — Entities, Relationships, and Timelines** — extract
   people/orgs/dates, reconstruct email threads, build chronologies, map near-duplicates and
@@ -167,19 +174,21 @@
   *Lab: containerize and scale a processing job across workers.* The module for public-sector
   and government-cloud buyers.
 
-### The condensed two-day version
+### Scheduling the two
 
-The same course in two days, for buyers who cannot give up a third. **Days 1 and 2 run
-unchanged** — the full build path, the capstone, and a SAIS-100 score, so the certificate bar
-is met. What drops is Day 3: no document production set, no containerized deployment, no
-governance audit, no agentic deep-dive.
+There is no condensed version any more, and no floating module. The Core **is** the two-day
+product — Modules 1–6 and the capstone — and the Deep Dive is the third day, sold and scheduled on
+its own. Nothing is cut and no decision has to be made at 4pm on Day 2.
 
-**Module 7 floats.** When a two-day room moves fast enough, Module 7 comes forward into Day 2
-and the production set and the container come back with it. Nothing on Day 2 depends on it
-either way, because the capstone drives Labs 02–06 itself and produces its own score.
+**The Deep Dive assumes the Core, technically and not just pedagogically.** Labs 07, 10 and 12 read
+the Core's work tree — the catalog and exceptions from Lab 02, the index from Lab 03, the chunks and
+vectors from Lab 04, the attestation from Lab 05, the metrics and case snapshot from Lab 06. A
+student who arrives without it cannot start. Two defences, and use both: tell the room to keep
+`labs/work/`, and run **`labs/resume-deep-dive.sh`**, which rebuilds the seeded corpus and replays
+Labs 02–06 offline in a few minutes.
 
-The cut is **decided before the class, not at 4pm on Day 2** — that is the difference between a
-condensed course and a course that ran out of time.
+**Recommended gap: two to four weeks.** Long enough to be a separate commitment, short enough that
+the environment, the vocabulary and the capstone are all still fresh.
 
 ## What participants take away
 
@@ -192,8 +201,9 @@ condensed course and a course that ran out of time.
 
 ## Assessment and Certification
 * Evaluation — capstone project, lab completion, and class participation
-* Requirements — minimum attendance, completion of the module labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition
+* Requirements — minimum attendance, completion of the **Core** labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition
 * Certificate Awarded — the **Elephant Scale Legal AI Engineer Certificate**
+* **The certificate is earned on the Core.** The Deep Dive adds no second bar — it adds artifacts: the document production set, the container, the agentic workflow with its approval gate and refusal log, and the governance audit
 * Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
 
 ## Where this fits
