@@ -61,7 +61,7 @@ regardless of how good it is.
 
 ## DEFENSE.md — Your One Page
 
-Answer these six, in writing, in one page. This is the document you would hand a GC.
+Answer these seven, in writing, in one page. This is the document you would hand a GC.
 
 1. **What did the system do?** One paragraph a non-engineer can follow.
 2. **Where did the documents go?** Every hop. Cite `attestation.json`.
@@ -71,11 +71,20 @@ Answer these six, in writing, in one page. This is the document you would hand a
 5. **How do I re-run it?** Point at `VERIFY.md`. State which bar you claim — *same
    determinations* or *bit-exact*.
 6. **What are the limits?** Where it is weak, what it cannot prove, what a human must check.
+7. **Would you build this, or buy it?** Which parts you would keep, replace or integrate —
+   and **what you would make the vendor prove** to answer 2 and 3 for you.
 
 > Question 6 is worth more than questions 1–5 combined. A system whose author can name its
 > limits is a system someone can rely on.
 
 Notes:
+
+Question 7 is the one they will use first. Nobody's first job is to rebuild Relativity; it is
+to decide what to buy and then make it behave. Say out loud that they cannot evaluate a
+product from this room and are not being asked to — what they can write, having built the
+thing, is the list of questions a vendor has to answer before their component stands where
+yours stands. Point back at Module 1's Build vs. Buy slide: the usual answer is both, and the
+part that has to be yours is the part that touches the data.
 
 Grade question 6 hardest. Students who write "no significant limitations" have failed the
 module, not the engineering. The honest answers in the room usually include: OCR confidence,
@@ -92,7 +101,7 @@ local model quality delta, sample size, non-determinism on GPU, and the monitor'
 | **Citations — enforced** | 15 | Verifier in code: no fabricated markers, no uncited claims, quotes verbatim; "not found" works |
 | **Ingestion — honest** | 15 | Recursive containers; OCR; documented dedupe policy; **non-empty, triaged exception list**; load file read |
 | **Shippability** | 10 | Runs offline from compose; checkpointed and resumable; pinned digests |
-| **Score & governance** | 10 | SAIS-100 with legal overlay, before/after, no auto-fail; `DEFENSE.md` names real limits |
+| **Score & governance** | 10 | SAIS-100 with legal overlay, before/after, no auto-fail; `DEFENSE.md` names real limits and ends with build/buy/integrate |
 
 **Auto-fail (regardless of total):** any of the four legal auto-fails from Module 7 —
 case content can leave by an unapproved or unenforced path; cross-matter leakage; production
@@ -150,6 +159,7 @@ Ask these, in this order:
 5. "Prove no document content left this machine. What exactly does your monitor cover?"
 6. "Re-run this review in front of me."
 7. "What model version? Can you still get those weights?"
+8. "What would you buy instead of this — and what would you make the vendor prove?"
 
 Hand your partner their three weakest answers, in writing.
 

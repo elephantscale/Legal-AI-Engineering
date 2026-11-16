@@ -34,7 +34,7 @@ provably never phoned home, measured against a blind ground truth, scored with
 
 **FreeEed** — the Apache-2.0, on-prem eDiscovery platform the instructor ships — is the
 reference architecture throughout: Tika extraction across 1,400+ file types, OCR, imaging,
-PST/OST, Solr/Lucene search, review, and Bates/load-file production. The labs are
+PST/OST, Solr/Lucene search, review and export. The labs are
 self-contained Python over a synthetic corpus, designed against that architecture, so what
 you build here transfers to a system you can actually deploy.
 

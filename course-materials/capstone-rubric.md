@@ -20,7 +20,7 @@ full assembly instructions are in `labs/08-Capstone/README.md`.
 | **Citations — enforced** | 15 | A verifier **in code**: no fabricated markers, no uncited claims, quotations verbatim; "not found in the provided documents" works and sometimes fires |
 | **Ingestion — honest** | 15 | Recursive containers; OCR; a documented dedupe policy; a **non-empty, triaged** exception list; the producer's load file read and reconciled |
 | **Shippability** | 10 | Runs offline from compose; checkpointed and resumable; digests pinned, not tags |
-| **Score & governance** | 10 | SAIS-100 with the legal overlay, before and after one hardening change, no auto-fail; `DEFENSE.md` names real limits |
+| **Score & governance** | 10 | SAIS-100 with the legal overlay, before and after one hardening change, no auto-fail; `DEFENSE.md` names real limits and ends with a build/buy/integrate recommendation |
 
 ---
 
@@ -51,7 +51,7 @@ architectures the profession actually accepts.
 
 | Band | What it looks like |
 |---|---|
-| **Excellent (90–100)** | Runs from a clean clone with one command. Every stage emits its artifact. `DEFENSE.md` answers all six questions, and question 6 names at least three specific limits with what they would measure. The student says "I don't know" to the right question and then says how they would find out. |
+| **Excellent (90–100)** | Runs from a clean clone with one command. Every stage emits its artifact. `DEFENSE.md` answers all seven questions, question 6 names at least three specific limits with what they would measure, and question 7 names what a vendor would have to prove. The student says "I don't know" to the right question and then says how they would find out. |
 | **Strong (75–89)** | The pipeline and the artifacts are there; one or two artifacts are thin. The limits section is real but general. `VERIFY.md` works with one undocumented step. |
 | **Adequate (60–74)** | It runs and produces a measurement, but something is asserted rather than shown — an attestation with no tripwire, a protocol whose date is not checkable, or a verifier in the prompt rather than in code. |
 | **Not yet (<60)** | An empty exception list, no elusion measurement, a protocol written after the run, or a limits section that says "none". Each of these is a specific habit to fix, not a verdict on the engineering. |
@@ -72,7 +72,7 @@ Check these first; it takes ninety seconds and it tells you most of what you nee
 
 ## `DEFENSE.md` — the differentiator
 
-One page, six questions, in writing. This is the document that would go to a general counsel.
+One page, seven questions, in writing. This is the document that would go to a general counsel.
 
 | # | Question | Full marks |
 |---|---|---|
@@ -82,6 +82,20 @@ One page, six questions, in writing. This is the document that would go to a gen
 | 4 | **Why was this document coded this way?** | One real document by id, with rationale, citations, and the rendered prompt from `runs/<run-id>/prompts/`. |
 | 5 | **How do I re-run it?** | Points at `VERIFY.md`. States which bar — *same determinations* or *bit-exact* — and why. |
 | 6 | **What are the limits?** | Where it is weak, what it cannot prove, what a human must check. |
+| 7 | **Would you build this, or buy it?** | Names a real product or category, says which parts to keep, replace or integrate — and **states the evidence the vendor would have to produce** to answer questions 2 and 3 instead of you. A vendor question list, not a product opinion. "Both" is usually the right answer: buy the platform, build the layer that touches the data. |
+
+**Question 7 is new as of 2026-11-15, and it is deliberately not weighted on its own.** It
+sits inside *Score & governance* because it is a governance answer, and because the course
+does not have the clock to add a graded exercise — Core Day 2 is already over its window. It
+costs about five minutes of the existing silent writing block, and question 8 of the defense
+round costs nothing at all, because that round is time-boxed either way.
+
+**Why it is here:** the job-market handout's own finding is that AI adoption and vendor
+evaluation are *"the most-repeated responsibility in the whole set"* — five of six employers —
+and the course does not otherwise teach them. This is the cheapest honest version: a student
+who has built the thing can say what a bought version would have to prove, which is the half
+of adoption an engineer is actually hired for. ⛔ It is **not** a product review, and students
+have no vendor access in the room — grade the evidence list, never the brand named.
 
 > **Question 6 is worth more than questions 1–5 combined.** "No significant limitations" fails
 > the module, not the engineering. A student with a mediocre pipeline and an excellent limits
@@ -117,6 +131,7 @@ their partner's system — politely, specifically, and **in writing**.
 5. "Prove no document content left this machine. What exactly does your monitor cover?"
 6. "Re-run this review in front of me."
 7. "What model version? Can you still get those weights?"
+8. "What would you buy instead of this — and what would you make the vendor prove?"
 
 Each student hands their partner their **three weakest answers in writing**, then they swap.
 Grade the questions asked as well as the answers given — a student who finds a real hole in a

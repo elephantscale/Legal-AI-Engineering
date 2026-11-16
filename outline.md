@@ -18,7 +18,7 @@
 * Special emphasis is placed on:
   * **Confidentiality and privilege** — where legal data actually goes, and how to keep it local and certifiable.
   * **Defensibility** — measuring, documenting, and reproducing an AI review so it holds up.
-  * Grounding every concept in a real-world system: **FreeEed** (Apache-2.0, on-prem eDiscovery — Tika extraction across 1,400+ file types, OCR, imaging, PST/OST, Solr/Lucene search, review, and Bates/load-file production) is the reference platform the instructor ships and the labs are designed against.
+  * Grounding every concept in a real-world system: **FreeEed** (Apache-2.0, on-prem eDiscovery — Tika extraction across 1,400+ file types, OCR, imaging, PST/OST, Solr/Lucene search, review and export — ⛔ **not** Bates/load-file production, which is a written spec and issue #551, not shipped code, verified against tag v10.8.7 on 2026-11-15) is the reference platform the instructor ships and the labs are designed against.
 
 ### Learning Outcomes
 * After the **Core (two days)** — the build path, and shipping it — participants will be able to:

@@ -85,7 +85,7 @@ python3 sais100.py --work ./work --delta --out sais100-score.json
 
 ### 4. Write `DEFENSE.md`
 
-One page. Six questions. In writing. This is the document you would hand a general counsel.
+One page. Seven questions. In writing. This is the document you would hand a general counsel.
 
 1. **What did the system do?** One paragraph a non-engineer can follow. No architecture
    diagrams, no model names.
@@ -98,9 +98,28 @@ One page. Six questions. In writing. This is the document you would hand a gener
 5. **How do I re-run it?** Point at `VERIFY.md`. State which bar you claim — *same
    determinations* or *bit-exact* — and why.
 6. **What are the limits?** Where it is weak, what it cannot prove, what a human must check.
+7. **Would you build this, or buy it?** Name the product or category you would buy instead
+   of what you built — hosted review platform, a vendor's AI add-on, a cloud API. Say which
+   parts of your system you would keep, which you would replace with a purchase, and which
+   you would integrate. Then the part that matters: **what evidence would you require from
+   that vendor** to answer questions 2 and 3 on your behalf?
 
 > Question 6 is worth more than questions 1–5 combined. A system whose author can name its
 > limits is a system someone can rely on. "No significant limitations" is a failing answer.
+
+**Question 7 does not need a vendor account, and that is the point.** You cannot evaluate
+RelativityOne or CoCounsel from this room, and nobody is asking you to. What you can write —
+because you spent two days building the thing — is the list of questions a vendor has to
+answer before you would let their component stand where yours stands now. *"Show me your
+recall against a blind sample on my data." "Can I pin your model?" "What leaves my tenant,
+and can you enforce it rather than promise it?"* That list is the skill: five of six
+employers in the job-market handout ask for AI adoption and vendor evaluation, and almost
+nobody arrives able to interrogate a product instead of being demoed one.
+
+⚠ **Most honest answers are "both".** Buy the review platform, build the private AI layer —
+see the *Build vs. Buy* slide in Module 1. A student who writes "build everything" has not
+understood the exercise, and so has a student who writes "buy everything, I was wasting my
+time."
 
 Honest answers to question 6 from past rooms: OCR confidence on the degraded scans; the
 quality gap between a local 8B model and a frontier model on long contract reasoning;
@@ -124,7 +143,7 @@ this and it is the first thing anyone else reads.
 | **Citations — enforced** | 15 | Verifier in code: no fabricated markers, no uncited claims, quotes verbatim; "not found in the provided documents" works |
 | **Ingestion — honest** | 15 | Recursive containers; OCR; documented dedupe policy; **non-empty, triaged exception list**; load file read and reconciled |
 | **Shippability** | 10 | Runs offline from compose; checkpointed and resumable; pinned digests |
-| **Score & governance** | 10 | SAIS-100 with the legal overlay, before/after, no auto-fail; `DEFENSE.md` names real limits |
+| **Score & governance** | 10 | SAIS-100 with the legal overlay, before/after, no auto-fail; `DEFENSE.md` names real limits and ends with a build/buy/integrate recommendation |
 
 **Auto-fail, regardless of total** — any of the four legal conditions:
 
