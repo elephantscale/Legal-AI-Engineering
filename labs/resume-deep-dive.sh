@@ -20,9 +20,15 @@
 #      the same tree in one line, and that line is the Deep Dive's first lesson.
 #   2. It stops before Lab 06's pre-registration. `defensible_review.py protocol` REFUSES to
 #      overwrite an existing validation-protocol.md — that refusal is the control, not a bug —
-#      and Lab 07's pipeline re-runs that stage. So metrics.json and case-snapshot-*/ are left
-#      for Lab 07 to produce at the start of the Deep Dive, which is where the teaching order
-#      puts them anyway.
+#      and Lab 07's pipeline runs that stage itself. So metrics.json and case-snapshot-*/ are
+#      left for Lab 07 to produce at the start of the Deep Dive, which is where the teaching
+#      order puts them anyway.
+#
+#      Note the other direction, which is NOT this script's path: a student who ran the Core
+#      back to back (three consecutive days) arrives with Lab 06 genuinely completed, so
+#      validation-protocol.md IS on disk. Lab 07's run_matter.py adopts it rather than
+#      rebuilding it ([keep], a hash in the ledger, pre_registered stays true). Both routes
+#      reach Lab 07; only this one leaves the protocol to be written there.
 #
 # It is a REPLAY, not your original run: the corpus is rebuilt from the pinned seed, and in
 # offline mode the model-shaped steps use the deterministic fallbacks. The artifacts are the

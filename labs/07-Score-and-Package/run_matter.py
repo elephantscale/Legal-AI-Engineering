@@ -55,6 +55,10 @@ class Stage:
     cwd: Path
     produces: list[str]
     gate: str | None = None
+    # An artifact that, if it is ALREADY on disk, this pipeline must adopt rather than
+    # rebuild. Only `protocol` has one: a pre-registration that the orchestrator can
+    # silently rewrite is not a pre-registration. See the loop in main().
+    adopt_existing: str | None = None
 
 
 def stages(corpus: Path, work: Path) -> list[Stage]:
@@ -81,7 +85,8 @@ def stages(corpus: Path, work: Path) -> list[Stage]:
               LABS / "06-Defensible-Review", ["richness.json"]),
         Stage("protocol", [py, "defensible_review.py", "protocol", "--work", str(work),
                            "--corpus", str(corpus)],
-              LABS / "06-Defensible-Review", ["validation-protocol.md"]),
+              LABS / "06-Defensible-Review", ["validation-protocol.md"],
+              adopt_existing="validation-protocol.md"),
         Stage("classify", [py, "defensible_review.py", "classify", "--work", str(work),
                            "--corpus", str(corpus)],
               LABS / "06-Defensible-Review", ["decisions.jsonl"],
@@ -312,6 +317,21 @@ def main() -> int:
 
     print(f"\nmatter {MATTER}   work {work}\n")
     for s in plan:
+        # A student who actually finished the Core arrives with a pre-registration already
+        # written by Lab 06. Re-running `protocol` would hit Lab 06's refusal — correctly —
+        # and stop the Deep Dive at its first command. The artifact on disk IS this stage's
+        # output, so adopt it, hash it into the ledger, and move on. Deliberately ahead of
+        # --force: nothing this orchestrator does may overwrite a pre-registration. The only
+        # way to revise one is Lab 06's own `protocol --force`, by hand, on purpose.
+        if s.adopt_existing and (work / s.adopt_existing).exists():
+            art = work / s.adopt_existing
+            sha = hashlib.sha256(art.read_bytes()).hexdigest()
+            print(f"  [keep] {s.name:<10} {s.adopt_existing} was already written "
+                  f"(sha256 {sha[:12]}) -> adopted, not rebuilt")
+            mark_done(work, s, 0.0)
+            log(work, {"stage": s.name, "status": "adopted-preexisting",
+                       "artifact": s.adopt_existing, "sha256": sha})
+            continue
         if is_done(work, s) and not args.force:
             print(f"  [skip] {s.name:<10} already done with this config")
             continue

@@ -67,6 +67,25 @@ idempotency key `(stage, config_hash)`, where `config_hash` covers the command *
 `LEGAL_AI_*` environment that shapes its output. Change the model and every downstream
 stage correctly becomes stale.
 
+One stage does not play by that rule, and the exception is the interesting part:
+
+```
+  [keep] protocol   validation-protocol.md was already written (sha256 ...) -> adopted, not rebuilt
+```
+
+If you came straight from the Core you already wrote a validation protocol in Lab 06, and
+`defensible_review.py protocol` **refuses to overwrite one**. So the orchestrator does not
+try. It adopts the protocol that is on disk, hashes it into `_state/run.log`, and carries
+on — and `metrics.json` then records `pre_registered: true` against *that* hash, which is
+the strongest version of the claim: the numbers were measured against a protocol written
+before anyone had seen a result. `--force` will not override this. The only way to revise a
+pre-registration is Lab 06's own `protocol --force`, by hand, with the old version in version
+control.
+
+> Idempotency has a limit, and it is a legal one. Most stages may be rebuilt because the
+> output is a function of the input. A pre-registration is not: its value comes from *when*
+> it was written, so rebuilding it destroys the only property that made it evidence.
+
 Then prove resumability the honest way — break something in the middle:
 
 ```bash
@@ -372,6 +391,7 @@ say *why* 94-with-an-auto-fail is worse than 70-clean, without being prompted.
 | `run_matter.py` fails at `ingest` | corpus not generated | `python3 ../assets/make_corpus.py` |
 | every stage re-runs every time | `LEGAL_AI_*` env differs between invocations | the config hash is doing its job; export the env once, or use a `.env` |
 | `--stage produce` says "run classify first" | ran `produce` against a fresh work dir | run the pipeline first |
+| `protocol` says `[keep] ... adopted, not rebuilt` | you finished Lab 06, so a pre-registration already exists | **nothing to fix — this is correct.** Re-running it would hit Lab 06's refusal and stop the pipeline; adopting it is what keeps `pre_registered: true` honest |
 | score shows `model supply chain 0` | no reproducibility bundle, so no pins to read | run the `bundle` stage |
 | `D2` stuck at 1 | catalog rows have no `matter` | re-ingest; `--matter` defaults to `SYNTHETIC-DEMO-01` |
 | compose build fails on `FROM ... @sha256:REPLACE...` | the placeholder digest is deliberate | paste your own `docker inspect` digest |

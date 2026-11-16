@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-15 (Core + Deep Dive split; Module 1 slide splits; target list in the CRM)
+**Last updated:** 2026-11-16 (first confirmed seat — three days; the back-to-back route fixed in Lab 07)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -96,6 +96,32 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Recent accomplishments
 
+- 🔴➡✅ **THE BACK-TO-BACK ROUTE WAS BROKEN, AND IT WAS THE ONE NOBODY HAD RUN (found and fixed
+  2026-11-16, prompted by the first confirmed seat booking three consecutive days).** A student
+  who **actually completed Lab 06** in the Core arrives at the Deep Dive with
+  `work/validation-protocol.md` on disk but **no `_state/protocol.done` marker** — Lab 06's
+  commands do not write pipeline markers, only `run_matter.py` does. So Lab 07's opening
+  command, the first thing anyone types on Day 3, re-ran the `protocol` stage, hit
+  `defensible_review.py protocol`'s deliberate **refusal to overwrite a pre-registration**,
+  exited 1, and **stopped the pipeline**: `classify`, `measure` and `bundle` never ran. The
+  failure was invisible because the designed route hid it — `resume-deep-dive.sh` deliberately
+  *skips* Lab 06, so the replayed tree has no protocol and the stage runs clean. **Reproduced
+  before the fix and verified after**, on both routes.
+  - **Fix:** `Stage` gains `adopt_existing`, set only on `protocol`. The pipeline now adopts
+    the protocol already on disk, hashes it into `_state/run.log` as
+    `status: "adopted-preexisting"`, and continues — and `metrics.json` records
+    `pre_registered: true` against **the hash of the protocol the student wrote on Day 2**,
+    which is a *stronger* audit trail than the replay route produces. Deliberately ahead of
+    `--force`: nothing the orchestrator does may overwrite a pre-registration. The only way to
+    revise one stays Lab 06's own `protocol --force`, by hand.
+  - ⛔ **Lab 06 was not touched.** The refusal is the control and it still fires exactly as
+    taught. The bug was in the orchestrator treating a timestamped artifact as rebuildable.
+  - **Taught, not just patched:** Lab 07's README gains the `[keep]` line, its meaning and a
+    "nothing to fix" row in Common mistakes; `slides/07-ship-score-govern.md` gains a bullet
+    and narration on the limit of idempotency — most stages may be recomputed because output
+    is a function of input, but a pre-registration's value is *when* it was written, so
+    rebuilding it destroys the only property that made it evidence. `resume-deep-dive.sh`'s
+    header comment no longer implies Lab 07 always re-runs that stage.
 - *** THE COURSE IS NOW TWO PRODUCTS, NOT THREE DAYS IN A ROW (Mark, 2026-11-15). *** A **2-day
   Core** (Modules 1–6 + the capstone; the certificate bar is met by it alone) and a **1-day Deep
   Dive** (Modules **7**, **10**, **12** — ship it, oversee it, prove it), **sold and scheduled
@@ -214,7 +240,33 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Customers and revenue connections
 
-- **First student: Carlene Gordon.** Mark meets her **Tuesday 2026-11-17** to talk through
+- ⭐ **First confirmed seat: Steve Wolfe — three days, date-flexible** (Mark, 2026-11-16:
+  *"steve wolfe is joining for three days, whenever the course runs"*). Three days = the
+  **2-day Core plus the 1-day Deep Dive**, i.e. the full format and the largest purchase the
+  page offers. Full record and the contact history are in `FreeEedCRM/contacts.csv`
+  (`swolfe100@gmail.com`); what belongs here is what it changes for the course:
+  - **It makes the back-to-back route the first cohort's real route, not the option.**
+    `CLAUDE.md` describes three consecutive days as available "on request" — this is the
+    request. Everything built for the 2 + 1 route still stands; the consequence was that
+    the back-to-back route had **never been run**, and it was broken. See "Recent
+    accomplishments" — Lab 07's pipeline stopped at the `protocol` stage for exactly the
+    students who had completed Lab 06 properly. Found and fixed 2026-11-16.
+  - **He removes himself as a date constraint.** Date-flexible, so the Nov 30 vs Dec 7
+    choice is now decided by Carlene's dry run alone (see Upcoming deadlines).
+  - ⚠ **Keep precise what his seat proves.** It validates **fit** — an engineer-titled
+    person who can run all eleven Python labs on day one and still wants the legal
+    vocabulary, which is the course's live audience question. It does **not** validate
+    arm's-length willingness to pay: he is Mark's friend, currently self-employed, and would
+    be on an individual rate. Carlene is the arm's-length demand evidence and is not yet a
+    confirmed seat; Steve is the confirmed seat and is not arm's-length. **Complements, not
+    substitutes** — reading them as two of a kind would overstate demand.
+  - **Prerequisites: he meets the hardest one natively** (Ollama / local inference is his
+    specialism). ⚠ Mild inverse risk: the Day 1 ingestion and search labs may sit below his
+    level. Same shape as the Nov 20 session note — tell him where to skip ahead rather than
+    pad the labs.
+  - **Open for Mark:** whether he is paying, and at what rate. It is unrecorded, and it
+    decides whether he counts toward "the class is guaranteed to run".
+- **First student (dry run): Carlene Gordon.** Mark meets her **Tuesday 2026-11-17** to talk through
   the course and set expectations; **delivery dates are agreed later**, not in that meeting.
   This ends the course's build-ahead-of-demand phase.
   - **Run her as three days** (Mark, 2026-11-12). The course is now three days by default, and
@@ -285,6 +337,11 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 - **Calendar note for that conversation:** US Thanksgiving is **2026-11-26**, so the week of
   Nov 23 is effectively gone. The first clean two-day windows are the weeks of **2026-11-30**
   and **2026-12-07**; later December runs into year-end, which is a bad season for legal.
+  - 🆕 **2026-11-16 — the choice got cheaper, not harder.** Steve Wolfe is in and
+    date-flexible, so enrollment no longer argues for the earlier window. Against that: the
+    dry run is the week of Nov 16, so **Nov 30 leaves one week** to act on whatever the labs
+    surface and **Dec 7 leaves three**. Mark's call, and nothing in the course now pulls
+    toward Nov 30.
 - Nothing else fixed.
 
 ## Important TODOs

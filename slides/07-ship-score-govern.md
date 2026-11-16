@@ -72,6 +72,9 @@ work/
 
 * **Why this is not just good engineering:** the artifact chain *is* the chain of custody.
   Mutating stage 3 in place destroys the evidence that stage 2 produced what it produced.
+* **And one stage must never be rebuilt at all** — the validation protocol. Rebuildable
+  means "output is a function of input"; a pre-registration's value is *when* it was
+  written. The pipeline adopts the one on disk and hashes it. `--force` does not apply.
 
 > Idempotent, append-only, checkpointed. The engineering best practice and the legal
 > requirement are the same thing here — which is unusual and worth noticing.
@@ -81,6 +84,12 @@ Notes:
 Engineers already believe in idempotency; the news is that in this domain it has a legal
 payoff. Make the connection explicitly — it is the kind of observation that makes a senior
 engineer re-evaluate how they build everything else.
+
+Then land the last bullet, because it is the one a pipeline engineer has never had to think
+about. Every rule of thumb they have says a stage that can be recomputed should be
+recomputed. Here one stage cannot, and not for a technical reason: re-deriving the protocol
+after seeing a result turns evidence into a rationalization. Ask them where else in their
+own systems a timestamp is the whole value of the artifact.
 
 ---
 
