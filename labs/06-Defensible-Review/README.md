@@ -77,6 +77,13 @@ because the order is the legal argument.
 python3 defensible_review.py classify --work ../work --corpus ../assets/corpus
 ```
 
+**On a laptop with no GPU, add `--limit 150`.** This stage is one model call per document
+across ~1,200 documents, which is a tea break on a GPU and not class-time work on a CPU.
+Sampling is not a workaround here — `measure` handles it correctly and returns a wider
+confidence interval, which is this module's subject. `--classifier keyword` is the other
+route, and worth running either way.
+
+
 Read the routing summary, and then read `classify_one` and the banding logic:
 
 - **privilege never auto-codes.** There is no confidence threshold that makes an automated

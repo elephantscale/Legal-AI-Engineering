@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-16 (first confirmed seat — three days; the back-to-back route fixed in Lab 07)
+**Last updated:** 2026-11-16 (tentative dates Jan 5–7; first confirmed seat; back-to-back route fixed; laptop requirements written down)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -96,6 +96,30 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Recent accomplishments
 
+- ✅ **THE COURSE NOW STATES WHAT A LAPTOP NEEDS — it never did (2026-11-16, Mark's question).**
+  Before today the only hardware statement anywhere in the repo was `SETUP.md`'s "Python 3.10+
+  is the only hard requirement", `verify-setup.sh` checked no hardware at all, and the
+  freeeed.org page said "a modern laptop and reliable internet". **The answer is no GPU**, and
+  it is now written down with measured numbers rather than asserted: corpus builds in 2 s,
+  Labs 02–06 run end to end in ~12 s, work tree 17 MB, measured on a 12-core machine with no
+  usable GPU. Floor **8 GB RAM / 2 GB disk / Python 3.10+**; comfortable 16 GB and 10 GB (the
+  models are ~5.5 GB of it).
+  - **The one place a GPU is genuinely felt, named precisely:** Lab 06's `classify` is one
+    model call per document across ~1,198 documents, serially. A tea break on a GPU; not
+    class-time work on a CPU. **Both CPU routes were tested, not assumed** — `--limit 150`
+    works and `measure` handles it correctly, returning a *wider confidence interval*, which
+    lands the module's own lesson harder ("an estimate consistent with the target, not a
+    demonstration of it"); `--classifier keyword` is the other, and the course already argues
+    it should be run either way.
+  - **Where it went:** a measured requirements table and a "what does a GPU actually buy you"
+    section in `labs/SETUP.md`; a new **Machine** block in `verify-setup.sh` (cores, RAM, free
+    disk, GPU) that reports `no gpu — and that is fine` with the consequence attached, in the
+    script's existing house style of never failing the class; and a `--limit 150` note at Lab
+    06's classify step.
+  - ⚠ **Separate finding, for Mark: this machine cannot demo local mode.** No Ollama
+    installed, and no usable GPU (Intel UHD 630 + Radeon PRO WX 2100). Students are fine on
+    CPU; **the instructor is the one who has to show a local model answering**, since
+    local-first is the course's central claim. Added to Important TODOs.
 - 🔴➡✅ **THE BACK-TO-BACK ROUTE WAS BROKEN, AND IT WAS THE ONE NOBODY HAD RUN (found and fixed
   2026-11-16, prompted by the first confirmed seat booking three consecutive days).** A student
   who **actually completed Lab 06** in the Core arrives at the Deep Dive with
@@ -326,6 +350,24 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Upcoming deadlines
 
+- ⭐ **TENTATIVE DELIVERY DATES: 2027-01-05 to 01-07** (Mark, 2026-11-16 — *"the dates is
+  tentative Jan. 5-7"*). **Tuesday to Thursday**, three consecutive days = the 2-day Core
+  **plus** the 1-day Deep Dive back to back, which is the format the first confirmed seat
+  booked. **This supersedes the Nov 30 / Dec 7 windows below**, and it is a better answer
+  than either: it clears Thanksgiving and year-end entirely, starts in the first full working
+  week of 2027 when legal teams are back and budgets have reset, and leaves **seven weeks**
+  of runway instead of one or three.
+  - **What the seven weeks are for, in priority order:** (1) the Day 1 dry run against the
+    clock — still never done, and now there is no excuse; (2) Carlene's 2 + 1 dry run, which
+    also exercises the route Jan 5–7 does *not* use; (3) the PPTX decks (Mark's to build);
+    (4) `verify-setup.sh` out to both students by **2026-12-22 at the latest**, a fortnight
+    ahead, because the failure modes are a 5 GB model download and corporate install
+    restrictions and both are discovered too late by default.
+  - ⚠ **Tentative, so nothing downstream may state it as fixed** — not the freeeed.org page,
+    not a channel conversation, not an invoice. The page's whole premise is "dates are being
+    set now"; it stays that way until Mark confirms.
+  - ⚠ **Day 3 is the Deep Dive and it has never been timed.** Jan 5–7 sells it as a day. See
+    the Risks table.
 - **Week of 2026-11-16 — meeting with Carlene Gordon to set the delivery dates.** Exact day
   Unknown. Two things must be true before any date Mark agrees to in that meeting:
   1. **The Day 1 dry run against the clock has happened** (priority 2, still open). The
@@ -346,6 +388,14 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Important TODOs
 
+- 🆕 **Install Ollama and pull the two models on the teaching machine — before 2027-01-05.**
+  This machine has no Ollama and no GPU it can use for inference, so local mode cannot be
+  demonstrated on it today. Students can sit the whole course on CPU in `offline` mode and
+  lose nothing measurable, but **the instructor cannot**: Modules 4, 5 and 6 argue local-first
+  and the narration assumes a model answering on screen. Either `ollama pull qwen3:8b` +
+  `nomic-embed-text` here and accept CPU latency on a *small* corpus for the demo, or teach
+  the model-facing beats from a machine with a GPU. Decide which, then rehearse on it —
+  `verify-setup.sh` now reports exactly this.
 - **`labs/07-Score-and-Package/README.md` has no stated duration** — the only core lab
   without one, and it sits inside the Day 2 block that does not fit. Time it during the dry
   run and write the number in.

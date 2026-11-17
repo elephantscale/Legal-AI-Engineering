@@ -20,6 +20,54 @@ If `verify-setup.sh` says you can run every lab, stop reading and go to
 
 ---
 
+## What your laptop needs
+
+**No GPU is required.** Nor a workstation, nor a big machine of any kind. Measured on a
+6-year-old 12-core desktop with no usable GPU: the corpus builds in **2 seconds**, Labs
+02–06 run end to end in **about 12 seconds**, and the whole work tree is **17 MB**. The
+labs are small on purpose — this course is about the decisions, and a lab you cannot run is
+a decision you never make.
+
+| | Enough | Comfortable |
+|---|---|---|
+| **Python** | 3.10+ | 3.12 |
+| **RAM** | **8 GB** — runs every lab in `offline` mode | **16 GB** — runs a local 8B model alongside your editor |
+| **Free disk** | **2 GB** (repo + corpus + work tree + room) | **10 GB** — the two models are ~5.5 GB of it |
+| **CPU** | anything from the last ~6 years | 8+ cores shortens the local-model waits |
+| **GPU** | **none** | 8 GB+ VRAM, or Apple silicon with 16 GB+ unified memory |
+| **OS** | Linux, macOS, or Windows (WSL2 recommended) | — |
+| **Network** | once, to pull the models | — *no lab needs the network, and none needs an API key* |
+
+### So what does a GPU actually buy you?
+
+One lab, and it is worth naming precisely rather than hand-waving. **Lab 06's `classify`
+makes one model call per document, serially, across ~1,200 documents.** With a GPU that is a
+tea break. On CPU it is not class-time work. Two ways through, and **both are taught rather
+than tolerated**:
+
+```sh
+python3 defensible_review.py classify --work ../work --corpus ../assets/corpus --limit 150
+```
+
+Classify a sample. `measure` handles it correctly and hands you back a *wider confidence
+interval* — which lands Lab 06's real lesson harder than the full run does: a point estimate
+that meets your target while its lower bound does not is **an estimate consistent with the
+target, not a demonstration of it**. Sample size is the whole subject of that module.
+
+```sh
+python3 defensible_review.py classify --work ../work --corpus ../assets/corpus --classifier keyword
+```
+
+Or run the keyword baseline — which you should run anyway, GPU or not, because *a classifier
+that cannot beat keyword search has not earned its place in a protocol*.
+
+> Everywhere else, the model is either small (`nomic-embed-text` is 275 MB and CPU-fine) or
+> called a handful of times. And `LEGAL_AI_MODE=offline` removes the model entirely, with
+> every planted finding still found and every metric still computed. **Nobody is blocked by
+> hardware in this course.** If you are, that is a bug — tell the instructor.
+
+---
+
 ## The three run modes
 
 One environment variable picks the mode. Copy `.env.example` to `.env` to keep your

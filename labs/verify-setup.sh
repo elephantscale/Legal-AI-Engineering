@@ -34,6 +34,55 @@ else
 fi
 printf "\n"
 
+# ------------------------------------------------------------------------- machine
+# Reported, not enforced. The labs themselves are tiny; the only heavy thing in this
+# course is a local model, and offline mode removes even that.
+printf "${BOLD}Machine${OFF}\n"
+
+CORES=$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo "?")
+MEM_GB="?"
+if [ -r /proc/meminfo ]; then
+  MEM_GB=$(awk '/MemTotal/ {printf "%d", $2/1048576}' /proc/meminfo)
+elif command -v sysctl >/dev/null 2>&1; then
+  MEM_GB=$(sysctl -n hw.memsize 2>/dev/null | awk '{printf "%d", $1/1073741824}')
+fi
+DISK_GB=$(df -Pk . 2>/dev/null | awk 'NR==2 {printf "%d", $4/1048576}')
+
+ok "cpu cores" "$CORES"
+if [ "$MEM_GB" != "?" ] && [ "${MEM_GB:-0}" -lt 8 ] 2>/dev/null; then
+  warn "memory" "${MEM_GB} GB — under 8 GB, run LEGAL_AI_MODE=offline"
+  note "A local 8B model wants ~6 GB to itself. Offline mode needs none of it and"
+  note "every lab still completes."
+else
+  ok "memory" "${MEM_GB} GB"
+fi
+if [ -n "${DISK_GB:-}" ] && [ "${DISK_GB:-0}" -lt 10 ] 2>/dev/null; then
+  warn "free disk" "${DISK_GB} GB here"
+  note "The labs need well under 1 GB (corpus ~1 MB, work tree ~20 MB). The space is"
+  note "for the models: qwen3:8b ~5 GB, nomic-embed-text ~275 MB. Offline mode: neither."
+else
+  ok "free disk" "${DISK_GB} GB"
+fi
+
+GPU=""
+if command -v nvidia-smi >/dev/null 2>&1; then
+  GPU=$(nvidia-smi --query-gpu=name,memory.total --format=csv,noheader 2>/dev/null | head -1)
+elif [ "$(uname -s)" = "Darwin" ]; then
+  case "$(uname -m)" in arm64) GPU="Apple silicon (unified memory)" ;; esac
+fi
+if [ -n "$GPU" ]; then
+  ok "gpu" "$GPU"
+else
+  warn "gpu" "none detected — and that is fine"
+  note "NO GPU IS REQUIRED. Every lab completes without one. The single place it is"
+  note "felt is Lab 06's classify, which is one model call per document across ~1,200"
+  note "documents: on CPU that is not class-time work. Two honest answers, both"
+  note "taught: run it on a sample (classify --limit 150) and read the wider"
+  note "confidence interval that comes back, or run --classifier keyword. The"
+  note "playbook figures are offline figures, so your numbers will still match."
+fi
+printf "\n"
+
 # ------------------------------------------------------------------------ optional
 printf "${BOLD}Optional — each gap has a fallback, and a cost${OFF}\n"
 
