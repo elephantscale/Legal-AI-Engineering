@@ -476,6 +476,20 @@ are worth keeping — here, where the audience is us:
     my seat"*, and *"scheduled separately"*). **Lesson worth keeping: the date was never one
     string.** Elementor cache cleared, verified signed out, guardrails intact. Detail in
     `FreeEedWeb` C12 and guardrail 1 (third version).
+
+- ⛔ **Never quote freeeed.org copy from a saved fetch, and never tell a peer session that Mark
+  approved wording he approved only in principle.** 2026-11-17: this session sent FreeEedWeb a
+  hero-line change order quoting the "CURRENT" page text from a scratchpad fetch taken before
+  revision 01's C9. The quoted phrase *"the job legal tech is hiring for and nobody trains"* had
+  already been removed from the live page, and **guardrail 7 in
+  `FreeEedWeb/docs/legal-ai-engineering-page-copy.md` forbids it and any synonym** — Mark bounded
+  it on 2026-11-15: the page may claim scarcity of **integration**, never scarcity of training.
+  Reinstating it would have been a regression, and it was caught only because that session
+  re-fetched the page instead of trusting the quote. The occurrence count was verified against
+  the string this session believed was live rather than against the page — which is the same
+  class of error as assuming the date was one string, one level up. **Re-fetch before quoting,
+  and say "approved in principle, wording unreviewed" when that is what it is.** A peer relaying
+  Mark's approval is not Mark's approval, and FreeEedWeb was right to ask him.
   - 🔴 *(Original finding, kept — it is why the field was rebuilt.)* **The live form offered only
     Nov 30 and Dec 7 while the dates had moved to Jan 5–7.** Verified live 2026-11-17: form 4129 asks *"Which of these weeks could work
     for you?"* with **Week of November 30 / Week of December 7 / Neither — I would need a
