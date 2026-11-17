@@ -9,7 +9,15 @@
 
 ### Course Description
 * Course goals
-  * Turn software / AI engineers into **legal engineers** — the people who can actually *build* AI for legal work (eDiscovery, review, investigations).
+  * Turn software / AI engineers into **legal engineers** — the person a matter can rely on when
+    the tool does not do what the matter needs (eDiscovery, review, investigations). **Not
+    "builds AI for legal work"**: every vendor says that, and most of them are telling the truth.
+    The legal engineer **adjusts** what was bought to the matter in front of them,
+    **integrates** it with the systems the firm already runs, **measures** what it actually did,
+    **attests** to what did not leave the building, **reproduces** the run a year later and gets
+    the same answer, **bounds** it — says what the system must not be allowed to do, and makes
+    that structural rather than promised — and **explains** every one of those to someone whose
+    job is to doubt them.
   * Teach participants to build legal-AI systems that are **private** (nothing leaves the building), **defensible** (you can prove what they did), and **deployable on-prem** — the exact skills legal-tech firms and law departments are hiring for.
   * Do it in **two intensive, hands-on days** — the whole build path, and shipping it — with a **one-day technical Deep Dive**, scheduled separately, for oversight and governance. No fluff.
 
@@ -92,7 +100,9 @@
     * The legal AI implementation gap — what the 2026 ILTA, Wolters Kluwer and Thomson
       Reuters surveys show, and why buying legal AI software does not remove the need
       for engineering
-    * The legal-engineer role and why it is being hired right now
+    * The legal-engineer role and why it is being hired right now — and the verbs that separate
+      it from a vendor's datasheet: adjust, integrate, measure, attest, reproduce, bound,
+      explain. Each one is a module in this course, which is the argument that the role is real
     * **What the postings actually say** — a market map built from nine current postings at
       six employers: which titles are J.D.-gated, which are not, what each pays, which door
       this course opens, and what it deliberately does not teach *(handout included)*
