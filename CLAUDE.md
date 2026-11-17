@@ -84,11 +84,14 @@ differentiator against generic "AI for lawyers" training.
 - Labs 02–07 write into `labs/work/` (gitignored). Lab `NN` reads lab `NN-1`'s output.
   Don't break that chain; if you change a filename, change the consumer in the same commit.
 - **The Deep Dive runs weeks after the Core**, so `labs/resume-deep-dive.sh` rebuilds the seeded
-  corpus and replays Labs 02–06 into `labs/work/` offline — Labs 07, 10 and 12 read
-  `catalog.jsonl`, `exceptions.jsonl`, `index.sqlite`, `chunks.jsonl`, `attestation.json`,
-  `metrics.json` and the case snapshot, so a student arriving with an empty work tree cannot
-  start. It deliberately replays the Core labs with **their own commands** rather than Lab 07's
-  `run_matter.py`, which would spoil the Deep Dive's first lesson. That script is a **consumer of
+  corpus and replays Labs 02–05 into `labs/work/` offline — Labs 07, 10 and 12 read
+  `catalog.jsonl`, `exceptions.jsonl`, `index.sqlite`, `chunks.jsonl` and `attestation.json`, so a
+  student arriving with an empty work tree cannot start. It deliberately replays the Core labs with
+  **their own commands** rather than Lab 07's `run_matter.py`, which would spoil the Deep Dive's
+  first lesson. It also stops **before** Lab 06: `protocol` refuses to overwrite a pre-registration
+  and that refusal is the control, so `metrics.json` and the case snapshot are left for Lab 07's
+  `run_matter.py` to produce — and when a student ran the Core back to back and already has
+  `validation-protocol.md`, `run_matter.py` adopts it rather than rebuilding it. That script is a **consumer of
   every Core lab's output filenames**: if you rename one, fix it in the same commit.
 - Each lab ends with a rich `## Teacher's Playbook`: worked model answer with realistic
   output, live-demo script, common mistakes + fixes, debrief Q&A, "what good looks like."

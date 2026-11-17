@@ -270,7 +270,9 @@ and it is where the production set and the container come from.
 **Coming back for the Deep Dive weeks later?** Labs 07, 10 and 12 all read the Core's `work/`
 tree — `catalog.jsonl`, `exceptions.jsonl`, `index.sqlite`, `chunks.jsonl`, `attestation.json`,
 `metrics.json`, the case snapshot. If yours is gone, run `./resume-deep-dive.sh` from `labs/`: it
-rebuilds the seeded corpus and replays Labs 02–06 offline in a few minutes.
+rebuilds the seeded corpus and replays Labs 02–05 offline in a few minutes. It stops there on
+purpose — `protocol` will not overwrite a pre-registration, so `metrics.json` and the case snapshot
+come from Lab 07's `run_matter.py` at the start of the Deep Dive instead.
 
 If you fall behind, Lab 02 ships a complete worked answer (`ingest_reference.py`) and every
 later lab in the chain ships code that already runs end to end — the exercises are edits and

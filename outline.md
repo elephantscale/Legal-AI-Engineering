@@ -65,8 +65,18 @@
 * Taught from the builder's seat — the instructor ships a real on-prem eDiscovery platform (FreeEed) and teaches AI security, so the labs reflect production reality rather than toy demos
 
 ## Lab environment
-* A modern laptop and reliable internet access
-* A local model runtime (Ollama / vLLM, OpenAI-compatible) for the privacy and local-serving labs
+* **Any laptop from the last few years, and no GPU.** Measured rather than estimated: Python 3.10+,
+  8 GB RAM (16 GB comfortable, which is what running a local 8B model alongside an editor wants),
+  2 GB free disk (10 GB if you pull both local models), Linux, macOS, or Windows with WSL2. One
+  lab — Lab 06's per-document classification — is genuinely slow on CPU, and the two ways round it
+  are *taught* rather than tolerated. `labs/SETUP.md` carries the table and the reasoning.
+* **Internet for the class, not for the labs.** Delivery is live online, so a connection is needed
+  to attend, and one is needed once to pull the local models. **No lab reaches the network and no
+  lab needs an API key** — that is a design rule of this course, not a convenience.
+* A local model runtime (Ollama / vLLM, OpenAI-compatible) for the privacy and local-serving labs.
+  Where a lab wants a model it also ships a deterministic offline fallback, so a participant who
+  cannot install Ollama — a locked corporate laptop, say — still completes the lab and still
+  learns the lesson
 * The labs themselves are self-contained Python (standard library plus a short pinned requirements list) over a provided synthetic corpus; **FreeEed** is referenced throughout as the production reference architecture, and participants are pointed at it to install and run on their own machines
 * Deliberately messy sample legal corpora are provided
 
@@ -183,10 +193,20 @@ its own. Nothing is cut and no decision has to be made at 4pm on Day 2.
 
 **The Deep Dive assumes the Core, technically and not just pedagogically.** Labs 07, 10 and 12 read
 the Core's work tree — the catalog and exceptions from Lab 02, the index from Lab 03, the chunks and
-vectors from Lab 04, the attestation from Lab 05, the metrics and case snapshot from Lab 06. A
-student who arrives without it cannot start. Two defences, and use both: tell the room to keep
-`labs/work/`, and run **`labs/resume-deep-dive.sh`**, which rebuilds the seeded corpus and replays
-Labs 02–06 offline in a few minutes.
+vectors from Lab 04, the attestation from Lab 05. A student who arrives without those cannot start.
+Two defences, and use both: tell the room to keep `labs/work/`, and run
+**`labs/resume-deep-dive.sh`**, which rebuilds the seeded corpus and replays **Labs 02–05** offline
+in a few minutes.
+
+**Lab 06's artifacts are the one thing the replay leaves alone**, and that is a control rather than
+an oversight: `defensible_review.py protocol` refuses to overwrite an existing pre-registration, so
+a replay script must not write one. Lab 07's `run_matter.py` runs those stages itself at the start
+of the Deep Dive, which is where the teaching order puts them anyway — so `metrics.json` and the
+case snapshot arrive there. A student who *did* complete Lab 06 arrives with
+`validation-protocol.md` already on disk, and `run_matter.py` **adopts** it rather than rebuilding
+it: the hash goes in the stage ledger and the pre-registration still counts as one. Both routes
+reach Lab 07, and the back-to-back route is the one that matters when the Core and the Deep Dive run
+on consecutive days.
 
 **Recommended gap: two to four weeks.** Long enough to be a separate commitment, short enough that
 the environment, the vocabulary and the capstone are all still fresh.
