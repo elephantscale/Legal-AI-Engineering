@@ -126,6 +126,43 @@ for lab in "${expected_labs[@]}"; do
   fi
 done
 
+# ------------------------------------------------- Module N == Lab N, checked as a number
+#
+# CLAUDE.md makes this identity load-bearing: "Module N uses Lab N -- the numbers agree
+# exactly, so the instructor never has to translate between them out loud." The hand-off
+# check in the slides section only asks whether SOME "Lab <digit>" appears in a heading, so
+# 04-legal-rag-citations.md handing off to "Lab 07" would pass it. That is a string search
+# standing in for a claim about structure; this extracts the numbers and compares them.
+#
+# Two deliberate exceptions, both from CLAUDE.md: deck 01 is the framing module with no lab
+# of its own and points FORWARD to Lab 02, and deck 08 is the capstone, which names Lab 08
+# in its body rather than in a hand-off slide. A deck's slide title may differ from the
+# lab's own heading -- only the numbers must agree.
+printf "\n${B}Module N == Lab N (the numbers, not the words)${N}\n"
+for d in "$ROOT_DIR"/slides/[0-9][0-9]-*.md; do
+  b=$(basename "$d"); nn=${b%%-*}
+  case "$b" in 00-*|08-*) continue ;; esac
+  want=$nn
+  [ "$nn" = "01" ] && want=02   # deck 01 hands off forward to Lab 02
+  wrong=$(grep -ioE '^## (. )?.*Lab [0-9]+' "$d" | grep -oE 'Lab [0-9]+' \
+          | grep -vx "Lab $want" | sort -u | tr '\n' ' ')
+  if [ -n "$wrong" ]; then
+    bad "deck $b hands off to ${wrong% } but its module is $nn (expected Lab $want)"
+  else
+    ok "deck $nn -> Lab $want"
+  fi
+done
+for lab in "${expected_labs[@]}"; do
+  f="$ROOT_DIR/labs/$lab/README.md"; nn=${lab%%-*}
+  [ -f "$f" ] || continue
+  h=$(grep -m1 -oE '^# Lab [0-9]+' "$f")
+  if [ "$h" = "# Lab $nn" ]; then
+    ok "labs/$lab heading says Lab $nn"
+  else
+    bad "labs/$lab README heading is '${h:-<none>}', not '# Lab $nn'"
+  fi
+done
+
 # the pipeline contract: labs 03-07 must read ../work
 printf "\n${B}Pipeline contract (labs 02-07 chain through work/)${N}\n"
 for lab in 03-Search 04-Legal-RAG-Citations 05-Local-Model-Egress-Proof \
