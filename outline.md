@@ -13,7 +13,7 @@
   * Teach participants to build legal-AI systems that are **private** (nothing leaves the building), **defensible** (you can prove what they did), and **deployable on-prem** — the exact skills legal-tech firms and law departments are hiring for.
   * Do it in **two intensive, hands-on days** — the whole build path, and shipping it — with a **one-day technical Deep Dive**, scheduled separately, for oversight and governance. No fluff.
 
-* **The Core — two days.** Participants build the full stack: ingest and extract messy real-world legal data, search and retrieve it, add retrieval-augmented generation (RAG) with **citations**, keep it **private** on a local model and prove it, run a **defensible AI review** with court-ready metrics, and assemble the whole thing as a capstone that scores itself with **SAIS-100**. **The Deep Dive — one day, scheduled separately.** Ship that system: a multi-step workflow with a human in the loop, private on-prem packaging, agentic orchestration with a designed human checkpoint, and a full governance audit against the AI-regulation landscape. Investigations and deployment at scale are available as electives.
+* **The Core — two days.** Participants build the full stack: ingest and extract messy real-world legal data, search and retrieve it, add retrieval-augmented generation (RAG) with **citations**, keep it **private** on a local model and prove it, run a **defensible AI review** with court-ready metrics, and assemble the whole thing as a capstone that scores and defends itself against a structured rubric. **The Deep Dive — one day, scheduled separately.** Ship that system: a multi-step workflow with a human in the loop, private on-prem packaging, agentic orchestration with a designed human checkpoint, and a full governance audit against the AI-regulation landscape. Investigations and deployment at scale are available as electives.
 
 * Special emphasis is placed on:
   * **Confidentiality and privilege** — where legal data actually goes, and how to keep it local and certifiable.
@@ -26,7 +26,9 @@
   * Build search + RAG over documents that **cites its sources** and keeps data local.
   * Choose local vs. cloud AI defensibly, and prove nothing left the machine.
   * Measure and document an AI review so it holds up in court (recall, elusion, precision, ground truth).
-  * Package a private, defensible legal-AI application and score it with the **SAIS-100 (Elephant Scale Secure AI Score)** rubric.
+  * Package a private, defensible legal-AI application and score it against the controls a
+    reviewer actually asks about — **NIST AI RMF, ISO/IEC 42001, the EU AI Act** — and defend the
+    gaps you chose not to close.
 * The **Deep Dive (one day)** adds: shipping a human-in-the-loop legal workflow and packaging it for private on-prem deployment, designing human oversight into an agentic workflow rather than promising it, attacking your own guardrails and watching them hold, and auditing a legal-AI system against the AI-regulation landscape.
 * The **electives** add: investigative AI (entities, relationships, timelines) and on-prem deployment at scale in regulated environments (CJIS, government, higher-ed).
 
@@ -41,7 +43,7 @@
 
 ## Duration
 * **Core — two days.** The complete hands-on build path, Modules 1–6 plus the capstone. The
-  capstone and the SAIS-100 score sit on Day 2, so **the certificate bar is met by the Core alone**.
+  capstone and its score sit on Day 2, so **the certificate bar is met by the Core alone**.
 * **Deep Dive — one day, scheduled separately.** Modules 7, 10 and 12 — ship it, oversee it, prove
   it: the document production set, the container, the agentic workflow with a designed human
   checkpoint, and the governance audit. **It assumes the Core.**
@@ -142,7 +144,7 @@
 > **Module 7 opens the Deep Dive, and it cannot come back into Day 2** — that was tried on
 > paper and the clock refuses it: Day 2 is already about 35 minutes over 6.5 hours without it, and
 > Module 7 plus Lab 07 is another 1:45. Nothing on Day 2 depends on it: the capstone drives Labs
-> 02–06 itself and produces its own SAIS-100 score, so the certificate bar is met at the end of
+> 02–06 itself and produces its own score, so the certificate bar is met at the end of
 > Day 2. What a Core-only buyer does not get is the **document production set** and the
 > **containerized deployment** — say that in the sales conversation, not on Day 2.
 
@@ -157,9 +159,9 @@
 * **Module 7: Ship It — Workflow, Private Deployment, and Governance**
   * A multi-step legal workflow (ingest → search → summarize → review → produce) with
     **human-in-the-loop**; private/on-prem deployment essentials (containerize; keep the data in
-    the building); AI governance for legal in brief, and **scoring the system with SAIS-100 (the
-    Elephant Scale Secure AI Score)**
-  * **Lab: Score and Package** — wire the workflow, score it with SAIS-100, and package it for
+    the building); AI governance for legal in brief, and **scoring the system against a structured
+    security rubric**
+  * **Lab: Score and Package** — wire the workflow, score it, and package it for
     private deployment. This is where the **document production set** and the **containerized
     deployment** come from
 
@@ -170,7 +172,7 @@
 
 * **Module 12: Governance and Compliance Deep-Dive**
   * The AI-regulation landscape (100+ US state AI laws, the EU AI Act), audit requirements, and
-    a full SAIS-100 governance audit
+    a full governance audit in which every finding cites an independently resolvable artifact
   * **Lab: Governance Audit** — audit a legal-AI system against a governance/defensibility
     checklist
 
@@ -214,8 +216,9 @@ the environment, the vocabulary and the capstone are all still fresh.
 ## What participants take away
 
 * **Comfort in the area of study** — you leave able to hold your own in a legal-AI conversation: the vocabulary, the two risks, where AI actually fits in a matter, and what still has to be *built* rather than bought.
-* **The working system you built** — the capstone repository itself: a private, defensible legal-AI application with its `DEFENSE.md`, reproducibility bundle and SAIS-100 score. A portfolio artifact, not a slide deck.
-* **The reusable paperwork** — the SAIS-100 legal overlay, the defensibility checklist, the reproducibility manifest template, the TAR metrics cheat sheet.
+* **The working system you built** — the capstone repository itself: a private, defensible legal-AI application with its `DEFENSE.md`, reproducibility bundle and scored rubric. A portfolio artifact, not a slide deck.
+* **The reusable paperwork** — the legal scoring overlay (evidence requirements and auto-fail
+  conditions), the defensibility checklist, the reproducibility manifest template, the TAR metrics cheat sheet.
 * **The Elephant Scale Legal AI Engineer Certificate**, signed by the instructor.
 * **Six months of email support from the instructor** — on your own build, not just on the labs: architecture, what to measure, how to defend it. Best effort, by email, personal to you, starting the last day of class. **Please send no client data — a synthetic reproduction or a description of the problem.** Advice on a live matter, or work that turns out to be a project, is quoted separately.
 * **Six months of updates to the course materials** — slides, labs and handouts, as the tooling and the regulations move.
@@ -225,9 +228,9 @@ the environment, the vocabulary and the capstone are all still fresh.
 * Requirements — minimum attendance, completion of the **Core** labs, and a capstone that passes its own `VERIFY.md` and trips **no** legal auto-fail condition
 * Certificate Awarded — the **Elephant Scale Legal AI Engineer Certificate**
 * **The certificate is earned on the Core.** The Deep Dive adds no second bar — it adds artifacts: the document production set, the container, the agentic workflow with its approval gate and refusal log, and the governance audit
-* Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and SAIS-100 score. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
+* Participants also leave with the capstone repository itself: a private, defensible legal-AI application plus its `DEFENSE.md`, reproducibility bundle, and scored rubric. That portfolio artifact is the evidence behind the certificate — the certificate says a bar was met, and the repository is how it is shown.
 
 ## Where this fits
 * This is the **legal-vertical track of the Elephant Scale Secure AI Learning Path.**
-* It pairs naturally with **Building Secure AI Applications** (builders) and **AI Security for Security Teams** (defenders), and applies the **SAIS-100** framework in its governance work.
+* It pairs naturally with **Building Secure AI Applications** (builders) and **AI Security for Security Teams** (defenders).
 * **FreeEed** (Apache-2.0, on-prem eDiscovery) is the reference architecture throughout — the real system that keeps the labs production-grade rather than slideware. Participants build their own pipeline in the labs and leave able to deploy FreeEed on their own hardware.
