@@ -430,8 +430,17 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     (4) `verify-setup.sh` out to both students by **2026-12-22 at the latest**, a fortnight
     ahead, because the failure modes are a 5 GB model download and corporate install
     restrictions and both are discovered too late by default.
-  - 🔴 **THE LIVE FORM STILL OFFERS ONLY NOV 30 AND DEC 7 — and four people are about to
-    fill it in.** Verified live 2026-11-17: form 4129 asks *"Which of these weeks could work
+  - ✅ **RESOLVED 2026-11-17 — the live form now asks about January 5–7** (Mark: *"fix the form
+    to say Jan 5-7"*). Form 4129 field 12 rebuilt and **verified live, signed out**: *"January
+    5–7, 2027 — does that work for you?"* with **Yes — all three days / Yes — the Core only
+    (January 5–6) / No — I would need a different date**, described as *"being held, not
+    booked"* so the page does not outrun a tentative date. **Both dead weeks are gone from the
+    whole page.** The Core-only option is new information the old field could not capture: it
+    says **which product each registrant wants, on the dates, in one tick**. Detail and method
+    note in `FreeEedWeb` C12. ⚠ **If the dates firm up, the hero's *"Dates are being set now"*
+    and this field move together.**
+  - 🔴 *(Original finding, kept — it is why the field was rebuilt.)* **The live form offered only
+    Nov 30 and Dec 7 while the dates had moved to Jan 5–7.** Verified live 2026-11-17: form 4129 asks *"Which of these weeks could work
     for you?"* with **Week of November 30 / Week of December 7 / Neither — I would need a
     later date**. Jan 5–7 is *"Neither"*. So the first cohort is being asked to choose between
     two weeks the instructor has tentatively moved away from, on a page whose premise is
