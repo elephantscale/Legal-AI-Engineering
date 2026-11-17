@@ -3,7 +3,7 @@
 
 *© Elephant Scale · Jan 5 - 7, 2027*
 
-- **Course Code:** LEGAL-AI-ENG-2026
+- **Course Code:** LEGAL-AI-ENG-2027
 - **Duration:** 2-day Core + a 1-day Deep Dive, scheduled separately (electives sell on their own)
 - **Level:** Intermediate to Advanced
 
