@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-16 (tentative dates Jan 5–7; first confirmed seat; back-to-back route fixed; laptop requirements written down)
+**Last updated:** 2026-11-17 (the cohort filled — four accepted; two of them cannot take the course as built; the live form still offers only Nov 30 / Dec 7)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -264,6 +264,42 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Customers and revenue connections
 
+- ⭐⭐ **THE COHORT FILLED ON 2026-11-17. All four invitees accepted** (Mark: *"I sent the
+  invite and everyone accepted"*, relayed by the FreeEedCRM session, which owns the contact
+  rows). **Steve Wolfe, Carlene Gordon, Robert Chesler, Reuven Bisk.** This ends the
+  build-ahead-of-demand phase for real, and **"the class is guaranteed to run" — which Mark
+  put in writing to Carlene on 11-16 — is now defensible on headcount**, which it was not two
+  days ago.
+  - 🔴 **Two of the four cannot take the course as built, and this was known and written down
+    before they were invited.** The audience risk in the Risks table stopped being theoretical
+    on 2026-11-15; today it has names.
+    - **Reuven Bisk — marked NOT A SEAT since 2026-11-15.** J.D./M.B.A., practising attorney,
+      part-time CFO. The assessment was: eleven Python labs plus a capstone repository, *"a
+      practising attorney and CFO cannot complete them"*, *"selling him a seat would fail in
+      week one"*. **His acceptance does not change what the labs require.** His bucket was
+      always (c) sponsor / door-opener / private cohort.
+    - **Robert Chesler — marked RAMP-UP, NOT DAY-ONE.** Princeton BSE EECS 1986, X Consortium,
+      deep systems and C/X11; **no evidence of recent Python or LLM work**. The labs are within
+      reach; **starting them cold on day one is the risk**, and the fix is lead time, which the
+      Jan 5–7 dates now supply in abundance (seven weeks, not one).
+  - ✅ **ENDORSED, and it is the cheapest honest route: have all four submit form 4129 rather
+    than treat an email acceptance as the record.** The form asks *"How much Python do you
+    write?"* down to *"None yet"*, so **their own stated answers make the track decision
+    instead of Mark having to make it about them** — and it converts four LinkedIn-inferred
+    Python levels into four stated ones, which is the measurement the audience question has
+    always needed. It is also a documented opt-in under the page's narrow consent line; a
+    reply saying "yes" is not.
+  - ⛔ **CORRECTION to the remedy as relayed — do not offer Bisk the "Legal AI Implementation"
+    track as a solution.** That checkbox (FreeEedWeb revision 01, C10) is **demand
+    measurement that commits to nothing** — its own wording is *"if we run it"* — and the
+    standing decision (Mark, 2026-11-15) is **stay with A, measure B**. Course B is not a
+    smaller A: its substance is evaluating and configuring RelativityOne, CoCounsel, Harvey
+    and Copilot Studio, products this instructor does not teach and which our own job-market
+    handout names as the course's largest gap. **Ticking that box in November is not a seat in
+    January.** What is genuinely available to Bisk today: **a private cohort** (real, on the
+    page, and the right shape for a sponsor), or **attending without completing the labs** —
+    which is honest only if it is said out loud, because the capstone is assessed and the
+    certificate bar is met by completing it. ➡ Decision 10 below.
 - ⭐ **First confirmed seat: Steve Wolfe — three days, date-flexible** (Mark, 2026-11-16:
   *"steve wolfe is joining for three days, whenever the course runs"*). Three days = the
   **2-day Core plus the 1-day Deep Dive**, i.e. the full format and the largest purchase the
@@ -363,6 +399,18 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     (4) `verify-setup.sh` out to both students by **2026-12-22 at the latest**, a fortnight
     ahead, because the failure modes are a 5 GB model download and corporate install
     restrictions and both are discovered too late by default.
+  - 🔴 **THE LIVE FORM STILL OFFERS ONLY NOV 30 AND DEC 7 — and four people are about to
+    fill it in.** Verified live 2026-11-17: form 4129 asks *"Which of these weeks could work
+    for you?"* with **Week of November 30 / Week of December 7 / Neither — I would need a
+    later date**. Jan 5–7 is *"Neither"*. So the first cohort is being asked to choose between
+    two weeks the instructor has tentatively moved away from, on a page whose premise is
+    *"registrants choose from the dates first"*. **Carlene's 11-16 invite points at this
+    form**, and the FreeEedCRM session is recommending Dec 7 to her in good faith without
+    knowing about Jan 5–7. ➡ Raised as **C12** in
+    `FreeEedWeb/docs/legal-ai-engineering-page-revision-01.md` and sent back to that session.
+    ⚠ Note for the record: **the built form diverged from the change order in exactly the way
+    the change order warned against** — B2 specified a free-text *"Which weeks or months would
+    work for you?"* precisely so the page would never name a week we had not committed to.
   - ⚠ **Tentative, so nothing downstream may state it as fixed** — not the freeeed.org page,
     not a channel conversation, not an invoice. The page's whole premise is "dates are being
     set now"; it stays that way until Mark confirms.
@@ -711,6 +759,32 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    **Still open — how updates are delivered.** A read invitation to the course repository costs
    nothing and is self-maintaining; a mailed archive per release is a recurring chore. The
    outline deliberately does not name a mechanism, so this can be settled without re-issuing it.
+
+10. 🔴 **How Bisk and Chesler attend — NEEDS MARK, and it is the only thing standing between a
+    full cohort and a bad first delivery.** Both accepted; neither fits the course as built.
+    The two questions are different and should not be answered together:
+
+    **Chesler is a scheduling problem, and it is already solved by Jan 5–7.** Seven weeks of
+    lead time, a stated Python answer on form 4129, and `verify-setup.sh` in his hands by
+    2026-12-22. If his answer comes back *"Occasionally / I can read it and modify it"* or
+    better, he is a day-one student with homework. ⚠ If it comes back *"None yet"*, he is the
+    same problem as Bisk.
+
+    **Bisk is a product problem and it has no free answer.** Three options, in order of
+    honesty:
+    - **A private cohort, later.** Real, already offered, right shape for a sponsor, and it
+      keeps the relationship without putting him in a room where he cannot do the work.
+    - **He attends the Core and does not complete the labs.** Permissible if *stated in
+      advance*: he gets the vocabulary, Module 1, Module 5's architecture choice and the
+      governance material, and he does **not** get the certificate, because the bar is the
+      capstone and a softened first issuance would devalue it permanently (decision 2).
+      ⛔ Never discovered on day two — agreed before he sits down.
+    - ⛔ **Not an option: build course B for January.** Weeks of work, products we do not
+      teach, and the standing decision is to measure demand, not to build on four acceptances.
+
+    **What this costs if it is not decided:** Day 1, Lab 02, two of four students stalled at a
+    Python prompt while the other two are ahead — and the first cohort is also the dry run that
+    is supposed to produce our timings. **One email each, before the dates are confirmed.**
 
 ## Next highest-value actions
 
