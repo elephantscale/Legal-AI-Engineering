@@ -4,7 +4,7 @@
 *© Elephant Scale · Jan 5 - 7, 2027*
 
 - **Course Code:** LEGAL-AI-ENG-2027
-- **Duration:** 2-day Core + a 1-day Deep Dive, scheduled separately (electives sell on their own)
+- **Duration:** 2 days (Core) + 1 day (Deep Dive), scheduled separately
 - **Level:** Intermediate to Advanced
 
 ### Course Description
@@ -47,11 +47,11 @@
 * **Deep Dive — one day, scheduled separately.** Modules 7, 10 and 12 — ship it, oversee it, prove
   it: the document production set, the container, the agentic workflow with a designed human
   checkpoint, and the governance audit. **It assumes the Core.**
-* The two can still run back to back as three consecutive days when a buyer wants it that way. The
-  split exists because three days in a row is the hardest thing to ask of a working legal team — not
-  because the days are weaker apart.
-* **Electives** — **investigations** and **deployment at scale** — are booked on their own, or added
-  to the Deep Dive on request.
+* The two can also run back to back as three consecutive days, on request. The split exists because
+  three days in a row is the hardest thing to ask of a working legal team — not because the days
+  are weaker apart.
+* **Electives** — **investigations** and **deployment at scale** — are taken on their own or added
+  to the Deep Dive. Each is one module and one lab; **their length is not yet fixed.**
 
 ## Prerequisites
 * Comfortable with Python and basic APIs
@@ -145,8 +145,8 @@
 > paper and the clock refuses it: Day 2 is already about 35 minutes over 6.5 hours without it, and
 > Module 7 plus Lab 07 is another 1:45. Nothing on Day 2 depends on it: the capstone drives Labs
 > 02–06 itself and produces its own score, so the certificate bar is met at the end of
-> Day 2. What a Core-only buyer does not get is the **document production set** and the
-> **containerized deployment** — say that in the sales conversation, not on Day 2.
+> Day 2. What the Core does not reach is the **document production set** and the **containerized
+> deployment**: both are built in Lab 07, on the Deep Dive.
 
 ### Capstone (integrated across Core Day 2)
 * Build a **private, defensible legal-AI application end to end** — ingest a messy corpus, search it, answer questions over it with citations using a **local** model, measure a defensible review, and package it for private deployment.
@@ -176,22 +176,20 @@
   * **Lab: Governance Audit** — audit a legal-AI system against a governance/defensibility
     checklist
 
-### Electives — booked on their own, or added to the Deep Dive on request
+### Electives — taken on their own, or added to the Deep Dive
 
 * **Module 9: Investigations — Entities, Relationships, and Timelines** — extract
   people/orgs/dates, reconstruct email threads, build chronologies, map near-duplicates and
-  document lineage. *Lab: build a timeline and entity/relationship view.* The module an
-  eDiscovery audience asks for most often.
+  document lineage. *Lab: build a timeline and entity/relationship view.*
 * **Module 11: Deployment at Scale** — on-prem and appliance deployment, distributed processing
   for large volumes, regulated environments (CJIS, government, higher-ed), hardware sizing.
-  *Lab: containerize and scale a processing job across workers.* The module for public-sector
-  and government-cloud buyers.
+  *Lab: containerize and scale a processing job across workers.*
 
 ### Scheduling the two
 
 There is no condensed version any more, and no floating module. The Core **is** the two-day
-product — Modules 1–6 and the capstone — and the Deep Dive is the third day, sold and scheduled on
-its own. Nothing is cut and no decision has to be made at 4pm on Day 2.
+course — Modules 1–6 and the capstone — and the Deep Dive is a third day with a schedule of its
+own. Nothing is cut, and no decision has to be made at 4pm on Day 2.
 
 **The Deep Dive assumes the Core, technically and not just pedagogically.** Labs 07, 10 and 12 read
 the Core's work tree — the catalog and exceptions from Lab 02, the index from Lab 03, the chunks and

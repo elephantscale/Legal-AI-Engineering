@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-17 (DATES ARE SET: 2027-01-05 to 01-07, three consecutive days; a waiting list now exists; student organisation is Mark's)
+**Last updated:** 2026-11-17 (outline: SAIS-100 removed, selling notes moved here)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -414,6 +414,22 @@ rewritten** — the gaps are recorded for review. The three findings that matter
   publishing the overlay outside the course.
 - **Elephant Scale Secure AI Learning Path** — this is its legal vertical. Sibling courses:
   `Building-Secure-AI-Applications`, `AI-Security-for-Security-Teams`, `Building-Agentic-AI`.
+
+### Selling notes, moved out of `outline.md` (2026-11-17)
+
+Mark, 2026-11-17: *"(electives sell on their own) sounds like sales talk."* It did, and it was
+one of eight places where `outline.md` addressed **the seller rather than the student**. The
+outline now carries only what a participant needs. These are the notes that were in it, and they
+are worth keeping — here, where the audience is us:
+
+- **Which elective to build out first: investigations.** It is the module an eDiscovery audience
+  asks for most often — the single clearest signal in the material about demand order.
+- **Deployment at Scale is the public-sector / government-cloud module.** CJIS, government and
+  higher-ed sizing is what that buyer asks about first.
+- **Say what the Core does not include in the sales conversation, not on Day 2.** A Core-only
+  participant finishes without the document production set and the containerized deployment
+  (both are Lab 07, on the Deep Dive). Raising that at 4pm on Day 2 turns a complete two-day
+  course into a thing with a piece missing. ⛔ It belongs before the sale, never in the room.
 
 ## Upcoming deadlines
 
@@ -851,6 +867,18 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     stated Python levels come back low across the cohort, that is the **paced cohort** the
     signup form already measures demand for — and that is a build decision with weeks in it,
     not a seating decision. Raise it only if the data says so.
+
+11. **How long is an elective?** — *`Unknown`. Needs CEO input, and it is the hole the sales talk
+    was covering.* `outline.md`'s Duration field read *"(electives sell on their own)"* — a
+    commercial statement standing exactly where a length belongs, **because no length has ever
+    been set.** Nowhere in the repo states one. What is known: each elective is one module plus
+    one lab, and the Core's comparable pairing (Module 7 + Lab 07) was timed at **1:45**, so one
+    elective is likely a **half day at most** — which does not obviously sell on its own at a
+    day rate. Three shapes, and this is a pricing decision rather than a content one: a
+    **half-day each**, **both together as one day**, or **bundled only as a Deep Dive add-on**.
+    ⚠ Not urgent — nothing in the Jan 5–7 cohort depends on it, and no elective has been sold.
+    It becomes urgent the moment an elective is quoted. The outline now says their length is not
+    yet fixed, which is true and safe to publish.
 
 ## Next highest-value actions
 
