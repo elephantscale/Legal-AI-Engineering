@@ -400,11 +400,15 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     same number, so from today **$300 is the cohort-one introductory price**, not a dry-run rate.
     ➡ **Quote it consistently to everyone in this cohort.** These are friends who know each
     other; a second friend hearing a different number costs more than the discount does.
-  - ⛔ **The format was not stated, and that is the one gap still cheap to close.** Carlene's
-    $300 was three days. Andrew was told $300 with no format attached, so whether the Core alone
-    is $300, and whether the Deep Dive day is inside it, are both unanswered. And $300 as quoted
-    carries the **assessed certificate** and **six months of personal email support**
-    (decision 9) — which is the expensive half, not the teaching.
+  - ✅ **FORMAT SETTLED THE SAME DAY (Mark, 2026-11-17): *"$300 covers all three days."***
+    So the quote is the **2-day Core plus the 1-day Deep Dive**, and the cohort-one rate is not a
+    number but a **rule — $100/day**, identical to Carlene's. That rule answers the next
+    question before it is asked: **Core alone $200, Deep Dive day $100, all three $300**, and
+    **Steve Wolfe's three days are $300** on the same basis. ⚠ Note what $300 carries at that
+    rate: the **assessed certificate** and **six months of personal email support**
+    (decision 9) — the expensive half is the support, not the teaching, and decision 9's fence
+    (best effort, email, named participant, no client data, a project is quoted) is what keeps it
+    affordable.
   - ⛔ **Guardrail unchanged and now one step closer to the edge:** $300 reaches no partner
     page, no channel conversation and no public page. A private email to a friend is not a
     channel; a forward of it is.
