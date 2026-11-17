@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-17 (student organisation is Mark's, by his instruction; "everyone accepted" downgraded — the sends are not established; the live form still offers only Nov 30 / Dec 7)
+**Last updated:** 2026-11-17 (DATES ARE SET: 2027-01-05 to 01-07, three consecutive days; a waiting list now exists; student organisation is Mark's)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -307,7 +307,7 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     - **Robert Chesler — marked RAMP-UP, NOT DAY-ONE.** Princeton BSE EECS 1986, X Consortium,
       deep systems and C/X11; **no evidence of recent Python or LLM work**. The labs are within
       reach; starting them cold on day one is the risk. **Lead time is what the course can
-      offer here and it already does**: the tentative Jan 5–7 gives seven weeks, and
+      offer here and it already does**: Jan 5–7 gives seven weeks, and
       `verify-setup.sh` plus `labs/SETUP.md` are what a participant can use to arrive ready.
       Nothing further is needed from this repo.
   - **Available, not recommended — form 4129 already asks the question this repo needs
@@ -417,28 +417,49 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 
 ## Upcoming deadlines
 
-- ⭐ **TENTATIVE DELIVERY DATES: 2027-01-05 to 01-07** (Mark, 2026-11-16 — *"the dates is
-  tentative Jan. 5-7"*). **Tuesday to Thursday**, three consecutive days = the 2-day Core
-  **plus** the 1-day Deep Dive back to back, which is the format the first confirmed seat
-  booked. **This supersedes the Nov 30 / Dec 7 windows below**, and it is a better answer
-  than either: it clears Thanksgiving and year-end entirely, starts in the first full working
-  week of 2027 when legal teams are back and budgets have reset, and leaves **seven weeks**
-  of runway instead of one or three.
-  - **What the seven weeks are for, in priority order:** (1) the Day 1 dry run against the
-    clock — still never done, and now there is no excuse; (2) Carlene's 2 + 1 dry run, which
-    also exercises the route Jan 5–7 does *not* use; (3) the PPTX decks (Mark's to build);
-    (4) `verify-setup.sh` out to both students by **2026-12-22 at the latest**, a fortnight
-    ahead, because the failure modes are a 5 GB model download and corporate install
-    restrictions and both are discovered too late by default.
-  - ✅ **RESOLVED 2026-11-17 — the live form now asks about January 5–7** (Mark: *"fix the form
-    to say Jan 5-7"*). Form 4129 field 12 rebuilt and **verified live, signed out**: *"January
-    5–7, 2027 — does that work for you?"* with **Yes — all three days / Yes — the Core only
-    (January 5–6) / No — I would need a different date**, described as *"being held, not
-    booked"* so the page does not outrun a tentative date. **Both dead weeks are gone from the
-    whole page.** The Core-only option is new information the old field could not capture: it
-    says **which product each registrant wants, on the dates, in one tick**. Detail and method
-    note in `FreeEedWeb` C12. ⚠ **If the dates firm up, the hero's *"Dates are being set now"*
-    and this field move together.**
+- 🗓️ **DELIVERY DATES ARE SET: 2027-01-05 to 01-07.** Mark, 2026-11-17, to the FreeEedWeb
+  session: ***"the dates are set, January 5-7. But leave open for waiting list."*** This
+  **supersedes the tentative status of 2026-11-16** and every "nothing may state it as fixed"
+  caveat that went with it. **Tuesday to Thursday**, three consecutive days = the **2-day Core
+  on the 5th and 6th** plus the **1-day Deep Dive on the 7th**, back to back — the format the
+  first confirmed seat booked. It clears Thanksgiving and year-end, starts in the first full
+  working week of 2027, and leaves **seven weeks**.
+  - 🆕 **A WAITING LIST NOW EXISTS, and it is half of the instruction.** The signup form's
+    third option is *"No — put me on the waiting list for the next cohort"*, so the page is
+    now collecting for **a second cohort that has no date and no plan**. ⛔ Per the rewritten
+    guardrail 1 in `FreeEedWeb/docs/legal-ai-engineering-page-copy.md`, **that choice may never
+    be dropped** — removing it would strand people who ticked it. ➡ Anyone who ticks it is a
+    commitment we have made; where that list lives is `FreeEedCRM`'s, not this repo's.
+  - ⭐ **The back-to-back fix of 2026-11-16 is now load-bearing, not a contingency.** Three
+    consecutive days means every student arrives at Lab 07 on Jan 7 having **actually
+    completed Lab 06** — which is precisely the path that stopped the Deep Dive at its first
+    command until it was fixed and verified. `resume-deep-dive.sh` is **not** cohort 1's route;
+    it is the recovery path for anyone who misses the Core. Both routes are tested.
+  - ⛔ **`outline.md` does NOT change, and a future session should not "fix" it.** It describes
+    the Deep Dive as *"one day, scheduled separately"* — that is the **product**, and the
+    product is unchanged. Jan 5–7 is **this cohort's schedule**, which is the "back to back on
+    request" case `CLAUDE.md` already allows. Product statement and cohort schedule are
+    different things; do not collapse them.
+  - **What the seven weeks are for, in priority order** — and these are now deadlines rather
+    than intentions:
+    (1) the **Day 1 dry run against the clock** — still never done; (2) the **PPTX decks**
+    (Mark's to build); (3) **`verify-setup.sh` and `labs/SETUP.md` out to every registrant by
+    2026-12-22**, a fortnight ahead — hard now that the date is fixed, because the failure
+    modes are a 5 GB model download and corporate install restrictions and both are discovered
+    too late by default; (4) **time Day 3**, which has never been timed and is now sold as a
+    dated day.
+  - ✅ **RESOLVED 2026-11-17, in two passes.** I rebuilt form 4129 field 12 to name January 5–7
+    (label plus a **Core-only** option, which the old field could not capture — it now says
+    *which product* each registrant wants, on the dates, in one tick), described as *"held, not
+    booked"*, which was correct while the dates were tentative. **Mark then set the dates**, and
+    the FreeEedWeb session completed it: the description now reads *"The dates are set"* and
+    **choice 3 became the waiting list**. ⚠ **My half left the field self-contradictory for the
+    interval** — label asserting a date, description denying it — and it also left *"The dates
+    are set"* under a hero still reading *"Dates are being set now"*. That session corrected
+    **four strings** in page 4132, two of which occur **twice** (*"Get the dates first"* → *"Reserve
+    my seat"*, and *"scheduled separately"*). **Lesson worth keeping: the date was never one
+    string.** Elementor cache cleared, verified signed out, guardrails intact. Detail in
+    `FreeEedWeb` C12 and guardrail 1 (third version).
   - 🔴 *(Original finding, kept — it is why the field was rebuilt.)* **The live form offered only
     Nov 30 and Dec 7 while the dates had moved to Jan 5–7.** Verified live 2026-11-17: form 4129 asks *"Which of these weeks could work
     for you?"* with **Week of November 30 / Week of December 7 / Neither — I would need a
@@ -453,9 +474,8 @@ rewritten** — the gaps are recorded for review. The three findings that matter
     ⚠ Note for the record: **the built form diverged from the change order in exactly the way
     the change order warned against** — B2 specified a free-text *"Which weeks or months would
     work for you?"* precisely so the page would never name a week we had not committed to.
-  - ⚠ **Tentative, so nothing downstream may state it as fixed** — not the freeeed.org page,
-    not a channel conversation, not an invoice. The page's whole premise is "dates are being
-    set now"; it stays that way until Mark confirms.
+  - ⬜ *(Superseded 2026-11-17 by Mark setting the dates: "tentative, so nothing downstream may
+    state it as fixed". It may now be stated as fixed.)*
   - ⚠ **Day 3 is the Deep Dive and it has never been timed.** Jan 5–7 sells it as a day. See
     the Risks table.
 - **Week of 2026-11-16 — meeting with Carlene Gordon to set the delivery dates.** Exact day
@@ -824,8 +844,8 @@ rewritten** — the gaps are recorded for review. The three findings that matter
       teach and which our own job-market handout names as the course's largest gap. The
       standing decision (Mark, 2026-11-15) is **stay with A, measure B**.
     - **Lead time is the one lever this repo controls and it is already pulled:**
-      `verify-setup.sh`, `labs/SETUP.md`'s measured requirements, and the tentative Jan 5–7
-      giving seven weeks.
+      `verify-setup.sh`, `labs/SETUP.md`'s measured requirements, and Jan 5–7 giving seven
+      weeks.
 
     ⚠ **The one thing that would still change the course rather than the roster:** if the
     stated Python levels come back low across the cohort, that is the **paced cohort** the
