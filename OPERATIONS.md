@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-17 (outline: SAIS-100 removed, selling notes moved here)
+**Last updated:** 2026-11-17 (the $300 pilot rate became the cohort-one introductory price)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -384,6 +384,30 @@ rewritten** — the gaps are recorded for review. The three findings that matter
   - **Superseded by the above (Mark, 2026-11-10): course free, technical support paid.** She
     would get the course at no charge, with paid support afterwards on the issues the course
     covers. *(Needs CEO input — see Decisions needed from Mark.)*
+- ⭐ **SECOND PAID QUOTE, AND THE PILOT RATE IS NOW THE COHORT-ONE INTRODUCTORY RATE
+  (2026-11-17).** Andrew Stears replied to Mark's referral note asking whether there was a cost;
+  Mark answered immediately: *"Offered at an introductory rate of $300."* The contact row is
+  `FreeEedCRM`'s. What belongs here is what it changes about the price.
+  - **The wording was right.** Decision 1 says the course is *discounted, not free*, because a
+    discount keeps a list price on the table. "Introductory rate" is that framing, and it is
+    time-bounded rather than permanent. **No guardrail was breached** — $300 was barred from
+    Chandra's page and from channel conversations, and a private email to a friend is neither.
+  - ⚠ **But the anchor it implies does not exist.** $300 is now introductory off a list price
+    that is still `Unknown`, and the first person to ask *"introductory compared to what?"* gets
+    no answer. The list price stops being a planning item and becomes what blocks the next quote.
+  - ⚠ **$300 has left its justification behind.** It was priced for Carlene as $100/day × 3
+    (2026-11-12), where the fee bought **feedback and our timings**. Andrew gives neither for the
+    same number, so from today **$300 is the cohort-one introductory price**, not a dry-run rate.
+    ➡ **Quote it consistently to everyone in this cohort.** These are friends who know each
+    other; a second friend hearing a different number costs more than the discount does.
+  - ⛔ **The format was not stated, and that is the one gap still cheap to close.** Carlene's
+    $300 was three days. Andrew was told $300 with no format attached, so whether the Core alone
+    is $300, and whether the Deep Dive day is inside it, are both unanswered. And $300 as quoted
+    carries the **assessed certificate** and **six months of personal email support**
+    (decision 9) — which is the expensive half, not the teaching.
+  - ⛔ **Guardrail unchanged and now one step closer to the edge:** $300 reaches no partner
+    page, no channel conversation and no public page. A private email to a friend is not a
+    channel; a forward of it is.
 - **Partnership offer out to John Tredennick (Merlin Search Technologies), 2026-11-11.**
   Legal AI Engineering under the Merlin brand, Mark teaching it; email sent, awaiting a call.
   Tredennick founded and sold Catalyst and now runs Merlin, a commercial **cloud** review
