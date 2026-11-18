@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-17 (the $300 pilot rate became the cohort-one introductory price)
+**Last updated:** 2026-11-18 (competitive landscape for Course B: Harvey, UC Law SF, Stanford)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -458,6 +458,49 @@ are worth keeping — here, where the audience is us:
   participant finishes without the document production set and the containerized deployment
   (both are Lab 07, on the Deep Dive). Raising that at 4pm on Day 2 turns a complete two-day
   course into a thing with a piece missing. ⛔ It belongs before the sale, never in the room.
+
+### Competitive landscape for Course B — three independent reads, same conclusion (2026-11-18)
+
+Prompted by a Harvey brochure Mark downloaded and a Bay Area university summary he forwarded.
+**Dates and formats below were re-verified by search; prices were not found and stay `Unknown`.**
+
+- **Harvey is running Course B itself.** *AI Fluency and the Future of Associate Development at
+  Law Firms* (Harvey Law Schools, PDF created 2026-06-23) is a 10-page thought-leadership guide
+  that closes by naming **Harvey Academy**, **Preparing for Legal Work** and **AI for Legal
+  Basics** — fluency and adoption training sold by the platform vendor into the firm's L&D
+  function, with quotes from Reed Smith's Global Head of L&D, Foley & Lardner's AI steering
+  committee chair, and a Wilson Elser associate. ➡ **Course B's space is not empty, and the
+  incumbent has firm relationships we do not.** This is evidence for the standing decision
+  (**stay with A, measure B**), not against it.
+- **UC Law SF (LexLab)** — **LAIC Lab**, an intensive three-day program on using, testing and
+  implementing generative AI in legal work, **first run 2026-12-01 to 12-03**; the fourth
+  **LAIC** runs **2027-03-08 to 03-10**; completion earns a **LAIC certificate** from UC Law SF.
+  UC Law SF is also **making an AI-enabled lawyering lab required for all JD students**.
+- **Stanford Law** — the **Stanford Legal Engineering Academy**, announced around 2026-11-03, is
+  a **selective two-week residential** program for ~**50 participants**, **summer 2027**,
+  application-based, awarding a **Certificate of Achievement after a capstone project**. A
+  separate Stanford Law exec-ed course, *AI Strategy for Legal Leaders*, is priced at **$1,200**.
+- ⚠ **NAMING COLLISION, AND IT CUTS BOTH WAYS.** Stanford is defining *"legal engineering"*
+  right now, and its definition is **organizational AI strategy, workflow redesign, governance and
+  prototyping for attorneys, operators and leaders** — which is **Course B's definition, not
+  ours**. Tailwind: the category name gains institutional recognition, which our title rides.
+  Risk: by 2027 a buyer hearing *"Legal AI Engineering"* will expect Stanford's meaning, so the
+  audience sentence (**for engineers; Python labs; an assessed capstone**) has to get **louder,
+  not softer**. ➡ This sharpens the standing top risk rather than adding a new one.
+- ⚠ **Certificate exposure rises.** Both schools issue certificates and **Stanford's is
+  capstone-gated exactly like ours**. Ours still has no settled name (`DEC-015`) and **SAIS-100
+  still has no published spec**. Competing against a university-issued certificate with an
+  unpublished rubric is the weakest form of that exposure.
+- **Usable inside the course, with attribution and without reproducing their prose:** two
+  citations from the Harvey guide — Reed Smith's *"However junior you are, you're the lawyer and
+  you are responsible"* (Module 10, human oversight, currently asserted on our own authority) and
+  Foley's *"AI fluency is an expectation, not an elective"* (Module 1 landscape).
+- ⭐ **The absence in all three is the finding.** Ten pages from the best-funded player in the
+  category, plus two university programs, and **privilege waiver by disclosure, recall/elusion
+  measurement and reproducibility appear nowhere**. That is the **third independent confirmation**
+  of the job-market result: the market conversation is about *fluency*, and nobody is asking for
+  *proof*. Simultaneously our differentiator and our over-investment — and nobody is contesting
+  that ground.
 
 ## Upcoming deadlines
 
