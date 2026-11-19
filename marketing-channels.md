@@ -5,6 +5,16 @@
 90-day experiment with a kill criterion. Partner facts come from `ES/es-marketing`; external
 facts are cited.
 
+> ⚠ **PARTLY SUPERSEDED 2026-11-18 — read `OPERATIONS.md` § "After January 5" first.**
+> Mark reports **no reply from ILTACON** and that *"most people do not reply to my emails"*. The
+> conclusion recorded there is that **outbound is dead for us** and the two working channels are
+> **inbound**: Google visibility on `freeeed.org` and FreeEed word of mouth. What that changes in
+> this document: **do not chase ILTACON**, do not build and work a cold list, and treat the
+> LawSites and ACEDS approaches in §5 as on hold rather than queued. What survives unchanged:
+> the channel costs, the Govtra/NobleProg determination (§1), the reseller channel as the
+> strongest paid-for asset, the webinar-over-advertising answer (§4), and every "fix the shop
+> window" item in Phase 1.
+
 > **The finding that should shape everything below.** The course is **already published and
 > for sale by a partner**, globally, and we have not yet sent that partner the outline we
 > promised them. We do not have a price of our own, a public page of our own, or a delivered

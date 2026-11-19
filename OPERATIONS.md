@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-18 (no rehearsal before Jan 5 — the first paying room is the dry run)
+**Last updated:** 2026-11-18 (post-January plan recorded; outbound withdrawn, inbound is the channel)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -977,6 +977,128 @@ Prompted by a Harvey brochure Mark downloaded and a Bay Area university summary 
     ⚠ Not urgent — nothing in the Jan 5–7 cohort depends on it, and no elective has been sold.
     It becomes urgent the moment an elective is quoted. The outline now says their length is not
     yet fixed, which is true and safe to publish.
+
+## After January 5 — the post-delivery plan (recorded 2026-11-18)
+
+**Precondition: a successful January 5–7 delivery.** Everything here assumes the room went
+well and produced its artifacts. Nothing here is to be started before it.
+
+### What we are actually selling from
+
+**Builder standing, not institutional standing.** Mark wrote FreeEed, it ships, and Scaia has
+delivered under CJIS constraints. Stanford has institutional standing; Harvey has product
+standing plus the firm relationships that come with already being installed; UC Law SF has a
+law school. ⛔ **Never compete on credential** — that fight is lost before it starts. Compete
+on the one question we answer absolutely: *has this person built one and run it against a
+regulator?* ➡ **Therefore every marketing asset is an artifact, not a claim.** The
+reproducibility bundle a student produces on Day 3 outranks any brochure we could write.
+
+### What the market is
+
+**Not "lawyers who want AI."** `job-market-research.md` is unkind and clear: four of six
+employers require a JD for the title, every platform named in every posting is cloud, and
+defensibility measurement appears **once** in nine postings. The individual-learner market for
+*"build a defensible local pipeline"* is thin. The buyers are organizations where the security
+constraint binds, and **they buy for a team, not a seat**:
+
+1. **eDiscovery service providers and litigation-support vendors** — they build pipelines,
+   answer client security questionnaires, and compete on defensibility. Closest to our product.
+2. **Government** — state, county, AG offices, CJIS-adjacent. Local is the rule, not a
+   preference. This is Module 11 and it is Mark's own professional history.
+3. **Regulated-industry legal ops** — defense, health, financial: cloud needs an approval package.
+4. **Platform vendors' forward-deployed teams** — the TR CoCounsel FDE pattern, no JD.
+
+### The fork, and the read
+
+**Is the course the business, or the funnel?** As the business, the ceiling is Mark's calendar:
+solo delivery plus six months of support per seat means a very good year is a modest one, and it
+consumes him. As the funnel — which is what this file has said from the start, *"the course is a
+demand channel for the platform"* — the metric is **how many target organizations put someone in
+the room**, and one FreeEed integration or CJIS engagement outweighs a year of public cohorts.
+⭐ **GM read: it is the funnel.** Price and market it as one that pays for itself.
+⚠ **Needs CEO input** — this is Mark's call and it changes everything downstream.
+
+### The motion: private cohorts, not public seats
+
+Target private cohorts at **service providers and government**. Same teaching effort, one sale
+instead of twelve, a buyer whose constraint makes our differentiator binding, and it lands
+exactly where Harvey, Stanford and UC Law SF are not playing. It also solves the Bisk shape
+structurally: a sponsor buying a private cohort is a real product, not a consolation.
+
+### ⛔ CHANNEL CORRECTION — outbound is dead for us, and the first version of this plan got it wrong
+
+**Mark, 2026-11-18: no reply from ILTACON, and *"most people do not reply to my emails."*** An
+earlier draft of this section recommended building a named list of 30–50 organizations and
+working it directly — **outbound, through the exact channel that is not working.** Withdrawn.
+
+- **Non-reply is a channel verdict, not a rejection.** Every inbox now holds a hundred
+  well-targeted, costless messages a day; the only defense is to stop reading the category. Our
+  emails are not losing on quality, they are losing on being **indistinguishable at a glance from
+  things that cost nothing to produce**. ➡ Stop paying into it. Do not chase ILTACON.
+- **Counter-evidence that confirms it:** Andrew Stears replied to a warm, personal note **within
+  a day** (2026-11-17). Warm works; cold does not.
+- ⭐ **The two real assets are both inbound: Google visibility on `freeeed.org`, and FreeEed
+  word of mouth.** People already arrive without being asked, and **who searches for an
+  open-source eDiscovery platform is precisely our buyer profile** — builds or runs review
+  pipelines, constrained enough on cost or security not to simply buy Relativity. The
+  best-qualified traffic in this market already lands on our own domain. No competitor has that.
+- ➡ **The motion inverts:** make the path from *"found FreeEed"* to *"talked to Mark about
+  training"* short and obvious, and let the traffic qualify itself.
+- **The FreeEed user base is the list, and reaching it is not cold email.** Release notes, the
+  repository, the project README — a note to people already running the software is a **product
+  announcement**, pre-filtered to people who build pipelines. If `ask-freeeed` does not know about
+  the course, that is a ten-minute fix with better odds than a conference submission.
+
+### Anti-slop doctrine: publish what is expensive to fake
+
+Slop is generic, unverifiable and costless, so the antidote is anything that costs something real
+and can be **checked**: running code; specific measured results with the method attached;
+**saying where it loses** (already required by `CLAUDE.md`'s house style and almost nobody does
+it); and the claim only Mark can make — *here is the platform, here is the GitHub*.
+
+⭐ **P1 after January: extract Lab 06 as a standalone public open-source tool.** *Measure your
+review pipeline's recall and elusion against blind ground truth — synthetic corpus included, runs
+offline, no API key.* It already exists; extracting it is about a day. It is unfakeable because it
+either runs or it does not, it is useful to someone who never buys the course, it lives where our
+word of mouth already works, and **it needs nobody's reply or permission**. It also compounds:
+repositories accumulate links, and links are what the Google asset is made of. ➡ This outranks
+the webinar, the ILTACON submission and the research post combined.
+
+### Consequence for the unpublished outline — revisits the 2026-11-17 reasoning
+
+On 11-17 the conclusion was *outcomes public, mechanics in a versioned attachment*, with the loss
+of discoverability accepted as fine for a soft launch. ⚠ **Given that search is the real channel,
+that loss is now the main cost.** Google indexes text, and today the substance of this course is
+invisible to it while NobleProg's stale version is not. **The split still holds; the public half
+must get substantially bigger** — real material on measuring a review pipeline, enforcing egress,
+what defensibility requires. **Publish the knowledge, keep the curriculum.** The knowledge ranks;
+the curriculum was never the moat.
+
+### Marketing sequence, from January 8
+
+1. **Write the delivery up as evidence, not as a brochure** — *"engineers built a local review
+   pipeline; here is the reproducibility bundle one produced and what it proves."* Permission
+   required, synthetic data only. That is the only kind of story Ambrogi covers editorially, and
+   a free mention beats a paid post.
+2. **Run the webinar**, now that the demo has survived a live room: score a pipeline, break
+   egress, watch **LEGAL-A** fire and the verdict flip to Do Not Deploy, repair, re-score. A
+   number moving, live. Co-brand with NobleProg — they hold the list and the dates.
+3. **Publish the SAIS-100 legal overlay spec.** Today it is the largest exposure (a proprietary
+   score with no published rubric, in a course whose brand is *do not overclaim*); published, it
+   is the thing people cite. Already drafted, blocked only on placement.
+4. **Course visible from FreeEed's own surfaces** — release notes, README, `ask-freeeed`.
+
+### ⛔ Explicitly not doing
+
+Cold outreach of any kind. Conference submissions. Chasing ILTACON. Paid search or paid social.
+Filling public cohorts.
+
+### Kill criterion
+
+**If no private cohort has been sold to a service provider or an agency by mid-2027, the answer
+is not to market harder.** It is that the business is **FreeEed and the consulting**, and the
+course is the best brochure we will ever have. That is a conclusion arriving by evidence, not a
+failure — so build the course's economics such that this outcome is acceptable.
 
 ## Next highest-value actions
 
