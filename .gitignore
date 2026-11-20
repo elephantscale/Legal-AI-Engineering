@@ -255,6 +255,21 @@ labs/**/throughput.json
 # accumulate and must never be committed. No PPTX belongs in this repo.
 assembly.out/
 assembly.out.*/
+# Vendored reveal.js. The Python template above ignores `dist/` anywhere, which
+# would silently swallow revealjs/dist/ — reveal.js itself, its CSS and every
+# theme — leaving a fresh clone with a build that cannot run. Re-include it.
+# Git cannot re-include a file whose parent directory is excluded, so the
+# directory has to be un-ignored before its contents.
+!slides/revealjs/dist/
+!slides/revealjs/dist/**
+
+# Built reveal.js decks (slides/gen-html.sh). Derived from the Markdown, which
+# is the source of truth; regenerate with ./slides/gen-html.sh. The decks that
+# are actually delivered are copied into slides/release/ and committed there,
+# the same way the PPTX and PDF are. Note slides/revealjs/ is NOT ignored: it
+# is vendored on purpose so a deck can be built with no network.
+slides/html.out/
+
 # Assembler scratch files, left behind only if a run is interrupted.
 slides/1.md
 slides/1.pptx

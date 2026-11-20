@@ -1,0 +1,170 @@
+/* ---------------------------------------------------------------------------
+   Legal AI Engineering — reveal.js house style.
+
+   Loaded on top of reveal.js's `white` theme by gen-html.sh and inlined into
+   each deck by pandoc --embed-resources, so a released deck is one file that
+   needs no network and no fonts it does not already have.
+
+   The decks are dense on purpose: tables of survey evidence, metric formulas,
+   worked arithmetic. reveal.js defaults (centred, large type, title-case
+   headings) fight that, so the whole point of this file is to make a
+   content-heavy engineering deck readable on a projector:
+
+     - top- and left-aligned, because bullets and tables read badly centred
+     - one type scale tuned so the widest table in the course still fits
+     - blockquotes rendered as the slide's key takeaway, which is what house
+       style already uses them for (one per slide, maximum)
+     - a slide that overflows scrolls instead of silently losing its bottom
+
+   Every colour and size is a variable below. Change them here, once.
+--------------------------------------------------------------------------- */
+
+:root {
+  --ink:        #15181d;   /* body text                                      */
+  --ink-soft:   #4a5159;   /* de-emphasised text, table rules                */
+  --accent:     #1d4e6f;   /* headings, links — deep navy, projector-safe    */
+  --beat-bar:   #b8860b;   /* the takeaway callout's left rule               */
+  --beat-bg:    #fdf7e8;   /* the takeaway callout's wash                    */
+  --rule:       #d7dce1;   /* hairlines                                      */
+  --code-bg:    #f4f6f8;
+  --base-size:  28px;
+
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, "Noto Sans", sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+          "Liberation Mono", "DejaVu Sans Mono", monospace;
+}
+
+/* --- canvas ------------------------------------------------------------- */
+
+.reveal           { font-family: var(--sans); font-size: var(--base-size);
+                    color: var(--ink); font-weight: 400; }
+.reveal .slides   { text-align: left; }
+
+/* center:false gives each section the full canvas height; let a slide that
+   runs long scroll rather than crop. If you are scrolling in the room, the
+   slide is too long — that is useful information during a timed run-through. */
+.reveal .slides section {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  scrollbar-width: thin;
+}
+
+/* --- headings ----------------------------------------------------------- */
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: var(--sans);
+  color: var(--accent);
+  text-transform: none;      /* reveal's themes shout; these titles are prose */
+  text-align: left;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  text-shadow: none;
+  margin: 0 0 0.6em;
+}
+.reveal h1 { font-size: 1.95em; font-weight: 700; }
+.reveal h2 { font-size: 1.32em; font-weight: 700;
+             padding-bottom: 0.3em; border-bottom: 2px solid var(--rule); }
+.reveal h3 { font-size: 1.05em; font-weight: 600; color: var(--ink); }
+
+/* Title slide: `# Module N — Title` followed by `Elephant Scale`.
+   reveal.js sets display:block inline on the current section, so flex centring
+   loses; sit the title a third of the way down with padding instead. */
+.reveal .slides > section:first-of-type            { padding-top: 16%; }
+.reveal .slides > section:first-of-type h1         { font-size: 2.3em; margin-bottom: 0.35em;
+                                                     border: 0; }
+.reveal .slides > section:first-of-type h1 + p,
+.reveal .slides > section:first-of-type h3         { font-size: 1.05em; font-weight: 500;
+                                                     color: var(--ink-soft);
+                                                     letter-spacing: 0.08em;
+                                                     text-transform: uppercase; }
+
+/* --- body --------------------------------------------------------------- */
+
+.reveal p         { line-height: 1.4; margin: 0 0 0.65em; }
+.reveal strong    { font-weight: 700; color: var(--ink); }
+.reveal em        { font-style: italic; }
+.reveal a         { color: var(--accent); text-decoration: underline;
+                    text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.reveal a:hover   { color: var(--beat-bar); }
+
+.reveal ul, .reveal ol { display: block; margin: 0 0 0.65em 1.1em; }
+.reveal li        { line-height: 1.38; margin-bottom: 0.3em; }
+.reveal li > ul,
+.reveal li > ol   { font-size: 0.93em; margin-top: 0.3em; margin-bottom: 0.4em; }
+.reveal ul        { list-style-type: disc; }
+.reveal ul ul     { list-style-type: "– "; }
+
+/* --- the visual beat ---------------------------------------------------- */
+/* House style: one `>` blockquote per slide, carrying the takeaway. Render it
+   as a callout so the room's eye lands on it, and so the instructor can see at
+   a glance that a slide is missing one. */
+
+.reveal blockquote {
+  display: block;
+  width: auto;
+  margin: 0.9em 0 0.7em;
+  padding: 0.6em 0.9em;
+  font-size: 0.97em;
+  font-style: normal;
+  line-height: 1.38;
+  background: var(--beat-bg);
+  border-left: 5px solid var(--beat-bar);
+  border-radius: 0 3px 3px 0;
+  box-shadow: none;
+}
+.reveal blockquote p:last-child { margin-bottom: 0; }
+
+/* --- tables ------------------------------------------------------------- */
+/* The evidence tables are the densest thing in the course (three to five
+   columns of prose). Small, tight, hairline-ruled. */
+
+.reveal table      { font-size: 0.62em; border-collapse: collapse; width: 100%;
+                     margin: 0.5em 0 0.8em; }
+.reveal table th   { font-weight: 700; color: var(--accent); text-align: left;
+                     border-bottom: 2px solid var(--accent);
+                     padding: 0.42em 0.6em; }
+.reveal table td   { border-bottom: 1px solid var(--rule); padding: 0.42em 0.6em;
+                     vertical-align: top; line-height: 1.32; }
+.reveal table tr:last-child td { border-bottom: 0; }
+
+/* --- code --------------------------------------------------------------- */
+
+.reveal code              { font-family: var(--mono); font-size: 0.9em;
+                            background: var(--code-bg); padding: 0.08em 0.3em;
+                            border-radius: 3px; }
+.reveal pre               { width: 100%; box-shadow: none; margin: 0.5em 0 0.8em;
+                            font-size: 0.56em; }
+.reveal pre code          { font-family: var(--mono); display: block; padding: 0.85em 1em;
+                            background: var(--code-bg); border: 1px solid var(--rule);
+                            border-radius: 4px; overflow-x: auto;
+                            max-height: none; line-height: 1.45;
+                            word-wrap: normal; white-space: pre; }
+
+/* --- images ------------------------------------------------------------- */
+
+.reveal section img       { display: block; margin: 0.6em auto; max-width: 100%;
+                            max-height: 62vh; border: 0; background: none;
+                            box-shadow: none; }
+
+/* --- chrome ------------------------------------------------------------- */
+
+/* Bottom-LEFT, out of the way of the nav arrows reveal.js parks bottom-right.
+   It is on at all times on purpose: during a timed run-through "where am I of
+   how many" is the number you are actually watching. */
+.reveal .slide-number     { font-family: var(--mono); font-size: 15px;
+                            left: 12px; right: auto; bottom: 10px;
+                            background: rgba(21, 24, 29, 0.55); border-radius: 3px;
+                            padding: 3px 8px; }
+.reveal .progress         { color: var(--accent); height: 4px; }
+.reveal .controls         { color: var(--accent); }
+
+/* Print / PDF export (?print-pdf): drop the scroll box so a long slide spills
+   onto the page instead of being clipped at the viewport. */
+@media print {
+  .reveal .slides section { overflow: visible !important; height: auto !important; }
+  .reveal blockquote      { background: var(--beat-bg) !important;
+                            -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

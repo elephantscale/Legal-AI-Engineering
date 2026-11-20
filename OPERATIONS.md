@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-18 (post-January plan recorded; outbound withdrawn, inbound is the channel)
+**Last updated:** 2026-11-20 (post-January plan recorded; outbound withdrawn, inbound is the channel)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -266,8 +266,23 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    ➡ **The Day 2 overage is the live exposure**: decision 0 has it at ≈7:05 against 6.5 h,
    and with no rehearsal the choice of what gets dropped will otherwise be made at 3pm on
    Day 2, in front of paying students. **Decide the cut list in advance.**
+   ✅ **The stopwatch now exists (2026-11-20).** `slides/gen-html.sh` builds a third release
+   format — one self-contained reveal.js HTML file per module, from the same Markdown
+   (`slides/release/` already held the PPTX and the PDF). Press **`S`** and the `Notes:`
+   narration, the next slide, a clock and a **per-slide timer** open in a second window. That
+   is the instrument for this run-through: it measures where the minutes actually go, per
+   slide, which is exactly the number decision 0's clock table is currently guessing at. A
+   slide that overruns the canvas scrolls instead of cropping, so "I had to scroll" is a
+   second, free signal about which slides are too long.
 3. **Build the PPTX decks** — `slides/gen.sh` is wired to the shared assembler. By standing
-   instruction Claude does not run it; Mark builds the decks himself.
+   instruction Claude does not run it; Mark builds the decks himself. ➡ The reveal.js build
+   (`gen-html.sh`) is **separate and safe to run**: it never touches `gen.sh`, the assembler,
+   or any PPTX. It also gives a route to a PDF that does not go through PowerPoint
+   (`?print-pdf`), and a deck a student can keep and actually read afterwards — searchable,
+   with working citation links, opening with no PowerPoint and no network on a client laptop.
+   reveal.js is **vendored** in `slides/revealjs/` rather than loaded from a CDN: a course
+   whose first claim is *"nothing left the building"* should not phone a CDN to render its
+   own slides.
 
 ## Customers and revenue connections
 

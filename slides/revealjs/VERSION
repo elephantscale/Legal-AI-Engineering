@@ -1,0 +1,6 @@
+reveal.js 5.1.0 — https://github.com/hakimel/reveal.js (MIT, see LICENSE)
+
+Vendored, not fetched at build time: a deck must be buildable on a plane, and a
+course that teaches "nothing left the building" should not phone a CDN to render
+its own slides. Trimmed to the files pandoc's revealjs template references, plus
+all themes. Re-vendor with ./gen-html.sh --fetch-reveal.
