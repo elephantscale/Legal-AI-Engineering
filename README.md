@@ -20,12 +20,19 @@ The through-line is two risks that never go away: **confidentiality/privilege** 
 the document go?) and **defensibility** (can you prove what the system did?). They come down
 to two sentences a student must be able to say in front of a court, a client, or a regulator:
 
-> 1. **"Nothing left the building."**
-> 2. **"Here is exactly what the system did, and you can re-run it."**
+> 1. **"Here is exactly where the documents went — and nowhere else."**
+> 2. **"Here is exactly what the system did — and you can re-run it."**
 
 Every module serves one of those two, and every lab produces the artifact that proves it — an
 egress attestation, a citation trail, a recall measurement, a reproducibility bundle. If a
 slide or a lab does not serve one of them, it is not in the course.
+
+The **boundary** in claim 1 is a parameter of the matter, not a preference. Vendor-approved
+cloud and government cloud are accepted architectures with their own acceptance mechanisms —
+contract and process, or an authorization package. This course builds the strictest setting,
+local and zero-egress, where *nothing left the building* — because it is the only one whose
+proof is a log you own rather than a report you were sent. Build that one and you can evaluate
+the other two; the reverse is not true.
 
 The labs compound. By the end of Day 2 you have one working system: a messy corpus
 ingested, indexed, searchable, answerable with citations from a **local** model that

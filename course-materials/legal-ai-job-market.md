@@ -89,7 +89,7 @@ you did that the other candidate did not.
 
 **Nothing on that list is a reason to doubt the course.** Every item is a named, learnable
 thing you can add in days, on top of a system you can already defend. The reverse is not true:
-nobody adds "I can prove nothing left the building" in a weekend.
+nobody adds "I can prove exactly where the documents went" in a weekend.
 
 ---
 

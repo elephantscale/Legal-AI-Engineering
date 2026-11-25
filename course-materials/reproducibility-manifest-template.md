@@ -197,7 +197,7 @@ The coding determinations in `decisions.jsonl` and the metrics in
 stated interval. Differences, if any, are listed per document id.
 
 ## What this does NOT prove
-It does not prove no data left the building — that is `attestation.json`, and its
+It does not prove where the data went — that is `attestation.json`, and its
 own `scope_and_limits`. It does not prove the determinations are *correct*; that is
 `validation/metrics.json`, measured against blind ground truth.
 ```

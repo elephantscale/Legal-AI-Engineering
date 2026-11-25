@@ -341,7 +341,7 @@ case-snapshot-SYNTHETIC-DEMO-01/
     protocol.md          <- written BEFORE the run: sample size, threshold, acceptance
     ground_truth.jsonl   <- blind human calls, with the seed
     metrics.json         <- recall, elusion, precision, richness, CIs, agreement rate
-  attestation.json       <- Module 5: nothing left the building
+  attestation.json       <- Module 5: where the documents went
   model/                 <- the weights, for external hand-off (optional, large)
   VERIFY.md              <- how to re-run this and what "match" means
 ```

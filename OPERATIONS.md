@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-20 (post-January plan recorded; outbound withdrawn, inbound is the channel)
+**Last updated:** 2026-11-25 (claim 1 generalised from locality to the boundary)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -22,8 +22,11 @@ Why it earns its place in the catalog:
   useful both as teaching and as the shape of a paid verified assessment.
 
 Everything in the repo serves one of two claims a student must be able to make in front of a
-court, a client, or a regulator: *"Nothing left the building"* and *"Here is exactly what the
-system did, and you can re-run it."*
+court, a client, or a regulator: *"Here is exactly where the documents went — and nowhere
+else"* and *"Here is exactly what the system did, and you can re-run it."* Claim 1 is about the
+**boundary**, which is a parameter of the matter; *"nothing left the building"* is the strict
+default the course builds and the capstone grades, not a universal requirement of the role
+(generalised 2026-11-25 — see Recent accomplishments).
 
 ## Current status
 
@@ -95,6 +98,32 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    is cloud.
 
 ## Recent accomplishments
+
+- ✅ **CLAIM 1 NO LONGER OVERCLAIMS — it is about the boundary, not about locality (2026-11-25,
+  Mark's question: "should we put the emphasis on 'nothing leaked'? Is that a universal
+  requirement?").** It is not, and the course was contradicting itself about it. Module 5's
+  *"Where Local Actually Wins — and Where It Does Not"* (Mark's 2026-11-11 positioning call)
+  already named **three** accepted architectures — vendor-approved cloud, government cloud,
+  local/air-gapped — and said the skill is "knowing which boundary applies to this matter, and
+  how to prove the boundary you chose actually holds." But the spine stated the strict special
+  case as the principle, so **Day 1 promised an absolute that Day 2 walked back**, and the
+  stated failure mode was a student who tells a firm its approved review platform is
+  indefensible.
+  - **Claim 1 is now** *"Here is exactly where the documents went — and nowhere else."* —
+    parallel with claim 2's *what the system did*. *"Nothing left the building"* survives as
+    the name of the **strict default**: what the labs build and the capstone grades, because it
+    is the only boundary whose proof is a log you own rather than a report you were sent.
+  - **Nothing in the labs changed, because the machinery was already the general version:**
+    `labs/common/egress.py` is an **allowlist** — a boundary definition whose default happens
+    to be empty — and Lab 05's debrief already asks "your chat model is local and your embedder
+    is hosted, what exactly left the building?" Only the slogan was the special case.
+  - Rolled through 13 files: `CLAUDE.md`, `README.md`, `scripts/validate-course.sh` (which
+    grepped README for the old string), this file, decks `00`/`01`/`06`/`08`, and five
+    `course-materials/` documents. Incidental narrative uses of the phrase were left alone
+    where the strict case is what is actually being described (`slides/02`, Labs 05 and 07).
+  - **Commercial note:** this widens rather than softens the pitch. `OPERATIONS.md`'s own
+    Course-B risk entry concedes the strict slogan "carries least" in the hosted half of the
+    market, and Module 1's adoption data describes exactly that mainstream.
 
 - ✅ **THE COURSE NOW STATES WHAT A LAPTOP NEEDS — it never did (2026-11-16, Mark's question).**
   Before today the only hardware statement anywhere in the repo was `SETUP.md`'s "Python 3.10+
@@ -281,8 +310,7 @@ rewritten** — the gaps are recorded for review. The three findings that matter
    (`?print-pdf`), and a deck a student can keep and actually read afterwards — searchable,
    with working citation links, opening with no PowerPoint and no network on a client laptop.
    reveal.js is **vendored** in `slides/revealjs/` rather than loaded from a CDN: a course
-   whose first claim is *"nothing left the building"* should not phone a CDN to render its
-   own slides.
+   that teaches an enforced egress boundary should not phone a CDN to render its own slides.
 
 ## Customers and revenue connections
 

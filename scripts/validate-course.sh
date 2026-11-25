@@ -178,8 +178,8 @@ done
 printf "\n${B}Course content checks${N}\n"
 grep -qi "Legal AI Engineering" "$ROOT_DIR/README.md" \
   && ok "README names the course" || bad "README does not name the course"
-grep -qi "nothing left the building" "$ROOT_DIR/README.md" \
-  && ok "README states claim 1 (nothing left the building)" \
+grep -qiE "where the documents went|nothing left the building" "$ROOT_DIR/README.md" \
+  && ok "README states claim 1 (where the documents went)" \
   || bad "README does not state claim 1"
 grep -qiE "re-run it|reproduc" "$ROOT_DIR/README.md" \
   && ok "README states claim 2 (reproducibility)" || bad "README does not state claim 2"

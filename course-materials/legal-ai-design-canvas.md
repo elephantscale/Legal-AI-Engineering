@@ -34,8 +34,14 @@ line.
 
 Pick the ones that apply. Each one has a cost, listed.
 
-- [ ] **"Nothing left the building."** → local OCR, local embeddings, local model, local logs,
-      enforced egress, and an attestation with a stated scope
+- [ ] **"Here is exactly where the documents went — and nowhere else."** → an explicit
+      boundary, enforced in code, and an attestation with a stated scope. Name the boundary
+      here, because it is a parameter of the matter:
+      - [ ] **strict — "nothing left the building"** → local OCR, local embeddings, local
+            model, local logs, zero egress; your proof is a log you own
+      - [ ] **vendor-approved or government cloud** → the same attestation against the
+            allowlist that defines the boundary, plus the contract, DPA or authorization
+            package that permits it, and the vendor's audit report as the proof you were sent
 - [ ] **"Here is exactly what the system did, and you can re-run it."** → pinned model,
       rendered prompts logged, retrieval captured, reproducibility bundle, a `VERIFY.md` that
       somebody else has run

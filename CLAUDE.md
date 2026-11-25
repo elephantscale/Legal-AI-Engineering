@@ -34,14 +34,23 @@ started in this directory.
 Everything in this repo exists to support one of two claims a student must be able to make
 in front of a court, a client, or a regulator:
 
-1. **"Nothing left the building."** — confidentiality and privilege. Local model, local
-   OCR, enforced egress, and a *monitor that attests to it*.
-2. **"Here is exactly what the system did, and you can re-run it."** — defensibility.
+1. **"Here is exactly where the documents went — and nowhere else."** — confidentiality and
+   privilege. An explicit boundary, enforced in code, and a *monitor that attests to it*.
+2. **"Here is exactly what the system did — and you can re-run it."** — defensibility.
    Citations, recall/elusion/precision against blind ground truth, pinned model, logged
    prompts, a reproducibility bundle.
 
 If a slide or a lab doesn't serve one of those two, cut it. That discipline is the course's
 differentiator against generic "AI for lawyers" training.
+
+**Claim 1 is about the boundary, not about locality (Mark, 2026-11-25).** *"Nothing left the
+building"* is the strict **default** this course builds and the capstone grades — it is not a
+universal requirement of the role, and the repo used to state it as though it were. The
+boundary is a parameter of the matter: vendor-approved cloud and government cloud are the two
+other accepted architectures, each with its own acceptance mechanism, and Module 5's *"Where
+Local Actually Wins — and Where It Does Not"* is the slide that says so. Keep the slogan where
+it describes the strict architecture; don't restate it as the principle. The principle is
+knowing **which boundary applies to this matter, and proving the one you chose actually held.**
 
 ## House style (match it)
 

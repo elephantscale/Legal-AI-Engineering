@@ -108,7 +108,7 @@ The labs are **not** seven exercises. They are **one system, built in seven step
   Lab 02  messy corpus      ->  catalog.jsonl   (ingest, extract, OCR, dedupe)
   Lab 03  catalog.jsonl      ->  search index    (find anything inside everything)
   Lab 04  search index       ->  RAG + citations (answers you can go check)
-  Lab 05  RAG                ->  local + attested (nothing left the building)
+  Lab 05  RAG                ->  local + attested (the boundary, proven)
   Lab 06  local RAG          ->  measured review (recall, elusion, precision)
   Lab 07  measured review    ->  scored + packaged (SAIS-100, on-prem bundle)
   Lab 08  all of it          ->  CAPSTONE: your portfolio project

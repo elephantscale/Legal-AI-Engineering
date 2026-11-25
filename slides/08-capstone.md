@@ -11,7 +11,7 @@ Elephant Scale
 1. **Ingest** a messy corpus — containers, email, scans, load files — with an exception list
 2. **Search** it — real eDiscovery queries, a hit report, families not orphans
 3. **Answer questions** over it with **citations**, using a **local** model
-4. **Prove** nothing left the building — `attestation.json`
+4. **Prove** the boundary held — nothing left the building — `attestation.json`
 5. **Measure** a review against blind ground truth — recall, elusion, precision, with CIs
 6. **Package** it — reproducibility bundle, SAIS-100 score, container that runs offline
 

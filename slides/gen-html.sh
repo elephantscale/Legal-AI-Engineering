@@ -78,15 +78,15 @@ fetch_reveal() {
     #     so a bundled font (Source Sans Pro) would be downloaded, inlined into
     #     every deck, and never used.
     #   - half the themes @import fonts.googleapis.com. A deck for a course
-    #     whose first claim is "nothing left the building" must not call out to
-    #     Google to render its own slides, in the room or at build time.
+    #     that teaches an enforced egress boundary must not call out to Google
+    #     to render its own slides, in the room or at build time.
     sed -i '/@import url(/d' "$REVEAL_DIR"/dist/theme/*.css
     cp "$src/LICENSE" "$REVEAL_DIR/LICENSE"
     cat > "$REVEAL_DIR/VERSION" <<EOF
 reveal.js ${REVEAL_VERSION} — https://github.com/hakimel/reveal.js (MIT, see LICENSE)
 
 Vendored, not fetched at build time: a deck must be buildable on a plane, and a
-course that teaches "nothing left the building" should not phone a CDN to render
+course that teaches an enforced egress boundary should not phone a CDN to render
 its own slides. Trimmed to the files pandoc's revealjs template references, plus
 all themes. Re-vendor with ./gen-html.sh --fetch-reveal.
 EOF

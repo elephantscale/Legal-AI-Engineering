@@ -2,10 +2,15 @@
 
 **Legal AI Engineering · Elephant Scale**
 
-This is the document that supports the claim **"nothing left the building."** It is signed by
-a named human, it is generated from a machine record rather than typed from memory, and it
-states its own limits — because an attestation whose scope is unstated is read as covering
-everything, and then it is wrong.
+This is the document that supports claim 1 — **"here is exactly where the documents went, and
+nowhere else."** It is signed by a named human, it is generated from a machine record rather
+than typed from memory, and it states its own limits — because an attestation whose scope is
+unstated is read as covering everything, and then it is wrong.
+
+It is written for the strict case, where the answer is *nothing left the building*. A
+vendor-approved or government-cloud boundary is attested with the same form against the
+**allowlist that defines it** — the destinations change, the obligation to state the boundary
+and show that it held does not.
 
 Working code: `labs/common/egress.py` and `labs/05-Local-Model-Egress-Proof/local_proof.py`.
 A filled example lands in `work/attestation.json` on every run.

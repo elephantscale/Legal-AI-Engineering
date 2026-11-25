@@ -8,8 +8,8 @@ Elephant Scale
 
 You are about to build software whose output may be read aloud in a courtroom.
 
-That changes the **acceptance criteria**. "It works" is not a criterion. "It works, nothing
-leaked, and I can prove both" is.
+That changes the **acceptance criteria**. "It works" is not a criterion. "It works, I know
+exactly where the documents went, and I can prove both" is.
 
 This module gives you the map: what the market has already bought and what it still cannot
 do, what the role is, where AI actually fits in legal work. Also, the risks.
@@ -559,16 +559,28 @@ Don't resolve the tension here — just name it.
 
 | | The risk | The claim you must be able to make | Where we build it |
 |---|---|---|---|
-| **1** | Confidentiality / privilege | *"Nothing left the building, and here is the attestation."* | Module 5, Lab 05 |
+| **1** | Confidentiality / privilege | *"Here is exactly where the documents went — and nowhere else."* | Module 5, Lab 05 |
 | **2** | Defensibility | *"Here is exactly what it did, and you can re-run it."* | Module 6, Lab 06 |
 
 Everything else — ingestion, search, RAG, deployment — is **in service of those two
 sentences.**
 
+* Claim 1 is about the **boundary**, not about locality. *"Nothing left the building"* is its
+  strictest setting — the one we build, because it is the only one whose proof is a log you own
+  rather than a report you were sent. Module 5 names the two other accepted architectures.
+
 Notes:
 
 Put this slide back up at the start of Day 2. It is the course's spine, and it is what
 students should be able to recite a month later even if they forget every API.
+
+Say the boundary bullet out loud; do not let the room leave Day 1 believing local is the only
+defensible architecture. The hosted review platforms process an enormous share of the world's
+eDiscovery and lawyers accept them — that is a *different acceptance mechanism*, not a hole.
+Module 5's "Where Local Actually Wins — and Where It Does Not" is where that gets its full
+slide; this bullet is the forward reference, and it exists so Day 1 does not promise an
+absolute that Day 2 has to walk back. (Reframed 2026-11-25 — "nothing left the building" is the
+strict default, not the principle.)
 
 ---
 
