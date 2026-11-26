@@ -68,6 +68,35 @@ What it gives the instructor that the PPTX does not:
 Append `?print-pdf` to the URL and print to get a PDF without going through PowerPoint.
 Per-slide anchors (`#/13`) work, so you can link someone to one slide.
 
+### Opening a deck — `./present.sh`
+
+A deck is a web page, so the browser is the tool; there is nothing better to open it with.
+Don't double-click it in the IDE — that loads 2.7 MB of generated HTML into the editor. In
+JetBrains use **Alt+F2** (or right-click → *Open In → Browser*). Otherwise:
+
+```sh
+./present.sh 01            # Module 1, newest build, in a chromeless window
+./present.sh capstone      # match on name instead of number
+./present.sh --list        # what is built, and whether it is current
+./present.sh 01 --pdf      # open with ?print-pdf, then Ctrl+P -> Save as PDF
+./present.sh 01 --url      # just print the file:// URL
+./present.sh 01 --release  # force the committed release/ copy
+```
+
+It opens Chrome in **app mode** — no tab strip, address bar or bookmarks across the top of
+your slides — and prefers `html.out/` over `release/`. Two things it does that opening the
+file by hand does not:
+
+- **It refuses to let you present a stale deck quietly.** If the `.md` is newer than the
+  built `.html`, it says so and names the rebuild command. `--list` shows this for every deck
+  at once, which is the check worth running the morning of a delivery.
+- **It tells you the keys** — and that if speaker view does not appear, Chrome blocked the
+  popup. Allow popups for the deck *before* you present, not during.
+
+No server is needed: speaker view, the timer and the `?receiver` windows all work from
+`file://` (verified — `location.origin` is `file://` and Chrome honours the query string), so
+the USB-stick-on-a-client-laptop case holds.
+
 ### How it maps to the Markdown
 
 - **Slides split on the `---` separators already in the source** (`pandoc --slide-level=0`).
