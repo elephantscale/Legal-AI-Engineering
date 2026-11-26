@@ -319,10 +319,16 @@ Three consequences a future session should not try to improve away:
    destination is SeaLearning, where the timer is never seen. Believe this table, not that
    comment.
 
-Also recorded while here: `slides/release/` HTML is **stale for decks 00, 01, 06 and 08**
-after the claim-1 rewording, and module 01's `.pdf`/`.pptx` there are from 2026-11-12.
-`./slides/present.sh --list` shows this at a glance. Rebuilding the HTML is
-`./gen-html.sh --release`; the PPTX and PDF remain Mark's to build.
+**Release state, 2026-11-25.** `slides/release/` HTML was stale for decks 00, 01, 06 and 08
+after the claim-1 rewording; all four were rebuilt with `./gen-html.sh --release 00 01 06 08`
+and **all thirteen now match their Markdown** (`./slides/present.sh --list --release`).
+
+- ⬜ **PDF is no longer a release format (Mark, 2026-11-25):** *"I do not need pdf at all. It
+  was only for presenting at the webinar, and that is done."* `release/01-legal-engineer-landscape.pdf`
+  (2026-11-12, 568 KB) is the only one and is now an orphan — it predates the claim-1 rewording
+  and will not be regenerated. Removing it is a one-line `git rm` awaiting Mark's go-ahead.
+- `release/01-legal-engineer-landscape.pptx` is also from 2026-11-12 and therefore predates the
+  rewording. **The PPTX stays Mark's to build** — `gen.sh` is never run by Claude.
 
 ## Current priorities
 
