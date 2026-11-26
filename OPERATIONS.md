@@ -329,8 +329,18 @@ and **all thirteen now match their Markdown** (`./slides/present.sh --list --rel
   instruction** the same day; it is recoverable from git history if ever wanted. `gen-html.sh`
   and `slides/README.md` no longer describe PDF as a release format. Printing one on demand
   still works (`?print-pdf`, or `./present.sh NN --pdf`) — that capability was kept.
-- `release/01-legal-engineer-landscape.pptx` is also from 2026-11-12 and therefore predates the
-  rewording. **The PPTX stays Mark's to build** — `gen.sh` is never run by Claude.
+- ⬜ **PPTX work is paused — reveal only, for now (Mark, 2026-11-25):** *"for now, i will only
+  work on the reveal versions."* So **the active release set is the thirteen reveal HTML decks**,
+  and they are all current. Do not propose completing the PPTX set until Mark resumes it.
+- **`release/` holds one PPTX out of thirteen and that is deliberate for now.**
+  `release/01-legal-engineer-landscape.pptx` is from 2026-11-12, predates the claim-1 rewording,
+  and is **1,988,435 bytes against the 1,910,753 of a fresh build** — 77 KB larger, same 23
+  slides and 4 media files. That size gap is consistent with it being the copy Mark hand-edited
+  and adjusted pictures in, and hand edits have no merge path back from a rebuild. ⛔ **Do not
+  overwrite it with an `assembly.out/` build** without Mark saying the manual work is expendable.
+  Mark ran `gen.sh` on 2026-11-25 at 23:15, so `assembly.out/` holds thirteen fresh PPTX built
+  from the current Markdown whenever he wants them; `assembly.out/` is gitignored.
+  **The PPTX stays Mark's to build** — `gen.sh` is never run by Claude.
 
 ## Current priorities
 
