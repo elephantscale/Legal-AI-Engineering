@@ -1,6 +1,6 @@
 # Project Operations
 
-**Last updated:** 2026-11-25 (claim 1 generalised from locality to the boundary)
+**Last updated:** 2026-11-25 (claim 1 generalised; release-format division of labour recorded)
 **Owner:** Mark Kerzner
 **Status:** Green
 
@@ -281,6 +281,48 @@ rewritten** — the gaps are recorded for review. The three findings that matter
 - **`validate-course.sh` glob bug fixed.** `labs/*/work*` matched
   `labs/11-Deploy-At-Scale/work_queue.py` — lab source, not lab output — so the "no real case
   data" check failed the moment that file became tracked. It now matches directories only.
+
+### Who each release format is for (Mark, 2026-11-25) — settled, do not "fix"
+
+Asked whether the reveal.js build should change now that claim 1 is about the boundary, and
+whether its speaker notes should be stripped. Mark's answer, twice: **leave all of it as it
+is.** The division of labour:
+
+| Format | Audience | Carries |
+|---|---|---|
+| **PPTX** (`gen.sh`, Mark builds) | the human presenter, live | hand-tuned picture layout and the notes pane |
+| **reveal.js** (`gen-html.sh`) | **SeaLearning self-learners** | the slide content |
+| **Markdown** | source of truth | everything, narration included |
+
+Three consequences a future session should not try to improve away:
+
+1. **The PPTX is a one-way fork and that is fine.** Mark's workflow is: picture into the
+   `.md` → generate PPTX → **edit the PPTX and adjust pictures by hand** → generate reveal.
+   Those hand adjustments live only in the PPTX, never reach reveal (which builds from the
+   Markdown), and are lost whenever a deck is regenerated. Accepted deliberately: *"pictures
+   provide fun, but with SeaLearning the AI tutor will give its own fun"* — picture fidelity
+   in reveal does not matter, because reveal is not the presented artifact.
+2. **`Notes:` stay in the reveal HTML.** All 159 of them, across 13 decks. They are
+   instructor narration — for Mark, not the student — and CLAUDE.md says so, but reveal ships
+   them as `<aside class="notes">` where <kbd>S</kbd> or view-source reveals them. Mark's
+   reasoning: notes are for the human presenter and *"SeaLearning will not learn anything from
+   notes."* ⬜ **The one fact that would reopen this:** whether a human self-learner is ever
+   served the reveal HTML itself, rather than SeaLearning only ingesting the deck to feed the
+   tutor. If learners open the deck in a browser they can read, among 159 blocks, *"this is
+   the most commercially useful slide in the course — it is a sales tool as much as an
+   architecture tool"* and internal positioning calls attributed to Mark by date. A
+   `--no-notes` flag on `gen-html.sh` is a one-line change if that turns out to be the case.
+   Not raised again until Mark says SeaLearning serves the HTML.
+3. **`gen-html.sh`'s own header is now misleading** and was left that way on purpose. It says
+   the build exists "because reveal.js gives **the instructor** three things the PPTX cannot,"
+   headlined by the per-slide timer. That was true when it was written; reveal's actual
+   destination is SeaLearning, where the timer is never seen. Believe this table, not that
+   comment.
+
+Also recorded while here: `slides/release/` HTML is **stale for decks 00, 01, 06 and 08**
+after the claim-1 rewording, and module 01's `.pdf`/`.pptx` there are from 2026-11-12.
+`./slides/present.sh --list` shows this at a glance. Rebuilding the HTML is
+`./gen-html.sh --release`; the PPTX and PDF remain Mark's to build.
 
 ## Current priorities
 
