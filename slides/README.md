@@ -37,7 +37,9 @@ This refreshes `slide-list.txt`, calls the shared assembler
 
 ## reveal.js (HTML)
 
-A third release format alongside the PPTX and the PDF, built from the same Markdown:
+The second release format alongside the PPTX, built from the same Markdown. (PDF was
+dropped as a release format on 2026-11-25 — it existed for a webinar that is done. You can
+still print one on demand; see `?print-pdf` below.)
 
 ```sh
 ./gen-html.sh                  # every deck -> html.out/

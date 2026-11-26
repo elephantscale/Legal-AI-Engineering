@@ -4,9 +4,9 @@
 #
 #   00-about.html  01-legal-engineer-landscape.html ... 12-governance-deep-dive.html
 #
-# This is the third release format alongside the PPTX (gen.sh, which Mark runs)
-# and the PDF. It exists because reveal.js gives the instructor three things the
-# PPTX cannot:
+# This is the second release format alongside the PPTX (gen.sh, which Mark runs).
+# PDF was dropped on 2026-11-25 — it existed for a webinar that is done. It exists
+# because reveal.js gives the instructor three things the PPTX cannot:
 #
 #   1. Speaker view (press S): the `Notes:` narration from the Markdown, the next
 #      slide, a clock and a per-slide timer, in a second window. The deck is

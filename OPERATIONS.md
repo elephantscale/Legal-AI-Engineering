@@ -323,10 +323,12 @@ Three consequences a future session should not try to improve away:
 after the claim-1 rewording; all four were rebuilt with `./gen-html.sh --release 00 01 06 08`
 and **all thirteen now match their Markdown** (`./slides/present.sh --list --release`).
 
-- ⬜ **PDF is no longer a release format (Mark, 2026-11-25):** *"I do not need pdf at all. It
-  was only for presenting at the webinar, and that is done."* `release/01-legal-engineer-landscape.pdf`
-  (2026-11-12, 568 KB) is the only one and is now an orphan — it predates the claim-1 rewording
-  and will not be regenerated. Removing it is a one-line `git rm` awaiting Mark's go-ahead.
+- ✅ **PDF is no longer a release format (Mark, 2026-11-25):** *"I do not need pdf at all. It
+  was only for presenting at the webinar, and that is done."* The single PDF,
+  `release/01-legal-engineer-landscape.pdf` (2026-11-12, 568 KB), was **removed on Mark's
+  instruction** the same day; it is recoverable from git history if ever wanted. `gen-html.sh`
+  and `slides/README.md` no longer describe PDF as a release format. Printing one on demand
+  still works (`?print-pdf`, or `./present.sh NN --pdf`) — that capability was kept.
 - `release/01-legal-engineer-landscape.pptx` is also from 2026-11-12 and therefore predates the
   rewording. **The PPTX stays Mark's to build** — `gen.sh` is never run by Claude.
 
